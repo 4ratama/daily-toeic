@@ -1,0 +1,1485 @@
+{
+ "version": 1,
+ "grammar": [
+  {
+   "id": "g001",
+   "q": "_____ the inclement weather, the outdoor product launch proceeded as scheduled.",
+   "choices": [
+    "Despite",
+    "Although",
+    "However",
+    "Even"
+   ],
+   "exp": "後ろが名詞句（the inclement weather）なので前置詞 Despite。Although は節（S+V）を取る接続詞、However は副詞。"
+  },
+  {
+   "id": "g002",
+   "q": "Ms. Tanaka asked that the revised budget _____ to her by Friday.",
+   "choices": [
+    "be submitted",
+    "is submitted",
+    "was submitted",
+    "submits"
+   ],
+   "exp": "ask / request / insist that ～ の that節は仮定法現在（動詞の原形）。予算は「提出される」ので受動の be submitted。"
+  },
+  {
+   "id": "g003",
+   "q": "Had the shipment arrived on time, we _____ the order to the client yesterday.",
+   "choices": [
+    "would have delivered",
+    "would deliver",
+    "had delivered",
+    "will deliver"
+   ],
+   "exp": "If the shipment had arrived の倒置。過去の事実に反する仮定なので主節は would have + 過去分詞。"
+  },
+  {
+   "id": "g004",
+   "q": "The committee will not make a final decision _____ all the proposals have been reviewed.",
+   "choices": [
+    "until",
+    "by",
+    "during",
+    "despite"
+   ],
+   "exp": "not A until B「Bして初めてAする」。後ろが節なので接続詞の until。by は前置詞。"
+  },
+  {
+   "id": "g005",
+   "q": "Neither the manager nor the assistants _____ aware of the schedule change.",
+   "choices": [
+    "were",
+    "was",
+    "is",
+    "has been"
+   ],
+   "exp": "neither A nor B の動詞は B（the assistants＝複数）に一致させる。"
+  },
+  {
+   "id": "g006",
+   "q": "Only after the merger was finalized _____ the details to the press.",
+   "choices": [
+    "did the company release",
+    "the company released",
+    "the company did release",
+    "released the company"
+   ],
+   "exp": "Only after ～ が文頭に出ると主節は倒置（助動詞＋S＋V）になる。"
+  },
+  {
+   "id": "g007",
+   "q": "The new software is designed to process data far more _____ than its predecessor.",
+   "choices": [
+    "efficiently",
+    "efficient",
+    "efficiency",
+    "more efficient"
+   ],
+   "exp": "動詞 process を修飾するので副詞。far は比較級の強調。"
+  },
+  {
+   "id": "g008",
+   "q": "Applicants _____ résumés are incomplete will not be considered.",
+   "choices": [
+    "whose",
+    "who",
+    "whom",
+    "which"
+   ],
+   "exp": "「応募者の履歴書が」と所有関係を表すので whose。後ろに無冠詞の名詞が続くのが目印。"
+  },
+  {
+   "id": "g009",
+   "q": "By the time the CEO arrives, the team _____ the presentation slides.",
+   "choices": [
+    "will have finished",
+    "has finished",
+    "finishes",
+    "will finish"
+   ],
+   "exp": "By the time + 現在形（未来の意味）→ 主節は未来完了「その時までに～し終えているだろう」。"
+  },
+  {
+   "id": "g010",
+   "q": "The training session was so _____ that many participants asked for a follow-up.",
+   "choices": [
+    "informative",
+    "information",
+    "inform",
+    "informatively"
+   ],
+   "exp": "be動詞の補語なので形容詞。so ～ that 構文。"
+  },
+  {
+   "id": "g011",
+   "q": "Please keep the receipt _____ you need to return the item.",
+   "choices": [
+    "in case",
+    "so that",
+    "unless",
+    "whereas"
+   ],
+   "exp": "in case「～する場合に備えて」。文脈的に返品に備えてレシートを保管する。"
+  },
+  {
+   "id": "g012",
+   "q": "It is essential that every employee _____ the safety guidelines.",
+   "choices": [
+    "follow",
+    "follows",
+    "followed",
+    "is following"
+   ],
+   "exp": "It is essential / necessary / vital that ～ は仮定法現在で原形。主語が三単現でも s を付けない。"
+  },
+  {
+   "id": "g013",
+   "q": "The proposal, _____ was submitted last week, is still under review.",
+   "choices": [
+    "which",
+    "that",
+    "what",
+    "who"
+   ],
+   "exp": "カンマ付きの非制限用法では that は使えない。先行詞が物なので which。"
+  },
+  {
+   "id": "g014",
+   "q": "_____ his extensive experience, Mr. Lee was the obvious choice to lead the project.",
+   "choices": [
+    "Given",
+    "Giving",
+    "Give",
+    "To give"
+   ],
+   "exp": "Given ～「～を考慮すると」は前置詞的に使われる定番表現。"
+  },
+  {
+   "id": "g015",
+   "q": "The report must be completed _____ the end of the month.",
+   "choices": [
+    "by",
+    "until",
+    "since",
+    "while"
+   ],
+   "exp": "by は「期限（～までに）」、until は「継続（～までずっと）」。完了の期限なので by。"
+  },
+  {
+   "id": "g016",
+   "q": "Sales figures for the third quarter were _____ higher than analysts had predicted.",
+   "choices": [
+    "considerably",
+    "considerable",
+    "consideration",
+    "considerate"
+   ],
+   "exp": "比較級 higher を修飾するのは副詞。considerate は「思いやりのある」で意味も違う。"
+  },
+  {
+   "id": "g017",
+   "q": "The director insisted on _____ informed of any changes to the budget.",
+   "choices": [
+    "being kept",
+    "keeping",
+    "to be kept",
+    "be kept"
+   ],
+   "exp": "前置詞 on の後は動名詞。部長自身が「知らされ続ける」ので受動の being kept。"
+  },
+  {
+   "id": "g018",
+   "q": "_____ you have any questions about the contract, please contact the legal department.",
+   "choices": [
+    "Should",
+    "Would",
+    "Could",
+    "Unless"
+   ],
+   "exp": "If you should have ～ の if を省略した倒置。TOEIC頻出の Should you ～。"
+  },
+  {
+   "id": "g019",
+   "q": "The museum has extended its hours _____ accommodate the growing number of visitors.",
+   "choices": [
+    "in order to",
+    "so that",
+    "due to",
+    "as for"
+   ],
+   "exp": "後ろが動詞の原形なので in order to。so that は節、due to は名詞が続く。"
+  },
+  {
+   "id": "g020",
+   "q": "The candidate _____ we interviewed yesterday has accepted another offer.",
+   "choices": [
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "exp": "interviewed の目的語が欠けていて先行詞が人なので whom（who も可だが選択肢にない）。"
+  },
+  {
+   "id": "g021",
+   "q": "Each of the branch offices _____ responsible for its own budget.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been"
+   ],
+   "exp": "Each of ～ は単数扱い。its own もヒント。"
+  },
+  {
+   "id": "g022",
+   "q": "No sooner had the meeting started _____ the fire alarm went off.",
+   "choices": [
+    "than",
+    "when",
+    "then",
+    "that"
+   ],
+   "exp": "No sooner ～ than ...「～するとすぐに...」。Hardly / Scarcely なら when / before。"
+  },
+  {
+   "id": "g023",
+   "q": "The board approved the plan, _____ some members expressed reservations.",
+   "choices": [
+    "although",
+    "despite",
+    "nevertheless",
+    "in spite"
+   ],
+   "exp": "後ろが節なので接続詞 although。nevertheless は副詞で2つの節をつなげない。"
+  },
+  {
+   "id": "g024",
+   "q": "Customers are advised to read the terms carefully before _____ the agreement.",
+   "choices": [
+    "signing",
+    "sign",
+    "signed",
+    "to sign"
+   ],
+   "exp": "before は前置詞としても使え、後ろは動名詞。"
+  },
+  {
+   "id": "g025",
+   "q": "The renovation is expected to take _____ longer than originally estimated.",
+   "choices": [
+    "slightly",
+    "slight",
+    "slightest",
+    "slighter"
+   ],
+   "exp": "比較級 longer を修飾する副詞。"
+  },
+  {
+   "id": "g026",
+   "q": "The more you practice, the _____ you will become.",
+   "choices": [
+    "more confident",
+    "most confident",
+    "confident",
+    "confidence"
+   ],
+   "exp": "the 比較級 ～, the 比較級 ...「～すればするほど...」。"
+  },
+  {
+   "id": "g027",
+   "q": "The factory has been operating at full capacity _____ last April.",
+   "choices": [
+    "since",
+    "for",
+    "from",
+    "during"
+   ],
+   "exp": "現在完了進行形＋起点（last April）なので since。for は期間（for two months）。"
+  },
+  {
+   "id": "g028",
+   "q": "The marketing team is looking for someone _____ can speak both Spanish and Japanese.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what"
+   ],
+   "exp": "can speak の主語が欠けていて先行詞が人なので主格の who。"
+  },
+  {
+   "id": "g029",
+   "q": "Were it not for the generous donation, the shelter _____ forced to close.",
+   "choices": [
+    "would be",
+    "will be",
+    "had been",
+    "is"
+   ],
+   "exp": "If it were not for ～ の倒置。現在の事実に反する仮定なので would + 原形。"
+  },
+  {
+   "id": "g030",
+   "q": "Ms. Garcia has worked at the firm _____ longer than any other employee.",
+   "choices": [
+    "far",
+    "very",
+    "much more",
+    "too"
+   ],
+   "exp": "比較級の強調は far / much / even / still。very は比較級を修飾できず、much more longer は二重比較。"
+  },
+  {
+   "id": "g031",
+   "q": "The shipment was delayed _____ a shortage of qualified drivers.",
+   "choices": [
+    "owing to",
+    "because",
+    "even though",
+    "so that"
+   ],
+   "exp": "後ろが名詞句なので群前置詞 owing to（＝because of / due to）。"
+  },
+  {
+   "id": "g032",
+   "q": "Mr. Patel would rather his team _____ the report on Friday than on Monday.",
+   "choices": [
+    "submitted",
+    "submit",
+    "submits",
+    "will submit"
+   ],
+   "exp": "would rather + S + 過去形（仮定法過去）で「Sに～してほしい」。"
+  },
+  {
+   "id": "g033",
+   "q": "All participants must register online _____ advance.",
+   "choices": [
+    "in",
+    "at",
+    "on",
+    "by"
+   ],
+   "exp": "in advance「前もって」は決まり文句。"
+  },
+  {
+   "id": "g034",
+   "q": "_____ the two proposals, the second one is clearly more cost-effective.",
+   "choices": [
+    "Of",
+    "Between",
+    "Among",
+    "From"
+   ],
+   "exp": "Of the two ～, the 比較級 / the second ...「2つのうちで」。"
+  },
+  {
+   "id": "g035",
+   "q": "The company is considering _____ its headquarters to a larger building.",
+   "choices": [
+    "relocating",
+    "to relocate",
+    "relocate",
+    "relocated"
+   ],
+   "exp": "consider は動名詞を目的語に取る（consider doing）。"
+  },
+  {
+   "id": "g036",
+   "q": "Ms. Kim was _____ to the position of regional manager last month.",
+   "choices": [
+    "promoted",
+    "promoting",
+    "promotion",
+    "promote"
+   ],
+   "exp": "be promoted to ～「～に昇進する」。受動態。"
+  },
+  {
+   "id": "g037",
+   "q": "The seminar will cover topics _____ from tax planning to retirement savings.",
+   "choices": [
+    "ranging",
+    "ranged",
+    "range",
+    "to range"
+   ],
+   "exp": "topics を後ろから修飾する現在分詞。range from A to B「AからBに及ぶ」。"
+  },
+  {
+   "id": "g038",
+   "q": "The CEO, along with several board members, _____ expected to attend the ceremony.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have"
+   ],
+   "exp": "A along with B の動詞は A（The CEO＝単数）に一致。"
+  },
+  {
+   "id": "g039",
+   "q": "Not only _____ the deadline, but the team also stayed under budget.",
+   "choices": [
+    "did the team meet",
+    "the team met",
+    "met the team",
+    "the team did meet"
+   ],
+   "exp": "Not only が文頭に出ると倒置（助動詞＋S＋V）。"
+  },
+  {
+   "id": "g040",
+   "q": "We regret _____ you that your application was unsuccessful.",
+   "choices": [
+    "to inform",
+    "informing",
+    "inform",
+    "informed"
+   ],
+   "exp": "regret to do「残念ながら～する」（これからのこと）。regret doing は「～したことを後悔する」。"
+  },
+  {
+   "id": "g041",
+   "q": "The supplier offered a discount on the condition _____ we place a large order.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "if"
+   ],
+   "exp": "on the condition that ～「～という条件で」。同格の that。"
+  },
+  {
+   "id": "g042",
+   "q": "This is the hotel _____ the international conference was held last year.",
+   "choices": [
+    "where",
+    "which",
+    "what",
+    "whose"
+   ],
+   "exp": "後ろが完全な文（受動態で欠けなし）なので関係副詞 where。"
+  },
+  {
+   "id": "g043",
+   "q": "_____ completed, the new bridge will reduce commuting times significantly.",
+   "choices": [
+    "Once",
+    "Since",
+    "Unless",
+    "Despite"
+   ],
+   "exp": "Once (it is) completed「完成すれば」。接続詞＋過去分詞の省略形。"
+  },
+  {
+   "id": "g044",
+   "q": "The printer on the third floor needs _____.",
+   "choices": [
+    "repairing",
+    "to repair",
+    "repair it",
+    "repaired"
+   ],
+   "exp": "need doing で「～される必要がある」（受動の意味）。to be repaired も同義。"
+  },
+  {
+   "id": "g045",
+   "q": "Employees can choose _____ to work from home or in the office.",
+   "choices": [
+    "whether",
+    "either",
+    "if",
+    "both"
+   ],
+   "exp": "whether to do A or B「AするかBするか」。if は to不定詞を続けられない。"
+  },
+  {
+   "id": "g046",
+   "q": "The new policy applies to all staff members, _____ of their position.",
+   "choices": [
+    "regardless",
+    "despite",
+    "although",
+    "irrespective to"
+   ],
+   "exp": "regardless of ～「～に関係なく」。irrespective なら of を取る。"
+  },
+  {
+   "id": "g047",
+   "q": "Hardly _____ the product been launched when complaints began to arrive.",
+   "choices": [
+    "had",
+    "has",
+    "did",
+    "was"
+   ],
+   "exp": "Hardly had S p.p. when ～「～するとすぐに」。過去完了の倒置。"
+  },
+  {
+   "id": "g048",
+   "q": "The figures in this report are _____ accurate as those in last year's.",
+   "choices": [
+    "as",
+    "so",
+    "more",
+    "such"
+   ],
+   "exp": "as ～ as の同等比較。肯定文では so ～ as は使わない。"
+  },
+  {
+   "id": "g049",
+   "q": "The manager, _____ office is on the fifth floor, will meet you at the entrance.",
+   "choices": [
+    "whose",
+    "who",
+    "which",
+    "that"
+   ],
+   "exp": "「部長のオフィス」と所有を表すので whose。非制限用法。"
+  },
+  {
+   "id": "g050",
+   "q": "Ms. Novak is one of the few engineers who _____ certified to inspect the equipment.",
+   "choices": [
+    "are",
+    "is",
+    "has",
+    "was"
+   ],
+   "exp": "who の先行詞は the few engineers（複数）なので are。"
+  },
+  {
+   "id": "g051",
+   "q": "The conference room is not available, _____ we will hold the meeting in the lobby.",
+   "choices": [
+    "so",
+    "because",
+    "although",
+    "unless"
+   ],
+   "exp": "前半が理由、後半が結果なので so。"
+  },
+  {
+   "id": "g052",
+   "q": "The instructions were written so _____ that even new employees could follow them.",
+   "choices": [
+    "clearly",
+    "clear",
+    "clarity",
+    "clearness"
+   ],
+   "exp": "were written（動詞）を修飾するので副詞。"
+  },
+  {
+   "id": "g053",
+   "q": "_____ the project manager was on leave, her assistant chaired the meeting.",
+   "choices": [
+    "Because",
+    "Because of",
+    "Due to",
+    "Owing to"
+   ],
+   "exp": "後ろが節（S+V）なので接続詞 Because。他は前置詞相当。"
+  },
+  {
+   "id": "g054",
+   "q": "The client requested that the delivery date _____ by one week.",
+   "choices": [
+    "be postponed",
+    "is postponed",
+    "postpones",
+    "postponed"
+   ],
+   "exp": "request that の that節は仮定法現在（原形）。日付は「延期される」ので受動。"
+  },
+  {
+   "id": "g055",
+   "q": "Mr. Ito will be responsible for _____ new staff during their first month.",
+   "choices": [
+    "training",
+    "train",
+    "trained",
+    "to train"
+   ],
+   "exp": "前置詞 for の後ろは動名詞。目的語 new staff を取れる動名詞が正解。"
+  },
+  {
+   "id": "g056",
+   "q": "Most of the information in the brochure _____ outdated.",
+   "choices": [
+    "is",
+    "are",
+    "have",
+    "were"
+   ],
+   "exp": "Most of + 不可算名詞（information）は単数扱い。"
+  },
+  {
+   "id": "g057",
+   "q": "The seminar was canceled due to _____ registration.",
+   "choices": [
+    "insufficient",
+    "insufficiently",
+    "insufficiency",
+    "insufficience"
+   ],
+   "exp": "名詞 registration を修飾する形容詞。"
+  },
+  {
+   "id": "g058",
+   "q": "_____ the end of the fiscal year approaches, departments are finalizing their reports.",
+   "choices": [
+    "As",
+    "During",
+    "While of",
+    "Despite"
+   ],
+   "exp": "As「～につれて」は接続詞で節を取る。"
+  },
+  {
+   "id": "g059",
+   "q": "The company has hired a consultant to help _____ its customer service procedures.",
+   "choices": [
+    "improve",
+    "improving",
+    "improved",
+    "improvement"
+   ],
+   "exp": "help (to) do で to なしの原形が来る。"
+  },
+  {
+   "id": "g060",
+   "q": "The package should arrive within three business days, _____ there are unexpected delays.",
+   "choices": [
+    "unless",
+    "if",
+    "because",
+    "since"
+   ],
+   "exp": "unless「～でない限り」。遅延がなければ3営業日以内に届く。"
+  }
+ ],
+ "vocab": [
+  {
+   "id": "v001",
+   "q": "The company decided to _____ its contract with the supplier for another two years.",
+   "choices": [
+    "extend",
+    "expand",
+    "exceed",
+    "expose"
+   ],
+   "exp": "extend a contract「契約を延長する」。expand は規模を広げる。"
+  },
+  {
+   "id": "v002",
+   "q": "Please _____ to the attached document for further details.",
+   "choices": [
+    "refer",
+    "consult",
+    "review",
+    "check"
+   ],
+   "exp": "refer to ～「～を参照する」。他の動詞は to を取らない。"
+  },
+  {
+   "id": "v003",
+   "q": "The new regulations will take _____ next month.",
+   "choices": [
+    "effect",
+    "affect",
+    "action",
+    "impact"
+   ],
+   "exp": "take effect「（法律などが）施行される」。affect は動詞。"
+  },
+  {
+   "id": "v004",
+   "q": "Due to _____ demand, the product is temporarily out of stock.",
+   "choices": [
+    "overwhelming",
+    "overwhelmed",
+    "overlooking",
+    "overdue"
+   ],
+   "exp": "overwhelming demand「圧倒的な需要」。"
+  },
+  {
+   "id": "v005",
+   "q": "All expenses must be _____ by a supervisor before reimbursement.",
+   "choices": [
+    "authorized",
+    "authored",
+    "authenticated",
+    "authorize"
+   ],
+   "exp": "authorize「承認する」。authenticate は「本物と証明する」。"
+  },
+  {
+   "id": "v006",
+   "q": "The hotel offers _____ shuttle service to and from the airport.",
+   "choices": [
+    "complimentary",
+    "complementary",
+    "compulsory",
+    "comprehensive"
+   ],
+   "exp": "complimentary「無料の」。complementary「補完的な」と混同注意。"
+  },
+  {
+   "id": "v007",
+   "q": "The rent payment is _____ on the first day of each month.",
+   "choices": [
+    "due",
+    "overdue",
+    "prompt",
+    "timely"
+   ],
+   "exp": "be due「（支払いの）期日である」。overdue は「期限切れの」。"
+  },
+  {
+   "id": "v008",
+   "q": "Mr. Chen is _____ for overseeing the daily operations of the warehouse.",
+   "choices": [
+    "responsible",
+    "reliable",
+    "respective",
+    "responsive"
+   ],
+   "exp": "be responsible for ～「～の責任がある」。"
+  },
+  {
+   "id": "v009",
+   "q": "The firm has a _____ reputation for delivering projects on time.",
+   "choices": [
+    "solid",
+    "sturdy",
+    "dense",
+    "rigid"
+   ],
+   "exp": "solid reputation「確固たる評判」。sturdy は物理的な頑丈さ。"
+  },
+  {
+   "id": "v010",
+   "q": "The manager asked staff to _____ from using personal phones during meetings.",
+   "choices": [
+    "refrain",
+    "prevent",
+    "avoid",
+    "prohibit"
+   ],
+   "exp": "refrain from doing「～を控える」。自動詞で from を取るのは refrain。"
+  },
+  {
+   "id": "v011",
+   "q": "The survey results were _____ with our initial predictions.",
+   "choices": [
+    "consistent",
+    "constant",
+    "consecutive",
+    "considerate"
+   ],
+   "exp": "be consistent with ～「～と一致する」。"
+  },
+  {
+   "id": "v012",
+   "q": "Sales have increased for five _____ quarters.",
+   "choices": [
+    "consecutive",
+    "continual",
+    "constant",
+    "consistent"
+   ],
+   "exp": "consecutive「連続した」＋数字＋名詞。"
+  },
+  {
+   "id": "v013",
+   "q": "The workshop is _____ to all employees, regardless of department.",
+   "choices": [
+    "open",
+    "exposed",
+    "admitted",
+    "entitled"
+   ],
+   "exp": "be open to ～「～が参加できる」。"
+  },
+  {
+   "id": "v014",
+   "q": "The contractor submitted a detailed _____ of the renovation costs.",
+   "choices": [
+    "breakdown",
+    "breakthrough",
+    "breakout",
+    "breakup"
+   ],
+   "exp": "breakdown「内訳」。breakthrough は「躍進、大発見」。"
+  },
+  {
+   "id": "v015",
+   "q": "Our team will _____ the logistics of the trade show.",
+   "choices": [
+    "handle",
+    "hold",
+    "host",
+    "hand"
+   ],
+   "exp": "handle「処理する、担当する」。"
+  },
+  {
+   "id": "v016",
+   "q": "The new CEO plans to _____ the company's operations to cut costs.",
+   "choices": [
+    "streamline",
+    "straighten",
+    "stream",
+    "stretch"
+   ],
+   "exp": "streamline「合理化する、効率化する」。"
+  },
+  {
+   "id": "v017",
+   "q": "Employees are _____ to two weeks of paid vacation per year.",
+   "choices": [
+    "entitled",
+    "eligible",
+    "qualified",
+    "allowed"
+   ],
+   "exp": "be entitled to ＋名詞「～の権利がある」。eligible は for ＋名詞 / to do。"
+  },
+  {
+   "id": "v018",
+   "q": "The merger is _____ to approval by government regulators.",
+   "choices": [
+    "subject",
+    "liable",
+    "prone",
+    "exposed"
+   ],
+   "exp": "be subject to approval「承認を条件とする」。"
+  },
+  {
+   "id": "v019",
+   "q": "Please _____ your reservation at least 24 hours in advance.",
+   "choices": [
+    "confirm",
+    "conform",
+    "confine",
+    "confer"
+   ],
+   "exp": "confirm「確認する」。conform は「従う」。"
+  },
+  {
+   "id": "v020",
+   "q": "The proposal was rejected because it lacked _____ evidence.",
+   "choices": [
+    "sufficient",
+    "efficient",
+    "proficient",
+    "deficient"
+   ],
+   "exp": "sufficient「十分な」。deficient は「不足した」で文意と矛盾。"
+  },
+  {
+   "id": "v021",
+   "q": "Ms. Rossi was praised for her _____ attention to detail.",
+   "choices": [
+    "meticulous",
+    "ridiculous",
+    "momentous",
+    "meticulously"
+   ],
+   "exp": "meticulous「細心の、几帳面な」。attention to detail と相性が良い。"
+  },
+  {
+   "id": "v022",
+   "q": "The airline apologized for the _____ caused by the delay.",
+   "choices": [
+    "inconvenience",
+    "incompetence",
+    "incidence",
+    "indifference"
+   ],
+   "exp": "inconvenience「不便、迷惑」。お詫び文の定番。"
+  },
+  {
+   "id": "v023",
+   "q": "Any _____ in the invoice should be reported immediately.",
+   "choices": [
+    "discrepancies",
+    "disciplines",
+    "dispositions",
+    "distinctions"
+   ],
+   "exp": "discrepancy「（数字などの）食い違い」。"
+  },
+  {
+   "id": "v024",
+   "q": "The new branch is _____ located near the central station.",
+   "choices": [
+    "conveniently",
+    "convincingly",
+    "considerably",
+    "conventionally"
+   ],
+   "exp": "conveniently located「便利な場所にある」。"
+  },
+  {
+   "id": "v025",
+   "q": "Staff must _____ with all safety regulations.",
+   "choices": [
+    "comply",
+    "adhere",
+    "observe",
+    "abide"
+   ],
+   "exp": "comply with ～「～に従う」。adhere to、abide by、observe（他動詞）。"
+  },
+  {
+   "id": "v026",
+   "q": "The company will _____ interviewees for their travel expenses.",
+   "choices": [
+    "reimburse",
+    "redeem",
+    "reinforce",
+    "restore"
+   ],
+   "exp": "reimburse A for B「AにBを払い戻す」。"
+  },
+  {
+   "id": "v027",
+   "q": "The team leader _____ the tasks evenly among the members.",
+   "choices": [
+    "allocated",
+    "allotted to",
+    "alleviated",
+    "alleged"
+   ],
+   "exp": "allocate「割り当てる、配分する」。"
+  },
+  {
+   "id": "v028",
+   "q": "The new product line has _____ positive feedback from customers.",
+   "choices": [
+    "generated",
+    "generalized",
+    "genuine",
+    "gathered up"
+   ],
+   "exp": "generate feedback / interest「反響を生む」。"
+  },
+  {
+   "id": "v029",
+   "q": "Ms. Wong will _____ as interim director until a replacement is found.",
+   "choices": [
+    "serve",
+    "work out",
+    "take",
+    "act out"
+   ],
+   "exp": "serve as ～「～として務める」。"
+  },
+  {
+   "id": "v030",
+   "q": "Visitors must present a valid photo ID to gain _____ to the building.",
+   "choices": [
+    "access",
+    "excess",
+    "assess",
+    "process"
+   ],
+   "exp": "gain access to ～「～に入る」。excess は「超過」。"
+  },
+  {
+   "id": "v031",
+   "q": "The board will _____ the proposal at next week's meeting.",
+   "choices": [
+    "deliberate on",
+    "deliver",
+    "delegate",
+    "depreciate"
+   ],
+   "exp": "deliberate on ～「～を審議する」。"
+  },
+  {
+   "id": "v032",
+   "q": "Profits rose _____ after the cost-cutting measures were introduced.",
+   "choices": [
+    "markedly",
+    "marked",
+    "marketably",
+    "markingly"
+   ],
+   "exp": "markedly「著しく」。"
+  }
+ ],
+ "para": [
+  {
+   "id": "p001",
+   "word": "implement",
+   "answer": "carry out",
+   "ja": "実施する"
+  },
+  {
+   "id": "p002",
+   "word": "postpone",
+   "answer": "put off",
+   "ja": "延期する"
+  },
+  {
+   "id": "p003",
+   "word": "commence",
+   "answer": "begin",
+   "ja": "開始する"
+  },
+  {
+   "id": "p004",
+   "word": "tentative",
+   "answer": "provisional",
+   "ja": "暫定的な"
+  },
+  {
+   "id": "p005",
+   "word": "adjacent to",
+   "answer": "next to",
+   "ja": "～に隣接した"
+  },
+  {
+   "id": "p006",
+   "word": "expedite",
+   "answer": "speed up",
+   "ja": "迅速化する"
+  },
+  {
+   "id": "p007",
+   "word": "renowned",
+   "answer": "famous",
+   "ja": "有名な"
+  },
+  {
+   "id": "p008",
+   "word": "inquire",
+   "answer": "ask",
+   "ja": "問い合わせる"
+  },
+  {
+   "id": "p009",
+   "word": "sufficient",
+   "answer": "enough",
+   "ja": "十分な"
+  },
+  {
+   "id": "p010",
+   "word": "obtain",
+   "answer": "acquire",
+   "ja": "入手する"
+  },
+  {
+   "id": "p011",
+   "word": "vacant",
+   "answer": "unoccupied",
+   "ja": "空いている"
+  },
+  {
+   "id": "p012",
+   "word": "prior to",
+   "answer": "before",
+   "ja": "～より前に"
+  },
+  {
+   "id": "p013",
+   "word": "in charge of",
+   "answer": "responsible for",
+   "ja": "～を担当して"
+  },
+  {
+   "id": "p014",
+   "word": "lucrative",
+   "answer": "profitable",
+   "ja": "儲かる"
+  },
+  {
+   "id": "p015",
+   "word": "mandatory",
+   "answer": "required",
+   "ja": "義務の"
+  },
+  {
+   "id": "p016",
+   "word": "relocate",
+   "answer": "move",
+   "ja": "移転する"
+  },
+  {
+   "id": "p017",
+   "word": "subsequent",
+   "answer": "following",
+   "ja": "その後の"
+  },
+  {
+   "id": "p018",
+   "word": "fluctuate",
+   "answer": "vary",
+   "ja": "変動する"
+  },
+  {
+   "id": "p019",
+   "word": "durable",
+   "answer": "long-lasting",
+   "ja": "耐久性のある"
+  },
+  {
+   "id": "p020",
+   "word": "terminate",
+   "answer": "end",
+   "ja": "終了させる"
+  },
+  {
+   "id": "p021",
+   "word": "alleviate",
+   "answer": "ease",
+   "ja": "和らげる"
+  },
+  {
+   "id": "p022",
+   "word": "itinerary",
+   "answer": "travel schedule",
+   "ja": "旅程"
+  },
+  {
+   "id": "p023",
+   "word": "deteriorate",
+   "answer": "worsen",
+   "ja": "悪化する"
+  },
+  {
+   "id": "p024",
+   "word": "reimburse",
+   "answer": "pay back",
+   "ja": "払い戻す"
+  },
+  {
+   "id": "p025",
+   "word": "ample",
+   "answer": "plenty of",
+   "ja": "十分な、たくさんの"
+  },
+  {
+   "id": "p026",
+   "word": "procure",
+   "answer": "purchase",
+   "ja": "調達する"
+  },
+  {
+   "id": "p027",
+   "word": "scrutinize",
+   "answer": "examine closely",
+   "ja": "精査する"
+  },
+  {
+   "id": "p028",
+   "word": "viable",
+   "answer": "feasible",
+   "ja": "実行可能な"
+  },
+  {
+   "id": "p029",
+   "word": "tenant",
+   "answer": "renter",
+   "ja": "賃借人"
+  },
+  {
+   "id": "p030",
+   "word": "consolidate",
+   "answer": "combine",
+   "ja": "統合する"
+  },
+  {
+   "id": "p031",
+   "word": "commensurate with",
+   "answer": "in proportion to",
+   "ja": "～に見合った"
+  },
+  {
+   "id": "p032",
+   "word": "defer",
+   "answer": "delay",
+   "ja": "延期する"
+  },
+  {
+   "id": "p033",
+   "word": "adhere to",
+   "answer": "follow",
+   "ja": "～に従う"
+  },
+  {
+   "id": "p034",
+   "word": "prospective",
+   "answer": "potential",
+   "ja": "見込みのある"
+  },
+  {
+   "id": "p035",
+   "word": "tally",
+   "answer": "count",
+   "ja": "集計する"
+  },
+  {
+   "id": "p036",
+   "word": "outstanding",
+   "answer": "unpaid",
+   "ja": "未払いの"
+  },
+  {
+   "id": "p037",
+   "word": "waive",
+   "answer": "give up",
+   "ja": "（権利・料金を）免除する"
+  },
+  {
+   "id": "p038",
+   "word": "patronage",
+   "answer": "customer support",
+   "ja": "ひいき、愛顧"
+  },
+  {
+   "id": "p039",
+   "word": "pertinent",
+   "answer": "relevant",
+   "ja": "関連のある"
+  },
+  {
+   "id": "p040",
+   "word": "abundant",
+   "answer": "plentiful",
+   "ja": "豊富な"
+  }
+ ],
+ "reading": [
+  {
+   "id": "r001",
+   "title": "Email: Office relocation",
+   "passage": "To: All Staff\nFrom: Laura Kim, Facilities Manager\nSubject: Office relocation\n\nAs many of you know, our Denver office will move to the Harmon Building on Fifth Street. The move will take place over the weekend of March 14. Please pack your personal belongings in the boxes provided by Thursday, March 12. Movers will handle all furniture and computer equipment. The new office will open on Monday, March 16, with parking available in the underground garage. Parking permits can be picked up from the reception desk on the first floor starting March 16.",
+   "questions": [
+    {
+     "q": "What is the purpose of the email?",
+     "choices": [
+      "To provide details about an office move",
+      "To announce a new parking policy",
+      "To introduce a new facilities manager",
+      "To request help with moving furniture"
+     ],
+     "exp": "冒頭で Denver office will move と移転の詳細を伝えている。"
+    },
+    {
+     "q": "By when should staff pack their belongings?",
+     "choices": [
+      "March 12",
+      "March 14",
+      "March 16",
+      "March 15"
+     ],
+     "exp": "by Thursday, March 12 と明記。14日は引っ越し当日、16日は開業日。"
+    },
+    {
+     "q": "What is indicated about parking permits?",
+     "choices": [
+      "They will be distributed at the reception desk.",
+      "They must be requested by email.",
+      "They are only for managers.",
+      "They will be mailed to employees."
+     ],
+     "exp": "can be picked up from the reception desk ＝ 受付で配布される。言い換えに注目。"
+    }
+   ]
+  },
+  {
+   "id": "r002",
+   "title": "Notice: Software update",
+   "passage": "NOTICE TO ALL USERS\n\nOn Saturday, June 8, from 10:00 P.M. to 2:00 A.M., the company's internal network will be unavailable while the IT department installs a security update. During this time, employees will not be able to access email or shared drives. Staff working remotely are advised to save any files locally before 10:00 P.M. If you experience any problems logging in after the update, please contact the help desk at extension 4512. We apologize for any inconvenience.",
+   "questions": [
+    {
+     "q": "Why will the network be unavailable?",
+     "choices": [
+      "A security update will be installed.",
+      "New computers are being delivered.",
+      "The office is being renovated.",
+      "The help desk is moving."
+     ],
+     "exp": "installs a security update が理由。"
+    },
+    {
+     "q": "What are remote workers advised to do?",
+     "choices": [
+      "Save files on their own devices",
+      "Work from the office",
+      "Change their passwords",
+      "Call the help desk in advance"
+     ],
+     "exp": "save any files locally ＝ 自分の端末に保存する。"
+    },
+    {
+     "q": "The word \"experience\" in line 5 is closest in meaning to",
+     "choices": [
+      "encounter",
+      "learn",
+      "enjoy",
+      "remember"
+     ],
+     "exp": "experience problems「問題に遭遇する」＝ encounter。"
+    }
+   ]
+  },
+  {
+   "id": "r003",
+   "title": "Advertisement: Business conference",
+   "passage": "Global Retail Summit 2027\nSeptember 21-23, Lakeside Convention Center, Chicago\n\nJoin more than 3,000 industry leaders for three days of keynote talks, panel discussions, and networking events. This year's theme is \"Retail in a Digital World.\" Early registration, available until July 31, costs $450 and includes access to all sessions and lunch on each day. Regular registration is $550. Groups of five or more from the same organization receive an additional 10 percent discount. Visit www.grsummit.com to register and view the full program.",
+   "questions": [
+    {
+     "q": "What is suggested about the summit?",
+     "choices": [
+      "It focuses on technology in retail.",
+      "It is held every month.",
+      "It is free for first-time attendees.",
+      "It takes place over a weekend."
+     ],
+     "exp": "theme が Retail in a Digital World なので小売業におけるテクノロジーが焦点。"
+    },
+    {
+     "q": "What is included in the early registration fee?",
+     "choices": [
+      "Daily lunch",
+      "Hotel accommodation",
+      "Transportation",
+      "A printed program"
+     ],
+     "exp": "includes access to all sessions and lunch on each day。"
+    },
+    {
+     "q": "How can organizations receive a discount?",
+     "choices": [
+      "By registering a group of five or more people",
+      "By registering after July 31",
+      "By presenting at a session",
+      "By booking a hotel through the website"
+     ],
+     "exp": "Groups of five or more ... receive an additional 10 percent discount。"
+    }
+   ]
+  },
+  {
+   "id": "r004",
+   "title": "Memo: Expense reports",
+   "passage": "MEMO\nTo: Sales Department\nFrom: Daniel Ortiz, Finance Director\nDate: April 2\n\nEffective May 1, all expense reports must be submitted through the new online system, ExpenseTrack, rather than on paper forms. Receipts should be scanned or photographed and attached to each report. Reports submitted more than 30 days after the expense was incurred will no longer be accepted. A one-hour training session on ExpenseTrack will be offered on April 20 and April 25. Please sign up with my assistant, Mei Lin, by April 15.",
+   "questions": [
+    {
+     "q": "What is the main purpose of the memo?",
+     "choices": [
+      "To announce a change in procedure",
+      "To introduce a new finance director",
+      "To reduce travel expenses",
+      "To schedule a sales meeting"
+     ],
+     "exp": "紙からオンラインへの提出方法の変更を知らせている。"
+    },
+    {
+     "q": "What will happen to reports submitted more than 30 days late?",
+     "choices": [
+      "They will be rejected.",
+      "They will be reviewed by Mr. Ortiz.",
+      "They will require a manager's signature.",
+      "They will be processed more slowly."
+     ],
+     "exp": "will no longer be accepted ＝ 受け付けられない（rejected）。"
+    },
+    {
+     "q": "What should employees do by April 15?",
+     "choices": [
+      "Register for a training session",
+      "Submit their paper forms",
+      "Scan their receipts",
+      "Install ExpenseTrack"
+     ],
+     "exp": "Please sign up ... by April 15 ＝ 研修に申し込む。"
+    }
+   ]
+  },
+  {
+   "id": "r005",
+   "title": "Text messages",
+   "passage": "Kevin Hart (9:12 A.M.)\nHi Sara, I'm stuck in traffic on Route 9. I don't think I'll make it to the client meeting at 10.\n\nSara Mendez (9:14 A.M.)\nNo problem. I have the slides on my laptop. I can start the presentation.\n\nKevin Hart (9:15 A.M.)\nThanks. Could you also hand out the pricing sheets? They're in the blue folder on my desk.\n\nSara Mendez (9:16 A.M.)\nGot it. I'll grab them now.",
+   "questions": [
+    {
+     "q": "Why did Mr. Hart send the first message?",
+     "choices": [
+      "He expects to be late.",
+      "He forgot the slides.",
+      "He wants to reschedule the meeting.",
+      "He needs directions."
+     ],
+     "exp": "stuck in traffic で会議に間に合わないと伝えている。"
+    },
+    {
+     "q": "At 9:16 A.M., what does Ms. Mendez most likely mean when she writes, \"Got it\"?",
+     "choices": [
+      "She understands the request.",
+      "She has received the folder.",
+      "She has finished the slides.",
+      "She found a parking space."
+     ],
+     "exp": "意図問題。Got it ＝ 了解した。直後の I'll grab them now から、まだフォルダは受け取っていない。"
+    },
+    {
+     "q": "What will Ms. Mendez most likely do next?",
+     "choices": [
+      "Go to Mr. Hart's desk",
+      "Call the client",
+      "Drive to Route 9",
+      "Print new slides"
+     ],
+     "exp": "I'll grab them now ＝ 机の青いフォルダを取りに行く。"
+    }
+   ]
+  },
+  {
+   "id": "r006",
+   "title": "Article: Company expansion",
+   "passage": "PORTLAND (May 3) — Greenleaf Foods, a regional producer of organic snacks, announced on Tuesday that it will open a second manufacturing plant in Salem by early next year. The $20 million facility is expected to create about 150 jobs. According to CEO Rachel Moore, the expansion is a response to growing demand from supermarket chains across the West Coast. \"Our current plant is operating at full capacity,\" Ms. Moore said. The company also plans to introduce a line of low-sugar granola bars next spring.",
+   "questions": [
+    {
+     "q": "What is the article mainly about?",
+     "choices": [
+      "A company's plan to expand production",
+      "A new supermarket chain",
+      "The hiring of a new CEO",
+      "A decline in snack sales"
+     ],
+     "exp": "第2工場の建設＝生産拡大の計画。"
+    },
+    {
+     "q": "Why is Greenleaf Foods opening a new plant?",
+     "choices": [
+      "Demand for its products has increased.",
+      "Its current plant is being closed.",
+      "It received a government grant.",
+      "It is moving its headquarters."
+     ],
+     "exp": "a response to growing demand と明記。"
+    },
+    {
+     "q": "What does Greenleaf Foods plan to do next spring?",
+     "choices": [
+      "Launch a new product",
+      "Open a third plant",
+      "Hire a new CEO",
+      "Reduce prices"
+     ],
+     "exp": "introduce a line of low-sugar granola bars ＝ 新商品の発売。"
+    }
+   ]
+  }
+ ]
+}

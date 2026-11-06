@@ -1,0 +1,23 @@
+name: Daily Discord notification
+on:
+  schedule:
+    - cron: "30 22 * * *"   # 毎朝 7:30（日本時間）
+    - cron: "0 12 * * *"    # 毎晩 21:00（日本時間）
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "morning または evening"
+        default: morning
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/notify.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          SLOT: ${{ github.event.inputs.slot || (github.event.schedule == '0 12 * * *' && 'evening' || 'morning') }}
