@@ -6,7 +6,7 @@
   if (!app) return;
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   const NS = "http://www.w3.org/2000/svg";
-  const VERSION = "v2.0 オーロラデザイン（2026-11-06）"; // 見た目を更新したら書き換える
+  const VERSION = "v2.1 学習パス（2026-11-06）"; // 見た目を更新したら書き換える
 
   // ---- アイコン（自作SVG）----
   const ICON = {
@@ -202,8 +202,9 @@
     });
     if (firstOpen) {
       firstOpen.classList.add("next");
-      const tag = document.createElement("span"); tag.className = "nowtag"; tag.textContent = "NEXT"; firstOpen.appendChild(tag);
+      const tag = document.createElement("span"); tag.className = "nowtag"; tag.textContent = "START"; firstOpen.appendChild(tag);
     }
+    buildPath();
 
     const GC = { "文法": "var(--c-grammar)", "語彙": "var(--c-vocab)", "長文読解": "var(--c-reading)", "言い換え": "var(--c-para)" };
     app.querySelectorAll(".genres tr").forEach(tr => {
@@ -216,6 +217,50 @@
       tds[0].after(td);
       if (!isNaN(pct)) requestAnimationFrame(() => requestAnimationFrame(() => { td.querySelector("i").style.width = `${pct}%`; }));
     });
+  }
+
+  // ---- 学習パス：タームを左右に揺れる道に並べ、通った所を光らせる ----
+  const TROPHY = '<svg viewBox="0 0 64 64"><defs><linearGradient id="trG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#ff9a3c"/></linearGradient></defs><path d="M18 8h28v14a14 14 0 0 1-28 0z" fill="url(#trG)"/><path d="M18 12H9a9 9 0 0 0 10 11M46 12h9a9 9 0 0 1-10 11" fill="none" stroke="#ffb347" stroke-width="4"/><path d="M28 35h8v9h-8z" fill="#ffb347"/><rect x="20" y="44" width="24" height="8" rx="2" fill="url(#trG)"/><path d="M32 13l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.6-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z" fill="#fff"/></svg>';
+  function buildPath() {
+    const terms = app.querySelector(".terms");
+    if (!terms || terms.classList.contains("path")) return;
+    terms.classList.add("path");
+    const nodes = [...terms.querySelectorAll(".term")];
+    const wave = [0, 64, 84, 40, -40, -84, -64];
+    const k = Math.max(.55, Math.min(1, (Math.min(innerWidth, 640) - 200) / 190));
+    nodes.forEach((t, i) => t.style.setProperty("--x", `${Math.round(wave[i % wave.length] * k)}px`));
+    const all = nodes.filter(t => t.dataset.term && t.dataset.term !== "6");
+    const goal = document.createElement("div");
+    goal.className = "goal" + (all.length && all.every(t => t.classList.contains("done")) ? " got" : "");
+    goal.innerHTML = `${TROPHY}<span>TODAY CLEAR</span>`;
+    goal.style.transform = `translateX(${Math.round(wave[nodes.length % wave.length] * k)}px)`;
+    terms.appendChild(goal);
+    const svg = document.createElementNS(NS, "svg"); svg.setAttribute("class", "trail"); svg.setAttribute("aria-hidden", "true");
+    terms.prepend(svg);
+    const draw = () => {
+      const box = terms.getBoundingClientRect();
+      const pts = [...nodes.map(t => t.querySelector(".num")), goal.querySelector("svg")].map(el => {
+        const r = el.getBoundingClientRect(); return [r.left + r.width / 2 - box.left, r.top + r.height / 2 - box.top];
+      });
+      const d = list => list.map((p, i) => {
+        if (!i) return `M${p[0]} ${p[1]}`;
+        const q = list[i - 1], my = (q[1] + p[1]) / 2;
+        return `C${q[0]} ${my} ${p[0]} ${my} ${p[0]} ${p[1]}`;
+      }).join(" ");
+      let lit = 0; while (lit < nodes.length && nodes[lit].classList.contains("done")) lit++;
+      svg.innerHTML = `<path d="${d(pts)}"/>${lit ? `<path class="lit" d="${d(pts.slice(0, lit + 1))}"/>` : ""}`;
+      const lp = svg.querySelector(".lit");
+      if (lp) {
+        const L = lp.getTotalLength(), first = !svg.dataset.drawn;
+        lp.style.strokeDasharray = `${L} ${L}`;
+        lp.style.strokeDashoffset = first && !reduce ? L : 0;
+        if (first && !reduce) requestAnimationFrame(() => requestAnimationFrame(() => { lp.style.strokeDashoffset = 0; }));
+      }
+      svg.dataset.drawn = "1";
+    };
+    requestAnimationFrame(draw);
+    setTimeout(draw, 700); // 出現アニメーションの後に位置を取り直す
+    if (!buildPath.bound) { buildPath.bound = true; addEventListener("resize", () => { const tr = app.querySelector(".terms.path"); if (tr) { tr.classList.remove("path"); tr.querySelector(".trail")?.remove(); tr.querySelector(".goal")?.remove(); buildPath(); } }); }
   }
 
   function decorateFinish(big) {
