@@ -95,7 +95,7 @@ export function buildQuestion(bank, kind, id, sub = 0, order = null) {
   if (!it) return null;
   if (kind === "para") {
     // 言い換え：他の単語の answer を誤答に使う。order は表示順の問題ID
-    if (!order) order = shuffle([it.id, ...shuffle(bank.para.filter(p => p.id !== it.id)).slice(0, 3).map(p => p.id)]);
+    if (!order) order = shuffle([it.id, ...shuffle(bank.para.filter(p => p.id !== it.id && !(it.group && p.group === it.group))).slice(0, 3).map(p => p.id)]);
     const byId = Object.fromEntries(bank.para.map(p => [p.id, p]));
     if (order.some(x => !byId[x])) return null;
     return { kind, id, sub: 0, order, text: `“${it.word}” に最も近い意味は？`,

@@ -41,20 +41,74 @@ const tips = [
   "非制限用法（カンマの後）では that は使えない。",
   "by は期限（までに）、until は継続（までずっと）。",
 ];
-const date = `${now.getUTCMonth() + 1}月${now.getUTCDate()}日`;
+const WD = "日月火水木金土";
+const date = `${now.getUTCMonth() + 1}月${now.getUTCDate()}日（${WD[weekday]}）`;
 const tip = tips[now.getUTCDate() % tips.length];
 
+// 今日の1問（文法からその日ごとに1問。答えはタップで開くネタバレ表示）
+function questionOfDay() {
+  try {
+    const bank = JSON.parse(readFileSync("questions.json", "utf8")).grammar;
+    const q = bank[Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000) % bank.length];
+    const L = "ABCD";
+    // 選択肢の並びは日付で決まった順に入れ替える（1番目が必ず正解にならないように）
+    const order = [0, 1, 2, 3].sort((a, b) => ((a * 7 + now.getUTCDate()) % 4) - ((b * 7 + now.getUTCDate()) % 4));
+    const choices = order.map((k, i) => `**${L[i]}**　${q.choices[k]}`).join("\n");
+    const ans = L[order.indexOf(0)];
+    return { name: "🧩 今日の1問（Part 5）", value: `${q.q}\n\n${choices}\n\n答え：||**${ans}**　${q.choices[0]}　／　${q.point || ""}||` };
+  } catch (e) { return null; }
+}
+
+const COLOR = { morning: 0x2f6fde, reminder: 0xf2994a, test: 0x27ae60 };
+function message(t) {
+  const open = `👉 **[アプリを開いて学習する](${app})**`;
+  // テスト送信は、朝の通知と同じ見た目で送る（見え方の確認用）
+  if (t === "test" || t === times[0]) {
+    const q = questionOfDay();
+    return {
+      content: t === "test" ? "🔔 テスト送信（毎朝こんな形で届きます）" : `☀️ おはようございます！ ${date} の学習の時間です`,
+      embeds: [{
+        title: `📚 ${date} の5ターム`, url: app, color: COLOR.morning,
+        description: [
+          "⏱️ 1ターム約5分。通学中に1つずつ進めましょう。",
+          "",
+          "**今日のメニュー**",
+          "1️⃣ 文法（Part 5）　6問",
+          "2️⃣ 語彙（Part 5）　6問",
+          "3️⃣ 長文読解（Part 7）　3問",
+          "4️⃣ 言い換え単語　8問",
+          "5️⃣ 復習　最大12問",
+        ].join("\n"),
+        fields: [
+          { name: "💡 今日の文法ポイント", value: tip },
+          ...(q ? [q] : []),
+          { name: "​", value: open },
+        ],
+        footer: { text: "1タームだけでも連続記録が続きます 🔥" },
+      }],
+    };
+  }
+  return {
+    content: `⏰ ${t} になりました。学習の時間です`,
+    embeds: [{
+      title: "🔥 今日の連続記録をつなげよう", url: app, color: COLOR.reminder,
+      description: [
+        "まだ残っているタームはありませんか？",
+        "",
+        "✅ 1ターム（約5分）だけでも記録が続きます",
+        "🌙 間違えた問題は「帰りの復習」でもう一度",
+        "",
+        open,
+      ].join("\n"),
+    }],
+  };
+}
+
 for (const t of due) {
-  const first = t === "test" || t === times[0];
-  const content = t === "test"
-    ? `🔔 テスト通知です。この通知が届いていれば設定は完了です。\n${app}`
-    : first
-      ? `☀️ **${date} の5ターム**（1ターム約5分）\n移動中に1つずつ進めましょう。\n💡 今日の文法ポイント：${tip}\n${app}`
-      : `⏰ **${t}** の学習時間です。残っているタームを1つ進めましょう。\n${app}`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username: "TOEIC Daily", content }),
+    body: JSON.stringify({ username: "TOEIC Daily", ...message(t) }),
   });
   if (!res.ok) { console.error("送信失敗:", res.status, await res.text()); process.exit(1); }
   console.log("送信しました:", t);

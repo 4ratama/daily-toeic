@@ -12,7 +12,7 @@ const short = sha.slice(0, 7);
 // マージコミットなら1つ目の親との差分（＝取り込まれた変更全体）
 const files = sh(`git diff --name-only ${sha}^1 ${sha}`).split("\n").filter(Boolean);
 // 学習画面に関係しない変更（送信記録・通知時刻・ボット・説明書）だけなら送らない
-const ignore = f => f.startsWith("state/") || f === "config.json" || f.startsWith("bot/") || f.startsWith(".github/") || f.startsWith("scripts/") || f.endsWith(".md");
+const ignore = f => f.startsWith("state/") || f === "config.json" || f.startsWith("bot/") || f.startsWith(".github/") || f.startsWith("scripts/") || f.startsWith("widget/") || f.endsWith(".md");
 const changed = files.filter(f => !ignore(f));
 if (!changed.length && process.env.FORCE !== "true") { console.log("画面に関係する変更がないため送りません:", files.join(", ")); process.exit(0); }
 
@@ -26,17 +26,25 @@ if (changed.some(f => /\.(css|svg|png)$/.test(f) || f === "fx.js" || f === "inde
 if (changed.some(f => f === "app.js" || f === "sw.js")) what.push("機能");
 
 const link = `${app}?v=${short}`;
-const content = [
-  `🆕 **アプリを更新しました**（${what.join("・") || "その他"}）`,
-  ...subjects.map(s => `・${s}`),
-  `新しい画面はこちらから開いてください👇`,
-  link,
-].join("\n");
+const body = {
+  username: "TOEIC Daily",
+  content: "🆕 アプリを更新しました",
+  embeds: [{
+    title: `✨ TOEIC Daily をアップデートしました（${what.join("・") || "その他"}）`,
+    url: link,
+    color: 0x9b51e0,
+    fields: [
+      { name: "📝 変わったところ", value: subjects.map(s => `• ${s}`).join("\n") || "• 細かな改善" },
+      { name: "​", value: `👉 **[新しい画面を開く](${link})**\n古い画面が出たら、このリンクから開き直してください。` },
+    ],
+    footer: { text: `バージョン ${short}` },
+  }],
+};
 
 const res = await fetch(url, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ username: "TOEIC Daily", content }),
+  body: JSON.stringify(body),
 });
 if (!res.ok) { console.error("送信失敗:", res.status, await res.text()); process.exit(1); }
 console.log("送信しました:", link);

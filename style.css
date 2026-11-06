@@ -284,3 +284,10 @@ select.input { background-image: linear-gradient(45deg, transparent 50%, var(--i
   .mark path, .result-art path { stroke-dashoffset: 0; }
   .result-art text { opacity: 1; }
 }
+/* 問題の分類（基本スタイル） */
+.status-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 8px; }
+.status-table th, .status-table td { padding: 5px 4px; border-bottom: 1px solid var(--line); text-align: right; }
+.status-table th:first-child, .status-table td:first-child { text-align: left; }
+.status-table .st-wrong { color: var(--ng); font-weight: 700; }
+.status-table .st-correct { color: var(--ok); }
+.wrong-item .q { font-size: 16px; }

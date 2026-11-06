@@ -18,6 +18,7 @@ const TERMS = [
   { id: 4, name: "言い換え単語", desc: "同義語を素早く選ぶ 8問", kind: "para", n: 8 },
   { id: 5, name: "復習", desc: "期限が来た問題（最大12問）", kind: "review", n: REVIEW_MAX },
 ];
+const WRONGS = { id: 7, name: "要復習の問題を解く", desc: "最後に間違えた問題だけ（最大12問）", kind: "wrongs" };
 const EVENING = { id: 6, name: "帰りの復習", desc: "今日間違えた問題をもう一度", kind: "evening" };
 // 各問題が TOEIC のどの大問にあたるか
 const QUESTION_PART = {
@@ -171,7 +172,7 @@ function reviewCandidates(exclude = new Set()) {
 function pickNew(list, n, exclude) {
   const t = today();
   const avail = list.filter(x => !exclude.has(x.id) && !(S.items[x.id] && (S.items[x.id].mastered || S.items[x.id].due <= t)));
-  const fresh = avail.filter(x => !S.items[x.id]);
+  const fresh = shuffle(avail.filter(x => !S.items[x.id])); // 未出題から毎回ランダムに
   const later = avail.filter(x => S.items[x.id]).sort((a, b) => S.items[b.id].due.localeCompare(S.items[a.id].due));
   return [...fresh, ...later].slice(0, n);
 }
@@ -200,6 +201,56 @@ function buildTerm(term) {
   save();
   return items;
 }
+// 出た問題の分類：未出題 / 正解（最後に正解） / 要復習（最後に不正解）
+function statusOf(id) {
+  const it = S.items[id];
+  if (!it || !it.last) return it ? (it.lapses ? "wrong" : "correct") : "new";
+  return it.last.correct ? "correct" : "wrong";
+}
+function wrongItems() {
+  return ["grammar", "vocab", "para", "reading"].flatMap(g => BANK[g].filter(x => statusOf(x.id) === "wrong"));
+}
+function statusHtml() {
+  const rows = Object.keys(GENRE_NAMES).map(g => {
+    const c = { new: 0, correct: 0, wrong: 0 };
+    BANK[g].forEach(x => c[statusOf(x.id)]++);
+    return `<tr><td>${GENRE_NAMES[g]}</td><td class="st-new">${c.new}</td><td class="st-correct">${c.correct}</td><td class="st-wrong">${c.wrong}</td></tr>`;
+  }).join("");
+  const w = wrongItems().length;
+  return `
+    <div class="card status-card">
+      <h2>問題の分類</h2>
+      <table class="status-table"><tr><th></th><th>未出題</th><th>正解</th><th>要復習</th></tr>${rows}</table>
+      <div class="muted">新しい問題は未出題の中からランダムに出ます。最後に間違えた問題は「要復習」に入り、正解すると「正解」に移ります。</div>
+      ${w ? `<div class="row2"><button class="btn" id="wrongsGo">要復習を解く（${Math.min(w, 12)}問）</button><button class="btn ghost" id="wrongsList">一覧を見る</button></div>` : ""}
+    </div>`;
+}
+function wrongList() {
+  history.replaceState(null, "", "?wrongs=1");
+  const items = wrongItems();
+  app.innerHTML = `
+    <div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">要復習の問題（${items.length}問）</span></div>
+    ${items.map(x => {
+      const g = genreOf(x.id), it = S.items[x.id];
+      const q = g === "reading" ? `${x.title}（${x.questions.length}問）` : g === "para" ? `${x.word} ＝ ？` : x.q;
+      const ans = g === "reading" ? x.questions.map(y => y.choices[0]).join(" ／ ") : g === "para" ? `${x.answer}（${x.ja}）` : x.choices[0];
+      const point = g === "reading" ? x.questions.map(y => y.point).filter(Boolean).join(" ／ ") : x.point;
+      return `<div class="card wrong-item">
+        <div class="part-badge">${esc(QUESTION_PART[g].label)}${x.tag ? `<span class="part-tag">${esc(x.tag)}</span>` : ""}</div>
+        <div class="q">${esc(q)}</div>
+        <div><b>正解</b>　${esc(ans)}</div>
+        ${point ? `<div class="point">ポイント：${esc(point)}</div>` : ""}
+        <div class="muted">間違えた回数 ${it.lapses || 0}回・最後に解いた日 ${it.last ? it.last.date : "-"}</div>
+      </div>`;
+    }).join("") || `<div class="card">要復習の問題はありません。</div>`}
+    ${items.length ? `<button class="btn" id="go">この問題を解く</button>` : ""}
+    <button class="btn ghost" id="back2">ホームに戻る</button>`;
+  document.getElementById("back").onclick = goHome;
+  document.getElementById("back2").onclick = goHome;
+  const go = document.getElementById("go"); if (go) go.onclick = () => startTerm(WRONGS.id);
+  window.scrollTo(0, 0);
+}
+
 // 帰りの復習：今日間違えて、まだやり直していない問題（毎回その場で作る）
 function eveningItems() {
   const t = today();
@@ -217,7 +268,7 @@ function toQuestions(items) {
       it.questions.forEach((q, i) => qs.push({ id: it.id, g, sub: i, passage: it.passage, title: it.title,
         q: q.q, answer: q.choices[0], choices: shuffle(q.choices), exp: q.exp, point: q.point, last: i === it.questions.length - 1 }));
     } else if (g === "para") {
-      const others = shuffle(BANK.para.filter(p => p.id !== it.id)).slice(0, 3).map(p => p.answer);
+      const others = shuffle(BANK.para.filter(p => p.id !== it.id && !(it.group && p.group === it.group))).slice(0, 3).map(p => p.answer);
       qs.push({ id: it.id, g, q: `“${it.word}” に最も近い意味は？`, answer: it.answer,
         choices: shuffle([it.answer, ...others]), exp: `${it.word} ＝ ${it.answer}（${it.ja}）。本番では Part 7 の同義語問題や、設問と本文の言い換えとして出てきます。`, point: `${it.word} ＝ ${it.answer}` });
     } else {
@@ -296,7 +347,7 @@ function onTermDone(st) {
     m.frozen = m.frozen.filter(d => d >= today(-120));
   }
   if (new Date().getHours() === 7) award("early", res.badges);
-  if (st.term !== EVENING) {
+  if (TERMS.includes(st.term)) {
     const sec = (performance.now() - st.termStart) / 1000;
     const b = m.best[st.term.id], rate = st.score / st.qs.length;
     if (!b || rate > b.score / b.total || (rate === b.score / b.total && sec < b.sec)) {
@@ -451,6 +502,7 @@ function home() {
     <div class="terms">${TERMS.map(t => termButton(t, done.includes(t.id), t.id)).join("")}
       ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "夜") : ""}
     </div>
+    ${statusHtml()}
     ${motivationHtml()}
     <div class="card" style="margin-top:16px">
       <h2>ジャンル別の正答率</h2>
@@ -460,6 +512,8 @@ function home() {
   app.querySelectorAll(".term").forEach(b => b.onclick = () => startTerm(+b.dataset.term));
   document.getElementById("settings").onclick = settings;
   document.getElementById("guide").onclick = guide;
+  const wg = document.getElementById("wrongsGo"); if (wg) wg.onclick = () => startTerm(WRONGS.id);
+  const wl = document.getElementById("wrongsList"); if (wl) wl.onclick = wrongList;
   window.scrollTo(0, 0);
 }
 
@@ -497,8 +551,8 @@ function guide() {
 }
 
 function startTerm(termId) {
-  const term = termId === EVENING.id ? EVENING : TERMS.find(t => t.id === termId);
-  const items = term === EVENING ? eveningItems() : buildTerm(term);
+  const term = termId === EVENING.id ? EVENING : termId === WRONGS.id ? WRONGS : TERMS.find(t => t.id === termId);
+  const items = term === EVENING ? eveningItems() : term === WRONGS ? shuffle(wrongItems()).slice(0, 12) : buildTerm(term);
   if (!items.length) { goHome(); return; }
   const qs = toQuestions(items);
   const st = { term, qs, i: 0, score: 0, answered: false, badges: [], xp: 0, termStart: performance.now(), levelBefore: levelOf(M().xp).level };
@@ -544,7 +598,7 @@ function answer(st, k) {
   const over = limit && sec > limit;
   const last = st.i === st.qs.length - 1;
   const nextLabel = last ? "結果を見る" : "次へ";
-  const evening = st.term === EVENING;
+  const evening = st.term === EVENING || st.term === WRONGS; // その場の解き直しは、間違えても翌日へ
   const done = confident => {
     // 長文は3問まとめて1つの記録（全問正解・全問自信ありで1段上がる）
     if (q.passage) {
@@ -575,7 +629,7 @@ function answer(st, k) {
 
 function finish(st) {
   const t = today();
-  if (st.term !== EVENING) {
+  if (TERMS.includes(st.term)) {
     S.days[t] = S.days[t] || { done: [] };
     if (!S.days[t].done.includes(st.term.id)) S.days[t].done.push(st.term.id);
     save();
@@ -715,7 +769,7 @@ async function init() {
   }
   const t = +new URLSearchParams(location.search).get("term");
   const params = new URLSearchParams(location.search);
-  if (TERMS.some(x => x.id === t) || t === EVENING.id) startTerm(t); else if (params.get("guide")) guide(); else home();
+  if (TERMS.some(x => x.id === t) || t === EVENING.id || t === WRONGS.id) startTerm(t); else if (params.get("guide")) guide(); else if (params.get("wrongs")) wrongList(); else home();
 }
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 init();

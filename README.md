@@ -45,3 +45,20 @@ Discordアプリの通知をオンにしておくと、通知をタップして�
 Discord の中でボタン式の問題を解けるボットもあります。`/remind` で曜日ごとにリマインド時刻を選べます。
 Cloudflare Workers の無料プランで動き、問題はこの `questions.json` を共有します。
 セットアップは [bot/README.md](bot/README.md) を見てください。
+
+## iPhoneのホーム画面ウィジェット
+
+Discordや Webアプリは、自分でホーム画面ウィジェットを作れません。そこで、無料アプリ「Scriptable」を使います。
+
+1. App Store で **Scriptable** をインストールします。
+2. Scriptable を開き、右上の「＋」で新しいスクリプトを作ります。
+3. [widget/toeic-daily-widget.js](widget/toeic-daily-widget.js) の中身を全部コピーして貼り付けます。名前は `TOEIC Daily` にします。
+4. ホーム画面を長押し →「＋」→ Scriptable → 中サイズを追加します。
+5. 追加したウィジェットを長押し →「ウィジェットを編集」→ Script で `TOEIC Daily` を選びます。
+
+ウィジェットには「今日の1問」（Discordの朝の通知と同じ問題）と、次の学習時刻が出ます。タップすると学習ページが開きます。
+
+### 決まった時刻にアプリを自動で開く（ショートカット）
+
+「ショートカット」アプリ →「オートメーション」→「＋」→「時刻」で通学時間を選び、「すぐに実行」にします。
+アクションに「URLを開く」を追加し、`https://4ratama.github.io/daily-toeic/` を入れると、その時刻に学習ページが開きます。
