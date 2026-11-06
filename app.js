@@ -499,6 +499,10 @@ function home() {
       <span class="num">G</span>
       <span class="body"><span class="name">TOEICのパート別ガイド</span><br><span class="desc">Part 1〜7の形式・出題傾向・コツ</span></span>
     </button>
+    <button class="term guide-entry cards-entry" id="cards">
+      <span class="num">単</span>
+      <span class="body"><span class="name">いつでも単語帳</span><br><span class="desc">カード・学習・テスト・マッチ。自分の単語も追加できます</span></span>
+    </button>
     <div class="terms">${TERMS.map(t => termButton(t, done.includes(t.id), t.id)).join("")}
       ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "夜") : ""}
     </div>
@@ -514,6 +518,7 @@ function home() {
   document.getElementById("guide").onclick = guide;
   const wg = document.getElementById("wrongsGo"); if (wg) wg.onclick = () => startTerm(WRONGS.id);
   const wl = document.getElementById("wrongsList"); if (wl) wl.onclick = wrongList;
+  document.getElementById("cards").onclick = () => { history.replaceState(null, "", "?cards=1"); window.Cards && window.Cards.open(); };
   window.scrollTo(0, 0);
 }
 
@@ -769,7 +774,7 @@ async function init() {
   }
   const t = +new URLSearchParams(location.search).get("term");
   const params = new URLSearchParams(location.search);
-  if (TERMS.some(x => x.id === t) || t === EVENING.id || t === WRONGS.id) startTerm(t); else if (params.get("guide")) guide(); else if (params.get("wrongs")) wrongList(); else home();
+  if (TERMS.some(x => x.id === t) || t === EVENING.id || t === WRONGS.id) startTerm(t); else if (params.get("guide")) guide(); else if (params.get("wrongs")) wrongList(); else if (params.get("cards") && window.Cards) window.Cards.open(); else home();
 }
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 init();

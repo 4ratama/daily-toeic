@@ -1,0 +1,1380 @@
+{
+ "version": 1,
+ "decks": [
+  {
+   "id": "adv",
+   "name": "950〜990点の語",
+   "desc": "Part 5・7 の上級語彙"
+  }
+ ],
+ "cards": [
+  {
+   "id": "w001",
+   "deck": "adv",
+   "term": "adverse",
+   "pos": "形",
+   "def": "不利な、悪い",
+   "ex": "Adverse weather conditions delayed the shipment."
+  },
+  {
+   "id": "w002",
+   "deck": "adv",
+   "term": "amenable to",
+   "pos": "形",
+   "def": "～を受け入れやすい",
+   "ex": "The supplier was amenable to our revised terms."
+  },
+  {
+   "id": "w003",
+   "deck": "adv",
+   "term": "amend",
+   "pos": "動",
+   "def": "修正する、改正する",
+   "ex": "The board voted to amend the bylaws."
+  },
+  {
+   "id": "w004",
+   "deck": "adv",
+   "term": "anticipate",
+   "pos": "動",
+   "def": "予想する、見越す",
+   "ex": "We anticipate a sharp rise in demand next quarter."
+  },
+  {
+   "id": "w005",
+   "deck": "adv",
+   "term": "appraisal",
+   "pos": "名",
+   "def": "評価、査定",
+   "ex": "Annual performance appraisals are held in March."
+  },
+  {
+   "id": "w006",
+   "deck": "adv",
+   "term": "apprehensive",
+   "pos": "形",
+   "def": "不安な、気がかりな",
+   "ex": "Some staff were apprehensive about the merger."
+  },
+  {
+   "id": "w007",
+   "deck": "adv",
+   "term": "arbitrary",
+   "pos": "形",
+   "def": "恣意的な、任意の",
+   "ex": "The fee increase seemed arbitrary to customers."
+  },
+  {
+   "id": "w008",
+   "deck": "adv",
+   "term": "articulate",
+   "pos": "動",
+   "def": "はっきり述べる",
+   "ex": "She articulated the company's vision clearly."
+  },
+  {
+   "id": "w009",
+   "deck": "adv",
+   "term": "ascertain",
+   "pos": "動",
+   "def": "確かめる、突き止める",
+   "ex": "We need to ascertain the cause of the delay."
+  },
+  {
+   "id": "w010",
+   "deck": "adv",
+   "term": "assess",
+   "pos": "動",
+   "def": "評価する、査定する",
+   "ex": "The team will assess the damage on Monday."
+  },
+  {
+   "id": "w011",
+   "deck": "adv",
+   "term": "attainable",
+   "pos": "形",
+   "def": "達成可能な",
+   "ex": "The sales target is ambitious but attainable."
+  },
+  {
+   "id": "w012",
+   "deck": "adv",
+   "term": "attribute A to B",
+   "pos": "動",
+   "def": "AをBのせいにする、Aの原因をBとする",
+   "ex": "They attributed the growth to strong online sales."
+  },
+  {
+   "id": "w013",
+   "deck": "adv",
+   "term": "audit",
+   "pos": "名",
+   "def": "会計監査",
+   "ex": "The annual audit will begin next week."
+  },
+  {
+   "id": "w014",
+   "deck": "adv",
+   "term": "backlog",
+   "pos": "名",
+   "def": "未処理分、受注残",
+   "ex": "We have a backlog of orders to fill."
+  },
+  {
+   "id": "w015",
+   "deck": "adv",
+   "term": "benchmark",
+   "pos": "名",
+   "def": "基準、指標",
+   "ex": "The new model sets a benchmark for efficiency."
+  },
+  {
+   "id": "w016",
+   "deck": "adv",
+   "term": "bolster",
+   "pos": "動",
+   "def": "強化する、支える",
+   "ex": "The campaign is designed to bolster sales."
+  },
+  {
+   "id": "w017",
+   "deck": "adv",
+   "term": "breach",
+   "pos": "名",
+   "def": "違反、侵害",
+   "ex": "The delay constituted a breach of contract."
+  },
+  {
+   "id": "w018",
+   "deck": "adv",
+   "term": "candid",
+   "pos": "形",
+   "def": "率直な",
+   "ex": "Thank you for your candid feedback."
+  },
+  {
+   "id": "w019",
+   "deck": "adv",
+   "term": "capitalize on",
+   "pos": "動",
+   "def": "～を利用する、活かす",
+   "ex": "We should capitalize on the holiday season."
+  },
+  {
+   "id": "w020",
+   "deck": "adv",
+   "term": "circumvent",
+   "pos": "動",
+   "def": "回避する、うまく逃れる",
+   "ex": "The new route circumvents the busy downtown area."
+  },
+  {
+   "id": "w021",
+   "deck": "adv",
+   "term": "clientele",
+   "pos": "名",
+   "def": "顧客（層）",
+   "ex": "The boutique has a loyal clientele."
+  },
+  {
+   "id": "w022",
+   "deck": "adv",
+   "term": "coincide with",
+   "pos": "動",
+   "def": "～と同時に起こる",
+   "ex": "The sale coincides with the store's anniversary."
+  },
+  {
+   "id": "w023",
+   "deck": "adv",
+   "term": "collateral",
+   "pos": "名",
+   "def": "担保",
+   "ex": "The loan requires collateral."
+  },
+  {
+   "id": "w024",
+   "deck": "adv",
+   "term": "commendable",
+   "pos": "形",
+   "def": "称賛に値する",
+   "ex": "Her dedication to the project was commendable."
+  },
+  {
+   "id": "w025",
+   "deck": "adv",
+   "term": "compatible",
+   "pos": "形",
+   "def": "互換性のある、両立できる",
+   "ex": "The software is compatible with most devices."
+  },
+  {
+   "id": "w026",
+   "deck": "adv",
+   "term": "compensate",
+   "pos": "動",
+   "def": "補償する、埋め合わせる",
+   "ex": "Customers will be compensated for the delay."
+  },
+  {
+   "id": "w027",
+   "deck": "adv",
+   "term": "competent",
+   "pos": "形",
+   "def": "有能な",
+   "ex": "We are looking for a competent accountant."
+  },
+  {
+   "id": "w028",
+   "deck": "adv",
+   "term": "compile",
+   "pos": "動",
+   "def": "まとめる、編集する",
+   "ex": "Please compile the survey results by Friday."
+  },
+  {
+   "id": "w029",
+   "deck": "adv",
+   "term": "comprehensive",
+   "pos": "形",
+   "def": "包括的な",
+   "ex": "The manual provides a comprehensive overview."
+  },
+  {
+   "id": "w030",
+   "deck": "adv",
+   "term": "concede",
+   "pos": "動",
+   "def": "（しぶしぶ）認める",
+   "ex": "The CEO conceded that the plan had flaws."
+  },
+  {
+   "id": "w031",
+   "deck": "adv",
+   "term": "concise",
+   "pos": "形",
+   "def": "簡潔な",
+   "ex": "Keep your summary concise."
+  },
+  {
+   "id": "w032",
+   "deck": "adv",
+   "term": "contingency",
+   "pos": "名",
+   "def": "不測の事態",
+   "ex": "We have a contingency plan in case of a strike."
+  },
+  {
+   "id": "w033",
+   "deck": "adv",
+   "term": "conversely",
+   "pos": "副",
+   "def": "逆に",
+   "ex": "Conversely, sales in Asia declined."
+  },
+  {
+   "id": "w034",
+   "deck": "adv",
+   "term": "convene",
+   "pos": "動",
+   "def": "招集する、集まる",
+   "ex": "The committee will convene next Tuesday."
+  },
+  {
+   "id": "w035",
+   "deck": "adv",
+   "term": "cordially",
+   "pos": "副",
+   "def": "心から",
+   "ex": "You are cordially invited to the opening ceremony."
+  },
+  {
+   "id": "w036",
+   "deck": "adv",
+   "term": "corroborate",
+   "pos": "動",
+   "def": "裏付ける",
+   "ex": "The data corroborate our initial findings."
+  },
+  {
+   "id": "w037",
+   "deck": "adv",
+   "term": "culminate in",
+   "pos": "動",
+   "def": "ついに～となる",
+   "ex": "The negotiations culminated in a merger."
+  },
+  {
+   "id": "w038",
+   "deck": "adv",
+   "term": "curtail",
+   "pos": "動",
+   "def": "削減する、切り詰める",
+   "ex": "The company curtailed travel expenses."
+  },
+  {
+   "id": "w039",
+   "deck": "adv",
+   "term": "customary",
+   "pos": "形",
+   "def": "慣例の",
+   "ex": "It is customary to tip the driver."
+  },
+  {
+   "id": "w040",
+   "deck": "adv",
+   "term": "deduct",
+   "pos": "動",
+   "def": "差し引く",
+   "ex": "Taxes are deducted from your salary."
+  },
+  {
+   "id": "w041",
+   "deck": "adv",
+   "term": "delegate",
+   "pos": "動",
+   "def": "（権限を）委任する",
+   "ex": "Managers should delegate routine tasks."
+  },
+  {
+   "id": "w042",
+   "deck": "adv",
+   "term": "depict",
+   "pos": "動",
+   "def": "描写する",
+   "ex": "The mural depicts the history of the town."
+  },
+  {
+   "id": "w043",
+   "deck": "adv",
+   "term": "detrimental",
+   "pos": "形",
+   "def": "有害な",
+   "ex": "Lack of sleep is detrimental to productivity."
+  },
+  {
+   "id": "w044",
+   "deck": "adv",
+   "term": "diligent",
+   "pos": "形",
+   "def": "勤勉な",
+   "ex": "He is a diligent and reliable worker."
+  },
+  {
+   "id": "w045",
+   "deck": "adv",
+   "term": "discontinue",
+   "pos": "動",
+   "def": "（製造・販売を）中止する",
+   "ex": "This model has been discontinued."
+  },
+  {
+   "id": "w046",
+   "deck": "adv",
+   "term": "discretion",
+   "pos": "名",
+   "def": "裁量、慎重さ",
+   "ex": "Bonuses are paid at the manager's discretion."
+  },
+  {
+   "id": "w047",
+   "deck": "adv",
+   "term": "disperse",
+   "pos": "動",
+   "def": "分散させる、解散する",
+   "ex": "The crowd dispersed after the event."
+  },
+  {
+   "id": "w048",
+   "deck": "adv",
+   "term": "disruption",
+   "pos": "名",
+   "def": "混乱、中断",
+   "ex": "We apologize for any disruption to service."
+  },
+  {
+   "id": "w049",
+   "deck": "adv",
+   "term": "dissuade",
+   "pos": "動",
+   "def": "思いとどまらせる",
+   "ex": "High fees dissuade new customers."
+  },
+  {
+   "id": "w050",
+   "deck": "adv",
+   "term": "diversify",
+   "pos": "動",
+   "def": "多様化する",
+   "ex": "The firm plans to diversify its products."
+  },
+  {
+   "id": "w051",
+   "deck": "adv",
+   "term": "dormant",
+   "pos": "形",
+   "def": "休止中の",
+   "ex": "The account has been dormant for two years."
+  },
+  {
+   "id": "w052",
+   "deck": "adv",
+   "term": "downsize",
+   "pos": "動",
+   "def": "規模を縮小する",
+   "ex": "The factory was forced to downsize."
+  },
+  {
+   "id": "w053",
+   "deck": "adv",
+   "term": "drastically",
+   "pos": "副",
+   "def": "大幅に、劇的に",
+   "ex": "Prices have dropped drastically."
+  },
+  {
+   "id": "w054",
+   "deck": "adv",
+   "term": "earmark",
+   "pos": "動",
+   "def": "（資金を）充てる",
+   "ex": "The funds are earmarked for renovations."
+  },
+  {
+   "id": "w055",
+   "deck": "adv",
+   "term": "elicit",
+   "pos": "動",
+   "def": "引き出す",
+   "ex": "The survey elicited many useful responses."
+  },
+  {
+   "id": "w056",
+   "deck": "adv",
+   "term": "eligible",
+   "pos": "形",
+   "def": "資格のある",
+   "ex": "Full-time staff are eligible for the bonus."
+  },
+  {
+   "id": "w057",
+   "deck": "adv",
+   "term": "embark on",
+   "pos": "動",
+   "def": "～に乗り出す",
+   "ex": "The company will embark on a new venture."
+  },
+  {
+   "id": "w058",
+   "deck": "adv",
+   "term": "encompass",
+   "pos": "動",
+   "def": "含む、網羅する",
+   "ex": "The plan encompasses all regional offices."
+  },
+  {
+   "id": "w059",
+   "deck": "adv",
+   "term": "endorse",
+   "pos": "動",
+   "def": "支持する、推薦する",
+   "ex": "The proposal was endorsed by the board."
+  },
+  {
+   "id": "w060",
+   "deck": "adv",
+   "term": "enforce",
+   "pos": "動",
+   "def": "施行する、実施する",
+   "ex": "The new rules will be strictly enforced."
+  },
+  {
+   "id": "w061",
+   "deck": "adv",
+   "term": "entail",
+   "pos": "動",
+   "def": "伴う、必要とする",
+   "ex": "The job entails frequent travel."
+  },
+  {
+   "id": "w062",
+   "deck": "adv",
+   "term": "enumerate",
+   "pos": "動",
+   "def": "列挙する",
+   "ex": "The report enumerates several risks."
+  },
+  {
+   "id": "w063",
+   "deck": "adv",
+   "term": "envision",
+   "pos": "動",
+   "def": "心に描く、想像する",
+   "ex": "We envision a store in every major city."
+  },
+  {
+   "id": "w064",
+   "deck": "adv",
+   "term": "equivalent",
+   "pos": "形",
+   "def": "同等の",
+   "ex": "Applicants need a degree or equivalent experience."
+  },
+  {
+   "id": "w065",
+   "deck": "adv",
+   "term": "exemplary",
+   "pos": "形",
+   "def": "模範的な",
+   "ex": "She received an award for exemplary service."
+  },
+  {
+   "id": "w066",
+   "deck": "adv",
+   "term": "exempt from",
+   "pos": "形",
+   "def": "～を免除された",
+   "ex": "Small businesses are exempt from the tax."
+  },
+  {
+   "id": "w067",
+   "deck": "adv",
+   "term": "exorbitant",
+   "pos": "形",
+   "def": "法外な",
+   "ex": "The hotel charges exorbitant prices."
+  },
+  {
+   "id": "w068",
+   "deck": "adv",
+   "term": "expertise",
+   "pos": "名",
+   "def": "専門知識",
+   "ex": "We need your expertise in marketing."
+  },
+  {
+   "id": "w069",
+   "deck": "adv",
+   "term": "facilitate",
+   "pos": "動",
+   "def": "促進する、容易にする",
+   "ex": "The software facilitates communication."
+  },
+  {
+   "id": "w070",
+   "deck": "adv",
+   "term": "feasible",
+   "pos": "形",
+   "def": "実現可能な",
+   "ex": "The plan is technically feasible."
+  },
+  {
+   "id": "w071",
+   "deck": "adv",
+   "term": "fiscal",
+   "pos": "形",
+   "def": "会計の、財政の",
+   "ex": "The fiscal year ends in March."
+  },
+  {
+   "id": "w072",
+   "deck": "adv",
+   "term": "forfeit",
+   "pos": "動",
+   "def": "（権利などを）失う",
+   "ex": "You will forfeit your deposit if you cancel."
+  },
+  {
+   "id": "w073",
+   "deck": "adv",
+   "term": "formidable",
+   "pos": "形",
+   "def": "手ごわい、恐るべき",
+   "ex": "They face a formidable competitor."
+  },
+  {
+   "id": "w074",
+   "deck": "adv",
+   "term": "forthcoming",
+   "pos": "形",
+   "def": "近く来る、今度の",
+   "ex": "Details will be announced in the forthcoming newsletter."
+  },
+  {
+   "id": "w075",
+   "deck": "adv",
+   "term": "frugal",
+   "pos": "形",
+   "def": "倹約的な",
+   "ex": "The firm took a frugal approach to spending."
+  },
+  {
+   "id": "w076",
+   "deck": "adv",
+   "term": "garner",
+   "pos": "動",
+   "def": "集める、獲得する",
+   "ex": "The campaign garnered wide support."
+  },
+  {
+   "id": "w077",
+   "deck": "adv",
+   "term": "hamper",
+   "pos": "動",
+   "def": "妨げる",
+   "ex": "Heavy snow hampered the delivery."
+  },
+  {
+   "id": "w078",
+   "deck": "adv",
+   "term": "hesitant",
+   "pos": "形",
+   "def": "ためらっている",
+   "ex": "Investors were hesitant to commit."
+  },
+  {
+   "id": "w079",
+   "deck": "adv",
+   "term": "impeccable",
+   "pos": "形",
+   "def": "非の打ちどころのない",
+   "ex": "The hotel is known for impeccable service."
+  },
+  {
+   "id": "w080",
+   "deck": "adv",
+   "term": "impending",
+   "pos": "形",
+   "def": "差し迫った",
+   "ex": "Staff were informed of the impending changes."
+  },
+  {
+   "id": "w081",
+   "deck": "adv",
+   "term": "imperative",
+   "pos": "形",
+   "def": "必須の、緊急の",
+   "ex": "It is imperative that we meet the deadline."
+  },
+  {
+   "id": "w082",
+   "deck": "adv",
+   "term": "incentive",
+   "pos": "名",
+   "def": "報奨、動機付け",
+   "ex": "Employees receive incentives for referrals."
+  },
+  {
+   "id": "w083",
+   "deck": "adv",
+   "term": "incidental",
+   "pos": "形",
+   "def": "付随的な",
+   "ex": "Incidental expenses will be reimbursed."
+  },
+  {
+   "id": "w084",
+   "deck": "adv",
+   "term": "incur",
+   "pos": "動",
+   "def": "（費用・損失を）負う",
+   "ex": "You may incur a late fee."
+  },
+  {
+   "id": "w085",
+   "deck": "adv",
+   "term": "indispensable",
+   "pos": "形",
+   "def": "不可欠な",
+   "ex": "Her skills are indispensable to the team."
+  },
+  {
+   "id": "w086",
+   "deck": "adv",
+   "term": "inadvertently",
+   "pos": "副",
+   "def": "うっかり",
+   "ex": "I inadvertently deleted the file."
+  },
+  {
+   "id": "w087",
+   "deck": "adv",
+   "term": "inaugural",
+   "pos": "形",
+   "def": "最初の、就任の",
+   "ex": "The inaugural conference was held in Tokyo."
+  },
+  {
+   "id": "w088",
+   "deck": "adv",
+   "term": "incumbent",
+   "pos": "形",
+   "def": "現職の",
+   "ex": "The incumbent mayor won reelection."
+  },
+  {
+   "id": "w089",
+   "deck": "adv",
+   "term": "inherent",
+   "pos": "形",
+   "def": "本来備わっている",
+   "ex": "There are risks inherent in any investment."
+  },
+  {
+   "id": "w090",
+   "deck": "adv",
+   "term": "inventory",
+   "pos": "名",
+   "def": "在庫",
+   "ex": "We need to check the inventory before ordering."
+  },
+  {
+   "id": "w091",
+   "deck": "adv",
+   "term": "itemize",
+   "pos": "動",
+   "def": "項目別にする",
+   "ex": "Please itemize your expenses."
+  },
+  {
+   "id": "w092",
+   "deck": "adv",
+   "term": "jeopardize",
+   "pos": "動",
+   "def": "危うくする",
+   "ex": "Delays could jeopardize the contract."
+  },
+  {
+   "id": "w093",
+   "deck": "adv",
+   "term": "lapse",
+   "pos": "動",
+   "def": "（期限が）切れる",
+   "ex": "Your membership will lapse next month."
+  },
+  {
+   "id": "w094",
+   "deck": "adv",
+   "term": "leverage",
+   "pos": "動",
+   "def": "活用する",
+   "ex": "We can leverage our existing network."
+  },
+  {
+   "id": "w095",
+   "deck": "adv",
+   "term": "liability",
+   "pos": "名",
+   "def": "（法的）責任、負債",
+   "ex": "The company accepts no liability for loss."
+  },
+  {
+   "id": "w096",
+   "deck": "adv",
+   "term": "liaison",
+   "pos": "名",
+   "def": "連絡係",
+   "ex": "She acts as a liaison between departments."
+  },
+  {
+   "id": "w097",
+   "deck": "adv",
+   "term": "lenient",
+   "pos": "形",
+   "def": "寛大な",
+   "ex": "The return policy is fairly lenient."
+  },
+  {
+   "id": "w098",
+   "deck": "adv",
+   "term": "meticulously",
+   "pos": "副",
+   "def": "細心の注意を払って",
+   "ex": "The documents were meticulously reviewed."
+  },
+  {
+   "id": "w099",
+   "deck": "adv",
+   "term": "mitigate",
+   "pos": "動",
+   "def": "軽減する",
+   "ex": "Measures were taken to mitigate the risk."
+  },
+  {
+   "id": "w100",
+   "deck": "adv",
+   "term": "momentum",
+   "pos": "名",
+   "def": "勢い",
+   "ex": "The project is gaining momentum."
+  },
+  {
+   "id": "w101",
+   "deck": "adv",
+   "term": "negligible",
+   "pos": "形",
+   "def": "ごくわずかな",
+   "ex": "The cost difference is negligible."
+  },
+  {
+   "id": "w102",
+   "deck": "adv",
+   "term": "notable",
+   "pos": "形",
+   "def": "注目すべき",
+   "ex": "There was a notable increase in visitors."
+  },
+  {
+   "id": "w103",
+   "deck": "adv",
+   "term": "novice",
+   "pos": "名",
+   "def": "初心者",
+   "ex": "The course is ideal for novices."
+  },
+  {
+   "id": "w104",
+   "deck": "adv",
+   "term": "obligatory",
+   "pos": "形",
+   "def": "義務的な",
+   "ex": "Attendance at the meeting is obligatory."
+  },
+  {
+   "id": "w105",
+   "deck": "adv",
+   "term": "obsolete",
+   "pos": "形",
+   "def": "時代遅れの",
+   "ex": "The old system is now obsolete."
+  },
+  {
+   "id": "w106",
+   "deck": "adv",
+   "term": "onerous",
+   "pos": "形",
+   "def": "厄介な、負担の重い",
+   "ex": "The paperwork is onerous for small firms."
+  },
+  {
+   "id": "w107",
+   "deck": "adv",
+   "term": "oversee",
+   "pos": "動",
+   "def": "監督する",
+   "ex": "She oversees the marketing department."
+  },
+  {
+   "id": "w108",
+   "deck": "adv",
+   "term": "overhaul",
+   "pos": "動",
+   "def": "徹底的に見直す、分解修理する",
+   "ex": "The company overhauled its pricing."
+  },
+  {
+   "id": "w109",
+   "deck": "adv",
+   "term": "patron",
+   "pos": "名",
+   "def": "常連客、後援者",
+   "ex": "Library patrons must show a card."
+  },
+  {
+   "id": "w110",
+   "deck": "adv",
+   "term": "periodically",
+   "pos": "副",
+   "def": "定期的に",
+   "ex": "Passwords should be changed periodically."
+  },
+  {
+   "id": "w111",
+   "deck": "adv",
+   "term": "perishable",
+   "pos": "形",
+   "def": "傷みやすい",
+   "ex": "Perishable goods must be refrigerated."
+  },
+  {
+   "id": "w112",
+   "deck": "adv",
+   "term": "plausible",
+   "pos": "形",
+   "def": "もっともらしい",
+   "ex": "That is a plausible explanation."
+  },
+  {
+   "id": "w113",
+   "deck": "adv",
+   "term": "precede",
+   "pos": "動",
+   "def": "～に先行する",
+   "ex": "A reception will precede the dinner."
+  },
+  {
+   "id": "w114",
+   "deck": "adv",
+   "term": "precedent",
+   "pos": "名",
+   "def": "前例",
+   "ex": "The decision set a precedent."
+  },
+  {
+   "id": "w115",
+   "deck": "adv",
+   "term": "predominantly",
+   "pos": "副",
+   "def": "主に",
+   "ex": "Our customers are predominantly young."
+  },
+  {
+   "id": "w116",
+   "deck": "adv",
+   "term": "preliminary",
+   "pos": "形",
+   "def": "予備の、事前の",
+   "ex": "Preliminary results look promising."
+  },
+  {
+   "id": "w117",
+   "deck": "adv",
+   "term": "premises",
+   "pos": "名",
+   "def": "敷地、構内",
+   "ex": "Smoking is not permitted on the premises."
+  },
+  {
+   "id": "w118",
+   "deck": "adv",
+   "term": "prerequisite",
+   "pos": "名",
+   "def": "前提条件",
+   "ex": "Basic Excel skills are a prerequisite."
+  },
+  {
+   "id": "w119",
+   "deck": "adv",
+   "term": "prestigious",
+   "pos": "形",
+   "def": "名声のある",
+   "ex": "She works for a prestigious law firm."
+  },
+  {
+   "id": "w120",
+   "deck": "adv",
+   "term": "prevail",
+   "pos": "動",
+   "def": "普及している、勝る",
+   "ex": "Optimism prevailed at the meeting."
+  },
+  {
+   "id": "w121",
+   "deck": "adv",
+   "term": "proficient",
+   "pos": "形",
+   "def": "熟達した",
+   "ex": "Applicants must be proficient in Spanish."
+  },
+  {
+   "id": "w122",
+   "deck": "adv",
+   "term": "prohibitive",
+   "pos": "形",
+   "def": "（値段が）手が出ないほど高い",
+   "ex": "The cost of repairs was prohibitive."
+  },
+  {
+   "id": "w123",
+   "deck": "adv",
+   "term": "proprietor",
+   "pos": "名",
+   "def": "所有者、経営者",
+   "ex": "The proprietor greeted every guest."
+  },
+  {
+   "id": "w124",
+   "deck": "adv",
+   "term": "provisional",
+   "pos": "形",
+   "def": "暫定的な",
+   "ex": "We have a provisional booking for May."
+  },
+  {
+   "id": "w125",
+   "deck": "adv",
+   "term": "proximity",
+   "pos": "名",
+   "def": "近さ",
+   "ex": "The hotel's proximity to the airport is convenient."
+  },
+  {
+   "id": "w126",
+   "deck": "adv",
+   "term": "punctual",
+   "pos": "形",
+   "def": "時間を守る",
+   "ex": "Please be punctual for the interview."
+  },
+  {
+   "id": "w127",
+   "deck": "adv",
+   "term": "quota",
+   "pos": "名",
+   "def": "ノルマ、割り当て",
+   "ex": "She exceeded her sales quota."
+  },
+  {
+   "id": "w128",
+   "deck": "adv",
+   "term": "ratify",
+   "pos": "動",
+   "def": "批准する、承認する",
+   "ex": "Members ratified the new agreement."
+  },
+  {
+   "id": "w129",
+   "deck": "adv",
+   "term": "reconcile",
+   "pos": "動",
+   "def": "（帳簿を）照合する、調和させる",
+   "ex": "Please reconcile the accounts monthly."
+  },
+  {
+   "id": "w130",
+   "deck": "adv",
+   "term": "redeem",
+   "pos": "動",
+   "def": "（クーポンを）引き換える",
+   "ex": "Coupons can be redeemed at any store."
+  },
+  {
+   "id": "w131",
+   "deck": "adv",
+   "term": "redundant",
+   "pos": "形",
+   "def": "余分な、不要な",
+   "ex": "Several positions were made redundant."
+  },
+  {
+   "id": "w132",
+   "deck": "adv",
+   "term": "referral",
+   "pos": "名",
+   "def": "紹介",
+   "ex": "Most of our clients come through referrals."
+  },
+  {
+   "id": "w133",
+   "deck": "adv",
+   "term": "reinstate",
+   "pos": "動",
+   "def": "復活させる、復職させる",
+   "ex": "The service will be reinstated tomorrow."
+  },
+  {
+   "id": "w134",
+   "deck": "adv",
+   "term": "remittance",
+   "pos": "名",
+   "def": "送金",
+   "ex": "Please send your remittance by June 1."
+  },
+  {
+   "id": "w135",
+   "deck": "adv",
+   "term": "remuneration",
+   "pos": "名",
+   "def": "報酬",
+   "ex": "Remuneration is commensurate with experience."
+  },
+  {
+   "id": "w136",
+   "deck": "adv",
+   "term": "renovate",
+   "pos": "動",
+   "def": "改装する",
+   "ex": "The lobby is being renovated."
+  },
+  {
+   "id": "w137",
+   "deck": "adv",
+   "term": "replenish",
+   "pos": "動",
+   "def": "補充する",
+   "ex": "Staff replenish the shelves every morning."
+  },
+  {
+   "id": "w138",
+   "deck": "adv",
+   "term": "reputable",
+   "pos": "形",
+   "def": "評判のよい",
+   "ex": "Choose a reputable contractor."
+  },
+  {
+   "id": "w139",
+   "deck": "adv",
+   "term": "rescind",
+   "pos": "動",
+   "def": "取り消す、撤回する",
+   "ex": "The company rescinded the job offer."
+  },
+  {
+   "id": "w140",
+   "deck": "adv",
+   "term": "retain",
+   "pos": "動",
+   "def": "保持する、引き留める",
+   "ex": "We must retain our best employees."
+  },
+  {
+   "id": "w141",
+   "deck": "adv",
+   "term": "retrieve",
+   "pos": "動",
+   "def": "取り戻す、回収する",
+   "ex": "You can retrieve your files from the server."
+  },
+  {
+   "id": "w142",
+   "deck": "adv",
+   "term": "revamp",
+   "pos": "動",
+   "def": "刷新する",
+   "ex": "The website was revamped last month."
+  },
+  {
+   "id": "w143",
+   "deck": "adv",
+   "term": "robust",
+   "pos": "形",
+   "def": "強固な、好調な",
+   "ex": "The economy showed robust growth."
+  },
+  {
+   "id": "w144",
+   "deck": "adv",
+   "term": "salient",
+   "pos": "形",
+   "def": "顕著な、重要な",
+   "ex": "Summarize the salient points of the report."
+  },
+  {
+   "id": "w145",
+   "deck": "adv",
+   "term": "scrupulous",
+   "pos": "形",
+   "def": "細心の、良心的な",
+   "ex": "He is scrupulous about details."
+  },
+  {
+   "id": "w146",
+   "deck": "adv",
+   "term": "solicit",
+   "pos": "動",
+   "def": "求める、募る",
+   "ex": "We are soliciting proposals from vendors."
+  },
+  {
+   "id": "w147",
+   "deck": "adv",
+   "term": "stagnant",
+   "pos": "形",
+   "def": "停滞した",
+   "ex": "Sales have remained stagnant."
+  },
+  {
+   "id": "w148",
+   "deck": "adv",
+   "term": "stipulate",
+   "pos": "動",
+   "def": "規定する",
+   "ex": "The contract stipulates a 30-day notice."
+  },
+  {
+   "id": "w149",
+   "deck": "adv",
+   "term": "stringent",
+   "pos": "形",
+   "def": "厳しい",
+   "ex": "The lab follows stringent safety rules."
+  },
+  {
+   "id": "w150",
+   "deck": "adv",
+   "term": "substantial",
+   "pos": "形",
+   "def": "かなりの",
+   "ex": "The firm made a substantial profit."
+  },
+  {
+   "id": "w151",
+   "deck": "adv",
+   "term": "supersede",
+   "pos": "動",
+   "def": "取って代わる",
+   "ex": "This version supersedes all previous ones."
+  },
+  {
+   "id": "w152",
+   "deck": "adv",
+   "term": "surplus",
+   "pos": "名",
+   "def": "余剰、黒字",
+   "ex": "The budget showed a surplus."
+  },
+  {
+   "id": "w153",
+   "deck": "adv",
+   "term": "susceptible to",
+   "pos": "形",
+   "def": "～の影響を受けやすい",
+   "ex": "The region is susceptible to flooding."
+  },
+  {
+   "id": "w154",
+   "deck": "adv",
+   "term": "tangible",
+   "pos": "形",
+   "def": "具体的な、有形の",
+   "ex": "The plan produced tangible results."
+  },
+  {
+   "id": "w155",
+   "deck": "adv",
+   "term": "tedious",
+   "pos": "形",
+   "def": "退屈な、うんざりする",
+   "ex": "Data entry can be tedious."
+  },
+  {
+   "id": "w156",
+   "deck": "adv",
+   "term": "tenure",
+   "pos": "名",
+   "def": "在職期間",
+   "ex": "During her tenure, sales doubled."
+  },
+  {
+   "id": "w157",
+   "deck": "adv",
+   "term": "thrive",
+   "pos": "動",
+   "def": "繁栄する",
+   "ex": "Small businesses thrive in this area."
+  },
+  {
+   "id": "w158",
+   "deck": "adv",
+   "term": "transcript",
+   "pos": "名",
+   "def": "記録、写し",
+   "ex": "A transcript of the speech is available online."
+  },
+  {
+   "id": "w159",
+   "deck": "adv",
+   "term": "turnover",
+   "pos": "名",
+   "def": "離職率、売上高",
+   "ex": "The company has low staff turnover."
+  },
+  {
+   "id": "w160",
+   "deck": "adv",
+   "term": "unanimous",
+   "pos": "形",
+   "def": "満場一致の",
+   "ex": "The decision was unanimous."
+  },
+  {
+   "id": "w161",
+   "deck": "adv",
+   "term": "undertake",
+   "pos": "動",
+   "def": "引き受ける、着手する",
+   "ex": "The firm undertook a major expansion."
+  },
+  {
+   "id": "w162",
+   "deck": "adv",
+   "term": "unprecedented",
+   "pos": "形",
+   "def": "前例のない",
+   "ex": "Demand reached an unprecedented level."
+  },
+  {
+   "id": "w163",
+   "deck": "adv",
+   "term": "upcoming",
+   "pos": "形",
+   "def": "近く行われる",
+   "ex": "Please register for the upcoming seminar."
+  },
+  {
+   "id": "w164",
+   "deck": "adv",
+   "term": "utilize",
+   "pos": "動",
+   "def": "利用する",
+   "ex": "We utilize the latest technology."
+  },
+  {
+   "id": "w165",
+   "deck": "adv",
+   "term": "validate",
+   "pos": "動",
+   "def": "有効にする、検証する",
+   "ex": "Please validate your parking ticket."
+  },
+  {
+   "id": "w166",
+   "deck": "adv",
+   "term": "verify",
+   "pos": "動",
+   "def": "確認する、検証する",
+   "ex": "Please verify your email address."
+  },
+  {
+   "id": "w167",
+   "deck": "adv",
+   "term": "versatile",
+   "pos": "形",
+   "def": "多用途の、多才な",
+   "ex": "This is a versatile tool for any kitchen."
+  },
+  {
+   "id": "w168",
+   "deck": "adv",
+   "term": "voucher",
+   "pos": "名",
+   "def": "引換券、割引券",
+   "ex": "Guests receive a meal voucher."
+  },
+  {
+   "id": "w169",
+   "deck": "adv",
+   "term": "warranty",
+   "pos": "名",
+   "def": "保証（書）",
+   "ex": "The printer comes with a two-year warranty."
+  },
+  {
+   "id": "w170",
+   "deck": "adv",
+   "term": "withstand",
+   "pos": "動",
+   "def": "耐える",
+   "ex": "The building can withstand earthquakes."
+  },
+  {
+   "id": "w171",
+   "deck": "adv",
+   "term": "yield",
+   "pos": "動",
+   "def": "（利益・結果を）生む",
+   "ex": "The investment yielded high returns."
+  }
+ ]
+}
