@@ -4,7 +4,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
 const url = process.env.DISCORD_WEBHOOK_URL;
-const app = process.env.APP_URL;
+const app = (process.env.APP_URL || "").replace(/\?v=([0-9a-f]{7})[0-9a-f]*/, "?v=$1"); // 版番号は短く
 const force = process.env.FORCE === "true"; // 手動テスト：時刻に関係なく1通送る
 if (!url) {
   // 未設定のうちは定期実行を失敗扱いにしない（失敗メールが10分ごとに届くのを防ぐ）。手動テストだけ失敗にする。

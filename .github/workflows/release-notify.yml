@@ -1,0 +1,23 @@
+name: Notify Discord when the app is updated
+# GitHub Pages の公開（page_build）が終わったら、最新版のURLをDiscordに送る
+on:
+  page_build:
+  workflow_dispatch:   # 手動で「最新版のURL」を送りたいとき
+jobs:
+  notify:
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.build.commit || github.sha }}
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/release-notify.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          SHA: ${{ github.event.build.commit || github.sha }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' }}

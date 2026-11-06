@@ -24,7 +24,7 @@ jobs:
       - run: node scripts/notify.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/?v=${{ github.sha }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.test }}
       - name: 送信記録を保存
         run: |
