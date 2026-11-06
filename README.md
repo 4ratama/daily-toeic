@@ -39,3 +39,9 @@ Discordアプリの通知をオンにしておくと、通知をタップして�
 ## 問題を増やす
 
 `questions.json` に問題を追加します。文法・語彙は `choices` の1番目が正解です（画面では毎回シャッフルされます）。
+
+## Discordボット（Partごとのスレッドで出題・曜日別リマインド）
+
+Discord の中でボタン式の問題を解けるボットもあります。`/remind` で曜日ごとにリマインド時刻を選べます。
+Cloudflare Workers の無料プランで動き、問題はこの `questions.json` を共有します。
+セットアップは [bot/README.md](bot/README.md) を見てください。

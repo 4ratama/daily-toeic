@@ -1,0 +1,17 @@
+# Cloudflare Workers の設定（GitHub Actions の「Deploy Discord bot」から自動でデプロイされます）
+name = "toeic-daily-bot"
+main = "src/worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+[vars]
+APP_URL = "https://4ratama.github.io/daily-toeic/"
+
+# 5分ごとに起動して、リマインドの時刻か確認する（無料プランで使えます）
+[triggers]
+crons = ["*/5 * * * *"]
+
+# KV の id はデプロイ時に scripts/ensure-kv.mjs が自動で書き込みます
+[[kv_namespaces]]
+binding = "KV"
+id = "__KV_ID__"

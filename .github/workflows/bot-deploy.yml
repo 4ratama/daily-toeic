@@ -1,0 +1,62 @@
+name: Deploy Discord bot
+on:
+  push:
+    branches: [main]
+    paths: ["bot/**", ".github/workflows/bot-deploy.yml"]
+  workflow_dispatch:
+concurrency:
+  group: bot-deploy
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bot
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+      DISCORD_APPLICATION_ID: ${{ secrets.DISCORD_APPLICATION_ID }}
+      DISCORD_PUBLIC_KEY: ${{ secrets.DISCORD_PUBLIC_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: シークレットの確認
+        id: check
+        run: |
+          missing=""
+          for n in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID DISCORD_TOKEN DISCORD_APPLICATION_ID DISCORD_PUBLIC_KEY; do
+            [ -z "${!n}" ] && missing="$missing $n"
+          done
+          if [ -n "$missing" ]; then
+            echo "::warning::まだ登録されていないシークレットがあります:$missing（bot/README.md の手順を見てください）"
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            # 手動実行のときだけ失敗にする（自動実行で失敗メールが届かないように）
+            [ "${{ github.event_name }}" = "workflow_dispatch" ] && exit 1
+            exit 0
+          fi
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+      - if: steps.check.outputs.ok == 'true'
+        run: npm ci && npm test
+      - name: KV（設定の保存先）を用意
+        if: steps.check.outputs.ok == 'true'
+        run: node scripts/ensure-kv.mjs
+      - name: Cloudflare Workers にデプロイ
+        if: steps.check.outputs.ok == 'true'
+        run: |
+          npx wrangler deploy --var "DISCORD_PUBLIC_KEY:$DISCORD_PUBLIC_KEY" --var "DISCORD_APPLICATION_ID:$DISCORD_APPLICATION_ID" | tee deploy.log
+          printf '%s' "$DISCORD_TOKEN" | npx wrangler secret put DISCORD_TOKEN
+      - name: スラッシュコマンドを登録
+        if: steps.check.outputs.ok == 'true'
+        run: node scripts/register-commands.mjs
+      - name: Interactions Endpoint URL を表示
+        if: steps.check.outputs.ok == 'true'
+        run: |
+          url=$(grep -oE 'https://[a-zA-Z0-9.-]+\.workers\.dev' deploy.log | head -1)
+          echo "### ✅ デプロイしました" >> "$GITHUB_STEP_SUMMARY"
+          echo "Discord Developer Portal → General Information → **Interactions Endpoint URL** に次のURLを貼って保存してください：" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`$url\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Interactions Endpoint URL: $url"
