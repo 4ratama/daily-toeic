@@ -6,7 +6,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 const url = process.env.DISCORD_WEBHOOK_URL;
 const app = process.env.APP_URL;
 const force = process.env.FORCE === "true"; // 手動テスト：時刻に関係なく1通送る
-if (!url) { console.error("DISCORD_WEBHOOK_URL が設定されていません"); process.exit(1); }
+if (!url) {
+  // 未設定のうちは定期実行を失敗扱いにしない（失敗メールが10分ごとに届くのを防ぐ）。手動テストだけ失敗にする。
+  console.error("DISCORD_WEBHOOK_URL が設定されていません。リポジトリの Settings → Secrets and variables → Actions で登録してください。");
+  process.exit(force ? 1 : 0);
+}
 
 const cfg = JSON.parse(readFileSync("config.json", "utf8"));
 const state = JSON.parse(readFileSync("state/sent.json", "utf8"));
