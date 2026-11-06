@@ -227,6 +227,178 @@ function toQuestions(items) {
   return qs;
 }
 
+// ---- やる気の仕組み（XP・レベル・連続記録・休み券・バッジ・自己ベスト）と弱点分析・予想スコア ----
+const XP_CORRECT = 10, XP_ALL_TERMS = 50, FREEZE_MAX = 2, FREEZE_EVERY = 7;
+const TITLES = [[1, "Rookie"], [5, "900 Club"], [10, "950 Challenger"], [20, "990 Master"]];
+const BADGES = [
+  { id: "first_full", icon: "🏁", name: "初めての5ターム完走", desc: "1日で5タームを全部終える" },
+  { id: "combo10", icon: "🔥", name: "文法10連続正解", desc: "文法問題を10問続けて正解" },
+  { id: "streak7", icon: "📅", name: "7日連続", desc: "7日続けて学習" },
+  { id: "streak30", icon: "🗓️", name: "30日連続", desc: "30日続けて学習" },
+  { id: "early", icon: "🌅", name: "朝7時台に完了", desc: "朝7時台にタームを終える" },
+  { id: "comeback", icon: "↩️", name: "おかえり", desc: "途切れた後に再開する" },
+  { id: "speed", icon: "⚡", name: "スピードスター", desc: "文法タームを全問正解・平均10秒以内" },
+  { id: "tag_master", icon: "👑", name: "単元マスター", desc: "文法の単元を1つ80%以上にする" },
+];
+
+function M() {
+  if (!S.m) {
+    // 以前の記録から連続日数を引き継ぐ
+    const days = Object.keys(S.days).filter(d => S.days[d].done && S.days[d].done.length).sort();
+    S.m = { xp: 0, streak: days.length ? streak() : 0, lastDay: days.pop() || null, freezes: 0, frozen: [], badges: {}, best: {}, combo: 0, log: [], comebackDay: null };
+  }
+  return S.m;
+}
+function levelOf(xp) {
+  // Lv n に必要な累計XP = 50 × (n-1) × n
+  let n = 1; while (50 * n * (n + 1) <= xp) n++;
+  const cur = 50 * (n - 1) * n, next = 50 * n * (n + 1);
+  return { level: n, into: xp - cur, need: next - cur, title: TITLES.filter(([lv]) => n >= lv).pop()[1] };
+}
+function award(id, gained) {
+  const m = M();
+  if (m.badges[id]) return;
+  m.badges[id] = today();
+  gained.push(BADGES.find(b => b.id === id));
+}
+// 解答ごと：XP・コンボ・記録（予想スコア用に直近14日分）
+function onAnswer(g, correct, sec, st) {
+  const m = M();
+  m.log.push({ d: today(), g, ok: correct ? 1 : 0, s: Math.round(sec) });
+  const cut = today(-14); m.log = m.log.filter(x => x.d >= cut);
+  if (g === "grammar") {
+    m.combo = correct ? m.combo + 1 : 0;
+    if (m.combo >= 10) award("combo10", st.badges);
+  }
+  st.combo = correct ? (st.combo || 0) + 1 : 0;
+  if (correct) {
+    let xp = XP_CORRECT + Math.min(10, Math.max(0, st.combo - 2) * 2); // 3連続目から +2ずつ（最大+10）
+    if (m.comebackDay === today()) xp *= 2; // 戻ってきた日は2倍
+    m.xp += xp; st.xp = (st.xp || 0) + xp;
+  }
+}
+// ターム完了時：連続記録・休み券・自己ベスト・バッジ・完走ボーナス
+function onTermDone(st) {
+  const m = M(), t = today(), res = { badges: st.badges, xp: st.xp || 0, record: false, levelBefore: st.levelBefore };
+  if (m.lastDay !== t) {
+    const gap = m.lastDay ? daysBetween(m.lastDay, t) - 1 : 0;
+    if (!m.lastDay) m.streak = 1;
+    else if (gap === 0) m.streak++;
+    else if (gap <= m.freezes) { // 休み券で穴埋め
+      m.freezes -= gap;
+      for (let i = gap; i >= 1; i--) m.frozen.push(today(-i));
+      m.streak++; res.usedFreeze = gap;
+    } else { m.streak = 1; m.comebackDay = t; award("comeback", res.badges); }
+    m.lastDay = t;
+    if (m.streak % FREEZE_EVERY === 0 && m.freezes < FREEZE_MAX) { m.freezes++; res.newFreeze = true; }
+    if (m.streak >= 7) award("streak7", res.badges);
+    if (m.streak >= 30) award("streak30", res.badges);
+    m.frozen = m.frozen.filter(d => d >= today(-120));
+  }
+  if (new Date().getHours() === 7) award("early", res.badges);
+  if (st.term !== EVENING) {
+    const sec = (performance.now() - st.termStart) / 1000;
+    const b = m.best[st.term.id], rate = st.score / st.qs.length;
+    if (!b || rate > b.score / b.total || (rate === b.score / b.total && sec < b.sec)) {
+      res.record = !!b; m.best[st.term.id] = { score: st.score, total: st.qs.length, sec: Math.round(sec), date: t };
+    }
+    if (st.term.kind === "grammar" && st.score === st.qs.length && sec / st.qs.length <= 10) award("speed", res.badges);
+    if (doneToday().length === 5 && !(S.days[t] && S.days[t].bonus)) {
+      S.days[t].bonus = true; m.xp += XP_ALL_TERMS; res.xp += XP_ALL_TERMS; res.allBonus = true;
+      award("first_full", res.badges);
+    }
+  }
+  if (grammarGauge().some(x => x.pct >= 80)) award("tag_master", res.badges);
+  res.levelAfter = levelOf(m.xp).level;
+  save();
+  return res;
+}
+// 表示用の連続日数（今日まだでも、昨日まで続いていれば・休み券で埋まるなら続いている扱い）
+function streakNow() {
+  const m = M();
+  if (!m.lastDay) return 0;
+  const gap = daysBetween(m.lastDay, today()) - 1;
+  return gap <= 0 || gap <= m.freezes ? m.streak : 0;
+}
+// 文法力ゲージ：単元ごとに、各問題の stage（定着で満点）から習得度％を出す
+function grammarGauge() {
+  const by = {};
+  for (const q of BANK.grammar) {
+    const it = S.items[q.id];
+    const v = !it ? 0 : it.mastered ? 1 : Math.min(it.stage, 4) / 4;
+    (by[q.tag] = by[q.tag] || { tag: q.tag, sum: 0, n: 0, seen: 0 }).sum += v;
+    by[q.tag].n++; if (it) by[q.tag].seen++;
+  }
+  return Object.values(by).map(x => ({ tag: x.tag, pct: Math.round(x.sum / x.n * 100), seen: x.seen, n: x.n }))
+    .sort((a, b) => a.pct - b.pct);
+}
+// 予想スコア（目安）：直近14日の正答率と回答時間から、リーディングを推定。リスニングは前回の結果からの推定値。
+const LISTENING_ESTIMATE = 470;
+function predictScore() {
+  const log = M().log, need = 40;
+  if (log.length < need) return { enough: false, left: need - log.length };
+  const acc = gs => { const xs = log.filter(x => gs.includes(x.g)); return xs.length ? xs.reduce((a, x) => a + x.ok, 0) / xs.length : null; };
+  const p5 = acc(["grammar", "vocab"]), p7 = acc(["reading", "para"]);
+  const a = p5 !== null && p7 !== null ? 0.46 * p5 + 0.54 * p7 : (p5 ?? p7);
+  const gs = log.filter(x => x.g === "grammar"), avgSec = gs.length ? gs.reduce((s, x) => s + x.s, 0) / gs.length : 20;
+  const slow = Math.max(0, Math.min(30, (avgSec - 20) * 3)); // 1問20秒を超えるほど本番で時間が足りなくなる
+  const reading = Math.max(5, Math.min(495, Math.round((5 + 490 * Math.pow(a, 1.6) - slow) / 5) * 5));
+  const total = reading + LISTENING_ESTIMATE;
+  return { enough: true, reading, low: Math.max(10, total - 20), high: Math.min(990, total + 20), avgSec: Math.round(avgSec), n: log.length };
+}
+// 学習カレンダー（直近12週）
+function calendarHtml() {
+  const m = M(), cells = [];
+  const start = -(7 * 11 + new Date().getDay()); // 12週前の日曜から
+  for (let i = start; i <= 0; i++) {
+    const d = today(i), n = (S.days[d] && S.days[d].done.length) || 0;
+    const frozen = m.frozen.includes(d);
+    cells.push(`<i class="cal-cell${frozen ? " frozen" : ""}" data-n="${n}" title="${d}：${frozen ? "休み券" : `${n}ターム`}"></i>`);
+  }
+  return `<div class="calendar">${cells.join("")}</div>`;
+}
+function motivationHtml() {
+  const m = M(), lv = levelOf(m.xp), pred = predictScore(), gauge = grammarGauge();
+  const examLeft = S.examDate ? daysBetween(today(), S.examDate) : null;
+  return `
+    <div class="card level-card">
+      <div class="level-row"><span class="level">Lv.${lv.level}</span><span class="title">${lv.title}</span><span class="xp">${m.xp} XP</span></div>
+      <div class="xp-bar"><i style="width:${Math.round(lv.into / lv.need * 100)}%"></i></div>
+      <div class="muted">次のレベルまで ${lv.need - lv.into} XP・休み券 <span class="freeze">${"🧊".repeat(m.freezes) || "なし"}</span>（${FREEZE_EVERY}日続けるごとに1枚、最大${FREEZE_MAX}枚）</div>
+    </div>
+    <div class="card score-pred">
+      <h2>予想スコア <span class="muted">（目安）</span></h2>
+      ${pred.enough
+        ? `<div class="score-range">${pred.low}〜${pred.high}</div>
+           <div class="muted">リーディング推定 ${pred.reading}（直近${pred.n}問の正答率と、文法の平均${pred.avgSec}秒から計算）＋リスニングは前回結果からの推定 ${LISTENING_ESTIMATE}。</div>
+           <div class="goal-track"><span>905</span><i style="left:${Math.max(0, Math.min(100, (((pred.low + pred.high) / 2) - 905) / 85 * 100))}%"></i><span>950</span><span>990</span></div>`
+        : `<div class="muted">あと${pred.left}問解くと表示されます。</div>`}
+      ${examLeft !== null && examLeft >= 0 ? `<div class="countdown">試験まであと <b>${examLeft}</b> 日</div>` : `<div class="muted">⚙︎ 設定で試験日を入れると、カウントダウンが出ます。</div>`}
+    </div>
+    <div class="card grammar-gauge">
+      <h2>文法力ゲージ <span class="muted">（弱い単元から順に）</span></h2>
+      ${gauge.map(x => `<div class="gauge-row"><span class="gauge-name">${esc(x.tag)}</span><span class="gauge"><i style="width:${x.pct}%"></i></span><span class="gauge-pct">${x.pct}%</span></div>`).join("")}
+    </div>
+    <div class="card">
+      <h2>学習カレンダー</h2>
+      ${calendarHtml()}
+    </div>
+    <div class="card badges">
+      <h2>バッジ <span class="muted">${Object.keys(m.badges).length}/${BADGES.length}</span></h2>
+      <div class="badge-list">${BADGES.map(b => `<div class="badge ${m.badges[b.id] ? "earned" : ""}" title="${esc(b.desc)}"><span class="badge-icon">${b.icon}</span><span class="badge-name">${esc(b.name)}</span></div>`).join("")}</div>
+    </div>`;
+}
+function resultExtrasHtml(res) {
+  const parts = [];
+  if (res.xp) parts.push(`<div class="xp-gain">+${res.xp} XP${res.allBonus ? `（5ターム完走ボーナス +${XP_ALL_TERMS}含む）` : ""}${M().comebackDay === today() ? "・おかえりボーナスで2倍" : ""}</div>`);
+  if (res.levelAfter > res.levelBefore) parts.push(`<div class="levelup">レベルアップ！ Lv.${res.levelAfter}「${levelOf(M().xp).title}」</div>`);
+  if (res.record) parts.push(`<div class="new-record">NEW RECORD</div>`);
+  if (res.newFreeze) parts.push(`<div class="muted">🧊 休み券を1枚もらいました</div>`);
+  if (res.usedFreeze) parts.push(`<div class="muted">🧊 休み券を${res.usedFreeze}枚使って、連続記録を守りました</div>`);
+  for (const b of res.badges) parts.push(`<div class="badge earned new-badge"><span class="badge-icon">${b.icon}</span><span class="badge-name">バッジ獲得：${esc(b.name)}</span></div>`);
+  return parts.length ? `<div class="result-extras">${parts.join("")}</div>` : "";
+}
+
 // ---- 画面 ----
 function streak() {
   let n = 0;
@@ -269,7 +441,7 @@ function home() {
     <div class="muted">${d.getMonth() + 1}月${d.getDate()}日・1タームは約5分です${examLeft !== null && examLeft >= 0 ? `・試験まであと${examLeft}日` : ""}</div>
     <div class="stats">
       <div class="stat"><b>${done.length}/5</b><span>今日の完了</span></div>
-      <div class="stat"><b>${streak()}日</b><span>連続学習</span></div>
+      <div class="stat"><b>${streakNow()}日</b><span>連続学習</span></div>
       <div class="stat"><b>${mastered}</b><span>定着した問題</span></div>
     </div>
     <button class="term guide-entry" id="guide">
@@ -279,6 +451,7 @@ function home() {
     <div class="terms">${TERMS.map(t => termButton(t, done.includes(t.id), t.id)).join("")}
       ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "🌙") : ""}
     </div>
+    ${motivationHtml()}
     <div class="card" style="margin-top:16px">
       <h2>ジャンル別の正答率</h2>
       <table class="genres">${rows}</table>
@@ -328,7 +501,7 @@ function startTerm(termId) {
   const items = term === EVENING ? eveningItems() : buildTerm(term);
   if (!items.length) { goHome(); return; }
   const qs = toQuestions(items);
-  const st = { term, qs, i: 0, score: 0, answered: false };
+  const st = { term, qs, i: 0, score: 0, answered: false, badges: [], xp: 0, termStart: performance.now(), levelBefore: levelOf(M().xp).level };
   history.replaceState(null, "", `?term=${termId}`);
   showQ(st);
 }
@@ -380,6 +553,7 @@ function answer(st, k) {
       st.read.conf = st.read.conf && confident;
       if (q.last) record(q.id, st.read.ok, st.read.conf, (performance.now() - st.passageStart) / 1000, evening);
     } else record(q.id, correct, confident, sec, evening);
+    onAnswer(q.g, correct, sec, st);
     st.i++; showQ(st);
   };
   const timeNote = limit ? `<span class="muted">（${Math.round(sec)}秒${over ? `・目標${limit}秒を超えました` : ""}）</span>` : "";
@@ -406,6 +580,7 @@ function finish(st) {
     if (!S.days[t].done.includes(st.term.id)) S.days[t].done.push(st.term.id);
     save();
   }
+  const res = onTermDone(st);
   const done = doneToday();
   const next = TERMS.find(x => !done.includes(x.id));
   const eve = eveningItems().length;
@@ -414,6 +589,7 @@ function finish(st) {
       <div class="muted">${st.term.name}</div>
       <div class="big">${st.score} / ${st.qs.length}</div>
       <div>${done.length === 5 ? "今日の5タームを全部終えました。お疲れさまでした！" : `今日はあと${5 - done.length}タームです。`}</div>
+      ${resultExtrasHtml(res)}
       ${eve ? `<div class="muted" style="margin-top:6px">間違えた問題は、帰りの復習（${eve}問）でもう一度出ます。</div>` : ""}
     </div>
     ${next ? `<button class="btn" id="nextTerm">次のターム：${next.name}</button>` : ""}
