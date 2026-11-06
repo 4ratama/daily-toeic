@@ -62,3 +62,11 @@ h2 { font-size: 18px; margin: 0 0 8px; }
 .genres td { padding: 6px 0; border-bottom: 1px solid var(--line); }
 .genres td:last-child { text-align: right; color: var(--muted); }
 .big { font-size: 40px; font-weight: 700; text-align: center; margin: 8px 0; }
+.row { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.input, .row input[type=time] {
+  font: inherit; color: var(--text); background: var(--bg); border: 1.5px solid var(--line);
+  border-radius: 10px; padding: 10px 12px; min-height: 46px;
+}
+.row input[type=time] { flex: 1; }
+.input { width: 100%; margin-top: 8px; }
+.top h1 { margin: 0; }

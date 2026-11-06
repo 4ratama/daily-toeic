@@ -132,7 +132,7 @@ function home() {
     return `<tr><td>${GENRE_NAMES[g]}</td><td>${a ? `${Math.round(a.ok / a.seen * 100)}%（${a.seen}問）` : "まだ"}</td></tr>`;
   }).join("");
   app.innerHTML = `
-    <h1>今日の5ターム</h1>
+    <div class="top"><h1>今日の5ターム</h1><button class="link" id="settings" aria-label="通知の設定">⚙︎ 通知</button></div>
     <div class="muted">${d.getMonth() + 1}月${d.getDate()}日・1タームは約5分です</div>
     <div class="stats">
       <div class="stat"><b>${done.length}/5</b><span>今日の完了</span></div>
@@ -149,6 +149,7 @@ function home() {
       <table class="genres">${rows}</table>
     </div>`;
   app.querySelectorAll(".term").forEach(b => b.onclick = () => startTerm(+b.dataset.term));
+  document.getElementById("settings").onclick = settings;
   window.scrollTo(0, 0);
 }
 
@@ -222,6 +223,104 @@ function finish(st) {
   if (next) document.getElementById("nextTerm").onclick = () => startTerm(next.id);
   document.getElementById("home").onclick = goHome;
   window.scrollTo(0, 0);
+}
+
+// ---- 通知の設定（config.json を GitHub に保存し、Actions がその時刻に Discord へ送る）----
+const TOKEN_KEY = "toeic-daily-token";
+function repoInfo() {
+  const m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  const name = location.pathname.split("/").filter(Boolean)[0];
+  return m && name ? { owner: m[1], repo: name } : { owner: "4ratama", repo: "daily-toeic" };
+}
+function getToken() { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; } }
+function setToken(t) { try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch (e) {} }
+async function gh(path, opts = {}) {
+  const { owner, repo } = repoInfo();
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}${path}`, {
+    ...opts,
+    headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${getToken()}`, ...(opts.headers || {}) },
+  });
+  if (!res.ok) {
+    const msg = res.status === 401 ? "トークンが正しくないか、期限が切れています。"
+      : res.status === 403 || res.status === 404 ? "トークンの権限が足りません（Contents と Actions の Read and write が必要です）。"
+      : `GitHubとの通信に失敗しました（${res.status}）。`;
+    throw new Error(msg);
+  }
+  return res.status === 204 ? null : res.json();
+}
+const b64encode = s => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
+const b64decode = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), c => c.charCodeAt(0)));
+
+async function loadConfig() {
+  if (getToken()) {
+    try { const f = await gh("/contents/config.json"); return { cfg: JSON.parse(b64decode(f.content)), sha: f.sha }; } catch (e) {}
+  }
+  try { const r = await fetch("config.json", { cache: "no-cache" }); return { cfg: await r.json(), sha: null }; }
+  catch (e) { return { cfg: { times: ["07:30", "21:00"], days: "everyday" }, sha: null }; }
+}
+
+async function settings() {
+  app.innerHTML = `<div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">通知の設定</span></div><div class="card">読み込み中…</div>`;
+  document.getElementById("back").onclick = goHome;
+  const { cfg } = await loadConfig();
+  let times = (cfg.times || []).slice();
+  const render = (msg = "") => {
+    app.innerHTML = `
+      <div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">通知の設定</span></div>
+      <div class="card">
+        <h2>Discordに通知する時刻</h2>
+        <div class="muted">通学の時間に合わせて最大5つまで。最初の時刻は「今日の5ターム」、2つ目以降は「続きをやろう」の通知になります。実際の通知は数分〜十数分遅れることがあります。</div>
+        <div id="times">${times.map((t, i) => `
+          <div class="row"><input type="time" value="${t}" data-i="${i}" class="time"><button class="link del" data-i="${i}">削除</button></div>`).join("")}
+        </div>
+        ${times.length < 5 ? `<button class="btn ghost" id="add">＋ 時刻を追加</button>` : ""}
+        <h2 style="margin-top:18px">通知する曜日</h2>
+        <select id="days" class="input">
+          <option value="everyday" ${cfg.days === "everyday" ? "selected" : ""}>毎日</option>
+          <option value="weekdays" ${cfg.days === "weekdays" ? "selected" : ""}>平日のみ（月〜金）</option>
+          <option value="weekends" ${cfg.days === "weekends" ? "selected" : ""}>週末のみ（土日）</option>
+        </select>
+      </div>
+      <div class="card">
+        <h2>GitHubのトークン</h2>
+        <div class="muted">設定を保存するために最初に1回だけ入力します。この端末の中だけに保存されます。作り方はREADMEを見てください。</div>
+        <input type="password" id="token" class="input" placeholder="github_pat_..." value="${esc(getToken())}" autocomplete="off">
+      </div>
+      ${msg ? `<div class="exp">${msg}</div>` : ""}
+      <button class="btn" id="save">保存する</button>
+      <button class="btn ghost" id="test">テスト通知を今すぐ送る</button>`;
+    document.getElementById("back").onclick = goHome;
+    const sync = () => {
+      times = [...app.querySelectorAll(".time")].map(x => x.value).filter(Boolean);
+      cfg.days = document.getElementById("days").value;
+      setToken(document.getElementById("token").value.trim());
+    };
+    app.querySelectorAll(".del").forEach(b => b.onclick = () => { sync(); times.splice(+b.dataset.i, 1); render(); });
+    const add = document.getElementById("add");
+    if (add) add.onclick = () => { sync(); times.push("12:00"); render(); };
+    document.getElementById("save").onclick = async () => {
+      sync();
+      if (!getToken()) return render("先にGitHubのトークンを入力してください。");
+      const next = { times: [...new Set(times)].sort(), days: cfg.days };
+      try {
+        let sha = null;
+        try { sha = (await gh("/contents/config.json")).sha; } catch (e) {}
+        await gh("/contents/config.json", { method: "PUT", body: JSON.stringify({
+          message: "Update notification times from the app", content: b64encode(JSON.stringify(next, null, 2) + "\n"), ...(sha ? { sha } : {}) }) });
+        times = next.times;
+        render(`<b class="ok">保存しました。</b>次の通知から、${times.join("、") || "（なし）"} に届きます。`);
+      } catch (e) { render(`<b class="ng">保存できませんでした。</b>${esc(e.message)}`); }
+    };
+    document.getElementById("test").onclick = async () => {
+      sync();
+      if (!getToken()) return render("先にGitHubのトークンを入力してください。");
+      try {
+        await gh("/actions/workflows/notify.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main", inputs: { test: "true" } }) });
+        render(`<b class="ok">送信を依頼しました。</b>1〜2分でDiscordに届きます。`);
+      } catch (e) { render(`<b class="ng">送れませんでした。</b>${esc(e.message)}`); }
+    };
+  };
+  render();
 }
 
 function goHome() { history.replaceState(null, "", location.pathname); home(); }
