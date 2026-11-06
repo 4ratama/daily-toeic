@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "grammar": [
   {
    "id": "g001",
@@ -10,7 +10,8 @@
     "However",
     "Even"
    ],
-   "exp": "後ろが名詞句（the inclement weather）なので前置詞 Despite。Although は節（S+V）を取る接続詞、However は副詞。"
+   "exp": "後ろが名詞句（the inclement weather）なので前置詞 Despite。Although は節（S+V）を取る接続詞、However は副詞。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g002",
@@ -21,7 +22,8 @@
     "was submitted",
     "submits"
    ],
-   "exp": "ask / request / insist that ～ の that節は仮定法現在（動詞の原形）。予算は「提出される」ので受動の be submitted。"
+   "exp": "ask / request / insist that ～ の that節は仮定法現在（動詞の原形）。予算は「提出される」ので受動の be submitted。",
+   "tag": "仮定法"
   },
   {
    "id": "g003",
@@ -32,7 +34,8 @@
     "had delivered",
     "will deliver"
    ],
-   "exp": "If the shipment had arrived の倒置。過去の事実に反する仮定なので主節は would have + 過去分詞。"
+   "exp": "If the shipment had arrived の倒置。過去の事実に反する仮定なので主節は would have + 過去分詞。",
+   "tag": "仮定法"
   },
   {
    "id": "g004",
@@ -43,7 +46,8 @@
     "during",
     "despite"
    ],
-   "exp": "not A until B「Bして初めてAする」。後ろが節なので接続詞の until。by は前置詞。"
+   "exp": "not A until B「Bして初めてAする」。後ろが節なので接続詞の until。by は前置詞。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g005",
@@ -54,7 +58,8 @@
     "is",
     "has been"
    ],
-   "exp": "neither A nor B の動詞は B（the assistants＝複数）に一致させる。"
+   "exp": "neither A nor B の動詞は B（the assistants＝複数）に一致させる。",
+   "tag": "主述一致"
   },
   {
    "id": "g006",
@@ -65,7 +70,8 @@
     "the company did release",
     "released the company"
    ],
-   "exp": "Only after ～ が文頭に出ると主節は倒置（助動詞＋S＋V）になる。"
+   "exp": "Only after ～ が文頭に出ると主節は倒置（助動詞＋S＋V）になる。",
+   "tag": "倒置"
   },
   {
    "id": "g007",
@@ -76,7 +82,8 @@
     "efficiency",
     "more efficient"
    ],
-   "exp": "動詞 process を修飾するので副詞。far は比較級の強調。"
+   "exp": "動詞 process を修飾するので副詞。far は比較級の強調。",
+   "tag": "品詞"
   },
   {
    "id": "g008",
@@ -87,7 +94,8 @@
     "whom",
     "which"
    ],
-   "exp": "「応募者の履歴書が」と所有関係を表すので whose。後ろに無冠詞の名詞が続くのが目印。"
+   "exp": "「応募者の履歴書が」と所有関係を表すので whose。後ろに無冠詞の名詞が続くのが目印。",
+   "tag": "関係詞"
   },
   {
    "id": "g009",
@@ -98,7 +106,8 @@
     "finishes",
     "will finish"
    ],
-   "exp": "By the time + 現在形（未来の意味）→ 主節は未来完了「その時までに～し終えているだろう」。"
+   "exp": "By the time + 現在形（未来の意味）→ 主節は未来完了「その時までに～し終えているだろう」。",
+   "tag": "時制・態"
   },
   {
    "id": "g010",
@@ -109,7 +118,8 @@
     "inform",
     "informatively"
    ],
-   "exp": "be動詞の補語なので形容詞。so ～ that 構文。"
+   "exp": "be動詞の補語なので形容詞。so ～ that 構文。",
+   "tag": "品詞"
   },
   {
    "id": "g011",
@@ -120,7 +130,8 @@
     "unless",
     "whereas"
    ],
-   "exp": "in case「～する場合に備えて」。文脈的に返品に備えてレシートを保管する。"
+   "exp": "in case「～する場合に備えて」。文脈的に返品に備えてレシートを保管する。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g012",
@@ -131,7 +142,8 @@
     "followed",
     "is following"
    ],
-   "exp": "It is essential / necessary / vital that ～ は仮定法現在で原形。主語が三単現でも s を付けない。"
+   "exp": "It is essential / necessary / vital that ～ は仮定法現在で原形。主語が三単現でも s を付けない。",
+   "tag": "仮定法"
   },
   {
    "id": "g013",
@@ -142,7 +154,8 @@
     "what",
     "who"
    ],
-   "exp": "カンマ付きの非制限用法では that は使えない。先行詞が物なので which。"
+   "exp": "カンマ付きの非制限用法では that は使えない。先行詞が物なので which。",
+   "tag": "関係詞"
   },
   {
    "id": "g014",
@@ -153,7 +166,8 @@
     "Give",
     "To give"
    ],
-   "exp": "Given ～「～を考慮すると」は前置詞的に使われる定番表現。"
+   "exp": "Given ～「～を考慮すると」は前置詞的に使われる定番表現。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g015",
@@ -164,7 +178,8 @@
     "since",
     "while"
    ],
-   "exp": "by は「期限（～までに）」、until は「継続（～までずっと）」。完了の期限なので by。"
+   "exp": "by は「期限（～までに）」、until は「継続（～までずっと）」。完了の期限なので by。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g016",
@@ -175,7 +190,8 @@
     "consideration",
     "considerate"
    ],
-   "exp": "比較級 higher を修飾するのは副詞。considerate は「思いやりのある」で意味も違う。"
+   "exp": "比較級 higher を修飾するのは副詞。considerate は「思いやりのある」で意味も違う。",
+   "tag": "品詞"
   },
   {
    "id": "g017",
@@ -186,7 +202,8 @@
     "to be kept",
     "be kept"
    ],
-   "exp": "前置詞 on の後は動名詞。部長自身が「知らされ続ける」ので受動の being kept。"
+   "exp": "前置詞 on の後は動名詞。部長自身が「知らされ続ける」ので受動の being kept。",
+   "tag": "準動詞"
   },
   {
    "id": "g018",
@@ -197,7 +214,8 @@
     "Could",
     "Unless"
    ],
-   "exp": "If you should have ～ の if を省略した倒置。TOEIC頻出の Should you ～。"
+   "exp": "If you should have ～ の if を省略した倒置。TOEIC頻出の Should you ～。",
+   "tag": "倒置"
   },
   {
    "id": "g019",
@@ -208,7 +226,8 @@
     "due to",
     "as for"
    ],
-   "exp": "後ろが動詞の原形なので in order to。so that は節、due to は名詞が続く。"
+   "exp": "後ろが動詞の原形なので in order to。so that は節、due to は名詞が続く。",
+   "tag": "準動詞"
   },
   {
    "id": "g020",
@@ -219,7 +238,8 @@
     "what",
     "which"
    ],
-   "exp": "interviewed の目的語が欠けていて先行詞が人なので whom（who も可だが選択肢にない）。"
+   "exp": "interviewed の目的語が欠けていて先行詞が人なので whom（who も可だが選択肢にない）。",
+   "tag": "関係詞"
   },
   {
    "id": "g021",
@@ -230,7 +250,8 @@
     "were",
     "have been"
    ],
-   "exp": "Each of ～ は単数扱い。its own もヒント。"
+   "exp": "Each of ～ は単数扱い。its own もヒント。",
+   "tag": "主述一致"
   },
   {
    "id": "g022",
@@ -241,7 +262,8 @@
     "then",
     "that"
    ],
-   "exp": "No sooner ～ than ...「～するとすぐに...」。Hardly / Scarcely なら when / before。"
+   "exp": "No sooner ～ than ...「～するとすぐに...」。Hardly / Scarcely なら when / before。",
+   "tag": "倒置"
   },
   {
    "id": "g023",
@@ -252,7 +274,8 @@
     "nevertheless",
     "in spite"
    ],
-   "exp": "後ろが節なので接続詞 although。nevertheless は副詞で2つの節をつなげない。"
+   "exp": "後ろが節なので接続詞 although。nevertheless は副詞で2つの節をつなげない。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g024",
@@ -263,7 +286,8 @@
     "signed",
     "to sign"
    ],
-   "exp": "before は前置詞としても使え、後ろは動名詞。"
+   "exp": "before は前置詞としても使え、後ろは動名詞。",
+   "tag": "準動詞"
   },
   {
    "id": "g025",
@@ -274,7 +298,8 @@
     "slightest",
     "slighter"
    ],
-   "exp": "比較級 longer を修飾する副詞。"
+   "exp": "比較級 longer を修飾する副詞。",
+   "tag": "品詞"
   },
   {
    "id": "g026",
@@ -285,7 +310,8 @@
     "confident",
     "confidence"
    ],
-   "exp": "the 比較級 ～, the 比較級 ...「～すればするほど...」。"
+   "exp": "the 比較級 ～, the 比較級 ...「～すればするほど...」。",
+   "tag": "比較"
   },
   {
    "id": "g027",
@@ -296,7 +322,8 @@
     "from",
     "during"
    ],
-   "exp": "現在完了進行形＋起点（last April）なので since。for は期間（for two months）。"
+   "exp": "現在完了進行形＋起点（last April）なので since。for は期間（for two months）。",
+   "tag": "時制・態"
   },
   {
    "id": "g028",
@@ -307,7 +334,8 @@
     "whose",
     "what"
    ],
-   "exp": "can speak の主語が欠けていて先行詞が人なので主格の who。"
+   "exp": "can speak の主語が欠けていて先行詞が人なので主格の who。",
+   "tag": "関係詞"
   },
   {
    "id": "g029",
@@ -318,7 +346,8 @@
     "had been",
     "is"
    ],
-   "exp": "If it were not for ～ の倒置。現在の事実に反する仮定なので would + 原形。"
+   "exp": "If it were not for ～ の倒置。現在の事実に反する仮定なので would + 原形。",
+   "tag": "仮定法"
   },
   {
    "id": "g030",
@@ -329,7 +358,8 @@
     "much more",
     "too"
    ],
-   "exp": "比較級の強調は far / much / even / still。very は比較級を修飾できず、much more longer は二重比較。"
+   "exp": "比較級の強調は far / much / even / still。very は比較級を修飾できず、much more longer は二重比較。",
+   "tag": "比較"
   },
   {
    "id": "g031",
@@ -340,7 +370,8 @@
     "even though",
     "so that"
    ],
-   "exp": "後ろが名詞句なので群前置詞 owing to（＝because of / due to）。"
+   "exp": "後ろが名詞句なので群前置詞 owing to（＝because of / due to）。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g032",
@@ -351,7 +382,8 @@
     "submits",
     "will submit"
    ],
-   "exp": "would rather + S + 過去形（仮定法過去）で「Sに～してほしい」。"
+   "exp": "would rather + S + 過去形（仮定法過去）で「Sに～してほしい」。",
+   "tag": "仮定法"
   },
   {
    "id": "g033",
@@ -362,7 +394,8 @@
     "on",
     "by"
    ],
-   "exp": "in advance「前もって」は決まり文句。"
+   "exp": "in advance「前もって」は決まり文句。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g034",
@@ -373,7 +406,8 @@
     "Among",
     "From"
    ],
-   "exp": "Of the two ～, the 比較級 / the second ...「2つのうちで」。"
+   "exp": "Of the two ～, the 比較級 / the second ...「2つのうちで」。",
+   "tag": "比較"
   },
   {
    "id": "g035",
@@ -384,7 +418,8 @@
     "relocate",
     "relocated"
    ],
-   "exp": "consider は動名詞を目的語に取る（consider doing）。"
+   "exp": "consider は動名詞を目的語に取る（consider doing）。",
+   "tag": "準動詞"
   },
   {
    "id": "g036",
@@ -395,7 +430,8 @@
     "promotion",
     "promote"
    ],
-   "exp": "be promoted to ～「～に昇進する」。受動態。"
+   "exp": "be promoted to ～「～に昇進する」。受動態。",
+   "tag": "時制・態"
   },
   {
    "id": "g037",
@@ -406,7 +442,8 @@
     "range",
     "to range"
    ],
-   "exp": "topics を後ろから修飾する現在分詞。range from A to B「AからBに及ぶ」。"
+   "exp": "topics を後ろから修飾する現在分詞。range from A to B「AからBに及ぶ」。",
+   "tag": "準動詞"
   },
   {
    "id": "g038",
@@ -417,7 +454,8 @@
     "were",
     "have"
    ],
-   "exp": "A along with B の動詞は A（The CEO＝単数）に一致。"
+   "exp": "A along with B の動詞は A（The CEO＝単数）に一致。",
+   "tag": "主述一致"
   },
   {
    "id": "g039",
@@ -428,7 +466,8 @@
     "met the team",
     "the team did meet"
    ],
-   "exp": "Not only が文頭に出ると倒置（助動詞＋S＋V）。"
+   "exp": "Not only が文頭に出ると倒置（助動詞＋S＋V）。",
+   "tag": "倒置"
   },
   {
    "id": "g040",
@@ -439,7 +478,8 @@
     "inform",
     "informed"
    ],
-   "exp": "regret to do「残念ながら～する」（これからのこと）。regret doing は「～したことを後悔する」。"
+   "exp": "regret to do「残念ながら～する」（これからのこと）。regret doing は「～したことを後悔する」。",
+   "tag": "準動詞"
   },
   {
    "id": "g041",
@@ -450,7 +490,8 @@
     "what",
     "if"
    ],
-   "exp": "on the condition that ～「～という条件で」。同格の that。"
+   "exp": "on the condition that ～「～という条件で」。同格の that。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g042",
@@ -461,7 +502,8 @@
     "what",
     "whose"
    ],
-   "exp": "後ろが完全な文（受動態で欠けなし）なので関係副詞 where。"
+   "exp": "後ろが完全な文（受動態で欠けなし）なので関係副詞 where。",
+   "tag": "関係詞"
   },
   {
    "id": "g043",
@@ -472,7 +514,8 @@
     "Unless",
     "Despite"
    ],
-   "exp": "Once (it is) completed「完成すれば」。接続詞＋過去分詞の省略形。"
+   "exp": "Once (it is) completed「完成すれば」。接続詞＋過去分詞の省略形。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g044",
@@ -483,7 +526,8 @@
     "repair it",
     "repaired"
    ],
-   "exp": "need doing で「～される必要がある」（受動の意味）。to be repaired も同義。"
+   "exp": "need doing で「～される必要がある」（受動の意味）。to be repaired も同義。",
+   "tag": "準動詞"
   },
   {
    "id": "g045",
@@ -494,7 +538,8 @@
     "if",
     "both"
    ],
-   "exp": "whether to do A or B「AするかBするか」。if は to不定詞を続けられない。"
+   "exp": "whether to do A or B「AするかBするか」。if は to不定詞を続けられない。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g046",
@@ -505,7 +550,8 @@
     "although",
     "irrespective to"
    ],
-   "exp": "regardless of ～「～に関係なく」。irrespective なら of を取る。"
+   "exp": "regardless of ～「～に関係なく」。irrespective なら of を取る。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g047",
@@ -516,7 +562,8 @@
     "did",
     "was"
    ],
-   "exp": "Hardly had S p.p. when ～「～するとすぐに」。過去完了の倒置。"
+   "exp": "Hardly had S p.p. when ～「～するとすぐに」。過去完了の倒置。",
+   "tag": "倒置"
   },
   {
    "id": "g048",
@@ -527,7 +574,8 @@
     "more",
     "such"
    ],
-   "exp": "as ～ as の同等比較。肯定文では so ～ as は使わない。"
+   "exp": "as ～ as の同等比較。肯定文では so ～ as は使わない。",
+   "tag": "比較"
   },
   {
    "id": "g049",
@@ -538,7 +586,8 @@
     "which",
     "that"
    ],
-   "exp": "「部長のオフィス」と所有を表すので whose。非制限用法。"
+   "exp": "「部長のオフィス」と所有を表すので whose。非制限用法。",
+   "tag": "関係詞"
   },
   {
    "id": "g050",
@@ -549,7 +598,8 @@
     "has",
     "was"
    ],
-   "exp": "who の先行詞は the few engineers（複数）なので are。"
+   "exp": "who の先行詞は the few engineers（複数）なので are。",
+   "tag": "主述一致"
   },
   {
    "id": "g051",
@@ -560,7 +610,8 @@
     "although",
     "unless"
    ],
-   "exp": "前半が理由、後半が結果なので so。"
+   "exp": "前半が理由、後半が結果なので so。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g052",
@@ -571,7 +622,8 @@
     "clarity",
     "clearness"
    ],
-   "exp": "were written（動詞）を修飾するので副詞。"
+   "exp": "were written（動詞）を修飾するので副詞。",
+   "tag": "品詞"
   },
   {
    "id": "g053",
@@ -582,7 +634,8 @@
     "Due to",
     "Owing to"
    ],
-   "exp": "後ろが節（S+V）なので接続詞 Because。他は前置詞相当。"
+   "exp": "後ろが節（S+V）なので接続詞 Because。他は前置詞相当。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g054",
@@ -593,7 +646,8 @@
     "postpones",
     "postponed"
    ],
-   "exp": "request that の that節は仮定法現在（原形）。日付は「延期される」ので受動。"
+   "exp": "request that の that節は仮定法現在（原形）。日付は「延期される」ので受動。",
+   "tag": "仮定法"
   },
   {
    "id": "g055",
@@ -604,7 +658,8 @@
     "trained",
     "to train"
    ],
-   "exp": "前置詞 for の後ろは動名詞。目的語 new staff を取れる動名詞が正解。"
+   "exp": "前置詞 for の後ろは動名詞。目的語 new staff を取れる動名詞が正解。",
+   "tag": "準動詞"
   },
   {
    "id": "g056",
@@ -615,7 +670,8 @@
     "have",
     "were"
    ],
-   "exp": "Most of + 不可算名詞（information）は単数扱い。"
+   "exp": "Most of + 不可算名詞（information）は単数扱い。",
+   "tag": "主述一致"
   },
   {
    "id": "g057",
@@ -626,7 +682,8 @@
     "insufficiency",
     "insufficience"
    ],
-   "exp": "名詞 registration を修飾する形容詞。"
+   "exp": "名詞 registration を修飾する形容詞。",
+   "tag": "品詞"
   },
   {
    "id": "g058",
@@ -637,7 +694,8 @@
     "While of",
     "Despite"
    ],
-   "exp": "As「～につれて」は接続詞で節を取る。"
+   "exp": "As「～につれて」は接続詞で節を取る。",
+   "tag": "接続詞・前置詞"
   },
   {
    "id": "g059",
@@ -648,7 +706,8 @@
     "improved",
     "improvement"
    ],
-   "exp": "help (to) do で to なしの原形が来る。"
+   "exp": "help (to) do で to なしの原形が来る。",
+   "tag": "準動詞"
   },
   {
    "id": "g060",
@@ -659,7 +718,8 @@
     "because",
     "since"
    ],
-   "exp": "unless「～でない限り」。遅延がなければ3営業日以内に届く。"
+   "exp": "unless「～でない限り」。遅延がなければ3営業日以内に届く。",
+   "tag": "接続詞・前置詞"
   }
  ],
  "vocab": [

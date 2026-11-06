@@ -70,3 +70,5 @@ h2 { font-size: 18px; margin: 0 0 8px; }
 .row input[type=time] { flex: 1; }
 .input { width: 100%; margin-top: 8px; }
 .top h1 { margin: 0; }
+.row2 { display: flex; gap: 10px; }
+.row2 .btn { flex: 1; }

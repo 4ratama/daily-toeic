@@ -2,14 +2,23 @@
 // TOEIC Daily: 1日5ターム（各約5分）。学習記録はこの端末のブラウザに保存されます。
 
 const STORE_KEY = "toeic-daily-v1";
-const INTERVALS = [1, 3, 7, 16, 35]; // 正解するたびに次の出題までの日数が伸びる
+
+// ---- 忘却曲線に基づく反復ルール ----
+// stage 0〜6。正解かつ「自信あり」かつ制限時間内で1段上がる。0日＝当日の帰りに再出題。
+const INTERVALS = [0, 1, 3, 7, 14, 30, 60];
+const MAX_STAGE = 6;
+const MASTER_NEED = { grammar: 2, vocab: 1, para: 1, reading: 1 }; // stage 6 で正解した回数がこれに達したら定着
+const TIME_LIMIT = { grammar: 20, vocab: 20, para: 10, reading: 180 }; // 秒（長文は3問合計）
+const REVIEW_MAX = 12;
+
 const TERMS = [
   { id: 1, name: "文法（Part 5）", desc: "時制・関係詞・倒置など 6問", kind: "grammar", n: 6 },
   { id: 2, name: "語彙（Part 5）", desc: "語法・コロケーション 6問", kind: "vocab", n: 6 },
   { id: 3, name: "長文読解（Part 7）", desc: "短い文書を読んで 3問", kind: "reading", n: 1 },
   { id: 4, name: "言い換え単語", desc: "同義語を素早く選ぶ 8問", kind: "para", n: 8 },
-  { id: 5, name: "復習＋文法", desc: "間違えた問題を優先 6問", kind: "review", n: 6 },
+  { id: 5, name: "復習", desc: "期限が来た問題（最大12問）", kind: "review", n: REVIEW_MAX },
 ];
+const EVENING = { id: 6, name: "帰りの復習", desc: "今日間違えた問題をもう一度", kind: "evening" };
 const GENRE_NAMES = { grammar: "文法", vocab: "語彙", reading: "長文読解", para: "言い換え" };
 
 let BANK = null;
@@ -17,11 +26,18 @@ let S = load();
 const app = document.getElementById("app");
 
 function load() {
-  try {
-    const s = JSON.parse(localStorage.getItem(STORE_KEY));
-    if (s && s.items) return s;
-  } catch (e) {}
-  return { items: {}, days: {}, picks: {} };
+  let s = null;
+  try { s = JSON.parse(localStorage.getItem(STORE_KEY)); } catch (e) {}
+  if (!s || !s.items) s = { items: {}, days: {}, picks: {} };
+  s.similar = s.similar || {};
+  // 旧形式（box）からの移行
+  for (const it of Object.values(s.items)) {
+    if (it.stage === undefined) {
+      it.stage = Math.min(it.box || 0, MAX_STAGE); it.lapses = it.wrong ? 1 : 0; it.mastered_streak = 0;
+      it.due_slot = "morning"; delete it.box; delete it.wrong;
+    }
+  }
+  return s;
 }
 function save() {
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) {}
@@ -31,6 +47,7 @@ function today(offset = 0) {
   d.setDate(d.getDate() + offset);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
+function daysBetween(a, b) { return Math.round((new Date(b) - new Date(a)) / 86400000); }
 function shuffle(a) {
   a = a.slice();
   for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
@@ -42,24 +59,83 @@ function esc(s) {
 function genreOf(id) {
   return { g: "grammar", v: "vocab", p: "para", r: "reading" }[id[0]];
 }
+function findItem(id) {
+  return BANK[genreOf(id)].find(x => x.id === id);
+}
+function examSoon() {
+  if (!S.examDate) return false;
+  const d = daysBetween(today(), S.examDate);
+  return d >= 0 && d <= 14;
+}
 
-// ---- 間隔反復（ライトナー方式）----
-function record(id, correct) {
-  const it = S.items[id] || { box: 0, seen: 0, ok: 0 };
+// 解答の記録。evening=帰りの復習中の解答（同日に何度も出ないよう、間違えても翌日へ）
+function record(id, correct, confident, sec, evening = false) {
+  const g = genreOf(id);
+  const it = S.items[id] || { stage: 0, lapses: 0, mastered_streak: 0, seen: 0, ok: 0 };
   it.seen++;
-  if (correct) { it.ok++; it.box = Math.min(it.box + 1, INTERVALS.length); it.due = today(INTERVALS[it.box - 1]); it.wrong = false; }
-  else { it.box = 0; it.due = today(1); it.wrong = true; }
+  if (correct) it.ok++;
+  it.last = { date: today(), correct, confident, sec: Math.round(sec) };
+  it.due_slot = "morning";
+  if (it.mastered && examSoon()) it.rechecked = true;
+  if (!correct) {
+    it.stage = 0; it.lapses++; it.mastered_streak = 0; it.mastered = false;
+    if (evening) it.due = today(1);
+    else { it.due = today(); it.due_slot = "evening"; }
+    if (g === "grammar") addSimilar(id);
+  } else if (confident && sec <= TIME_LIMIT[g]) {
+    if (it.stage >= MAX_STAGE) {
+      it.mastered_streak++;
+      if (it.mastered_streak >= MASTER_NEED[g]) it.mastered = true;
+    } else it.stage++;
+    it.due = today(INTERVALS[it.stage]);
+  } else {
+    // 正解だが迷った・時間超過 → stage 据え置き
+    it.due = today(Math.max(1, INTERVALS[it.stage]));
+  }
   S.items[id] = it;
   save();
 }
-function pick(list, n, exclude) {
+// 文法で間違えたら、同じ分野の類題を2問、翌日の復習に追加
+function addSimilar(id) {
+  const tag = findItem(id).tag;
+  const tmr = today(1);
+  const queued = new Set(Object.values(S.similar).flat());
+  const cands = BANK.grammar.filter(x => x.tag === tag && x.id !== id && !queued.has(x.id) && !(S.items[x.id] && S.items[x.id].mastered));
+  const fresh = cands.filter(x => !S.items[x.id]);
+  const rest = cands.filter(x => S.items[x.id]);
+  const add = [...shuffle(fresh), ...shuffle(rest)].slice(0, 2).map(x => x.id);
+  S.similar[tmr] = [...(S.similar[tmr] || []), ...add];
+}
+
+// 復習の候補：期限が来た問題（帰りの枠のものを除く）＋類題＋試験前の定着済み再確認
+function reviewCandidates(exclude = new Set()) {
   const t = today();
-  const avail = list.filter(x => !exclude.has(x.id));
-  const due = avail.filter(x => S.items[x.id] && S.items[x.id].due <= t);
+  const similar = new Set(Object.entries(S.similar).filter(([d]) => d <= t).flatMap(([, ids]) => ids));
+  const out = [];
+  for (const g of ["grammar", "vocab", "para", "reading"]) {
+    for (const x of BANK[g]) {
+      if (exclude.has(x.id)) continue;
+      const it = S.items[x.id];
+      const recheck = it && it.mastered && examSoon() && !it.rechecked;
+      const due = it && !it.mastered && it.due <= t && !(it.due_slot === "evening" && it.due === t);
+      if (due || recheck || similar.has(x.id)) {
+        const overdue = it && it.due ? daysBetween(it.due, t) : 0;
+        out.push({ x, overdue, g });
+      }
+    }
+  }
+  // 期限切れの長い順、同じなら文法を優先
+  out.sort((a, b) => b.overdue - a.overdue || (a.g === "grammar" ? -1 : 0) - (b.g === "grammar" ? -1 : 0));
+  return out.map(o => o.x);
+}
+
+// 新しい問題（未出題 → それもなければ期限の遠い順）
+function pickNew(list, n, exclude) {
+  const t = today();
+  const avail = list.filter(x => !exclude.has(x.id) && !(S.items[x.id] && (S.items[x.id].mastered || S.items[x.id].due <= t)));
   const fresh = avail.filter(x => !S.items[x.id]);
-  const later = avail.filter(x => S.items[x.id] && S.items[x.id].due > t)
-    .sort((a, b) => S.items[a.id].due.localeCompare(S.items[b.id].due));
-  return [...shuffle(due), ...fresh, ...later].slice(0, n);
+  const later = avail.filter(x => S.items[x.id]).sort((a, b) => S.items[b.id].due.localeCompare(S.items[a.id].due));
+  return [...fresh, ...later].slice(0, n);
 }
 
 // その日のタームの問題は一度決めたら固定（途中で閉じても同じ問題で再開できる）
@@ -68,23 +144,30 @@ function buildTerm(term) {
   S.picks[t] = S.picks[t] || {};
   if (S.picks[t][term.id]) return S.picks[t][term.id].map(findItem).filter(Boolean);
   for (const d of Object.keys(S.picks)) if (d !== t) delete S.picks[d];
+  for (const d of Object.keys(S.similar)) if (d < today(-7)) delete S.similar[d];
   const used = new Set(Object.values(S.picks[t]).flat());
   let items;
   if (term.kind === "review") {
-    const all = [...BANK.grammar, ...BANK.vocab, ...BANK.para];
-    const wrongDue = all.filter(x => !used.has(x.id) && S.items[x.id] && S.items[x.id].wrong && S.items[x.id].due <= t);
-    items = shuffle(wrongDue).slice(0, term.n);
-    const ex = new Set([...used, ...items.map(x => x.id)]);
-    items = items.concat(pick(BANK.grammar, term.n - items.length, ex));
+    items = reviewCandidates(used).slice(0, REVIEW_MAX);
+    // 復習が少ない日は文法の新出で6問まで補う
+    if (items.length < 6) items = items.concat(pickNew(BANK.grammar, 6 - items.length, new Set([...used, ...items.map(x => x.id)])));
+    items = shuffle(items);
   } else {
-    items = pick(BANK[term.kind], term.n, used);
+    let n = term.n;
+    // 復習が12問を超える日は、新出の語彙を半分に減らす
+    if (term.kind === "vocab" && reviewCandidates(used).length > REVIEW_MAX) n = Math.ceil(n / 2);
+    items = pickNew(BANK[term.kind], n, new Set([...used, ...reviewCandidates(used).slice(0, REVIEW_MAX).map(x => x.id)]));
   }
   S.picks[t][term.id] = items.map(x => x.id);
   save();
   return items;
 }
-function findItem(id) {
-  return BANK[genreOf(id)].find(x => x.id === id);
+// 帰りの復習：今日間違えて、まだやり直していない問題（毎回その場で作る）
+function eveningItems() {
+  const t = today();
+  return Object.entries(S.items)
+    .filter(([, it]) => it.due_slot === "evening" && it.due === t)
+    .map(([id]) => findItem(id)).filter(Boolean);
 }
 
 // 問題を「1問ずつ」の形に展開
@@ -93,14 +176,14 @@ function toQuestions(items) {
   for (const it of items) {
     const g = genreOf(it.id);
     if (g === "reading") {
-      it.questions.forEach((q, i) => qs.push({ id: it.id, sub: i, passage: it.passage, title: it.title,
+      it.questions.forEach((q, i) => qs.push({ id: it.id, g, sub: i, passage: it.passage, title: it.title,
         q: q.q, answer: q.choices[0], choices: shuffle(q.choices), exp: q.exp, last: i === it.questions.length - 1 }));
     } else if (g === "para") {
       const others = shuffle(BANK.para.filter(p => p.id !== it.id)).slice(0, 3).map(p => p.answer);
-      qs.push({ id: it.id, q: `“${it.word}” に最も近い意味は？`, answer: it.answer,
+      qs.push({ id: it.id, g, q: `“${it.word}” に最も近い意味は？`, answer: it.answer,
         choices: shuffle([it.answer, ...others]), exp: `${it.word} ＝ ${it.answer}（${it.ja}）` });
     } else {
-      qs.push({ id: it.id, q: it.q, answer: it.choices[0], choices: shuffle(it.choices), exp: it.exp });
+      qs.push({ id: it.id, g, q: it.q, answer: it.choices[0], choices: shuffle(it.choices), exp: it.exp, tag: it.tag });
     }
   }
   return qs;
@@ -119,34 +202,45 @@ function streak() {
 }
 function doneToday() { return (S.days[today()] && S.days[today()].done) || []; }
 
+function termButton(t, done, label) {
+  return `
+      <button class="term ${done ? "done" : ""}" data-term="${t.id}">
+        <span class="num">${done ? "✓" : label}</span>
+        <span class="body"><span class="name">${t.name}</span><br><span class="desc">${t.desc}</span></span>
+      </button>`;
+}
+
 function home() {
   const done = doneToday();
   const acc = {};
+  let mastered = 0;
   for (const [id, it] of Object.entries(S.items)) {
     const g = genreOf(id); acc[g] = acc[g] || { seen: 0, ok: 0 };
     acc[g].seen += it.seen; acc[g].ok += it.ok;
+    if (it.mastered) mastered++;
   }
   const d = new Date();
   const rows = Object.keys(GENRE_NAMES).map(g => {
     const a = acc[g];
     return `<tr><td>${GENRE_NAMES[g]}</td><td>${a ? `${Math.round(a.ok / a.seen * 100)}%（${a.seen}問）` : "まだ"}</td></tr>`;
   }).join("");
+  const eve = eveningItems().length;
+  const examLeft = S.examDate ? daysBetween(today(), S.examDate) : null;
   app.innerHTML = `
-    <div class="top"><h1>今日の5ターム</h1><button class="link" id="settings" aria-label="通知の設定">⚙︎ 通知</button></div>
-    <div class="muted">${d.getMonth() + 1}月${d.getDate()}日・1タームは約5分です</div>
+    <div class="top"><h1>今日の5ターム</h1><button class="link" id="settings" aria-label="設定">⚙︎ 設定</button></div>
+    <div class="muted">${d.getMonth() + 1}月${d.getDate()}日・1タームは約5分です${examLeft !== null && examLeft >= 0 ? `・試験まであと${examLeft}日` : ""}</div>
     <div class="stats">
       <div class="stat"><b>${done.length}/5</b><span>今日の完了</span></div>
       <div class="stat"><b>${streak()}日</b><span>連続学習</span></div>
+      <div class="stat"><b>${mastered}</b><span>定着した問題</span></div>
     </div>
-    <div class="terms">${TERMS.map(t => `
-      <button class="term ${done.includes(t.id) ? "done" : ""}" data-term="${t.id}">
-        <span class="num">${done.includes(t.id) ? "✓" : t.id}</span>
-        <span class="body"><span class="name">${t.name}</span><br><span class="desc">${t.desc}</span></span>
-      </button>`).join("")}
+    <div class="terms">${TERMS.map(t => termButton(t, done.includes(t.id), t.id)).join("")}
+      ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "🌙") : ""}
     </div>
     <div class="card" style="margin-top:16px">
       <h2>ジャンル別の正答率</h2>
       <table class="genres">${rows}</table>
+      <div class="muted" style="margin-top:8px">正解して「自信あり」を選び、制限時間内（文法・語彙20秒、言い換え10秒）に答えると次の復習までの間隔が 1→3→7→14→30→60日と伸びます。</div>
     </div>`;
   app.querySelectorAll(".term").forEach(b => b.onclick = () => startTerm(+b.dataset.term));
   document.getElementById("settings").onclick = settings;
@@ -154,8 +248,10 @@ function home() {
 }
 
 function startTerm(termId) {
-  const term = TERMS.find(t => t.id === termId);
-  const qs = toQuestions(buildTerm(term));
+  const term = termId === EVENING.id ? EVENING : TERMS.find(t => t.id === termId);
+  const items = term === EVENING ? eveningItems() : buildTerm(term);
+  if (!items.length) { goHome(); return; }
+  const qs = toQuestions(items);
   const st = { term, qs, i: 0, score: 0, answered: false };
   history.replaceState(null, "", `?term=${termId}`);
   showQ(st);
@@ -177,46 +273,68 @@ function showQ(st) {
     </div>`;
   document.getElementById("back").onclick = goHome;
   app.querySelectorAll(".choice").forEach(b => b.onclick = () => answer(st, +b.dataset.k));
-  if (!q.passage || q.sub === 0) window.scrollTo(0, 0);
+  if (!q.passage || q.sub === 0) { window.scrollTo(0, 0); st.passageStart = performance.now(); }
+  st.qStart = performance.now();
 }
 
 function answer(st, k) {
   if (st.answered) return;
   st.answered = true;
   const q = st.qs[st.i];
+  const sec = (performance.now() - st.qStart) / 1000;
   const correct = q.choices[k] === q.answer;
   if (correct) st.score++;
-  // 長文は3問まとめて1つの記録（全問正解で正解扱い）
-  if (q.passage) {
-    st.readOk = (q.sub === 0 ? true : st.readOk) && correct;
-    if (q.last) record(q.id, st.readOk);
-  } else record(q.id, correct);
   app.querySelectorAll(".choice").forEach((b, idx) => {
     b.disabled = true;
     if (q.choices[idx] === q.answer) b.classList.add("ok");
     else if (idx === k) b.classList.add("ng");
   });
+  const limit = q.passage ? null : TIME_LIMIT[q.g];
+  const over = limit && sec > limit;
   const last = st.i === st.qs.length - 1;
+  const nextLabel = last ? "結果を見る" : "次へ";
+  const evening = st.term === EVENING;
+  const done = confident => {
+    // 長文は3問まとめて1つの記録（全問正解・全問自信ありで1段上がる）
+    if (q.passage) {
+      if (q.sub === 0) st.read = { ok: true, conf: true };
+      st.read.ok = st.read.ok && correct;
+      st.read.conf = st.read.conf && confident;
+      if (q.last) record(q.id, st.read.ok, st.read.conf, (performance.now() - st.passageStart) / 1000, evening);
+    } else record(q.id, correct, confident, sec, evening);
+    st.i++; showQ(st);
+  };
+  const timeNote = limit ? `<span class="muted">（${Math.round(sec)}秒${over ? `・目標${limit}秒を超えました` : ""}）</span>` : "";
+  const similar = !correct && q.g === "grammar" && !evening ? `<div class="muted" style="margin-top:6px">「${esc(q.tag)}」の類題を明日の復習に2問追加します。</div>` : "";
   document.getElementById("after").innerHTML = `
-    <div class="exp"><b class="${correct ? "ok" : "ng"}">${correct ? "正解" : "不正解"}</b>　${esc(q.exp)}</div>
-    <button class="btn" id="next">${last ? "結果を見る" : "次へ"}</button>`;
-  const nb = document.getElementById("next");
-  nb.onclick = () => { st.i++; showQ(st); };
-  nb.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    <div class="exp"><b class="${correct ? "ok" : "ng"}">${correct ? "正解" : "不正解"}</b>${timeNote}　${esc(q.exp)}${similar}</div>
+    ${correct
+      ? `<div class="muted" style="margin-top:12px">この問題、自信を持って答えられましたか？</div>
+         <div class="row2"><button class="btn" id="conf">自信あり</button><button class="btn ghost" id="unsure">迷った</button></div>`
+      : `<button class="btn" id="next">${nextLabel}</button>`}`;
+  if (correct) {
+    document.getElementById("conf").onclick = () => done(true);
+    document.getElementById("unsure").onclick = () => done(false);
+  } else document.getElementById("next").onclick = () => done(false);
+  document.getElementById("after").lastElementChild.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 function finish(st) {
   const t = today();
-  S.days[t] = S.days[t] || { done: [] };
-  if (!S.days[t].done.includes(st.term.id)) S.days[t].done.push(st.term.id);
-  save();
+  if (st.term !== EVENING) {
+    S.days[t] = S.days[t] || { done: [] };
+    if (!S.days[t].done.includes(st.term.id)) S.days[t].done.push(st.term.id);
+    save();
+  }
   const done = doneToday();
   const next = TERMS.find(x => !done.includes(x.id));
+  const eve = eveningItems().length;
   app.innerHTML = `
     <div class="card" style="text-align:center">
       <div class="muted">${st.term.name}</div>
       <div class="big">${st.score} / ${st.qs.length}</div>
       <div>${done.length === 5 ? "今日の5タームを全部終えました。お疲れさまでした！" : `今日はあと${5 - done.length}タームです。`}</div>
+      ${eve ? `<div class="muted" style="margin-top:6px">間違えた問題は、帰りの復習（${eve}問）でもう一度出ます。</div>` : ""}
     </div>
     ${next ? `<button class="btn" id="nextTerm">次のターム：${next.name}</button>` : ""}
     <button class="btn ghost" id="home">ホームに戻る</button>`;
@@ -260,13 +378,13 @@ async function loadConfig() {
 }
 
 async function settings() {
-  app.innerHTML = `<div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">通知の設定</span></div><div class="card">読み込み中…</div>`;
+  app.innerHTML = `<div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">設定</span></div><div class="card">読み込み中…</div>`;
   document.getElementById("back").onclick = goHome;
   const { cfg } = await loadConfig();
   let times = (cfg.times || []).slice();
   const render = (msg = "") => {
     app.innerHTML = `
-      <div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">通知の設定</span></div>
+      <div class="top"><button class="link" id="back">‹ ホーム</button><span class="muted">設定</span></div>
       <div class="card">
         <h2>Discordに通知する時刻</h2>
         <div class="muted">通学の時間に合わせて最大5つまで。最初の時刻は「今日の5ターム」、2つ目以降は「続きをやろう」の通知になります。実際の通知は数分〜十数分遅れることがあります。</div>
@@ -282,6 +400,11 @@ async function settings() {
         </select>
       </div>
       <div class="card">
+        <h2>次のTOEICの試験日</h2>
+        <div class="muted">試験の2週間前になると、定着済みの問題も1回ずつ復習に戻して再確認します。この端末だけに保存されます。</div>
+        <input type="date" id="exam" class="input" value="${esc(S.examDate || "")}">
+      </div>
+      <div class="card">
         <h2>GitHubのトークン</h2>
         <div class="muted">設定を保存するために最初に1回だけ入力します。この端末の中だけに保存されます。作り方はREADMEを見てください。</div>
         <input type="password" id="token" class="input" placeholder="github_pat_..." value="${esc(getToken())}" autocomplete="off">
@@ -290,6 +413,7 @@ async function settings() {
       <button class="btn" id="save">保存する</button>
       <button class="btn ghost" id="test">テスト通知を今すぐ送る</button>`;
     document.getElementById("back").onclick = goHome;
+    document.getElementById("exam").onchange = e => { S.examDate = e.target.value || null; save(); };
     const sync = () => {
       times = [...app.querySelectorAll(".time")].map(x => x.value).filter(Boolean);
       cfg.days = document.getElementById("days").value;
@@ -334,7 +458,7 @@ async function init() {
     return;
   }
   const t = +new URLSearchParams(location.search).get("term");
-  if (TERMS.some(x => x.id === t)) startTerm(t); else home();
+  if (TERMS.some(x => x.id === t) || t === EVENING.id) startTerm(t); else home();
 }
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 init();
