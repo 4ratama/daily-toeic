@@ -6,6 +6,7 @@
   if (!app) return;
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   const NS = "http://www.w3.org/2000/svg";
+  const VERSION = "v2.0 オーロラデザイン（2026-11-06）"; // 見た目を更新したら書き換える
 
   // ---- アイコン（自作SVG）----
   const ICON = {
@@ -176,6 +177,11 @@
       q.innerHTML = `<div class="en"></div><div class="ja"></div>`;
       q.querySelector(".en").textContent = QUOTES[idx][0]; q.querySelector(".ja").textContent = QUOTES[idx][1];
       stEl.after(q);
+    }
+
+    if (!app.querySelector(".ver")) {
+      const v = document.createElement("div"); v.className = "ver"; v.textContent = `TOEIC Daily ${VERSION}`;
+      app.appendChild(v);
     }
 
     let firstOpen = null;

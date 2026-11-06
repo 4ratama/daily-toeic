@@ -315,3 +315,6 @@ select.input { background-image: linear-gradient(45deg, transparent 50%, var(--m
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ホーム最下部のバージョン表示（更新が反映されたかの確認用） */
+.ver { text-align: center; color: var(--muted); font-size: 11.5px; margin-top: 18px; opacity: .8; letter-spacing: .04em; }
