@@ -364,7 +364,7 @@ function motivationHtml() {
     <div class="card level-card">
       <div class="level-row"><span class="level">Lv.${lv.level}</span><span class="title">${lv.title}</span><span class="xp">${m.xp} XP</span></div>
       <div class="xp-bar"><i style="width:${Math.round(lv.into / lv.need * 100)}%"></i></div>
-      <div class="muted">次のレベルまで ${lv.need - lv.into} XP・休み券 <span class="freeze">${"🧊".repeat(m.freezes) || "なし"}</span>（${FREEZE_EVERY}日続けるごとに1枚、最大${FREEZE_MAX}枚）</div>
+      <div class="muted">次のレベルまで ${lv.need - lv.into} XP・休み券 <span class="freeze">${m.freezes ? `${m.freezes}枚` : "なし"}</span>（${FREEZE_EVERY}日続けるごとに1枚、最大${FREEZE_MAX}枚）</div>
     </div>
     <div class="card score-pred">
       <h2>予想スコア <span class="muted">（目安）</span></h2>
@@ -373,7 +373,7 @@ function motivationHtml() {
            <div class="muted">リーディング推定 ${pred.reading}（直近${pred.n}問の正答率と、文法の平均${pred.avgSec}秒から計算）＋リスニングは前回結果からの推定 ${LISTENING_ESTIMATE}。</div>
            <div class="goal-track"><span>905</span><i style="left:${Math.max(0, Math.min(100, (((pred.low + pred.high) / 2) - 905) / 85 * 100))}%"></i><span>950</span><span>990</span></div>`
         : `<div class="muted">あと${pred.left}問解くと表示されます。</div>`}
-      ${examLeft !== null && examLeft >= 0 ? `<div class="countdown">試験まであと <b>${examLeft}</b> 日</div>` : `<div class="muted">⚙︎ 設定で試験日を入れると、カウントダウンが出ます。</div>`}
+      ${examLeft !== null && examLeft >= 0 ? `<div class="countdown">試験まであと <b>${examLeft}</b> 日</div>` : `<div class="muted">設定で試験日を入れると、カウントダウンが出ます。</div>`}
     </div>
     <div class="card grammar-gauge">
       <h2>文法力ゲージ <span class="muted">（弱い単元から順に）</span></h2>
@@ -393,8 +393,8 @@ function resultExtrasHtml(res) {
   if (res.xp) parts.push(`<div class="xp-gain">+${res.xp} XP${res.allBonus ? `（5ターム完走ボーナス +${XP_ALL_TERMS}含む）` : ""}${M().comebackDay === today() ? "・おかえりボーナスで2倍" : ""}</div>`);
   if (res.levelAfter > res.levelBefore) parts.push(`<div class="levelup">レベルアップ！ Lv.${res.levelAfter}「${levelOf(M().xp).title}」</div>`);
   if (res.record) parts.push(`<div class="new-record">NEW RECORD</div>`);
-  if (res.newFreeze) parts.push(`<div class="muted">🧊 休み券を1枚もらいました</div>`);
-  if (res.usedFreeze) parts.push(`<div class="muted">🧊 休み券を${res.usedFreeze}枚使って、連続記録を守りました</div>`);
+  if (res.newFreeze) parts.push(`<div class="muted">休み券を1枚もらいました</div>`);
+  if (res.usedFreeze) parts.push(`<div class="muted">休み券を${res.usedFreeze}枚使って、連続記録を守りました</div>`);
   for (const b of res.badges) parts.push(`<div class="badge earned new-badge"><span class="badge-icon">${b.icon}</span><span class="badge-name">バッジ獲得：${esc(b.name)}</span></div>`);
   return parts.length ? `<div class="result-extras">${parts.join("")}</div>` : "";
 }
@@ -437,7 +437,7 @@ function home() {
   const eve = eveningItems().length;
   const examLeft = S.examDate ? daysBetween(today(), S.examDate) : null;
   app.innerHTML = `
-    <div class="top"><h1>今日の5ターム</h1><button class="link" id="settings" aria-label="設定">⚙︎ 設定</button></div>
+    <div class="top"><h1>今日の5ターム</h1><button class="link" id="settings" aria-label="設定">設定</button></div>
     <div class="muted">${d.getMonth() + 1}月${d.getDate()}日・1タームは約5分です${examLeft !== null && examLeft >= 0 ? `・試験まであと${examLeft}日` : ""}</div>
     <div class="stats">
       <div class="stat"><b>${done.length}/5</b><span>今日の完了</span></div>
@@ -445,11 +445,11 @@ function home() {
       <div class="stat"><b>${mastered}</b><span>定着した問題</span></div>
     </div>
     <button class="term guide-entry" id="guide">
-      <span class="num">📘</span>
+      <span class="num">G</span>
       <span class="body"><span class="name">TOEICのパート別ガイド</span><br><span class="desc">Part 1〜7の形式・出題傾向・コツ</span></span>
     </button>
     <div class="terms">${TERMS.map(t => termButton(t, done.includes(t.id), t.id)).join("")}
-      ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "🌙") : ""}
+      ${eve ? termButton({ ...EVENING, desc: `今日間違えた ${eve}問をもう一度` }, false, "夜") : ""}
     </div>
     ${motivationHtml()}
     <div class="card" style="margin-top:16px">
@@ -560,7 +560,7 @@ function answer(st, k) {
   const similar = !correct && q.g === "grammar" && !evening ? `<div class="muted" style="margin-top:6px">「${esc(q.tag)}」の類題を明日の復習に2問追加します。</div>` : "";
   document.getElementById("after").innerHTML = `
     <div class="exp"><b class="${correct ? "ok" : "ng"}">${correct ? "正解" : "不正解"}</b>${timeNote}　正解は「${esc(q.answer)}」
-      ${q.point ? `<div class="point">🎯 ポイント：${esc(q.point)}</div>` : ""}
+      ${q.point ? `<div class="point">ポイント：${esc(q.point)}</div>` : ""}
       <div class="exp-body">${esc(q.exp)}</div>${similar}</div>
     ${correct
       ? `<div class="muted" style="margin-top:12px">この問題、自信を持って答えられましたか？</div>
