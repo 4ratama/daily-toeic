@@ -18313,6 +18313,908 @@
      "point": "However の後に問題点が来る"
     }
    ]
+  },
+  {
+   "id": "r019",
+   "title": "E-mail: Delivery delay",
+   "passage": "Dear Mr. Kowalski, Thank you for your order of 50 office chairs. Unfortunately, our supplier has informed us that the chairs will not be ready until March 18, one week later than originally planned. We apologize for this delay. If this new date is not convenient, you may cancel your order without charge, or we can offer you a similar model that is available now at the same price. Please let us know which option you prefer by replying to this e-mail. Sincerely, Dana Price, Customer Service, Brightline Furniture",
+   "level": 1,
+   "questions": [
+    {
+     "q": "Why was the e-mail sent?",
+     "choices": [
+      "To report a delay in an order",
+      "To confirm a payment",
+      "To advertise a new chair",
+      "To request a product review"
+     ],
+     "exp": "第2文で、椅子の準備が予定より1週間遅れると伝えている。",
+     "point": "目的は冒頭〜Unfortunately の後"
+    },
+    {
+     "q": "What is Mr. Kowalski offered?",
+     "choices": [
+      "A different model at the same price",
+      "A discount on his next order",
+      "Free delivery",
+      "A full refund plus a gift"
+     ],
+     "exp": "同じ価格で今すぐ入手できる似たモデルを提案している。キャンセル無料も選べるが、選択肢にはない。",
+     "point": "offer の後の具体的な内容を確認"
+    },
+    {
+     "q": "What is Mr. Kowalski asked to do?",
+     "choices": [
+      "Reply with his choice",
+      "Call the supplier",
+      "Visit the store",
+      "Sign a new contract"
+     ],
+     "exp": "最後の文で、どちらを選ぶか返信で知らせるよう求めている。",
+     "point": "依頼は Please ～ に注目"
+    }
+   ]
+  },
+  {
+   "id": "r020",
+   "title": "Notice: Parking lot repaving",
+   "passage": "Attention all employees: The north parking lot will be closed from Monday, June 3, through Wednesday, June 5, while it is repaved. During this time, employees may park in the south lot or at the City Garage on Elm Street. Parking at the City Garage is normally $8 per day, but the company will cover the cost. Simply show your employee ID to the attendant when you leave. The north lot will reopen on Thursday morning. We apologize for any inconvenience. — Facilities Department",
+   "level": 1,
+   "questions": [
+    {
+     "q": "What is the notice mainly about?",
+     "choices": [
+      "A temporary parking lot closure",
+      "A new parking fee",
+      "An office relocation",
+      "A change in work hours"
+     ],
+     "exp": "北側駐車場が舗装工事のため3日間閉鎖されることを知らせている。",
+     "point": "主題は第1文"
+    },
+    {
+     "q": "How long will the north lot be closed?",
+     "choices": [
+      "Three days",
+      "One day",
+      "One week",
+      "Two weeks"
+     ],
+     "exp": "6月3日（月）から5日（水）まで。",
+     "point": "期間の計算に注意"
+    },
+    {
+     "q": "What should employees do to park free at the City Garage?",
+     "choices": [
+      "Show their employee ID",
+      "Pay $8 in advance",
+      "Register online",
+      "Get a pass from the Facilities Department"
+     ],
+     "exp": "退出時に係員に社員証を見せれば会社が料金を負担する。",
+     "point": "Simply ～ の手順"
+    }
+   ]
+  },
+  {
+   "id": "r021",
+   "title": "Advertisement: Language school",
+   "passage": "Want to improve your English for work? Clearview Language School offers evening and weekend classes for busy professionals. Our small classes have no more than eight students, so you get plenty of chances to speak. All of our teachers have at least five years of experience teaching business English. New students can take a free 30-minute trial lesson before signing up. Classes start every month. Visit our Web site to book your trial lesson today.",
+   "level": 1,
+   "questions": [
+    {
+     "q": "Who is the advertisement intended for?",
+     "choices": [
+      "Working people",
+      "Young children",
+      "English teachers",
+      "University professors"
+     ],
+     "exp": "for busy professionals「忙しい社会人向け」と書かれている。",
+     "point": "対象者は for ～ に注目"
+    },
+    {
+     "q": "What is mentioned about the classes?",
+     "choices": [
+      "They are small.",
+      "They are held online only.",
+      "They last three hours.",
+      "They are free of charge."
+     ],
+     "exp": "1クラス最大8人の少人数制。",
+     "point": "本文の言い換えを探す"
+    },
+    {
+     "q": "What can new students do?",
+     "choices": [
+      "Take a trial lesson for free",
+      "Get a discount on books",
+      "Choose their own teacher",
+      "Join a class at any time without booking"
+     ],
+     "exp": "無料の30分体験レッスンを受けられる。",
+     "point": "New students can ～"
+    }
+   ]
+  },
+  {
+   "id": "r022",
+   "title": "Text messages",
+   "passage": "Ken Ota (10:12 A.M.): Hi Maria, are you still at the printer's? Maria Lopez (10:14 A.M.): Yes, I'm picking up the brochures now. Why? Ken Ota (10:15 A.M.): The client just called. She wants 100 more copies for the trade show. Maria Lopez (10:16 A.M.): No problem. I'll ask them now. They said it usually takes a day. Ken Ota (10:17 A.M.): That works. The show isn't until Friday.",
+   "level": 1,
+   "questions": [
+    {
+     "q": "Where most likely is Ms. Lopez?",
+     "choices": [
+      "At a print shop",
+      "At a trade show",
+      "At the client's office",
+      "At a train station"
+     ],
+     "exp": "printer's（印刷所）でパンフレットを受け取っている。",
+     "point": "場所は会話の冒頭"
+    },
+    {
+     "q": "What does the client want?",
+     "choices": [
+      "Additional brochures",
+      "A new design",
+      "An earlier delivery",
+      "A lower price"
+     ],
+     "exp": "見本市用にさらに100部欲しいと言っている。",
+     "point": "more copies の言い換え"
+    },
+    {
+     "q": "At 10:17 A.M., what does Mr. Ota mean when he writes, \"That works\"?",
+     "choices": [
+      "One day is enough time.",
+      "The printer is working well.",
+      "He will go to work soon.",
+      "The client accepted the price."
+     ],
+     "exp": "通常1日かかるという話に対し、展示会は金曜なので間に合うという意味。",
+     "point": "意図問題は直前の発言を確認"
+    }
+   ]
+  },
+  {
+   "id": "r023",
+   "title": "Memo: Recycling program",
+   "passage": "To: All staff. From: Green Office Committee. Starting next month, our office will introduce a new recycling program. Blue bins for paper will be placed next to each printer, and green bins for plastic bottles will be in the kitchen on every floor. Please do not put food waste in either bin, as this makes the materials impossible to recycle. Food waste should go in the black bins in the kitchen. The committee will post monthly figures showing how much we have recycled on the bulletin board near the elevators. Questions can be sent to greenoffice@marlow.com.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What is the purpose of the memo?",
+     "choices": [
+      "To explain a new recycling system",
+      "To announce a kitchen renovation",
+      "To introduce new committee members",
+      "To ask staff to print less"
+     ],
+     "exp": "来月から始まる新しいリサイクルの仕組みを説明している。",
+     "point": "冒頭の Starting next month ～"
+    },
+    {
+     "q": "Where will the paper bins be placed?",
+     "choices": [
+      "Beside the printers",
+      "In the kitchen",
+      "Near the elevators",
+      "At the reception desk"
+     ],
+     "exp": "紙用の青い箱は各プリンターの隣に置かれる。next to が beside に言い換えられている。",
+     "point": "next to → beside"
+    },
+    {
+     "q": "What will the committee share every month?",
+     "choices": [
+      "Recycling results",
+      "Meeting schedules",
+      "A list of new rules",
+      "Kitchen cleaning duties"
+     ],
+     "exp": "毎月、リサイクル量の数値を掲示板に貼り出す。",
+     "point": "monthly figures の言い換え"
+    }
+   ]
+  },
+  {
+   "id": "r024",
+   "title": "Article: Hotel opening",
+   "passage": "The Harbor View Hotel will open its doors on April 2 after a two-year construction project. Located on the waterfront, the 15-story hotel has 220 guest rooms, a rooftop restaurant, and a conference center that can hold up to 400 people. General manager Ruth Adeyemi said the hotel expects to attract both tourists and business travelers. \"We are already fully booked for our first weekend,\" she said. To celebrate the opening, the hotel is offering a 20 percent discount on all rooms booked for the month of April.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What is suggested about the Harbor View Hotel?",
+     "choices": [
+      "It took two years to build.",
+      "It has been open for two years.",
+      "It is located downtown.",
+      "It has 400 guest rooms."
+     ],
+     "exp": "2年間の建設工事を経て開業する。400は会議場の収容人数。",
+     "point": "数字の取り違えに注意"
+    },
+    {
+     "q": "Who is Ms. Adeyemi?",
+     "choices": [
+      "The hotel's general manager",
+      "A travel agent",
+      "A hotel guest",
+      "A construction worker"
+     ],
+     "exp": "General manager Ruth Adeyemi と紹介されている。",
+     "point": "人物の肩書きは名前の前後"
+    },
+    {
+     "q": "What does the hotel offer for April?",
+     "choices": [
+      "Lower room rates",
+      "Free meals",
+      "A free conference room",
+      "A free airport shuttle"
+     ],
+     "exp": "4月中の宿泊予約は全室20%引き。",
+     "point": "discount → lower rates"
+    }
+   ]
+  },
+  {
+   "id": "r025",
+   "title": "Web page: Return policy",
+   "passage": "Return Policy. Items purchased from Fenwick Outdoors may be returned within 30 days of delivery for a full refund. Items must be unused and in their original packaging. To start a return, log in to your account, select the order, and print the prepaid shipping label. Refunds are issued to the original payment method within five business days after we receive the item. Please note that sale items marked \"Final Sale\" cannot be returned. If you received a damaged item, contact us within 48 hours and we will send a replacement at no cost.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What is required for a return?",
+     "choices": [
+      "The item must be unused.",
+      "The receipt must be mailed.",
+      "The item must be returned to a store.",
+      "A return fee must be paid."
+     ],
+     "exp": "未使用かつ元の包装であることが条件。",
+     "point": "must の文に条件がある"
+    },
+    {
+     "q": "What is true about the shipping label?",
+     "choices": [
+      "It is already paid for.",
+      "It is sent by mail.",
+      "It costs five dollars.",
+      "It must be requested by phone."
+     ],
+     "exp": "prepaid shipping label（送料前払いのラベル）を印刷する。",
+     "point": "prepaid の意味"
+    },
+    {
+     "q": "What should customers do if an item arrives damaged?",
+     "choices": [
+      "Contact the store within 48 hours",
+      "Return it within 30 days",
+      "Print a new label",
+      "Visit a local store"
+     ],
+     "exp": "破損品は48時間以内に連絡すれば無料で交換品が送られる。",
+     "point": "damaged の段落"
+    }
+   ]
+  },
+  {
+   "id": "r026",
+   "title": "E-mail: Interview schedule",
+   "passage": "Dear Ms. Varga, Thank you for applying for the position of graphic designer at Lumen Studio. We were impressed with your portfolio and would like to invite you to an interview. The interview will take place at our office on Thursday, May 9, at 2:00 P.M., and will last about one hour. You will meet with our creative director, Paul Henning, and a member of the design team. Please bring two examples of recent work that are not included in your online portfolio. Kindly confirm your attendance by Monday. Best regards, Alice Moore, Human Resources",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What is the purpose of the e-mail?",
+     "choices": [
+      "To arrange an interview",
+      "To offer a job",
+      "To request a portfolio",
+      "To reject an application"
+     ],
+     "exp": "面接への招待とその日程を伝えている。",
+     "point": "would like to invite you"
+    },
+    {
+     "q": "Who will Ms. Varga meet?",
+     "choices": [
+      "The creative director and a designer",
+      "The company president",
+      "Only Ms. Moore",
+      "Several clients"
+     ],
+     "exp": "クリエイティブディレクターとデザインチームの一人に会う。",
+     "point": "You will meet with ～"
+    },
+    {
+     "q": "What is Ms. Varga asked to bring?",
+     "choices": [
+      "Work that is not in her online portfolio",
+      "A copy of her résumé",
+      "Letters of recommendation",
+      "Her identification card"
+     ],
+     "exp": "オンラインポートフォリオにない最近の作品を2点持参するよう求めている。",
+     "point": "Please bring ～"
+    }
+   ]
+  },
+  {
+   "id": "r027",
+   "title": "Notice: Library renovation",
+   "passage": "The Oakdale Public Library's main branch will close on September 1 for a three-month renovation. The project will add a new children's area, a café, and twenty additional computers. During the closure, the Riverside branch will extend its hours and will be open until 9:00 P.M. on weekdays. Books that are due during the closure may be returned to any branch or to the drop box outside the main entrance, which will remain open. Late fees will not be charged on items due between September 1 and November 30.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What will be added to the main branch?",
+     "choices": [
+      "A café",
+      "A parking garage",
+      "A lecture hall",
+      "A bookstore"
+     ],
+     "exp": "子ども向けエリア、カフェ、パソコン20台が加わる。",
+     "point": "add の後に列挙"
+    },
+    {
+     "q": "What will the Riverside branch do?",
+     "choices": [
+      "Stay open later",
+      "Close temporarily",
+      "Hold special events",
+      "Lend computers"
+     ],
+     "exp": "平日は午後9時まで開館時間を延長する。",
+     "point": "extend its hours → stay open later"
+    },
+    {
+     "q": "What is indicated about late fees?",
+     "choices": [
+      "They will not be charged for some items.",
+      "They will be increased.",
+      "They must be paid at Riverside.",
+      "They will be charged daily."
+     ],
+     "exp": "9月1日〜11月30日が返却期限の資料は延滞料がかからない。",
+     "point": "Late fees の文"
+    }
+   ]
+  },
+  {
+   "id": "r028",
+   "title": "Text messages",
+   "passage": "Nadia Kim (3:02 P.M.): I'm at the Lakeside Hotel, but there's no sign for our workshop. Do you know which room it's in? Tom Reyes (3:04 P.M.): It was supposed to be the Willow Room, but they moved us. Let me check the e-mail. Tom Reyes (3:06 P.M.): Found it. It's the Maple Room on the second floor. Nadia Kim (3:07 P.M.): Thanks! I'll take the stairs. Are the handouts there already? Tom Reyes (3:08 P.M.): Jun brought them an hour ago.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What problem does Ms. Kim have?",
+     "choices": [
+      "She cannot find the workshop room.",
+      "She is late for a flight.",
+      "She forgot the handouts.",
+      "She cannot enter the hotel."
+     ],
+     "exp": "ワークショップの案内表示がなく部屋がわからない。",
+     "point": "冒頭の発言に問題点"
+    },
+    {
+     "q": "Why did Mr. Reyes check his e-mail?",
+     "choices": [
+      "To confirm the new room",
+      "To contact the hotel",
+      "To print the handouts",
+      "To change the date"
+     ],
+     "exp": "部屋が変更されたため、メールで新しい部屋を確認した。",
+     "point": "Let me check ～ の目的"
+    },
+    {
+     "q": "What is suggested about the handouts?",
+     "choices": [
+      "They have already been delivered.",
+      "They have not been printed.",
+      "Ms. Kim will bring them.",
+      "They are in the Willow Room."
+     ],
+     "exp": "Jun が1時間前に持ってきている。",
+     "point": "最後の発言"
+    }
+   ]
+  },
+  {
+   "id": "r029",
+   "title": "Letter: Rent increase",
+   "passage": "Dear Tenant, As you may know, property taxes and maintenance costs in our area have risen significantly over the past two years. As a result, monthly rent for all units at Cedar Court will increase by 4 percent, effective July 1. This is the first increase since 2021, and it remains below the average for comparable buildings in the neighborhood. In addition, we will use part of the increase to replace the building's aging elevators this fall. Tenants who sign a two-year lease renewal before May 31 will have the increase reduced to 2 percent. Please contact the management office if you have any questions. Sincerely, Cedar Court Management",
+   "level": 3,
+   "questions": [
+    {
+     "q": "Why is the rent being increased?",
+     "choices": [
+      "Costs have gone up.",
+      "The building was sold.",
+      "New units were added.",
+      "Demand has fallen."
+     ],
+     "exp": "固定資産税と維持費が大幅に上がったため。As a result 以下が結果。",
+     "point": "原因は As a result の前"
+    },
+    {
+     "q": "What is suggested about Cedar Court's rent?",
+     "choices": [
+      "It is lower than at similar buildings.",
+      "It has increased every year.",
+      "It will double next year.",
+      "It includes parking."
+     ],
+     "exp": "値上げ後も近隣の同等の建物の平均を下回る。",
+     "point": "below the average → lower"
+    },
+    {
+     "q": "How can tenants reduce the increase?",
+     "choices": [
+      "By signing a long-term lease early",
+      "By paying a year in advance",
+      "By moving to another unit",
+      "By helping with maintenance"
+     ],
+     "exp": "5月31日までに2年契約を更新すれば値上げ幅が2%になる。",
+     "point": "条件を表す Tenants who ～"
+    }
+   ]
+  },
+  {
+   "id": "r030",
+   "title": "Article: Bike-sharing program",
+   "passage": "Since its launch eighteen months ago, the city's bike-sharing program has exceeded expectations. More than 300,000 trips have been taken, nearly double the original forecast. Officials attribute the program's success largely to the decision to place stations near train stations, which allows commuters to complete the last part of their journey by bike. However, the program has faced challenges. Some stations in the business district are frequently empty during the morning rush, while others are overcrowded. To address this, the city plans to hire additional staff to move bikes between stations and to add 15 new stations next year.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What is indicated about the number of trips?",
+     "choices": [
+      "It was much higher than predicted.",
+      "It has decreased recently.",
+      "It met the forecast exactly.",
+      "It was lower than expected."
+     ],
+     "exp": "当初予測のほぼ2倍の利用があった。",
+     "point": "nearly double the original forecast"
+    },
+    {
+     "q": "According to officials, why has the program been successful?",
+     "choices": [
+      "Stations are located near train stations.",
+      "Bikes are free to use.",
+      "The city is flat.",
+      "It is advertised widely."
+     ],
+     "exp": "駅の近くにステーションを置いた判断がおもな成功要因とされる。",
+     "point": "attribute A to B の B"
+    },
+    {
+     "q": "What problem does the program have?",
+     "choices": [
+      "Bikes are unevenly distributed.",
+      "Bikes are often damaged.",
+      "Fees are too high.",
+      "Few people know about it."
+     ],
+     "exp": "朝のラッシュ時に空のステーションと満杯のステーションがある。",
+     "point": "However の後に問題"
+    }
+   ]
+  },
+  {
+   "id": "r031",
+   "title": "E-mail: Supplier change",
+   "passage": "To: Kitchen staff. From: Elena Rossi, Head Chef. Starting next Monday, we will receive our vegetables from Greenfield Farms instead of our current supplier. Greenfield is located only 20 kilometers from the restaurant, so deliveries will arrive each morning by 7:00 A.M. rather than twice a week. This means we will need less storage space, and the produce will be fresher. However, Greenfield does not grow tomatoes in winter, so we will continue to order those from Valley Produce until April. Please check all deliveries against the order form and report any problems to me directly.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What change is being announced?",
+     "choices": [
+      "A new vegetable supplier",
+      "A new head chef",
+      "A new menu",
+      "New opening hours"
+     ],
+     "exp": "来週月曜から野菜の仕入れ先が Greenfield Farms に変わる。",
+     "point": "冒頭の instead of"
+    },
+    {
+     "q": "What is one benefit of the change?",
+     "choices": [
+      "Fresher produce",
+      "Lower prices",
+      "Larger kitchen",
+      "More menu items"
+     ],
+     "exp": "毎朝届くので保管場所が減り、より新鮮になる。",
+     "point": "This means 以下"
+    },
+    {
+     "q": "Why will the restaurant still use Valley Produce?",
+     "choices": [
+      "To get a product unavailable in winter",
+      "To receive deliveries on weekends",
+      "To lower costs",
+      "To cater special events"
+     ],
+     "exp": "Greenfield は冬にトマトを作らないため、4月まで Valley Produce から注文する。",
+     "point": "However の後"
+    }
+   ]
+  },
+  {
+   "id": "r032",
+   "title": "Schedule: Product launch event",
+   "passage": "Velo Tech Product Launch — Thursday, October 10. 6:00 P.M. Doors open; light refreshments served in the lobby. 6:30 P.M. Welcome remarks by CEO Hannah Lowe. 6:45 P.M. Presentation of the new Velo X3 smartwatch by product manager Sam Turner. 7:30 P.M. Hands-on demonstrations in the exhibition hall. 8:30 P.M. Event ends. Note: Media guests may schedule a private interview with Ms. Lowe by contacting press@velotech.com before October 7.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What will happen at 6:45 P.M.?",
+     "choices": [
+      "A new product will be presented.",
+      "Guests will arrive.",
+      "Food will be served.",
+      "Interviews will take place."
+     ],
+     "exp": "6時45分に新しいスマートウォッチの発表がある。",
+     "point": "表の時刻と内容を対応させる"
+    },
+    {
+     "q": "Who is Sam Turner?",
+     "choices": [
+      "A product manager",
+      "The CEO",
+      "A journalist",
+      "An event planner"
+     ],
+     "exp": "product manager Sam Turner と書かれている。",
+     "point": "肩書きを確認"
+    },
+    {
+     "q": "What can media guests do?",
+     "choices": [
+      "Arrange an interview with the CEO",
+      "Try the product before the event",
+      "Receive a free smartwatch",
+      "Give a speech"
+     ],
+     "exp": "10月7日までに連絡すれば CEO との個別インタビューを予約できる。",
+     "point": "Note の内容"
+    }
+   ]
+  },
+  {
+   "id": "r033",
+   "title": "Memo: Flexible working hours",
+   "passage": "To: All employees. From: Human Resources. Following a successful three-month trial in the accounting department, flexible working hours will be extended to all departments beginning August 1. Employees may start work at any time between 7:00 and 10:00 A.M., provided they work eight hours per day and are present during the core hours of 10:00 A.M. to 3:00 P.M. Team meetings should be scheduled within core hours. Employees must agree on their schedule with their manager in advance, and any changes should be submitted at least one week ahead. Managers may limit flexible hours during busy periods such as the end of the fiscal year.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What is indicated about the flexible hours system?",
+     "choices": [
+      "It was tested in one department.",
+      "It is being discontinued.",
+      "It applies only to managers.",
+      "It begins in October."
+     ],
+     "exp": "経理部での3か月の試行が成功し、全部署に拡大される。",
+     "point": "Following a successful trial"
+    },
+    {
+     "q": "When must all employees be at work?",
+     "choices": [
+      "Between 10:00 A.M. and 3:00 P.M.",
+      "Between 7:00 and 10:00 A.M.",
+      "After 3:00 P.M.",
+      "Only during team meetings"
+     ],
+     "exp": "コアタイムの10時〜15時は勤務していなければならない。",
+     "point": "core hours の意味"
+    },
+    {
+     "q": "What can managers do?",
+     "choices": [
+      "Restrict flexible hours at busy times",
+      "Change employees' salaries",
+      "Cancel the core hours",
+      "Approve schedule changes on the same day"
+     ],
+     "exp": "年度末など繁忙期には柔軟な勤務時間を制限できる。",
+     "point": "最終文 may limit"
+    }
+   ]
+  },
+  {
+   "id": "r034",
+   "title": "Advertisement: Office space",
+   "passage": "Office space available in the Brennan Building, downtown. Units range from 50 to 200 square meters and come fully furnished with desks, chairs, and high-speed Internet. Tenants have 24-hour access to the building and can reserve meeting rooms on the third floor at no additional cost. A café and a fitness center are located on the ground floor. Leases are available for six months or longer. The building is a two-minute walk from Central Station. To arrange a viewing, call Ian Shaw at 555-0148.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What is included with the office units?",
+     "choices": [
+      "Furniture",
+      "Free parking",
+      "Cleaning service",
+      "Phone lines"
+     ],
+     "exp": "机・椅子・高速インターネット付きの家具付き物件。",
+     "point": "fully furnished"
+    },
+    {
+     "q": "What is true about the meeting rooms?",
+     "choices": [
+      "They can be used without extra charge.",
+      "They are on the ground floor.",
+      "They must be booked a month ahead.",
+      "They hold up to 200 people."
+     ],
+     "exp": "3階の会議室は追加料金なしで予約できる。",
+     "point": "at no additional cost"
+    },
+    {
+     "q": "What is the shortest lease available?",
+     "choices": [
+      "Six months",
+      "One month",
+      "One year",
+      "Two years"
+     ],
+     "exp": "6か月以上の契約が可能。",
+     "point": "six months or longer"
+    }
+   ]
+  },
+  {
+   "id": "r035",
+   "title": "Article: Factory automation",
+   "passage": "Dorsey Manufacturing announced on Tuesday that it will invest $40 million to automate its plant in Greenville over the next three years. The company said the new equipment will increase output by about 30 percent while reducing waste. Although some workers had feared job losses, Dorsey stated that no positions will be cut. Instead, the company will retrain around 150 employees to operate and maintain the new machines. The program will be run in partnership with Greenville Technical College, which will design the courses. Local officials welcomed the news, noting that the plant is the area's largest employer.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What is the article mainly about?",
+     "choices": [
+      "A company's investment in new equipment",
+      "The closing of a factory",
+      "A new college program for students",
+      "A decline in manufacturing jobs"
+     ],
+     "exp": "工場の自動化に4,000万ドルを投資するという発表。",
+     "point": "第1文が主題"
+    },
+    {
+     "q": "What will happen to the plant's employees?",
+     "choices": [
+      "Some will receive training.",
+      "Many will lose their jobs.",
+      "They will move to a new plant.",
+      "They will work fewer hours."
+     ],
+     "exp": "人員削減はなく、約150人が新しい機械の運用のために再訓練を受ける。",
+     "point": "Instead の後"
+    },
+    {
+     "q": "What is mentioned about Greenville Technical College?",
+     "choices": [
+      "It will create the training courses.",
+      "It will buy the factory.",
+      "It employs many local people.",
+      "It will provide the machines."
+     ],
+     "exp": "大学が講座を設計する。",
+     "point": "which will design the courses"
+    }
+   ]
+  },
+  {
+   "id": "r036",
+   "title": "Customer review",
+   "passage": "I bought the Aria 200 coffee maker after reading several positive reviews, and I'm mostly satisfied. It's easy to use and makes excellent coffee in under three minutes. The water tank is large enough for eight cups, so I only need to fill it every few days. My only complaint is the noise. It is much louder than my old machine, which is a problem when I make coffee early in the morning. I contacted customer service, and they quickly replied that this is normal for this model. Overall, I would still recommend it. — Priya N.",
+   "level": 2,
+   "questions": [
+    {
+     "q": "What does Ms. N. like about the coffee maker?",
+     "choices": [
+      "It makes coffee quickly.",
+      "It is very quiet.",
+      "It is inexpensive.",
+      "It is small."
+     ],
+     "exp": "3分以内で美味しいコーヒーを淹れられる点を評価している。",
+     "point": "肯定的な記述を探す"
+    },
+    {
+     "q": "What problem does she mention?",
+     "choices": [
+      "The machine is loud.",
+      "The tank leaks.",
+      "The coffee is weak.",
+      "The machine broke."
+     ],
+     "exp": "My only complaint is the noise と書かれている。",
+     "point": "complaint の後"
+    },
+    {
+     "q": "What is indicated about customer service?",
+     "choices": [
+      "It responded promptly.",
+      "It offered a refund.",
+      "It sent a new machine.",
+      "It did not reply."
+     ],
+     "exp": "すぐに返信があり、このモデルでは正常だと答えた。",
+     "point": "quickly replied → promptly"
+    }
+   ]
+  },
+  {
+   "id": "r037",
+   "title": "Notice: Train service changes",
+   "passage": "Due to track improvement work, Northline train service between Ashford and Milton will be suspended on the weekends of March 8–9 and March 15–16. Free shuttle buses will run between all affected stations every 15 minutes. Passengers should allow up to 40 minutes of additional travel time. Weekday service will not be affected. Tickets and monthly passes will be accepted on the shuttle buses. Passengers traveling with bicycles are advised to use alternative routes, as bicycles cannot be carried on the buses. Updated timetables are available at all stations and on the Northline mobile app.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "Why will train service be suspended?",
+     "choices": [
+      "Tracks are being improved.",
+      "A station is being built.",
+      "There is a staff shortage.",
+      "Trains are being replaced."
+     ],
+     "exp": "線路の改良工事のため。",
+     "point": "Due to の後に理由"
+    },
+    {
+     "q": "What is suggested about the shuttle buses?",
+     "choices": [
+      "Passengers can ride them with their train tickets.",
+      "They charge a small fee.",
+      "They run only once an hour.",
+      "They allow bicycles."
+     ],
+     "exp": "乗車券・定期券が使える。15分ごとに運行し、自転車は持ち込めない。",
+     "point": "accepted on the shuttle buses"
+    },
+    {
+     "q": "What are passengers with bicycles advised to do?",
+     "choices": [
+      "Use a different route",
+      "Board the first bus",
+      "Buy a special ticket",
+      "Travel on weekdays only"
+     ],
+     "exp": "自転車はバスに載せられないので別のルートを使うよう勧めている。",
+     "point": "advised to ～"
+    }
+   ]
+  },
+  {
+   "id": "r038",
+   "title": "E-mail: Conference feedback",
+   "passage": "Dear Dr. Mensah, Thank you for speaking at the Regional Health Innovation Conference last week. Your session on remote patient monitoring was one of the most highly rated of the event, with 92 percent of attendees describing it as \"very useful.\" Several participants asked whether your slides could be shared. With your permission, we would like to post them on the conference Web site, where they will be available only to registered attendees. We would also be delighted if you would consider joining our advisory panel for next year's conference. The panel meets online four times a year. Warm regards, Lena Fischer, Conference Director",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What is indicated about Dr. Mensah's session?",
+     "choices": [
+      "It was very popular.",
+      "It was canceled.",
+      "It ran longer than planned.",
+      "It was held online."
+     ],
+     "exp": "最も評価の高いセッションの一つで、92%が「とても役立つ」と回答。",
+     "point": "most highly rated"
+    },
+    {
+     "q": "What does Ms. Fischer ask permission to do?",
+     "choices": [
+      "Post the slides online",
+      "Record a video",
+      "Publish an article",
+      "Change the session time"
+     ],
+     "exp": "スライドを会議の Web サイトに掲載したいと許可を求めている。",
+     "point": "With your permission"
+    },
+    {
+     "q": "What is Dr. Mensah invited to do?",
+     "choices": [
+      "Join an advisory group",
+      "Organize next year's event",
+      "Write a book",
+      "Lead a workshop abroad"
+     ],
+     "exp": "来年の会議の諮問委員会への参加を依頼している。",
+     "point": "advisory panel → advisory group"
+    }
+   ]
+  },
+  {
+   "id": "r039",
+   "title": "Form: Event registration",
+   "passage": "Marlow City Half Marathon — Registration Form. Event date: Sunday, May 12. Start time: 7:30 A.M. Registration fee: $40 until April 1; $55 after April 1. Name: Daniel Brooks. Age group: 30–39. T-shirt size: Large. Emergency contact: Laura Brooks, 555-0193. Payment method: Credit card. Date submitted: March 20. Note: Race packets, including your number and T-shirt, can be picked up at City Sports Center on May 10 or 11.",
+   "level": 1,
+   "questions": [
+    {
+     "q": "How much did Mr. Brooks most likely pay?",
+     "choices": [
+      "$40",
+      "$55",
+      "$30",
+      "$95"
+     ],
+     "exp": "4月1日より前の3月20日に申し込んでいるので40ドル。",
+     "point": "日付と料金を照合"
+    },
+    {
+     "q": "Who is Laura Brooks?",
+     "choices": [
+      "An emergency contact",
+      "A race organizer",
+      "A sports center employee",
+      "A fellow runner"
+     ],
+     "exp": "Emergency contact の欄に書かれている。",
+     "point": "欄の見出しを確認"
+    },
+    {
+     "q": "When can runners pick up their race packets?",
+     "choices": [
+      "Before the race day",
+      "On the morning of the race",
+      "After the race",
+      "On April 1"
+     ],
+     "exp": "大会2日前と前日（5月10日・11日）に受け取れる。",
+     "point": "Note の内容"
+    }
+   ]
+  },
+  {
+   "id": "r040",
+   "title": "Article: Museum membership",
+   "passage": "The Halvorsen Museum of Art has seen its membership rise by 35 percent this year, reaching a record 12,000 members. Museum director Carlos Ibáñez credits the growth to a new program that offers members early access to special exhibitions and monthly evening events featuring live music. The museum also introduced a lower-priced membership for people under 30, which accounts for nearly a third of new sign-ups. Revenue from memberships now covers about 20 percent of the museum's operating budget, reducing its reliance on government funding. Next year, the museum plans to add online lectures for members who live outside the city.",
+   "level": 3,
+   "questions": [
+    {
+     "q": "What is the article mainly about?",
+     "choices": [
+      "An increase in museum members",
+      "The opening of a new exhibition",
+      "A change in museum directors",
+      "Government cuts to arts funding"
+     ],
+     "exp": "会員数が35%増え過去最高になった話題。",
+     "point": "第1文が主題"
+    },
+    {
+     "q": "What is mentioned about the membership for people under 30?",
+     "choices": [
+      "It has attracted many new members.",
+      "It includes free parking.",
+      "It will end next year.",
+      "It costs the same as other memberships."
+     ],
+     "exp": "新規加入のほぼ3分の1を占める。",
+     "point": "accounts for nearly a third"
+    },
+    {
+     "q": "What does the museum plan to offer next year?",
+     "choices": [
+      "Online lectures",
+      "Free admission for everyone",
+      "A second location",
+      "Overseas tours"
+     ],
+     "exp": "市外在住の会員向けにオンライン講座を加える予定。",
+     "point": "Next year の文"
+    }
+   ]
   }
  ]
 }
