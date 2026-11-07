@@ -79,7 +79,9 @@ function load() {
   return s;
 }
 function save() {
+  S.savedAt = Date.now();
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) {}
+  window.dispatchEvent(new Event("toeic:saved")); // sync.js がPC・スマホ間で同期
 }
 function today(offset = 0) {
   const d = new Date();
@@ -719,9 +721,10 @@ async function settings() {
         <div class="muted">試験の2週間前になると、定着済みの問題も1回ずつ復習に戻して再確認します。この端末だけに保存されます。</div>
         <input type="date" id="exam" class="input" value="${esc(S.examDate || "")}">
       </div>
+      <div id="syncCard"></div>
       <div class="card">
         <h2>GitHubのトークン</h2>
-        <div class="muted">設定を保存するために最初に1回だけ入力します。この端末の中だけに保存されます。作り方はREADMEを見てください。</div>
+        <div class="muted">通知の設定の保存と、記録の同期に使います。各端末で最初に1回だけ入力します。その端末の中だけに保存されます。作り方はREADMEを見てください。</div>
         <input type="password" id="token" class="input" placeholder="github_pat_..." value="${esc(getToken())}" autocomplete="off">
       </div>
       ${msg ? `<div class="exp">${msg}</div>` : ""}
