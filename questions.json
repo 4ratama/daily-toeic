@@ -4634,6 +4634,314 @@
    "tag": "品詞",
    "point": "fully operational「完全稼働して」",
    "level": 2
+  },
+  {
+   "id": "g332",
+   "q": "The museum's new exhibit has attracted a _____ number of visitors.",
+   "choices": [
+    "record",
+    "recorded",
+    "recording",
+    "records"
+   ],
+   "exp": "record は形容詞的に「記録的な」。",
+   "tag": "品詞",
+   "point": "a record number of ～「記録的な数の～」",
+   "level": 2
+  },
+  {
+   "id": "g333",
+   "q": "Any questions _____ the new policy should be directed to the human resources department.",
+   "choices": [
+    "regarding",
+    "regarded",
+    "regard",
+    "regards to"
+   ],
+   "exp": "前置詞として使える regarding。regards to は誤り（with regard to が正しい）。",
+   "tag": "品詞",
+   "point": "regarding ～「～に関して」",
+   "level": 2
+  },
+  {
+   "id": "g334",
+   "q": "The hotel's new spa has proven _____ popular with guests.",
+   "choices": [
+    "enormously",
+    "enormous",
+    "enormity",
+    "enormousness"
+   ],
+   "exp": "形容詞 popular を修飾する副詞。",
+   "tag": "品詞",
+   "point": "enormously popular「非常に人気がある」",
+   "level": 2
+  },
+  {
+   "id": "g335",
+   "q": "The museum is planning to _____ a new wing next year.",
+   "choices": [
+    "inaugurate",
+    "inaugural",
+    "inauguration",
+    "inaugurated"
+   ],
+   "exp": "to の後で動詞が必要。inaugural は形容詞。",
+   "tag": "品詞",
+   "point": "inaugurate「開設する、正式に開始する」",
+   "level": 3
+  },
+  {
+   "id": "g336",
+   "q": "The hotel staff did everything they could to make our stay _____.",
+   "choices": [
+    "enjoyable",
+    "enjoyment",
+    "enjoying",
+    "enjoys"
+   ],
+   "exp": "make O C の C は形容詞 enjoyable。",
+   "tag": "品詞",
+   "point": "make A enjoyable「A を楽しいものにする」",
+   "level": 1
+  },
+  {
+   "id": "g337",
+   "q": "The airline was _____ for its poor handling of the delays.",
+   "choices": [
+    "criticized",
+    "critiqued up",
+    "critical",
+    "critic"
+   ],
+   "exp": "受動態で過去分詞 criticized。",
+   "tag": "品詞",
+   "point": "be criticized for ～「～で批判される」",
+   "level": 1
+  },
+  {
+   "id": "g338",
+   "q": "The training manual is _____ revised to reflect changes in procedure.",
+   "choices": [
+    "regularly",
+    "regular",
+    "regulate",
+    "regulation"
+   ],
+   "exp": "過去分詞を修飾する副詞。",
+   "tag": "品詞",
+   "point": "regularly revised「定期的に改訂される」",
+   "level": 1
+  },
+  {
+   "id": "g339",
+   "q": "The company has decided to _____ its contract with the cleaning service.",
+   "choices": [
+    "terminate",
+    "terminal",
+    "terminology",
+    "terminus"
+   ],
+   "exp": "to の後で動詞 terminate。",
+   "tag": "品詞",
+   "point": "terminate a contract「契約を解除する」",
+   "level": 2
+  },
+  {
+   "id": "g340",
+   "q": "The CEO _____ employees for their patience during the restructuring.",
+   "choices": [
+    "thanked",
+    "thank",
+    "thanks",
+    "thankful"
+   ],
+   "exp": "文の動詞が必要で過去形 thanked。",
+   "tag": "品詞",
+   "point": "thank A for B「B のことで A に感謝する」",
+   "level": 1
+  },
+  {
+   "id": "g341",
+   "q": "The company's _____ debt has raised concerns among investors.",
+   "choices": [
+    "mounting",
+    "mounted",
+    "mountain",
+    "mount"
+   ],
+   "exp": "mounting は「増大する」で名詞 debt を修飾する。",
+   "tag": "品詞",
+   "point": "mounting debt「増え続ける負債」",
+   "level": 3
+  },
+  {
+   "id": "g342",
+   "q": "The new manager has a _____ attitude toward employee suggestions.",
+   "choices": [
+    "receptive",
+    "reception",
+    "receptionist",
+    "receptor"
+   ],
+   "exp": "名詞 attitude を修飾する形容詞 receptive。",
+   "tag": "品詞",
+   "point": "receptive to ～「～を受け入れる姿勢の」",
+   "level": 3
+  },
+  {
+   "id": "g343",
+   "q": "The museum's new exhibit _____ the history of the city's port.",
+   "choices": [
+    "chronicles",
+    "chronic",
+    "chronology",
+    "chronicled by"
+   ],
+   "exp": "動詞が必要で三単現 chronicles。chronic は形容詞「慢性の」。",
+   "tag": "品詞",
+   "point": "chronicle「年代順に記録する、たどる」",
+   "level": 3
+  },
+  {
+   "id": "g344",
+   "q": "Our office is closed on weekends and _____ holidays.",
+   "choices": [
+    "public",
+    "publicity",
+    "publicly",
+    "publish"
+   ],
+   "exp": "名詞 holidays を修飾する形容詞 public。",
+   "tag": "品詞",
+   "point": "public holidays「祝日」",
+   "level": 1
+  },
+  {
+   "id": "g345",
+   "q": "The company's success is _____ to its loyal customer base.",
+   "choices": [
+    "attributable",
+    "attributive",
+    "attribute",
+    "attributed by"
+   ],
+   "exp": "be の後で形容詞が必要。attributable to は「～のおかげである」。",
+   "tag": "品詞",
+   "point": "attributable to ～「～に起因する」",
+   "level": 3
+  },
+  {
+   "id": "g346",
+   "q": "The consultant suggested several ways to _____ the company's supply chain.",
+   "choices": [
+    "optimize",
+    "optimist",
+    "optimum",
+    "optimistic"
+   ],
+   "exp": "to の後で動詞が必要。",
+   "tag": "品詞",
+   "point": "optimize「最適化する」",
+   "level": 2
+  },
+  {
+   "id": "g347",
+   "q": "The supplier's prices are _____ higher than those of its competitors.",
+   "choices": [
+    "marginally",
+    "marginal",
+    "margin",
+    "marginalize"
+   ],
+   "exp": "比較級を修飾し「わずかに」は marginally。",
+   "tag": "品詞",
+   "point": "marginally higher「わずかに高い」",
+   "level": 3
+  },
+  {
+   "id": "g348",
+   "q": "Our new office building is _____ to open next spring.",
+   "choices": [
+    "scheduled",
+    "schedule",
+    "scheduling",
+    "schedules"
+   ],
+   "exp": "受動態で過去分詞 scheduled。",
+   "tag": "品詞",
+   "point": "be scheduled to do「～する予定である」",
+   "level": 1
+  },
+  {
+   "id": "g349",
+   "q": "The company's spokesperson _____ that the layoffs were temporary.",
+   "choices": [
+    "maintained",
+    "maintenance",
+    "maintainable",
+    "maintains of"
+   ],
+   "exp": "that 節を取って「主張する」は maintain。",
+   "tag": "品詞",
+   "point": "maintain that ～「～と主張する」",
+   "level": 3
+  },
+  {
+   "id": "g350",
+   "q": "The firm's financial position remains _____ despite the recession.",
+   "choices": [
+    "sound",
+    "soundly",
+    "sounding",
+    "sounds"
+   ],
+   "exp": "remain の補語になる形容詞 sound「健全な」。",
+   "tag": "品詞",
+   "point": "financially sound「財務的に健全な」",
+   "level": 2
+  },
+  {
+   "id": "g351",
+   "q": "The CEO's speech was met with _____ applause.",
+   "choices": [
+    "thunderous",
+    "thundered",
+    "thunderstruck",
+    "thundering at"
+   ],
+   "exp": "thunderous は「雷のような」。",
+   "tag": "品詞",
+   "point": "thunderous applause「割れんばかりの拍手」",
+   "level": 3
+  },
+  {
+   "id": "g352",
+   "q": "The board members were _____ divided over the proposal.",
+   "choices": [
+    "sharply",
+    "sharp",
+    "sharpen",
+    "sharpness"
+   ],
+   "exp": "過去分詞 divided を修飾する副詞 sharply。",
+   "tag": "品詞",
+   "point": "sharply divided「真っ二つに分かれて」",
+   "level": 2
+  },
+  {
+   "id": "g353",
+   "q": "The new policy aims to _____ a better work-life balance.",
+   "choices": [
+    "promote",
+    "promotion",
+    "promoter",
+    "promotional"
+   ],
+   "exp": "to の後で動詞が必要。",
+   "tag": "品詞",
+   "point": "promote「促進する」",
+   "level": 1
   }
  ],
  "vocab": [
@@ -6641,19 +6949,6 @@
   },
   {
    "id": "v155",
-   "q": "The museum's new exhibit has attracted a _____ number of visitors.",
-   "choices": [
-    "record",
-    "recorded",
-    "recording",
-    "records"
-   ],
-   "exp": "record は形容詞的に「記録的な」。",
-   "point": "a record number of ～「記録的な数の～」",
-   "level": 2
-  },
-  {
-   "id": "v156",
    "q": "Our company prides _____ on the quality of its products.",
    "choices": [
     "itself",
@@ -6666,7 +6961,7 @@
    "level": 1
   },
   {
-   "id": "v157",
+   "id": "v156",
    "q": "This coupon is valid _____ purchases made before December 31.",
    "choices": [
     "for",
@@ -6679,7 +6974,7 @@
    "level": 1
   },
   {
-   "id": "v158",
+   "id": "v157",
    "q": "The deadline for applications has been _____ until March 15.",
    "choices": [
     "extended",
@@ -6692,7 +6987,7 @@
    "level": 1
   },
   {
-   "id": "v159",
+   "id": "v158",
    "q": "Staff members are _____ encouraged to attend the safety workshop.",
    "choices": [
     "strongly",
@@ -6705,7 +7000,7 @@
    "level": 1
   },
   {
-   "id": "v160",
+   "id": "v159",
    "q": "The company plans to _____ its operations into Southeast Asia.",
    "choices": [
     "expand",
@@ -6718,7 +7013,7 @@
    "level": 2
   },
   {
-   "id": "v161",
+   "id": "v160",
    "q": "Ms. Patel was _____ as the most valuable employee of the year.",
    "choices": [
     "recognized",
@@ -6731,7 +7026,7 @@
    "level": 2
   },
   {
-   "id": "v162",
+   "id": "v161",
    "q": "The store will be closed _____ the national holiday.",
    "choices": [
     "in observance of",
@@ -6744,7 +7039,7 @@
    "level": 3
   },
   {
-   "id": "v163",
+   "id": "v162",
    "q": "The new equipment has significantly _____ the efficiency of the assembly line.",
    "choices": [
     "improved",
@@ -6757,7 +7052,7 @@
    "level": 1
   },
   {
-   "id": "v164",
+   "id": "v163",
    "q": "The company has a strict _____ regarding the use of personal devices at work.",
    "choices": [
     "policy",
@@ -6770,7 +7065,7 @@
    "level": 1
   },
   {
-   "id": "v165",
+   "id": "v164",
    "q": "The two departments will _____ on the development of the new software.",
    "choices": [
     "collaborate",
@@ -6783,7 +7078,7 @@
    "level": 2
   },
   {
-   "id": "v166",
+   "id": "v165",
    "q": "The marketing campaign was a _____ success.",
    "choices": [
     "resounding",
@@ -6796,7 +7091,7 @@
    "level": 3
   },
   {
-   "id": "v167",
+   "id": "v166",
    "q": "The company's annual revenue _____ $10 million for the first time.",
    "choices": [
     "exceeded",
@@ -6809,7 +7104,7 @@
    "level": 2
   },
   {
-   "id": "v168",
+   "id": "v167",
    "q": "Our office supplies are running _____, so please order more.",
    "choices": [
     "low",
@@ -6822,7 +7117,7 @@
    "level": 2
   },
   {
-   "id": "v169",
+   "id": "v168",
    "q": "Candidates will be _____ on their communication and problem-solving skills.",
    "choices": [
     "evaluated",
@@ -6835,7 +7130,7 @@
    "level": 2
   },
   {
-   "id": "v170",
+   "id": "v169",
    "q": "_____ to the trade fair is free for registered members.",
    "choices": [
     "Admission",
@@ -6848,7 +7143,7 @@
    "level": 2
   },
   {
-   "id": "v171",
+   "id": "v170",
    "q": "The board will _____ a final decision at next week's meeting.",
    "choices": [
     "reach",
@@ -6861,7 +7156,7 @@
    "level": 1
   },
   {
-   "id": "v172",
+   "id": "v171",
    "q": "The keynote speaker _____ the audience with her inspiring story.",
    "choices": [
     "captivated",
@@ -6874,7 +7169,7 @@
    "level": 3
   },
   {
-   "id": "v173",
+   "id": "v172",
    "q": "The research team has made significant _____ in cancer treatment.",
    "choices": [
     "advances",
@@ -6887,7 +7182,7 @@
    "level": 2
   },
   {
-   "id": "v174",
+   "id": "v173",
    "q": "Please _____ your seat belts while the sign is illuminated.",
    "choices": [
     "fasten",
@@ -6900,7 +7195,7 @@
    "level": 1
   },
   {
-   "id": "v175",
+   "id": "v174",
    "q": "The sales team exceeded _____ quota for the third quarter.",
    "choices": [
     "its",
@@ -6913,7 +7208,7 @@
    "level": 1
   },
   {
-   "id": "v176",
+   "id": "v175",
    "q": "The manual provides step-by-step _____ for assembling the furniture.",
    "choices": [
     "instructions",
@@ -6926,7 +7221,7 @@
    "level": 1
   },
   {
-   "id": "v177",
+   "id": "v176",
    "q": "Due to rising costs, the company had no _____ but to raise prices.",
    "choices": [
     "choice",
@@ -6939,7 +7234,7 @@
    "level": 2
   },
   {
-   "id": "v178",
+   "id": "v177",
    "q": "The new parking regulations will be strictly _____.",
    "choices": [
     "enforced",
@@ -6952,7 +7247,7 @@
    "level": 2
   },
   {
-   "id": "v179",
+   "id": "v178",
    "q": "The company _____ a 15 percent increase in profits this year.",
    "choices": [
     "reported",
@@ -6965,7 +7260,7 @@
    "level": 1
   },
   {
-   "id": "v180",
+   "id": "v179",
    "q": "We appreciate your _____ in this matter.",
    "choices": [
     "cooperation",
@@ -6978,7 +7273,7 @@
    "level": 1
   },
   {
-   "id": "v181",
+   "id": "v180",
    "q": "The CFO warned that the company's cash reserves were being _____ at an alarming rate.",
    "choices": [
     "depleted",
@@ -6991,7 +7286,7 @@
    "level": 3
   },
   {
-   "id": "v182",
+   "id": "v181",
    "q": "The consultant's recommendations were _____ to the company's actual needs.",
    "choices": [
     "tailored",
@@ -7004,7 +7299,7 @@
    "level": 2
   },
   {
-   "id": "v183",
+   "id": "v182",
    "q": "Ms. Ndiaye has _____ a reputation as one of the most reliable suppliers in the region.",
    "choices": [
     "earned",
@@ -7017,7 +7312,7 @@
    "level": 1
   },
   {
-   "id": "v184",
+   "id": "v183",
    "q": "The company will _____ a hiring freeze until the end of the fiscal year.",
    "choices": [
     "impose",
@@ -7030,7 +7325,7 @@
    "level": 2
   },
   {
-   "id": "v185",
+   "id": "v184",
    "q": "Because of the strike, deliveries may be _____ by up to a week.",
    "choices": [
     "delayed",
@@ -7043,7 +7338,7 @@
    "level": 1
   },
   {
-   "id": "v186",
+   "id": "v185",
    "q": "The firm's quarterly earnings fell _____ of analysts' expectations.",
    "choices": [
     "short",
@@ -7056,7 +7351,7 @@
    "level": 2
   },
   {
-   "id": "v187",
+   "id": "v186",
    "q": "The new software _____ users to track their expenses in real time.",
    "choices": [
     "enables",
@@ -7069,7 +7364,7 @@
    "level": 2
   },
   {
-   "id": "v188",
+   "id": "v187",
    "q": "The landlord agreed to _____ the rent by ten percent if we signed a three-year lease.",
    "choices": [
     "lower",
@@ -7082,7 +7377,7 @@
    "level": 1
   },
   {
-   "id": "v189",
+   "id": "v188",
    "q": "We are pleased to _____ that Dr. Haruka Ito will join our research team.",
    "choices": [
     "announce",
@@ -7095,7 +7390,7 @@
    "level": 1
   },
   {
-   "id": "v190",
+   "id": "v189",
    "q": "The bank requires two forms of identification to _____ an account.",
    "choices": [
     "open",
@@ -7108,7 +7403,7 @@
    "level": 1
   },
   {
-   "id": "v191",
+   "id": "v190",
    "q": "The delivery truck was _____ in heavy traffic for over an hour.",
    "choices": [
     "stuck",
@@ -7121,7 +7416,7 @@
    "level": 1
   },
   {
-   "id": "v192",
+   "id": "v191",
    "q": "Ms. Alvarez _____ the importance of meeting deadlines in her opening remarks.",
    "choices": [
     "underscored",
@@ -7134,7 +7429,7 @@
    "level": 3
   },
   {
-   "id": "v193",
+   "id": "v192",
    "q": "The museum _____ a small fee for special exhibitions.",
    "choices": [
     "charges",
@@ -7147,7 +7442,7 @@
    "level": 1
   },
   {
-   "id": "v194",
+   "id": "v193",
    "q": "The supplier has _____ that the order will arrive by Tuesday.",
    "choices": [
     "guaranteed",
@@ -7160,7 +7455,7 @@
    "level": 2
   },
   {
-   "id": "v195",
+   "id": "v194",
    "q": "Several employees _____ interest in the leadership training program.",
    "choices": [
     "expressed",
@@ -7173,7 +7468,7 @@
    "level": 1
   },
   {
-   "id": "v196",
+   "id": "v195",
    "q": "Unauthorized _____ of company software is strictly prohibited.",
    "choices": [
     "duplication",
@@ -7186,7 +7481,7 @@
    "level": 3
   },
   {
-   "id": "v197",
+   "id": "v196",
    "q": "The company's founder remains actively _____ in day-to-day decisions.",
    "choices": [
     "involved",
@@ -7199,7 +7494,7 @@
    "level": 1
   },
   {
-   "id": "v198",
+   "id": "v197",
    "q": "Please allow three to five business days for your order to be _____.",
    "choices": [
     "processed",
@@ -7212,7 +7507,7 @@
    "level": 2
   },
   {
-   "id": "v199",
+   "id": "v198",
    "q": "The city plans to _____ the old factory into an art center.",
    "choices": [
     "convert",
@@ -7225,7 +7520,7 @@
    "level": 2
   },
   {
-   "id": "v200",
+   "id": "v199",
    "q": "Mr. Okoye's proposal received _____ support from the committee.",
    "choices": [
     "unanimous",
@@ -7238,7 +7533,7 @@
    "level": 2
   },
   {
-   "id": "v201",
+   "id": "v200",
    "q": "The manufacturer has _____ production of its older models.",
    "choices": [
     "ceased",
@@ -7251,7 +7546,7 @@
    "level": 2
   },
   {
-   "id": "v202",
+   "id": "v201",
    "q": "The new regulations are intended to _____ consumers from unfair pricing.",
    "choices": [
     "protect",
@@ -7264,7 +7559,7 @@
    "level": 2
   },
   {
-   "id": "v203",
+   "id": "v202",
    "q": "The contract _____ that all work must be completed by June 30.",
    "choices": [
     "stipulates",
@@ -7277,7 +7572,7 @@
    "level": 3
   },
   {
-   "id": "v204",
+   "id": "v203",
    "q": "Applicants who meet the requirements will be _____ for an interview.",
    "choices": [
     "contacted",
@@ -7290,7 +7585,7 @@
    "level": 1
   },
   {
-   "id": "v205",
+   "id": "v204",
    "q": "The company spokesperson declined to _____ on the rumors.",
    "choices": [
     "comment",
@@ -7303,7 +7598,7 @@
    "level": 1
   },
   {
-   "id": "v206",
+   "id": "v205",
    "q": "The training program is designed to help employees _____ their full potential.",
    "choices": [
     "reach",
@@ -7316,7 +7611,7 @@
    "level": 2
   },
   {
-   "id": "v207",
+   "id": "v206",
    "q": "The publisher has _____ the release of the book until next spring.",
    "choices": [
     "postponed",
@@ -7329,20 +7624,7 @@
    "level": 1
   },
   {
-   "id": "v208",
-   "q": "Any questions _____ the new policy should be directed to the human resources department.",
-   "choices": [
-    "regarding",
-    "regarded",
-    "regard",
-    "regards to"
-   ],
-   "exp": "前置詞として使える regarding。regards to は誤り（with regard to が正しい）。",
-   "point": "regarding ～「～に関して」",
-   "level": 2
-  },
-  {
-   "id": "v209",
+   "id": "v207",
    "q": "The new branch will initially _____ a staff of twenty.",
    "choices": [
     "employ",
@@ -7355,7 +7637,7 @@
    "level": 1
   },
   {
-   "id": "v210",
+   "id": "v208",
    "q": "The company's success can be _____ to its focus on innovation.",
    "choices": [
     "traced",
@@ -7368,7 +7650,7 @@
    "level": 3
   },
   {
-   "id": "v211",
+   "id": "v209",
    "q": "The keynote address will be followed by a _____ discussion.",
    "choices": [
     "panel",
@@ -7381,7 +7663,7 @@
    "level": 1
   },
   {
-   "id": "v212",
+   "id": "v210",
    "q": "The financial report must be _____ by an independent auditor.",
    "choices": [
     "reviewed",
@@ -7394,7 +7676,7 @@
    "level": 1
   },
   {
-   "id": "v213",
+   "id": "v211",
    "q": "The bus service will be _____ during the holiday period.",
    "choices": [
     "reduced",
@@ -7407,7 +7689,7 @@
    "level": 2
   },
   {
-   "id": "v214",
+   "id": "v212",
    "q": "The company has introduced flexible working hours to _____ employee morale.",
    "choices": [
     "boost",
@@ -7420,7 +7702,7 @@
    "level": 1
   },
   {
-   "id": "v215",
+   "id": "v213",
    "q": "_____ your order, please call our customer service center.",
    "choices": [
     "To track",
@@ -7433,7 +7715,7 @@
    "level": 2
   },
   {
-   "id": "v216",
+   "id": "v214",
    "q": "The negotiations were _____ after both sides agreed to compromise.",
    "choices": [
     "concluded",
@@ -7446,7 +7728,7 @@
    "level": 2
   },
   {
-   "id": "v217",
+   "id": "v215",
    "q": "The new president has vowed to _____ the company's debt within three years.",
    "choices": [
     "eliminate",
@@ -7459,7 +7741,7 @@
    "level": 2
   },
   {
-   "id": "v218",
+   "id": "v216",
    "q": "Mr. Takahashi was _____ by the board to lead the restructuring effort.",
    "choices": [
     "chosen",
@@ -7472,7 +7754,7 @@
    "level": 1
   },
   {
-   "id": "v219",
+   "id": "v217",
    "q": "Our technicians are available _____ the clock to assist you.",
    "choices": [
     "around",
@@ -7485,7 +7767,7 @@
    "level": 1
   },
   {
-   "id": "v220",
+   "id": "v218",
    "q": "Prices for raw materials have _____ sharply in recent months.",
    "choices": [
     "soared",
@@ -7498,7 +7780,7 @@
    "level": 2
   },
   {
-   "id": "v221",
+   "id": "v219",
    "q": "Hotel guests may _____ their valuables in the safe at the front desk.",
    "choices": [
     "deposit",
@@ -7511,7 +7793,7 @@
    "level": 2
   },
   {
-   "id": "v222",
+   "id": "v220",
    "q": "The software developer released a _____ to fix the security flaw.",
    "choices": [
     "patch",
@@ -7524,7 +7806,7 @@
    "level": 2
   },
   {
-   "id": "v223",
+   "id": "v221",
    "q": "Our office will be _____ to a new location next month.",
    "choices": [
     "relocated",
@@ -7537,7 +7819,7 @@
    "level": 2
   },
   {
-   "id": "v224",
+   "id": "v222",
    "q": "The government has introduced new measures to _____ economic growth.",
    "choices": [
     "stimulate",
@@ -7550,7 +7832,7 @@
    "level": 2
   },
   {
-   "id": "v225",
+   "id": "v223",
    "q": "The company has _____ an agreement with a local university to share research.",
    "choices": [
     "forged",
@@ -7563,7 +7845,7 @@
    "level": 3
   },
   {
-   "id": "v226",
+   "id": "v224",
    "q": "Please notify the front desk if you require a wake-up _____.",
    "choices": [
     "call",
@@ -7576,7 +7858,7 @@
    "level": 1
   },
   {
-   "id": "v227",
+   "id": "v225",
    "q": "The company is _____ its customer service operations to improve response times.",
    "choices": [
     "restructuring",
@@ -7589,7 +7871,7 @@
    "level": 2
   },
   {
-   "id": "v228",
+   "id": "v226",
    "q": "The hotel is _____ booked during the festival, so reserve early.",
    "choices": [
     "typically",
@@ -7602,7 +7884,7 @@
    "level": 2
   },
   {
-   "id": "v229",
+   "id": "v227",
    "q": "The new manager quickly _____ a good relationship with her staff.",
    "choices": [
     "established",
@@ -7615,7 +7897,7 @@
    "level": 2
   },
   {
-   "id": "v230",
+   "id": "v228",
    "q": "Customers can _____ their orders online at any time.",
    "choices": [
     "track",
@@ -7628,7 +7910,7 @@
    "level": 1
   },
   {
-   "id": "v231",
+   "id": "v229",
    "q": "The proposal will be _____ to a vote at the next meeting.",
    "choices": [
     "put",
@@ -7641,7 +7923,7 @@
    "level": 2
   },
   {
-   "id": "v232",
+   "id": "v230",
    "q": "Unfortunately, the item you requested has been _____.",
    "choices": [
     "discontinued",
@@ -7654,7 +7936,7 @@
    "level": 2
   },
   {
-   "id": "v233",
+   "id": "v231",
    "q": "The museum's guided tours are conducted in several _____.",
    "choices": [
     "languages",
@@ -7667,7 +7949,7 @@
    "level": 1
   },
   {
-   "id": "v234",
+   "id": "v232",
    "q": "Employees who wish to work remotely must _____ a request to their supervisor.",
    "choices": [
     "submit",
@@ -7680,7 +7962,7 @@
    "level": 1
   },
   {
-   "id": "v235",
+   "id": "v233",
    "q": "The airline has added more flights to _____ the increase in demand.",
    "choices": [
     "meet",
@@ -7693,7 +7975,7 @@
    "level": 2
   },
   {
-   "id": "v236",
+   "id": "v234",
    "q": "The new shopping center is expected to _____ thousands of visitors every week.",
    "choices": [
     "draw",
@@ -7706,7 +7988,7 @@
    "level": 2
   },
   {
-   "id": "v237",
+   "id": "v235",
    "q": "The company's stock price has _____ since the announcement.",
    "choices": [
     "plummeted",
@@ -7719,7 +8001,7 @@
    "level": 3
   },
   {
-   "id": "v238",
+   "id": "v236",
    "q": "The team worked _____ to meet the tight deadline.",
    "choices": [
     "tirelessly",
@@ -7732,7 +8014,7 @@
    "level": 2
   },
   {
-   "id": "v239",
+   "id": "v237",
    "q": "The company has _____ a new marketing strategy aimed at young adults.",
    "choices": [
     "devised",
@@ -7745,7 +8027,7 @@
    "level": 2
   },
   {
-   "id": "v240",
+   "id": "v238",
    "q": "The company _____ its employees with free lunches on Fridays.",
    "choices": [
     "provides",
@@ -7758,7 +8040,7 @@
    "level": 2
   },
   {
-   "id": "v241",
+   "id": "v239",
    "q": "The director gave a brief _____ of the company's history.",
    "choices": [
     "overview",
@@ -7771,7 +8053,7 @@
    "level": 1
   },
   {
-   "id": "v242",
+   "id": "v240",
    "q": "The new CEO intends to _____ the company's struggling retail division.",
    "choices": [
     "overhaul",
@@ -7784,7 +8066,7 @@
    "level": 3
   },
   {
-   "id": "v243",
+   "id": "v241",
    "q": "Several board members voiced _____ about the cost of the expansion.",
    "choices": [
     "reservations",
@@ -7797,7 +8079,7 @@
    "level": 3
   },
   {
-   "id": "v244",
+   "id": "v242",
    "q": "The company _____ a loss of $3 million in the second quarter.",
    "choices": [
     "incurred",
@@ -7810,7 +8092,7 @@
    "level": 3
   },
   {
-   "id": "v245",
+   "id": "v243",
    "q": "The proposal was rejected on the _____ that it was too expensive.",
    "choices": [
     "grounds",
@@ -7823,7 +8105,7 @@
    "level": 2
   },
   {
-   "id": "v246",
+   "id": "v244",
    "q": "The new tax law will _____ small businesses the most.",
    "choices": [
     "affect",
@@ -7836,7 +8118,7 @@
    "level": 1
   },
   {
-   "id": "v247",
+   "id": "v245",
    "q": "Researchers are trying to _____ the cause of the equipment failure.",
    "choices": [
     "pinpoint",
@@ -7849,7 +8131,7 @@
    "level": 3
   },
   {
-   "id": "v248",
+   "id": "v246",
    "q": "The retailer has _____ its online presence by launching a mobile app.",
    "choices": [
     "strengthened",
@@ -7862,7 +8144,7 @@
    "level": 2
   },
   {
-   "id": "v249",
+   "id": "v247",
    "q": "Ms. Moreau's _____ of the report helped the team spot several errors.",
    "choices": [
     "proofreading",
@@ -7875,7 +8157,7 @@
    "level": 2
   },
   {
-   "id": "v250",
+   "id": "v248",
    "q": "Factory workers must _____ strict hygiene standards.",
    "choices": [
     "adhere to",
@@ -7888,7 +8170,7 @@
    "level": 2
   },
   {
-   "id": "v251",
+   "id": "v249",
    "q": "The two companies have been _____ rivals for decades.",
    "choices": [
     "fierce",
@@ -7901,7 +8183,7 @@
    "level": 2
   },
   {
-   "id": "v252",
+   "id": "v250",
    "q": "The financial crisis _____ many companies to cut jobs.",
    "choices": [
     "forced",
@@ -7914,7 +8196,7 @@
    "level": 1
   },
   {
-   "id": "v253",
+   "id": "v251",
    "q": "The CEO _____ that the company would return to profitability next year.",
    "choices": [
     "predicted",
@@ -7927,7 +8209,7 @@
    "level": 1
   },
   {
-   "id": "v254",
+   "id": "v252",
    "q": "Please _____ from smoking anywhere on the hospital grounds.",
    "choices": [
     "abstain",
@@ -7940,7 +8222,7 @@
    "level": 3
   },
   {
-   "id": "v255",
+   "id": "v253",
    "q": "The construction company won a _____ to build a new highway.",
    "choices": [
     "bid",
@@ -7953,7 +8235,7 @@
    "level": 2
   },
   {
-   "id": "v256",
+   "id": "v254",
    "q": "The board has _____ Ms. Ochoa as the next chief financial officer.",
    "choices": [
     "named",
@@ -7966,7 +8248,7 @@
    "level": 2
   },
   {
-   "id": "v257",
+   "id": "v255",
    "q": "The software automatically _____ your work every five minutes.",
    "choices": [
     "saves",
@@ -7979,7 +8261,7 @@
    "level": 1
   },
   {
-   "id": "v258",
+   "id": "v256",
    "q": "The company is _____ to delays because it relies on a single supplier.",
    "choices": [
     "vulnerable",
@@ -7992,7 +8274,7 @@
    "level": 3
   },
   {
-   "id": "v259",
+   "id": "v257",
    "q": "The agreement will remain in _____ for five years.",
    "choices": [
     "force",
@@ -8005,7 +8287,7 @@
    "level": 3
   },
   {
-   "id": "v260",
+   "id": "v258",
    "q": "The firm is known for its _____ approach to customer service.",
    "choices": [
     "proactive",
@@ -8018,7 +8300,7 @@
    "level": 2
   },
   {
-   "id": "v261",
+   "id": "v259",
    "q": "Due to the storm, the ferry service has been _____ for the day.",
    "choices": [
     "suspended",
@@ -8031,7 +8313,7 @@
    "level": 2
   },
   {
-   "id": "v262",
+   "id": "v260",
    "q": "The company is seeking to _____ its dependence on imported materials.",
    "choices": [
     "lessen",
@@ -8044,7 +8326,7 @@
    "level": 2
   },
   {
-   "id": "v263",
+   "id": "v261",
    "q": "Visitors are _____ to wear comfortable shoes for the walking tour.",
    "choices": [
     "advised",
@@ -8057,7 +8339,7 @@
    "level": 1
   },
   {
-   "id": "v264",
+   "id": "v262",
    "q": "The marketing campaign _____ a 20 percent increase in online sales.",
    "choices": [
     "generated",
@@ -8070,7 +8352,7 @@
    "level": 1
   },
   {
-   "id": "v265",
+   "id": "v263",
    "q": "The team leader _____ a meeting to discuss the client's complaints.",
    "choices": [
     "called",
@@ -8083,7 +8365,7 @@
    "level": 1
   },
   {
-   "id": "v266",
+   "id": "v264",
    "q": "The library has _____ its collection of digital books.",
    "choices": [
     "broadened",
@@ -8096,7 +8378,7 @@
    "level": 2
   },
   {
-   "id": "v267",
+   "id": "v265",
    "q": "Ms. Sanchez will _____ a workshop on effective presentation skills.",
    "choices": [
     "lead",
@@ -8109,7 +8391,7 @@
    "level": 1
   },
   {
-   "id": "v268",
+   "id": "v266",
    "q": "The company has _____ a new code of conduct for all employees.",
    "choices": [
     "drafted",
@@ -8122,7 +8404,7 @@
    "level": 2
   },
   {
-   "id": "v269",
+   "id": "v267",
    "q": "The defective products will be replaced _____ charge.",
    "choices": [
     "free of",
@@ -8135,7 +8417,7 @@
    "level": 2
   },
   {
-   "id": "v270",
+   "id": "v268",
    "q": "The new office is _____ larger than the old one.",
    "choices": [
     "considerably",
@@ -8148,7 +8430,7 @@
    "level": 2
   },
   {
-   "id": "v271",
+   "id": "v269",
    "q": "A _____ of the meeting will be sent to all participants.",
    "choices": [
     "summary",
@@ -8161,7 +8443,7 @@
    "level": 1
   },
   {
-   "id": "v272",
+   "id": "v270",
    "q": "The supplier promised to _____ the damaged goods free of charge.",
    "choices": [
     "replace",
@@ -8174,7 +8456,7 @@
    "level": 1
   },
   {
-   "id": "v273",
+   "id": "v271",
    "q": "The manager asked staff to _____ their vacation requests by the end of the month.",
    "choices": [
     "finalize",
@@ -8187,20 +8469,7 @@
    "level": 2
   },
   {
-   "id": "v274",
-   "q": "The hotel's new spa has proven _____ popular with guests.",
-   "choices": [
-    "enormously",
-    "enormous",
-    "enormity",
-    "enormousness"
-   ],
-   "exp": "形容詞 popular を修飾する副詞。",
-   "point": "enormously popular「非常に人気がある」",
-   "level": 2
-  },
-  {
-   "id": "v275",
+   "id": "v272",
    "q": "The company plans to _____ its headquarters to a more central location.",
    "choices": [
     "transfer",
@@ -8213,7 +8482,7 @@
    "level": 2
   },
   {
-   "id": "v276",
+   "id": "v273",
    "q": "The new safety procedures have been _____ by all departments.",
    "choices": [
     "adopted",
@@ -8226,7 +8495,7 @@
    "level": 2
   },
   {
-   "id": "v277",
+   "id": "v274",
    "q": "Customers can _____ a complaint through our online form.",
    "choices": [
     "file",
@@ -8239,7 +8508,7 @@
    "level": 2
   },
   {
-   "id": "v278",
+   "id": "v275",
    "q": "The quality control team _____ every product before it is shipped.",
    "choices": [
     "inspects",
@@ -8252,20 +8521,7 @@
    "level": 1
   },
   {
-   "id": "v279",
-   "q": "The museum is planning to _____ a new wing next year.",
-   "choices": [
-    "inaugurate",
-    "inaugural",
-    "inauguration",
-    "inaugurated"
-   ],
-   "exp": "to の後で動詞が必要。inaugural は形容詞。",
-   "point": "inaugurate「開設する、正式に開始する」",
-   "level": 3
-  },
-  {
-   "id": "v280",
+   "id": "v276",
    "q": "The financial advisor _____ clients on long-term investment strategies.",
    "choices": [
     "counsels",
@@ -8278,7 +8534,7 @@
    "level": 3
   },
   {
-   "id": "v281",
+   "id": "v277",
    "q": "The company has a _____ of hiring locally whenever possible.",
    "choices": [
     "practice",
@@ -8291,20 +8547,7 @@
    "level": 2
   },
   {
-   "id": "v282",
-   "q": "The hotel staff did everything they could to make our stay _____.",
-   "choices": [
-    "enjoyable",
-    "enjoyment",
-    "enjoying",
-    "enjoys"
-   ],
-   "exp": "make O C の C は形容詞 enjoyable。",
-   "point": "make A enjoyable「A を楽しいものにする」",
-   "level": 1
-  },
-  {
-   "id": "v283",
+   "id": "v278",
    "q": "The CEO's decision to step down _____ the entire industry.",
    "choices": [
     "stunned",
@@ -8317,7 +8560,7 @@
    "level": 3
   },
   {
-   "id": "v284",
+   "id": "v279",
    "q": "The software is _____ with both Windows and Mac computers.",
    "choices": [
     "compatible",
@@ -8330,7 +8573,7 @@
    "level": 2
   },
   {
-   "id": "v285",
+   "id": "v280",
    "q": "The company's growth has been _____ by a shortage of skilled workers.",
    "choices": [
     "constrained",
@@ -8343,7 +8586,7 @@
    "level": 3
   },
   {
-   "id": "v286",
+   "id": "v281",
    "q": "The new mall is expected to _____ the local economy.",
    "choices": [
     "revitalize",
@@ -8356,7 +8599,7 @@
    "level": 3
   },
   {
-   "id": "v287",
+   "id": "v282",
    "q": "Ms. Tanaka _____ the opportunity to work at the overseas office.",
    "choices": [
     "jumped at",
@@ -8369,7 +8612,7 @@
    "level": 2
   },
   {
-   "id": "v288",
+   "id": "v283",
    "q": "The proposal is still in the _____ stages of development.",
    "choices": [
     "early",
@@ -8382,7 +8625,7 @@
    "level": 1
   },
   {
-   "id": "v289",
+   "id": "v284",
    "q": "_____ hours for the store are 9 a.m. to 8 p.m.",
    "choices": [
     "Business",
@@ -8395,7 +8638,7 @@
    "level": 2
   },
   {
-   "id": "v290",
+   "id": "v285",
    "q": "The company has been _____ by its competitors in recent years.",
    "choices": [
     "outpaced",
@@ -8408,33 +8651,7 @@
    "level": 3
   },
   {
-   "id": "v291",
-   "q": "The airline was _____ for its poor handling of the delays.",
-   "choices": [
-    "criticized",
-    "critiqued up",
-    "critical",
-    "critic"
-   ],
-   "exp": "受動態で過去分詞 criticized。",
-   "point": "be criticized for ～「～で批判される」",
-   "level": 1
-  },
-  {
-   "id": "v292",
-   "q": "The training manual is _____ revised to reflect changes in procedure.",
-   "choices": [
-    "regularly",
-    "regular",
-    "regulate",
-    "regulation"
-   ],
-   "exp": "過去分詞を修飾する副詞。",
-   "point": "regularly revised「定期的に改訂される」",
-   "level": 1
-  },
-  {
-   "id": "v293",
+   "id": "v286",
    "q": "The development team has _____ several obstacles to complete the project.",
    "choices": [
     "overcome",
@@ -8447,7 +8664,7 @@
    "level": 2
   },
   {
-   "id": "v294",
+   "id": "v287",
    "q": "The consultant recommended that the company _____ its costs.",
    "choices": [
     "trim",
@@ -8460,7 +8677,7 @@
    "level": 2
   },
   {
-   "id": "v295",
+   "id": "v288",
    "q": "Our sales representatives will be happy to _____ any questions you may have.",
    "choices": [
     "answer",
@@ -8473,7 +8690,7 @@
    "level": 1
   },
   {
-   "id": "v296",
+   "id": "v289",
    "q": "The bank has _____ its branch network to cut costs.",
    "choices": [
     "scaled down",
@@ -8486,7 +8703,7 @@
    "level": 3
   },
   {
-   "id": "v297",
+   "id": "v290",
    "q": "The CEO received a standing _____ after her speech.",
    "choices": [
     "ovation",
@@ -8499,7 +8716,7 @@
    "level": 3
   },
   {
-   "id": "v298",
+   "id": "v291",
    "q": "The hotel's _____ location makes it popular with tourists.",
    "choices": [
     "central",
@@ -8512,7 +8729,7 @@
    "level": 1
   },
   {
-   "id": "v299",
+   "id": "v292",
    "q": "The company's founder is widely _____ as a pioneer in the industry.",
    "choices": [
     "regarded",
@@ -8525,7 +8742,7 @@
    "level": 2
   },
   {
-   "id": "v300",
+   "id": "v293",
    "q": "The museum _____ visitors from taking photographs inside the gallery.",
    "choices": [
     "prohibits",
@@ -8538,7 +8755,7 @@
    "level": 2
   },
   {
-   "id": "v301",
+   "id": "v294",
    "q": "The new product is aimed _____ busy professionals.",
    "choices": [
     "at",
@@ -8551,7 +8768,7 @@
    "level": 1
   },
   {
-   "id": "v302",
+   "id": "v295",
    "q": "The company's _____ to quality has earned it many loyal customers.",
    "choices": [
     "commitment",
@@ -8564,7 +8781,7 @@
    "level": 2
   },
   {
-   "id": "v303",
+   "id": "v296",
    "q": "The new policy has been _____ well by employees.",
    "choices": [
     "received",
@@ -8577,20 +8794,7 @@
    "level": 2
   },
   {
-   "id": "v304",
-   "q": "The company has decided to _____ its contract with the cleaning service.",
-   "choices": [
-    "terminate",
-    "terminal",
-    "terminology",
-    "terminus"
-   ],
-   "exp": "to の後で動詞 terminate。",
-   "point": "terminate a contract「契約を解除する」",
-   "level": 2
-  },
-  {
-   "id": "v305",
+   "id": "v297",
    "q": "The manager _____ the new employee to the rest of the team.",
    "choices": [
     "introduced",
@@ -8603,7 +8807,7 @@
    "level": 1
   },
   {
-   "id": "v306",
+   "id": "v298",
    "q": "The firm _____ to have the new factory operational by spring.",
    "choices": [
     "aims",
@@ -8616,7 +8820,7 @@
    "level": 2
   },
   {
-   "id": "v307",
+   "id": "v299",
    "q": "The store's sales have been _____ by the opening of a new supermarket nearby.",
    "choices": [
     "hurt",
@@ -8629,7 +8833,7 @@
    "level": 2
   },
   {
-   "id": "v308",
+   "id": "v300",
    "q": "The delivery service is available _____ within the city limits.",
    "choices": [
     "only",
@@ -8642,7 +8846,7 @@
    "level": 1
   },
   {
-   "id": "v309",
+   "id": "v301",
    "q": "Shareholders _____ the decision to sell the subsidiary.",
    "choices": [
     "endorsed",
@@ -8655,7 +8859,7 @@
    "level": 2
   },
   {
-   "id": "v310",
+   "id": "v302",
    "q": "The company aims to _____ its carbon emissions by 40 percent.",
    "choices": [
     "cut",
@@ -8668,7 +8872,7 @@
    "level": 1
   },
   {
-   "id": "v311",
+   "id": "v303",
    "q": "Ms. Robinson has a _____ for solving complex problems.",
    "choices": [
     "knack",
@@ -8681,7 +8885,7 @@
    "level": 3
   },
   {
-   "id": "v312",
+   "id": "v304",
    "q": "The CEO was _____ in his praise of the research team.",
    "choices": [
     "lavish",
@@ -8694,7 +8898,7 @@
    "level": 3
   },
   {
-   "id": "v313",
+   "id": "v305",
    "q": "The new regulations have _____ confusion among small business owners.",
    "choices": [
     "caused",
@@ -8707,7 +8911,7 @@
    "level": 1
   },
   {
-   "id": "v314",
+   "id": "v306",
    "q": "The recruitment agency will _____ suitable candidates for the position.",
    "choices": [
     "screen",
@@ -8720,7 +8924,7 @@
    "level": 2
   },
   {
-   "id": "v315",
+   "id": "v307",
    "q": "The company plans to _____ a new range of eco-friendly products.",
    "choices": [
     "roll out",
@@ -8733,7 +8937,7 @@
    "level": 2
   },
   {
-   "id": "v316",
+   "id": "v308",
    "q": "The museum's popularity has _____ since it began offering free admission on Sundays.",
    "choices": [
     "surged",
@@ -8746,7 +8950,7 @@
    "level": 2
   },
   {
-   "id": "v317",
+   "id": "v309",
    "q": "The new manager quickly _____ the trust of her team.",
    "choices": [
     "won",
@@ -8759,20 +8963,7 @@
    "level": 1
   },
   {
-   "id": "v318",
-   "q": "The CEO _____ employees for their patience during the restructuring.",
-   "choices": [
-    "thanked",
-    "thank",
-    "thanks",
-    "thankful"
-   ],
-   "exp": "文の動詞が必要で過去形 thanked。",
-   "point": "thank A for B「B のことで A に感謝する」",
-   "level": 1
-  },
-  {
-   "id": "v319",
+   "id": "v310",
    "q": "Our office is _____ located in the heart of the financial district.",
    "choices": [
     "ideally",
@@ -8785,7 +8976,7 @@
    "level": 2
   },
   {
-   "id": "v320",
+   "id": "v311",
    "q": "The company's _____ in the Asian market has grown steadily.",
    "choices": [
     "presence",
@@ -8798,7 +8989,7 @@
    "level": 2
   },
   {
-   "id": "v321",
+   "id": "v312",
    "q": "The meeting has been _____ to accommodate the CEO's schedule.",
    "choices": [
     "rescheduled",
@@ -8811,7 +9002,7 @@
    "level": 1
   },
   {
-   "id": "v322",
+   "id": "v313",
    "q": "The customer asked to _____ to a manager.",
    "choices": [
     "speak",
@@ -8824,7 +9015,7 @@
    "level": 1
   },
   {
-   "id": "v323",
+   "id": "v314",
    "q": "The project requires _____ coordination between several departments.",
    "choices": [
     "close",
@@ -8837,7 +9028,7 @@
    "level": 2
   },
   {
-   "id": "v324",
+   "id": "v315",
    "q": "The bank will _____ a fee for late payments.",
    "choices": [
     "levy",
@@ -8850,7 +9041,7 @@
    "level": 3
   },
   {
-   "id": "v325",
+   "id": "v316",
    "q": "The new marketing manager brings a _____ of experience to the role.",
    "choices": [
     "wealth",
@@ -8863,7 +9054,7 @@
    "level": 2
   },
   {
-   "id": "v326",
+   "id": "v317",
    "q": "_____ are invited to submit proposals by October 1.",
    "choices": [
     "Vendors",
@@ -8876,7 +9067,7 @@
    "level": 2
   },
   {
-   "id": "v327",
+   "id": "v318",
    "q": "The software allows users to _____ files securely with colleagues.",
    "choices": [
     "share",
@@ -8889,7 +9080,7 @@
    "level": 1
   },
   {
-   "id": "v328",
+   "id": "v319",
    "q": "The company's new strategy _____ heavily on digital advertising.",
    "choices": [
     "relies",
@@ -8902,7 +9093,7 @@
    "level": 2
   },
   {
-   "id": "v329",
+   "id": "v320",
    "q": "The government has _____ new incentives for companies that hire young workers.",
    "choices": [
     "unveiled",
@@ -8915,7 +9106,7 @@
    "level": 2
   },
   {
-   "id": "v330",
+   "id": "v321",
    "q": "The management team is _____ new ways to reduce costs.",
    "choices": [
     "exploring",
@@ -8928,7 +9119,7 @@
    "level": 2
   },
   {
-   "id": "v331",
+   "id": "v322",
    "q": "The auditors found that several invoices had been _____ approved without proper documentation.",
    "choices": [
     "inadvertently",
@@ -8941,7 +9132,7 @@
    "level": 3
   },
   {
-   "id": "v332",
+   "id": "v323",
    "q": "The merger is expected to _____ significant cost savings for both companies.",
    "choices": [
     "yield",
@@ -8954,7 +9145,7 @@
    "level": 3
   },
   {
-   "id": "v333",
+   "id": "v324",
    "q": "The consultant's report _____ the need for better communication between departments.",
    "choices": [
     "highlighted",
@@ -8967,7 +9158,7 @@
    "level": 2
   },
   {
-   "id": "v334",
+   "id": "v325",
    "q": "The company's new expansion plan is _____ on securing additional funding.",
    "choices": [
     "contingent",
@@ -8980,7 +9171,7 @@
    "level": 3
   },
   {
-   "id": "v335",
+   "id": "v326",
    "q": "The new manager has a _____ for turning around underperforming teams.",
    "choices": [
     "reputation",
@@ -8993,7 +9184,7 @@
    "level": 2
   },
   {
-   "id": "v336",
+   "id": "v327",
    "q": "Employees who _____ the company's confidentiality agreement may be dismissed.",
    "choices": [
     "breach",
@@ -9006,7 +9197,7 @@
    "level": 3
   },
   {
-   "id": "v337",
+   "id": "v328",
    "q": "The CEO's _____ remarks at the press conference surprised many journalists.",
    "choices": [
     "candid",
@@ -9019,7 +9210,7 @@
    "level": 3
   },
   {
-   "id": "v338",
+   "id": "v329",
    "q": "The company has _____ its position as the market leader in home appliances.",
    "choices": [
     "solidified",
@@ -9032,7 +9223,7 @@
    "level": 3
   },
   {
-   "id": "v339",
+   "id": "v330",
    "q": "The board is _____ a proposal to open a branch in Dubai.",
    "choices": [
     "weighing",
@@ -9045,7 +9236,7 @@
    "level": 3
   },
   {
-   "id": "v340",
+   "id": "v331",
    "q": "The negotiations _____ in an agreement that satisfied both sides.",
    "choices": [
     "culminated",
@@ -9058,7 +9249,7 @@
    "level": 3
   },
   {
-   "id": "v341",
+   "id": "v332",
    "q": "Ms. Fitzgerald was _____ about the project's chances of success.",
    "choices": [
     "upbeat",
@@ -9071,7 +9262,7 @@
    "level": 3
   },
   {
-   "id": "v342",
+   "id": "v333",
    "q": "The company has _____ its forecast for annual sales due to weak demand.",
    "choices": [
     "revised downward",
@@ -9084,7 +9275,7 @@
    "level": 3
   },
   {
-   "id": "v343",
+   "id": "v334",
    "q": "The new procedures are designed to _____ the risk of errors in the payroll system.",
    "choices": [
     "mitigate",
@@ -9097,7 +9288,7 @@
    "level": 3
   },
   {
-   "id": "v344",
+   "id": "v335",
    "q": "The startup has _____ funding from several prominent investors.",
    "choices": [
     "secured",
@@ -9110,7 +9301,7 @@
    "level": 2
   },
   {
-   "id": "v345",
+   "id": "v336",
    "q": "The proposal was _____ by a lack of concrete data.",
    "choices": [
     "undermined",
@@ -9123,7 +9314,7 @@
    "level": 3
   },
   {
-   "id": "v346",
+   "id": "v337",
    "q": "The CEO _____ confidence that the company would recover quickly.",
    "choices": [
     "exuded",
@@ -9136,7 +9327,7 @@
    "level": 3
   },
   {
-   "id": "v347",
+   "id": "v338",
    "q": "The firm's accountant noticed an _____ in the monthly expense figures.",
    "choices": [
     "anomaly",
@@ -9149,7 +9340,7 @@
    "level": 3
   },
   {
-   "id": "v348",
+   "id": "v339",
    "q": "The plant's output has _____ steadily since the new machinery was installed.",
    "choices": [
     "climbed",
@@ -9162,7 +9353,7 @@
    "level": 2
   },
   {
-   "id": "v349",
+   "id": "v340",
    "q": "The airline has been _____ by a series of technical problems.",
    "choices": [
     "plagued",
@@ -9175,7 +9366,7 @@
    "level": 3
   },
   {
-   "id": "v350",
+   "id": "v341",
    "q": "The museum relies on _____ from private donors to fund its programs.",
    "choices": [
     "contributions",
@@ -9188,7 +9379,7 @@
    "level": 2
   },
   {
-   "id": "v351",
+   "id": "v342",
    "q": "The company has _____ a reputation for producing durable goods.",
    "choices": [
     "cultivated",
@@ -9201,7 +9392,7 @@
    "level": 3
   },
   {
-   "id": "v352",
+   "id": "v343",
    "q": "The marketing team will _____ the results of the survey next week.",
    "choices": [
     "analyze",
@@ -9214,7 +9405,7 @@
    "level": 1
   },
   {
-   "id": "v353",
+   "id": "v344",
    "q": "The government has _____ a ban on single-use plastic bags.",
    "choices": [
     "imposed",
@@ -9227,7 +9418,7 @@
    "level": 2
   },
   {
-   "id": "v354",
+   "id": "v345",
    "q": "The CEO's sudden departure has _____ speculation about the company's future.",
    "choices": [
     "fueled",
@@ -9240,7 +9431,7 @@
    "level": 3
   },
   {
-   "id": "v355",
+   "id": "v346",
    "q": "The company's profits were _____ by unfavorable exchange rates.",
    "choices": [
     "eroded",
@@ -9253,7 +9444,7 @@
    "level": 3
   },
   {
-   "id": "v356",
+   "id": "v347",
    "q": "The contractor assured us that the work would be completed _____ the agreed timeline.",
    "choices": [
     "within",
@@ -9266,7 +9457,7 @@
    "level": 2
   },
   {
-   "id": "v357",
+   "id": "v348",
    "q": "The new system has greatly _____ the time needed to process orders.",
    "choices": [
     "shortened",
@@ -9279,7 +9470,7 @@
    "level": 2
   },
   {
-   "id": "v358",
+   "id": "v349",
    "q": "The proposal received a _____ response from the board.",
    "choices": [
     "lukewarm",
@@ -9292,7 +9483,7 @@
    "level": 3
   },
   {
-   "id": "v359",
+   "id": "v350",
    "q": "Staff must _____ any conflicts of interest to their manager.",
    "choices": [
     "declare",
@@ -9305,7 +9496,7 @@
    "level": 2
   },
   {
-   "id": "v360",
+   "id": "v351",
    "q": "The government plans to _____ the tax on gasoline.",
    "choices": [
     "raise",
@@ -9318,7 +9509,7 @@
    "level": 1
   },
   {
-   "id": "v361",
+   "id": "v352",
    "q": "The company _____ its annual shareholders' meeting in Chicago last week.",
    "choices": [
     "held",
@@ -9331,7 +9522,7 @@
    "level": 1
   },
   {
-   "id": "v362",
+   "id": "v353",
    "q": "Due to the high cost of fuel, many airlines have _____ surcharges.",
    "choices": [
     "introduced",
@@ -9344,7 +9535,7 @@
    "level": 2
   },
   {
-   "id": "v363",
+   "id": "v354",
    "q": "The project leader is _____ for keeping the team on schedule.",
    "choices": [
     "accountable",
@@ -9357,7 +9548,7 @@
    "level": 2
   },
   {
-   "id": "v364",
+   "id": "v355",
    "q": "The company has _____ to reduce its plastic packaging by half.",
    "choices": [
     "pledged",
@@ -9370,7 +9561,7 @@
    "level": 2
   },
   {
-   "id": "v365",
+   "id": "v356",
    "q": "The research findings are _____ to be published in a leading journal.",
    "choices": [
     "slated",
@@ -9383,7 +9574,7 @@
    "level": 3
   },
   {
-   "id": "v366",
+   "id": "v357",
    "q": "The airline was forced to _____ hundreds of flights due to the strike.",
    "choices": [
     "scrap",
@@ -9396,7 +9587,7 @@
    "level": 3
   },
   {
-   "id": "v367",
+   "id": "v358",
    "q": "The software update _____ several bugs reported by users.",
    "choices": [
     "addressed",
@@ -9409,7 +9600,7 @@
    "level": 2
   },
   {
-   "id": "v368",
+   "id": "v359",
    "q": "The CEO has _____ the company's commitment to sustainability.",
    "choices": [
     "reaffirmed",
@@ -9422,7 +9613,7 @@
    "level": 2
   },
   {
-   "id": "v369",
+   "id": "v360",
    "q": "The firm's lawyers are reviewing the contract to identify any potential _____.",
    "choices": [
     "loopholes",
@@ -9435,7 +9626,7 @@
    "level": 3
   },
   {
-   "id": "v370",
+   "id": "v361",
    "q": "Demand for the product has _____ since the start of the year.",
    "choices": [
     "tapered off",
@@ -9448,7 +9639,7 @@
    "level": 3
   },
   {
-   "id": "v371",
+   "id": "v362",
    "q": "The new branch manager was _____ to the position after ten years with the company.",
    "choices": [
     "elevated",
@@ -9461,7 +9652,7 @@
    "level": 3
   },
   {
-   "id": "v372",
+   "id": "v363",
    "q": "The company's quarterly earnings _____ analysts' forecasts.",
    "choices": [
     "beat",
@@ -9474,7 +9665,7 @@
    "level": 2
   },
   {
-   "id": "v373",
+   "id": "v364",
    "q": "The team has been working around the clock to _____ the backlog of orders.",
    "choices": [
     "clear",
@@ -9487,7 +9678,7 @@
    "level": 2
   },
   {
-   "id": "v374",
+   "id": "v365",
    "q": "Several investors have _____ out of the project due to rising costs.",
    "choices": [
     "pulled",
@@ -9500,7 +9691,7 @@
    "level": 2
   },
   {
-   "id": "v375",
+   "id": "v366",
    "q": "The company's new headquarters _____ a gym and a rooftop garden.",
    "choices": [
     "boasts",
@@ -9513,7 +9704,7 @@
    "level": 3
   },
   {
-   "id": "v376",
+   "id": "v367",
    "q": "The CEO has been _____ for his innovative leadership style.",
    "choices": [
     "lauded",
@@ -9526,7 +9717,7 @@
    "level": 3
   },
   {
-   "id": "v377",
+   "id": "v368",
    "q": "The firm's growth has been _____ by an aggressive acquisition strategy.",
    "choices": [
     "driven",
@@ -9539,7 +9730,7 @@
    "level": 2
   },
   {
-   "id": "v378",
+   "id": "v369",
    "q": "The company has _____ an investigation into the cause of the accident.",
    "choices": [
     "launched",
@@ -9552,7 +9743,7 @@
    "level": 2
   },
   {
-   "id": "v379",
+   "id": "v370",
    "q": "The firm's directors are _____ liable for any losses caused by negligence.",
    "choices": [
     "personally",
@@ -9565,7 +9756,7 @@
    "level": 2
   },
   {
-   "id": "v380",
+   "id": "v371",
    "q": "Please _____ the enclosed brochure for information about our services.",
    "choices": [
     "consult",
@@ -9578,7 +9769,7 @@
    "level": 2
   },
   {
-   "id": "v381",
+   "id": "v372",
    "q": "The hotel offers _____ views of the mountains.",
    "choices": [
     "breathtaking",
@@ -9591,7 +9782,7 @@
    "level": 2
   },
   {
-   "id": "v382",
+   "id": "v373",
    "q": "The plan was abandoned because it was not financially _____.",
    "choices": [
     "viable",
@@ -9604,7 +9795,7 @@
    "level": 3
   },
   {
-   "id": "v383",
+   "id": "v374",
    "q": "The manufacturer _____ that the new model will go on sale in May.",
    "choices": [
     "confirmed",
@@ -9617,7 +9808,7 @@
    "level": 1
   },
   {
-   "id": "v384",
+   "id": "v375",
    "q": "The hiring process has been _____ to reduce the time it takes to fill positions.",
    "choices": [
     "simplified",
@@ -9630,20 +9821,7 @@
    "level": 2
   },
   {
-   "id": "v385",
-   "q": "The company's _____ debt has raised concerns among investors.",
-   "choices": [
-    "mounting",
-    "mounted",
-    "mountain",
-    "mount"
-   ],
-   "exp": "mounting は「増大する」で名詞 debt を修飾する。",
-   "point": "mounting debt「増え続ける負債」",
-   "level": 3
-  },
-  {
-   "id": "v386",
+   "id": "v376",
    "q": "The two sides are expected to _____ a deal by the end of the week.",
    "choices": [
     "strike",
@@ -9656,7 +9834,7 @@
    "level": 3
   },
   {
-   "id": "v387",
+   "id": "v377",
    "q": "The department store is _____ its spring sale this weekend.",
    "choices": [
     "holding",
@@ -9669,20 +9847,7 @@
    "level": 1
   },
   {
-   "id": "v388",
-   "q": "The new manager has a _____ attitude toward employee suggestions.",
-   "choices": [
-    "receptive",
-    "reception",
-    "receptionist",
-    "receptor"
-   ],
-   "exp": "名詞 attitude を修飾する形容詞 receptive。",
-   "point": "receptive to ～「～を受け入れる姿勢の」",
-   "level": 3
-  },
-  {
-   "id": "v389",
+   "id": "v378",
    "q": "The city council voted to _____ funding for the arts program.",
    "choices": [
     "slash",
@@ -9695,7 +9860,7 @@
    "level": 3
   },
   {
-   "id": "v390",
+   "id": "v379",
    "q": "Our sales staff are trained to _____ customers' needs.",
    "choices": [
     "anticipate",
@@ -9708,7 +9873,7 @@
    "level": 2
   },
   {
-   "id": "v391",
+   "id": "v380",
    "q": "The company's sales have _____ a plateau after years of rapid growth.",
    "choices": [
     "reached",
@@ -9721,20 +9886,7 @@
    "level": 2
   },
   {
-   "id": "v392",
-   "q": "The museum's new exhibit _____ the history of the city's port.",
-   "choices": [
-    "chronicles",
-    "chronic",
-    "chronology",
-    "chronicled by"
-   ],
-   "exp": "動詞が必要で三単現 chronicles。chronic は形容詞「慢性の」。",
-   "point": "chronicle「年代順に記録する、たどる」",
-   "level": 3
-  },
-  {
-   "id": "v393",
+   "id": "v381",
    "q": "The company has _____ thousands of applications for its internship program.",
    "choices": [
     "received",
@@ -9747,7 +9899,7 @@
    "level": 1
   },
   {
-   "id": "v394",
+   "id": "v382",
    "q": "The new store will _____ a wide range of organic products.",
    "choices": [
     "carry",
@@ -9760,7 +9912,7 @@
    "level": 2
   },
   {
-   "id": "v395",
+   "id": "v383",
    "q": "The software _____ users when a payment is due.",
    "choices": [
     "alerts",
@@ -9773,7 +9925,7 @@
    "level": 2
   },
   {
-   "id": "v396",
+   "id": "v384",
    "q": "The company hopes to _____ its losses by selling unused property.",
    "choices": [
     "offset",
@@ -9786,20 +9938,7 @@
    "level": 3
   },
   {
-   "id": "v397",
-   "q": "Our office is closed on weekends and _____ holidays.",
-   "choices": [
-    "public",
-    "publicity",
-    "publicly",
-    "publish"
-   ],
-   "exp": "名詞 holidays を修飾する形容詞 public。",
-   "point": "public holidays「祝日」",
-   "level": 1
-  },
-  {
-   "id": "v398",
+   "id": "v385",
    "q": "The company decided to _____ its plans to open a factory overseas.",
    "choices": [
     "shelve",
@@ -9812,7 +9951,7 @@
    "level": 3
   },
   {
-   "id": "v399",
+   "id": "v386",
    "q": "The firm's legal team is _____ the terms of the new agreement.",
    "choices": [
     "scrutinizing",
@@ -9825,7 +9964,7 @@
    "level": 3
   },
   {
-   "id": "v400",
+   "id": "v387",
    "q": "Staff members are expected to _____ professional conduct at all times.",
    "choices": [
     "maintain",
@@ -9838,7 +9977,7 @@
    "level": 2
   },
   {
-   "id": "v401",
+   "id": "v388",
    "q": "The company's dividend payments have remained _____ for five years.",
    "choices": [
     "unchanged",
@@ -9851,7 +9990,7 @@
    "level": 2
   },
   {
-   "id": "v402",
+   "id": "v389",
    "q": "The supplier _____ to deliver the goods by the end of the month.",
    "choices": [
     "undertook",
@@ -9864,7 +10003,7 @@
    "level": 3
   },
   {
-   "id": "v403",
+   "id": "v390",
    "q": "The board _____ the CEO's proposal to expand into Asia.",
    "choices": [
     "backed",
@@ -9877,20 +10016,7 @@
    "level": 2
   },
   {
-   "id": "v404",
-   "q": "The company's success is _____ to its loyal customer base.",
-   "choices": [
-    "attributable",
-    "attributive",
-    "attribute",
-    "attributed by"
-   ],
-   "exp": "be の後で形容詞が必要。attributable to は「～のおかげである」。",
-   "point": "attributable to ～「～に起因する」",
-   "level": 3
-  },
-  {
-   "id": "v405",
+   "id": "v391",
    "q": "Visitors can _____ the museum's collection online.",
    "choices": [
     "browse",
@@ -9903,7 +10029,7 @@
    "level": 2
   },
   {
-   "id": "v406",
+   "id": "v392",
    "q": "The airline has _____ its baggage policy to allow one free checked bag.",
    "choices": [
     "amended",
@@ -9916,7 +10042,7 @@
    "level": 3
   },
   {
-   "id": "v407",
+   "id": "v393",
    "q": "The CEO stressed that customer data would be handled with the _____ care.",
    "choices": [
     "utmost",
@@ -9927,6 +10053,1475 @@
    "exp": "定番の表現 the utmost care。",
    "point": "with the utmost care「細心の注意を払って」",
    "level": 3
+  },
+  {
+   "id": "v394",
+   "q": "The new director has a reputation for being _____ with company resources.",
+   "choices": [
+    "frugal",
+    "fragile",
+    "futile",
+    "fertile"
+   ],
+   "exp": "資源を節約するのは frugal。futile は「無駄な」、fragile は「壊れやすい」。",
+   "point": "frugal「倹約的な」",
+   "level": 3
+  },
+  {
+   "id": "v395",
+   "q": "The company was fined for failing to _____ accurate financial records.",
+   "choices": [
+    "keep",
+    "hold on",
+    "stay",
+    "remain"
+   ],
+   "exp": "記録の保持は keep。",
+   "point": "keep records「記録をつける」",
+   "level": 2
+  },
+  {
+   "id": "v396",
+   "q": "The CEO _____ the rumors of a merger as pure speculation.",
+   "choices": [
+    "dismissed",
+    "dismantled",
+    "discharged",
+    "dispatched"
+   ],
+   "exp": "退ける・一蹴するのは dismiss。dismantle は「解体する」。",
+   "point": "dismiss A as B「A を B だとして退ける」",
+   "level": 3
+  },
+  {
+   "id": "v397",
+   "q": "Ms. Ivanova has been _____ responsible for the department's turnaround.",
+   "choices": [
+    "largely",
+    "large",
+    "larger",
+    "enlarged"
+   ],
+   "exp": "形容詞 responsible を修飾する副詞 largely。",
+   "point": "largely「主に、大部分は」",
+   "level": 2
+  },
+  {
+   "id": "v398",
+   "q": "The hotel is undergoing renovations, so some facilities may be _____.",
+   "choices": [
+    "unavailable",
+    "unaffordable",
+    "unaccountable",
+    "unacceptable"
+   ],
+   "exp": "改装中で使えないのは unavailable。unaccountable は「説明できない」。",
+   "point": "unavailable「利用できない」",
+   "level": 2
+  },
+  {
+   "id": "v399",
+   "q": "The new legislation will _____ come into effect next January.",
+   "choices": [
+    "formally",
+    "formerly",
+    "formulaically",
+    "formatively"
+   ],
+   "exp": "発効を修飾するのは formally。formerly は「以前は」で時制が合わない。",
+   "point": "formally「正式に」",
+   "level": 3
+  },
+  {
+   "id": "v400",
+   "q": "The department has been asked to _____ a list of potential suppliers.",
+   "choices": [
+    "compile",
+    "comply",
+    "compel",
+    "compete"
+   ],
+   "exp": "資料の編集・作成は compile。compel は「強いる」。",
+   "point": "compile a list「一覧を作成する」",
+   "level": 2
+  },
+  {
+   "id": "v401",
+   "q": "The CEO's resignation was _____ by poor financial results.",
+   "choices": [
+    "prompted",
+    "promoted",
+    "prompt",
+    "promptly"
+   ],
+   "exp": "きっかけとなるのは prompt。promote は「昇進させる」。",
+   "point": "be prompted by ～「～がきっかけとなる」",
+   "level": 2
+  },
+  {
+   "id": "v402",
+   "q": "The museum's new director is a _____ figure in the art world.",
+   "choices": [
+    "prominent",
+    "permanent",
+    "pertinent",
+    "predominant"
+   ],
+   "exp": "著名は prominent。pertinent は「関連のある」。",
+   "point": "a prominent figure「著名人」",
+   "level": 2
+  },
+  {
+   "id": "v403",
+   "q": "The company plans to _____ two of its smaller factories.",
+   "choices": [
+    "consolidate",
+    "console",
+    "consult",
+    "constitute"
+   ],
+   "exp": "統合は consolidate。constitute は「構成する」。",
+   "point": "consolidate「統合する」",
+   "level": 3
+  },
+  {
+   "id": "v404",
+   "q": "The software company _____ its new product at the trade show.",
+   "choices": [
+    "showcased",
+    "showered",
+    "showed up",
+    "shown off"
+   ],
+   "exp": "披露は showcase。show off は自動詞的に使うか目的語の位置が違い、shown は過去分詞。",
+   "point": "showcase「披露する」",
+   "level": 2
+  },
+  {
+   "id": "v405",
+   "q": "The manager asked everyone to _____ their ideas before the meeting.",
+   "choices": [
+    "jot down",
+    "jot up",
+    "jot in",
+    "jot off"
+   ],
+   "exp": "メモするのは jot down。",
+   "point": "jot down「書き留める」",
+   "level": 2
+  },
+  {
+   "id": "v406",
+   "q": "The new regulations will _____ companies to disclose their carbon emissions.",
+   "choices": [
+    "require",
+    "request",
+    "inquire",
+    "acquire"
+   ],
+   "exp": "義務づけるのは require。inquire は「尋ねる」。",
+   "point": "require A to do「A に～することを義務づける」",
+   "level": 2
+  },
+  {
+   "id": "v407",
+   "q": "The bank _____ the loan application due to insufficient income.",
+   "choices": [
+    "denied",
+    "deprived",
+    "defied",
+    "denounced"
+   ],
+   "exp": "却下は deny（reject）。deprive は of を伴い「奪う」。",
+   "point": "deny an application「申請を却下する」",
+   "level": 2
+  },
+  {
+   "id": "v408",
+   "q": "The new manager quickly _____ herself with the company's procedures.",
+   "choices": [
+    "acquainted",
+    "acquitted",
+    "acquired",
+    "acclaimed"
+   ],
+   "exp": "with と結びつくのは acquaint。acquit は「無罪にする」。",
+   "point": "acquaint oneself with ～「～に精通する」",
+   "level": 3
+  },
+  {
+   "id": "v409",
+   "q": "The firm's success _____ on its ability to attract talented staff.",
+   "choices": [
+    "hinges",
+    "hinders",
+    "hangs up",
+    "hints"
+   ],
+   "exp": "on と結びつき「～にかかっている」は hinge。hint は at を伴う。",
+   "point": "hinge on ～「～次第である」",
+   "level": 3
+  },
+  {
+   "id": "v410",
+   "q": "A _____ of the profits will be donated to charity.",
+   "choices": [
+    "portion",
+    "potion",
+    "position",
+    "proportionate"
+   ],
+   "exp": "一部は portion。potion は「水薬」。",
+   "point": "a portion of ～「～の一部」",
+   "level": 2
+  },
+  {
+   "id": "v411",
+   "q": "The CEO said that the company would _____ its efforts to reduce waste.",
+   "choices": [
+    "redouble",
+    "redo",
+    "reduce to",
+    "redeem"
+   ],
+   "exp": "努力を倍増させるのは redouble。redeem は「償還する」。",
+   "point": "redouble one's efforts「一層努力する」",
+   "level": 3
+  },
+  {
+   "id": "v412",
+   "q": "Employees are asked to _____ the kitchen clean and tidy.",
+   "choices": [
+    "keep",
+    "make up",
+    "let",
+    "leave out"
+   ],
+   "exp": "keep O C で状態の維持。",
+   "point": "keep A clean「A をきれいに保つ」",
+   "level": 1
+  },
+  {
+   "id": "v413",
+   "q": "The real estate agent _____ several properties that matched our requirements.",
+   "choices": [
+    "identified",
+    "identical",
+    "identity",
+    "idealized"
+   ],
+   "exp": "文の動詞が必要で identify の過去形。",
+   "point": "identify「見つけ出す、特定する」",
+   "level": 2
+  },
+  {
+   "id": "v414",
+   "q": "The company has begun to _____ out its older computer systems.",
+   "choices": [
+    "phase",
+    "faze",
+    "phrase",
+    "fade"
+   ],
+   "exp": "段階的廃止は phase out。faze は「動揺させる」。",
+   "point": "phase out「段階的に廃止する」",
+   "level": 2
+  },
+  {
+   "id": "v415",
+   "q": "The new product's features have been _____ praised by reviewers.",
+   "choices": [
+    "widely",
+    "wide",
+    "width",
+    "widen"
+   ],
+   "exp": "過去分詞を修飾する副詞 widely。",
+   "point": "widely praised「広く称賛される」",
+   "level": 1
+  },
+  {
+   "id": "v416",
+   "q": "The museum's collection _____ from ancient pottery to modern sculpture.",
+   "choices": [
+    "ranges",
+    "ranks",
+    "rages",
+    "reigns"
+   ],
+   "exp": "範囲を表すのは range。reign は「君臨する」。",
+   "point": "range from A to B「A から B に及ぶ」",
+   "level": 2
+  },
+  {
+   "id": "v417",
+   "q": "The CEO _____ the importance of investing in employee training.",
+   "choices": [
+    "stressed",
+    "strained",
+    "strapped",
+    "strolled"
+   ],
+   "exp": "強調は stress。strain は「負担をかける」。",
+   "point": "stress「強調する」",
+   "level": 1
+  },
+  {
+   "id": "v418",
+   "q": "The project will be _____ in three phases over the next two years.",
+   "choices": [
+    "implemented",
+    "implicated",
+    "implied",
+    "imported"
+   ],
+   "exp": "計画の実施は implement。implicate は「関与させる」。",
+   "point": "implement「実施する」",
+   "level": 2
+  },
+  {
+   "id": "v419",
+   "q": "The landlord has agreed to _____ the broken heating system.",
+   "choices": [
+    "repair",
+    "prepare",
+    "despair",
+    "pair"
+   ],
+   "exp": "修理は repair。",
+   "point": "repair「修理する」",
+   "level": 1
+  },
+  {
+   "id": "v420",
+   "q": "The company is facing a _____ of lawsuits from former employees.",
+   "choices": [
+    "barrage",
+    "garage",
+    "barricade",
+    "baggage"
+   ],
+   "exp": "殺到・連発は barrage。",
+   "point": "a barrage of ～「～の集中砲火、殺到」",
+   "level": 3
+  },
+  {
+   "id": "v421",
+   "q": "The new marketing strategy has _____ the company's brand image.",
+   "choices": [
+    "revitalized",
+    "revisited",
+    "revived up",
+    "revolved"
+   ],
+   "exp": "ブランドの再活性化は revitalize。revolve は「回転する」。",
+   "point": "revitalize「よみがえらせる、活性化する」",
+   "level": 3
+  },
+  {
+   "id": "v422",
+   "q": "The new trainee was _____ by the amount of information she had to learn.",
+   "choices": [
+    "overwhelmed",
+    "overflowed",
+    "overturned",
+    "overruled"
+   ],
+   "exp": "圧倒されるのは overwhelm。overrule は「却下する」。",
+   "point": "be overwhelmed by ～「～に圧倒される」",
+   "level": 2
+  },
+  {
+   "id": "v423",
+   "q": "The two companies have agreed to _____ resources to develop the new technology.",
+   "choices": [
+    "pool",
+    "pole",
+    "poll",
+    "pull"
+   ],
+   "exp": "共同出資は pool。poll は「世論調査（する）」。",
+   "point": "pool resources「資源を出し合う」",
+   "level": 3
+  },
+  {
+   "id": "v424",
+   "q": "The CEO has _____ a review of all overseas operations.",
+   "choices": [
+    "ordered",
+    "orderly",
+    "orders of",
+    "ordinal"
+   ],
+   "exp": "命じるのは order。orderly は形容詞「整然とした」。",
+   "point": "order a review「見直しを命じる」",
+   "level": 2
+  },
+  {
+   "id": "v425",
+   "q": "The company _____ thousands of dollars on advertising every month.",
+   "choices": [
+    "spends",
+    "costs",
+    "pays for",
+    "charges"
+   ],
+   "exp": "spend A on B の形。cost は人を主語にしない。",
+   "point": "spend money on ～「～にお金を使う」",
+   "level": 1
+  },
+  {
+   "id": "v426",
+   "q": "Customer complaints have _____ since the new manager took over.",
+   "choices": [
+    "subsided",
+    "subsidized",
+    "subscribed",
+    "substituted"
+   ],
+   "exp": "自動詞で「収まる」は subside。subsidize は「補助金を出す」。",
+   "point": "subside「収まる、静まる」",
+   "level": 3
+  },
+  {
+   "id": "v427",
+   "q": "The new law will _____ companies from collecting unnecessary personal data.",
+   "choices": [
+    "bar",
+    "bare",
+    "barn",
+    "bark"
+   ],
+   "exp": "禁止の bar。bark は「ほえる」。",
+   "point": "bar A from ～ing「A が～するのを禁じる」",
+   "level": 3
+  },
+  {
+   "id": "v428",
+   "q": "The project's budget has been _____ by 15 percent.",
+   "choices": [
+    "trimmed",
+    "tripped",
+    "trimmings",
+    "trimmer"
+   ],
+   "exp": "削減は trim。",
+   "point": "trim a budget「予算を削る」",
+   "level": 2
+  },
+  {
+   "id": "v429",
+   "q": "The company has _____ a team of experts to investigate the problem.",
+   "choices": [
+    "assembled",
+    "assimilated",
+    "assessed",
+    "ascended"
+   ],
+   "exp": "編成は assemble。assimilate は「吸収する」。",
+   "point": "assemble a team「チームを編成する」",
+   "level": 2
+  },
+  {
+   "id": "v430",
+   "q": "The hotel provides guests with _____ access to the fitness center.",
+   "choices": [
+    "unlimited",
+    "unlikely",
+    "unlikeable",
+    "unlit"
+   ],
+   "exp": "無制限は unlimited。unlit は「明かりのない」。",
+   "point": "unlimited access「無制限の利用」",
+   "level": 2
+  },
+  {
+   "id": "v431",
+   "q": "Before signing, please read the terms and conditions _____.",
+   "choices": [
+    "carefully",
+    "careful",
+    "care",
+    "careless"
+   ],
+   "exp": "動詞 read を修飾する副詞。",
+   "point": "read carefully「注意深く読む」",
+   "level": 1
+  },
+  {
+   "id": "v432",
+   "q": "Several employees have _____ concerns about the new schedule.",
+   "choices": [
+    "raised",
+    "risen",
+    "arisen",
+    "roused"
+   ],
+   "exp": "他動詞で目的語を取るのは raise。",
+   "point": "raise concerns「懸念を表明する」",
+   "level": 1
+  },
+  {
+   "id": "v433",
+   "q": "The online retailer _____ free returns on all orders.",
+   "choices": [
+    "accepts",
+    "excepts",
+    "expects",
+    "adapts"
+   ],
+   "exp": "受け付けるのは accept。except は「除く」。",
+   "point": "accept returns「返品を受け付ける」",
+   "level": 2
+  },
+  {
+   "id": "v434",
+   "q": "Ms. Huang was _____ by the CEO to head the new division.",
+   "choices": [
+    "handpicked",
+    "handcrafted",
+    "handled",
+    "handed down"
+   ],
+   "exp": "特別に選ばれるのは handpick。hand down は「（伝統を）伝える」。",
+   "point": "be handpicked「えり抜かれる」",
+   "level": 3
+  },
+  {
+   "id": "v435",
+   "q": "Our technicians will _____ the installation at no extra cost.",
+   "choices": [
+    "carry out",
+    "carry over",
+    "carry on to",
+    "carry away"
+   ],
+   "exp": "作業の実施は carry out。carry over は「繰り越す」。",
+   "point": "carry out「実行する」",
+   "level": 2
+  },
+  {
+   "id": "v436",
+   "q": "The audit revealed several _____ in the company's accounting practices.",
+   "choices": [
+    "irregularities",
+    "irregulars",
+    "irrelevances",
+    "irritations"
+   ],
+   "exp": "会計上の不正・不備は irregularities。",
+   "point": "irregularities「不正、不備」",
+   "level": 3
+  },
+  {
+   "id": "v437",
+   "q": "The CEO has been _____ to testify before the committee.",
+   "choices": [
+    "summoned",
+    "summarized",
+    "summed",
+    "summited"
+   ],
+   "exp": "召喚は summon。summarize は「要約する」。",
+   "point": "be summoned to do「～するよう召喚される」",
+   "level": 3
+  },
+  {
+   "id": "v438",
+   "q": "The company's shares rose after it _____ better-than-expected profits.",
+   "choices": [
+    "posted",
+    "posed",
+    "postured",
+    "postponed"
+   ],
+   "exp": "業績の計上・発表は post。posture は「気取る」。",
+   "point": "post profits「利益を計上する」",
+   "level": 2
+  },
+  {
+   "id": "v439",
+   "q": "Visitors must be _____ by a staff member at all times.",
+   "choices": [
+    "accompanied",
+    "accomplished",
+    "accommodated",
+    "accumulated"
+   ],
+   "exp": "同行は accompany。accomplish は「達成する」。",
+   "point": "be accompanied by ～「～に付き添われる」",
+   "level": 2
+  },
+  {
+   "id": "v440",
+   "q": "The new airport terminal is designed to _____ 20 million passengers a year.",
+   "choices": [
+    "handle",
+    "handful",
+    "handy",
+    "handout"
+   ],
+   "exp": "処理能力を表す handle。",
+   "point": "handle passengers「旅客を処理する」",
+   "level": 2
+  },
+  {
+   "id": "v441",
+   "q": "The firm has been _____ for its environmentally friendly practices.",
+   "choices": [
+    "recognized",
+    "reconciled",
+    "recollected",
+    "reclaimed"
+   ],
+   "exp": "功績を認めるのは recognize。reconcile は「和解させる・一致させる」。",
+   "point": "be recognized for ～「～で評価される」",
+   "level": 2
+  },
+  {
+   "id": "v442",
+   "q": "The new trade agreement will _____ tariffs on many goods.",
+   "choices": [
+    "abolish",
+    "abandon",
+    "abstain",
+    "abridge"
+   ],
+   "exp": "撤廃は abolish。abridge は「要約する」。",
+   "point": "abolish tariffs「関税を撤廃する」",
+   "level": 3
+  },
+  {
+   "id": "v443",
+   "q": "The hotel's location is _____ for business travelers.",
+   "choices": [
+    "ideal",
+    "idle",
+    "idol",
+    "idyllic"
+   ],
+   "exp": "理想的は ideal。idle は「暇な」。",
+   "point": "ideal for ～「～にとって理想的な」",
+   "level": 2
+  },
+  {
+   "id": "v444",
+   "q": "The new CEO wants to _____ a culture of innovation within the company.",
+   "choices": [
+    "instill",
+    "install",
+    "instigate",
+    "insist"
+   ],
+   "exp": "価値観を植えつけるのは instill。install は機器の設置。",
+   "point": "instill a culture「文化を根づかせる」",
+   "level": 3
+  },
+  {
+   "id": "v445",
+   "q": "The factory has been _____ with the latest technology.",
+   "choices": [
+    "outfitted",
+    "outfoxed",
+    "outlasted",
+    "outlawed"
+   ],
+   "exp": "装備は outfit。outlaw は「禁止する」。",
+   "point": "be outfitted with ～「～を装備している」",
+   "level": 3
+  },
+  {
+   "id": "v446",
+   "q": "The company has _____ its prices for the first time in three years.",
+   "choices": [
+    "hiked",
+    "hiking",
+    "hooked",
+    "hacked"
+   ],
+   "exp": "hike は「（価格を）引き上げる」。hack は「たたき切る」。",
+   "point": "hike prices「値上げする」",
+   "level": 3
+  },
+  {
+   "id": "v447",
+   "q": "Our CEO is _____ to speak at the industry conference next month.",
+   "choices": [
+    "due",
+    "owing",
+    "dew",
+    "dues"
+   ],
+   "exp": "予定を表すのは be due to do。owing to は「～のために」。",
+   "point": "be due to do「～する予定である」",
+   "level": 2
+  },
+  {
+   "id": "v448",
+   "q": "The company decided to _____ its decision until more information was available.",
+   "choices": [
+    "reserve",
+    "deserve",
+    "preserve",
+    "conserve"
+   ],
+   "exp": "保留は reserve。conserve は「保存する」。",
+   "point": "reserve judgment / a decision「判断を保留する」",
+   "level": 3
+  },
+  {
+   "id": "v449",
+   "q": "The new coffee shop has quickly _____ a loyal following.",
+   "choices": [
+    "attracted",
+    "distracted",
+    "detracted",
+    "subtracted"
+   ],
+   "exp": "引きつけるのは attract。detract は「損なう」。",
+   "point": "attract a following「固定客を引きつける」",
+   "level": 2
+  },
+  {
+   "id": "v450",
+   "q": "The company's IT department will _____ the network upgrade this weekend.",
+   "choices": [
+    "perform",
+    "preform",
+    "perfume",
+    "perforate"
+   ],
+   "exp": "作業の実施は perform。preform は「前もって形作る」。",
+   "point": "perform an upgrade「アップグレードを実施する」",
+   "level": 2
+  },
+  {
+   "id": "v451",
+   "q": "The plan was _____ due to a lack of support from senior management.",
+   "choices": [
+    "abandoned",
+    "abounded",
+    "abandons",
+    "abode"
+   ],
+   "exp": "計画の放棄は abandon。abound は「豊富にある」。",
+   "point": "be abandoned「放棄される」",
+   "level": 2
+  },
+  {
+   "id": "v452",
+   "q": "The firm's new office is _____ to public transportation.",
+   "choices": [
+    "close",
+    "closed",
+    "closely",
+    "closing"
+   ],
+   "exp": "近いを表す形容詞 close。",
+   "point": "close to ～「～に近い」",
+   "level": 1
+  },
+  {
+   "id": "v453",
+   "q": "The airline _____ an apology to passengers affected by the delay.",
+   "choices": [
+    "issued",
+    "issues of",
+    "tissued",
+    "isolated"
+   ],
+   "exp": "公式の発表は issue。isolate は「孤立させる」。",
+   "point": "issue an apology「謝罪を発表する」",
+   "level": 2
+  },
+  {
+   "id": "v454",
+   "q": "The company is _____ its focus from hardware to software.",
+   "choices": [
+    "shifting",
+    "shirking",
+    "shifting off",
+    "sifting"
+   ],
+   "exp": "移すのは shift。sift は「ふるいにかける」、shirk は「怠る」。",
+   "point": "shift one's focus「焦点を移す」",
+   "level": 2
+  },
+  {
+   "id": "v455",
+   "q": "The department head _____ approval for the new budget.",
+   "choices": [
+    "sought",
+    "sighted",
+    "sorted",
+    "soughed"
+   ],
+   "exp": "seek の過去形 sought。sort は「分類する」。",
+   "point": "seek approval「承認を求める」",
+   "level": 2
+  },
+  {
+   "id": "v456",
+   "q": "The contract _____ the supplier to deliver goods within ten days.",
+   "choices": [
+    "obliges",
+    "obliterates",
+    "obscures",
+    "obtains"
+   ],
+   "exp": "義務づけるのは oblige。obliterate は「消し去る」。",
+   "point": "oblige A to do「A に～することを義務づける」",
+   "level": 3
+  },
+  {
+   "id": "v457",
+   "q": "The bakery's products are made _____ local ingredients.",
+   "choices": [
+    "from",
+    "of",
+    "by",
+    "out"
+   ],
+   "exp": "原料が変化している場合は from。",
+   "point": "be made from ～「～から作られる（原料）」",
+   "level": 1
+  },
+  {
+   "id": "v458",
+   "q": "The construction of the new bridge is _____ completion.",
+   "choices": [
+    "nearing",
+    "nearly",
+    "near by",
+    "nearer to"
+   ],
+   "exp": "動詞 near「近づく」の進行形。",
+   "point": "near completion「完成間近である」",
+   "level": 2
+  },
+  {
+   "id": "v459",
+   "q": "The company's legal department will _____ the contract before it is signed.",
+   "choices": [
+    "vet",
+    "vex",
+    "veer",
+    "vent"
+   ],
+   "exp": "契約書を精査するのは vet。veer は「それる」、vent は「（感情を）吐き出す」。",
+   "point": "vet「（念入りに）審査する」",
+   "level": 3
+  },
+  {
+   "id": "v460",
+   "q": "Employees can _____ their unused vacation days for cash at the end of the year.",
+   "choices": [
+    "cash in",
+    "cash out of",
+    "cash up",
+    "cash on"
+   ],
+   "exp": "権利を現金化するのは cash in。",
+   "point": "cash in「換金する」",
+   "level": 3
+  },
+  {
+   "id": "v461",
+   "q": "The board decided to _____ the CEO's contract for another three years.",
+   "choices": [
+    "prolong",
+    "prologue",
+    "prolific",
+    "prone"
+   ],
+   "exp": "期間の延長は prolong。prone は「～しがちな」。",
+   "point": "prolong「延長する」",
+   "level": 3
+  },
+  {
+   "id": "v462",
+   "q": "Please _____ your questions until the end of the presentation.",
+   "choices": [
+    "hold",
+    "halt",
+    "haul",
+    "heal"
+   ],
+   "exp": "保留するのは hold。haul は「運ぶ」。",
+   "point": "hold questions「質問を後に回す」",
+   "level": 2
+  },
+  {
+   "id": "v463",
+   "q": "The firm has _____ its workforce by 20 percent over the past year.",
+   "choices": [
+    "bolstered",
+    "bolted",
+    "bowled",
+    "bundled"
+   ],
+   "exp": "人員の増強は bolster。bolt は「ボルトで留める」。",
+   "point": "bolster「強化する、増強する」",
+   "level": 3
+  },
+  {
+   "id": "v464",
+   "q": "The museum's guided tour lasts _____ two hours.",
+   "choices": [
+    "approximately",
+    "appropriately",
+    "approvingly",
+    "apparently"
+   ],
+   "exp": "数量の前で「約」は approximately。appropriately は「適切に」。",
+   "point": "approximately「およそ」",
+   "level": 2
+  },
+  {
+   "id": "v465",
+   "q": "The director gave _____ approval for the plan, pending a final budget review.",
+   "choices": [
+    "conditional",
+    "congenial",
+    "confidential",
+    "conventional"
+   ],
+   "exp": "pending ～ と合うのは conditional。congenial は「気の合う」。",
+   "point": "conditional approval「条件付き承認」",
+   "level": 3
+  },
+  {
+   "id": "v466",
+   "q": "The hotel staff _____ to our every need during the conference.",
+   "choices": [
+    "attended",
+    "tended up",
+    "intended",
+    "contended"
+   ],
+   "exp": "to と結びつき「対応する」は attend。contend は「主張する・争う」。",
+   "point": "attend to ～「～の世話をする」",
+   "level": 3
+  },
+  {
+   "id": "v467",
+   "q": "The marketing team needs to _____ a wider audience.",
+   "choices": [
+    "target",
+    "tarnish",
+    "tarry",
+    "tariff"
+   ],
+   "exp": "対象にするのは target。tarnish は「（評判を）汚す」。",
+   "point": "target an audience「客層を狙う」",
+   "level": 2
+  },
+  {
+   "id": "v468",
+   "q": "Sales of the new model have _____ all expectations.",
+   "choices": [
+    "surpassed",
+    "surmised",
+    "surrendered",
+    "surrounded"
+   ],
+   "exp": "上回るのは surpass。surmise は「推測する」。",
+   "point": "surpass expectations「予想を上回る」",
+   "level": 2
+  },
+  {
+   "id": "v469",
+   "q": "The manager praised the team for its _____ effort during the product launch.",
+   "choices": [
+    "concerted",
+    "converted",
+    "contorted",
+    "consorted"
+   ],
+   "exp": "定番の結びつき concerted effort。",
+   "point": "a concerted effort「一致協力した努力」",
+   "level": 3
+  },
+  {
+   "id": "v470",
+   "q": "The factory was forced to close after _____ to meet safety standards.",
+   "choices": [
+    "failing",
+    "falling",
+    "filling",
+    "felling"
+   ],
+   "exp": "基準を満たせなかったのは fail。fell は「切り倒す」。",
+   "point": "fail to do「～できない」",
+   "level": 1
+  },
+  {
+   "id": "v471",
+   "q": "The bookstore _____ in rare and antique books.",
+   "choices": [
+    "specializes",
+    "specifies",
+    "speculates",
+    "spectates"
+   ],
+   "exp": "in と結びつく専門は specialize。speculate は「推測・投機する」。",
+   "point": "specialize in ～「～を専門とする」",
+   "level": 2
+  },
+  {
+   "id": "v472",
+   "q": "The CEO's remarks were taken out of _____ by the media.",
+   "choices": [
+    "context",
+    "contest",
+    "contact",
+    "content"
+   ],
+   "exp": "定番の表現。",
+   "point": "take A out of context「A を文脈から切り離す」",
+   "level": 2
+  },
+  {
+   "id": "v473",
+   "q": "Our company has a long _____ of supporting local charities.",
+   "choices": [
+    "tradition",
+    "transition",
+    "traction",
+    "tradeoff"
+   ],
+   "exp": "伝統は tradition。traction は「牽引力」。",
+   "point": "a long tradition of ～「～の長い伝統」",
+   "level": 1
+  },
+  {
+   "id": "v474",
+   "q": "The new branch has been _____ busy since it opened.",
+   "choices": [
+    "unexpectedly",
+    "unaccompanied",
+    "unaffiliated",
+    "unattended"
+   ],
+   "exp": "形容詞 busy を修飾する副詞 unexpectedly。",
+   "point": "unexpectedly busy「思いのほか忙しい」",
+   "level": 2
+  },
+  {
+   "id": "v475",
+   "q": "The hotel's restaurant has _____ a Michelin star.",
+   "choices": [
+    "earned",
+    "learned",
+    "yearned",
+    "spurned"
+   ],
+   "exp": "獲得は earn。spurn は「はねつける」。",
+   "point": "earn a star「星を獲得する」",
+   "level": 2
+  },
+  {
+   "id": "v476",
+   "q": "Customers who _____ their subscriptions early will receive a discount.",
+   "choices": [
+    "renew",
+    "renounce",
+    "remand",
+    "remake"
+   ],
+   "exp": "更新は renew。renounce は「放棄する」。",
+   "point": "renew a subscription「購読を更新する」",
+   "level": 1
+  },
+  {
+   "id": "v477",
+   "q": "The company's environmental policy has _____ praise from activists.",
+   "choices": [
+    "drawn",
+    "drowned",
+    "dawned",
+    "drained"
+   ],
+   "exp": "反応を引き出すのは draw。dawn は「（考えが）浮かぶ」。",
+   "point": "draw praise「称賛を集める」",
+   "level": 2
+  },
+  {
+   "id": "v478",
+   "q": "All passengers must go through a security _____ before boarding.",
+   "choices": [
+    "check",
+    "cheque",
+    "chalk",
+    "chuck"
+   ],
+   "exp": "定番の表現。",
+   "point": "a security check「保安検査」",
+   "level": 1
+  },
+  {
+   "id": "v479",
+   "q": "The CEO's announcement _____ an immediate rise in the share price.",
+   "choices": [
+    "triggered",
+    "triggered off by",
+    "tickled",
+    "trickled"
+   ],
+   "exp": "即座の反応を引き起こすのは trigger。trickle は「したたる」。",
+   "point": "trigger「引き起こす」",
+   "level": 2
+  },
+  {
+   "id": "v480",
+   "q": "The supplier has _____ to lower its prices if we place a larger order.",
+   "choices": [
+    "offered",
+    "offended",
+    "offset",
+    "officiated"
+   ],
+   "exp": "申し出は offer。officiate は「司会を務める」。",
+   "point": "offer to do「～しようと申し出る」",
+   "level": 2
+  },
+  {
+   "id": "v481",
+   "q": "The government is _____ ways to encourage foreign investment.",
+   "choices": [
+    "seeking",
+    "seeing",
+    "seizing",
+    "seething"
+   ],
+   "exp": "探し求めるのは seek。seethe は「煮えくり返る」。",
+   "point": "seek ways「方法を探す」",
+   "level": 2
+  },
+  {
+   "id": "v482",
+   "q": "The new hires will _____ a two-week training program.",
+   "choices": [
+    "undergo",
+    "undergone",
+    "underlie",
+    "underrate"
+   ],
+   "exp": "will の後は原形 undergo。underlie は「根底にある」。",
+   "point": "undergo training「研修を受ける」",
+   "level": 2
+  },
+  {
+   "id": "v483",
+   "q": "The office has been _____ to make room for more desks.",
+   "choices": [
+    "rearranged",
+    "rearmed",
+    "reassured",
+    "rearmost"
+   ],
+   "exp": "配置換えは rearrange。",
+   "point": "rearrange「配置換えする」",
+   "level": 1
+  },
+  {
+   "id": "v484",
+   "q": "The two companies agreed to _____ their differences and work together.",
+   "choices": [
+    "set aside",
+    "set off",
+    "set up for",
+    "set back"
+   ],
+   "exp": "定番の表現。set back は「遅らせる」。",
+   "point": "set aside differences「違いを脇に置く」",
+   "level": 2
+  },
+  {
+   "id": "v485",
+   "q": "The newly appointed manager _____ a positive impression on the staff.",
+   "choices": [
+    "made",
+    "did",
+    "took",
+    "got"
+   ],
+   "exp": "make と結びつく。",
+   "point": "make an impression「印象を与える」",
+   "level": 1
+  },
+  {
+   "id": "v486",
+   "q": "The CEO has _____ several high-profile acquisitions this year.",
+   "choices": [
+    "orchestrated",
+    "orchestral",
+    "ordained",
+    "oriented"
+   ],
+   "exp": "取引を取り仕切るのは orchestrate。ordain は「任命する」。",
+   "point": "orchestrate「（綿密に）画策・指揮する」",
+   "level": 3
+  },
+  {
+   "id": "v487",
+   "q": "The new law will _____ effect on January 1.",
+   "choices": [
+    "come into",
+    "come up",
+    "come over",
+    "come off"
+   ],
+   "exp": "発効は come into effect。",
+   "point": "come into effect「発効する」",
+   "level": 2
+  },
+  {
+   "id": "v488",
+   "q": "The project team _____ every possible option before making a recommendation.",
+   "choices": [
+    "explored",
+    "exploded",
+    "exported",
+    "exposed"
+   ],
+   "exp": "検討は explore。",
+   "point": "explore options「選択肢を検討する」",
+   "level": 1
+  },
+  {
+   "id": "v489",
+   "q": "The company is _____ by a board of seven directors.",
+   "choices": [
+    "governed",
+    "governor",
+    "governing",
+    "governs"
+   ],
+   "exp": "受動態で過去分詞。",
+   "point": "be governed by ～「～によって統治・運営される」",
+   "level": 2
+  },
+  {
+   "id": "v490",
+   "q": "The magazine has a _____ of more than 200,000 copies.",
+   "choices": [
+    "circulation",
+    "circumstance",
+    "circulator",
+    "circumference"
+   ],
+   "exp": "発行部数は circulation。circumference は「円周」。",
+   "point": "circulation「発行部数」",
+   "level": 3
+  },
+  {
+   "id": "v491",
+   "q": "The bank's new mobile app has received _____ feedback from users.",
+   "choices": [
+    "favorable",
+    "flavorful",
+    "fabled",
+    "feasible"
+   ],
+   "exp": "好意的は favorable。feasible は「実現可能な」。",
+   "point": "favorable feedback「好意的な反応」",
+   "level": 2
+  },
+  {
+   "id": "v492",
+   "q": "Please contact us if your order does not arrive in good _____.",
+   "choices": [
+    "condition",
+    "conditioner",
+    "conditional",
+    "conduction"
+   ],
+   "exp": "状態は condition。",
+   "point": "in good condition「良好な状態で」",
+   "level": 1
+  },
+  {
+   "id": "v493",
+   "q": "The team leader _____ responsibilities clearly to each member.",
+   "choices": [
+    "outlined",
+    "outlived",
+    "outclassed",
+    "outnumbered"
+   ],
+   "exp": "明確に示すのは outline。outnumber は「数で上回る」。",
+   "point": "outline「概要を示す」",
+   "level": 2
+  },
+  {
+   "id": "v494",
+   "q": "The firm has _____ a strong presence in the European market.",
+   "choices": [
+    "built up",
+    "built in",
+    "built on",
+    "built over"
+   ],
+   "exp": "存在感を築き上げるのは build up。build on は「～を基にする」。",
+   "point": "build up「築き上げる」",
+   "level": 3
+  },
+  {
+   "id": "v495",
+   "q": "The company's founder is _____ remembered for his generosity.",
+   "choices": [
+    "fondly",
+    "fondness",
+    "fond of",
+    "fondle"
+   ],
+   "exp": "過去分詞を修飾する副詞 fondly。",
+   "point": "fondly remember「懐かしく思い出す」",
+   "level": 2
+  },
+  {
+   "id": "v496",
+   "q": "Due to high demand, delivery times may _____.",
+   "choices": [
+    "vary",
+    "very",
+    "veer off",
+    "vex"
+   ],
+   "exp": "自動詞で「異なる」は vary。",
+   "point": "vary「変わる、異なる」",
+   "level": 2
+  },
+  {
+   "id": "v497",
+   "q": "The government will _____ an inquiry into the collapse of the bank.",
+   "choices": [
+    "hold",
+    "behold",
+    "withhold",
+    "uphold"
+   ],
+   "exp": "調査の実施は hold。withhold は「差し控える」。",
+   "point": "hold an inquiry「調査を行う」",
+   "level": 2
+  },
+  {
+   "id": "v498",
+   "q": "The software allows managers to _____ the progress of each project.",
+   "choices": [
+    "monitor",
+    "mentor",
+    "muster",
+    "mortar"
+   ],
+   "exp": "監視は monitor。mentor は「指導する」、muster は「集める」。",
+   "point": "monitor progress「進捗を監視する」",
+   "level": 2
+  },
+  {
+   "id": "v499",
+   "q": "The company had to _____ several orders because of a parts shortage.",
+   "choices": [
+    "turn down",
+    "turn up",
+    "turn in",
+    "turn over"
+   ],
+   "exp": "注文を断るのは turn down。turn in は「提出する」。",
+   "point": "turn down「断る」",
+   "level": 2
+  },
+  {
+   "id": "v500",
+   "q": "The new mall has _____ shoppers away from the downtown area.",
+   "choices": [
+    "lured",
+    "lurked",
+    "lulled",
+    "loomed"
+   ],
+   "exp": "誘い出すのは lure。loom は「迫る」。",
+   "point": "lure A away from B「A を B から引き離す」",
+   "level": 3
+  },
+  {
+   "id": "v501",
+   "q": "The manager _____ that all reports be submitted electronically.",
+   "choices": [
+    "requested",
+    "required of",
+    "requisitioned",
+    "requited"
+   ],
+   "exp": "that 節で依頼するのは request。requite は「報いる」。",
+   "point": "request that S 原形「～するよう求める」",
+   "level": 2
+  },
+  {
+   "id": "v502",
+   "q": "The hotel can _____ special dietary requirements with advance notice.",
+   "choices": [
+    "cater for",
+    "cater to by",
+    "caterer",
+    "catering"
+   ],
+   "exp": "要望への対応は cater for / to。",
+   "point": "cater for ～「～に対応する」",
+   "level": 3
+  },
+  {
+   "id": "v503",
+   "q": "The two firms reached an agreement after months of _____ negotiations.",
+   "choices": [
+    "protracted",
+    "protected",
+    "projected",
+    "protruded"
+   ],
+   "exp": "長引いたは protracted。protrude は「突き出る」。",
+   "point": "protracted negotiations「長引いた交渉」",
+   "level": 3
+  },
+  {
+   "id": "v504",
+   "q": "The firm's chief economist _____ a slowdown in growth next year.",
+   "choices": [
+    "forecasts",
+    "forebodes",
+    "forfeits",
+    "forges"
+   ],
+   "exp": "予測は forecast。forfeit は「失う」。",
+   "point": "forecast「予測する」",
+   "level": 2
+  },
+  {
+   "id": "v505",
+   "q": "The council _____ the new parking plan by a vote of six to three.",
+   "choices": [
+    "passed",
+    "past",
+    "paced",
+    "pasted"
+   ],
+   "exp": "可決は pass。past は前置詞・形容詞。",
+   "point": "pass a plan「案を可決する」",
+   "level": 1
+  },
+  {
+   "id": "v506",
+   "q": "The airline offers a range of _____ for passengers with disabilities.",
+   "choices": [
+    "services",
+    "servants",
+    "serves",
+    "servings"
+   ],
+   "exp": "サービスは services。servings は「（食事の）一人前」。",
+   "point": "services for ～「～向けのサービス」",
+   "level": 1
   }
  ],
  "para": [
