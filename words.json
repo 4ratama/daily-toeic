@@ -5,6 +5,11 @@
    "id": "adv",
    "name": "950〜990点の語",
    "desc": "Part 5・7 の上級語彙"
+  },
+  {
+   "id": "phr",
+   "name": "句動詞・熟語",
+   "desc": "Part 5・7 頻出のフレーズ"
   }
  ],
  "cards": [
@@ -1375,6 +1380,2742 @@
    "pos": "動",
    "def": "（利益・結果を）生む",
    "ex": "The investment yielded high returns."
+  },
+  {
+   "id": "w172",
+   "deck": "adv",
+   "term": "abate",
+   "pos": "動",
+   "def": "和らぐ、弱まる",
+   "ex": "The storm abated by early evening, and flights resumed."
+  },
+  {
+   "id": "w173",
+   "deck": "adv",
+   "term": "abide by",
+   "pos": "動",
+   "def": "（規則などに）従う",
+   "ex": "All contractors must abide by our safety regulations."
+  },
+  {
+   "id": "w174",
+   "deck": "adv",
+   "term": "accrue",
+   "pos": "動",
+   "def": "（利息などが）たまる、生じる",
+   "ex": "Interest accrues on the unpaid balance each month."
+  },
+  {
+   "id": "w175",
+   "deck": "adv",
+   "term": "acquiesce",
+   "pos": "動",
+   "def": "黙って従う、しぶしぶ同意する",
+   "ex": "The landlord eventually acquiesced to the tenants' request."
+  },
+  {
+   "id": "w176",
+   "deck": "adv",
+   "term": "adept at",
+   "pos": "形",
+   "def": "～に熟達した",
+   "ex": "Ms. Kato is adept at handling difficult negotiations."
+  },
+  {
+   "id": "w177",
+   "deck": "adv",
+   "term": "adjoining",
+   "pos": "形",
+   "def": "隣接した",
+   "ex": "The conference will continue in the adjoining room."
+  },
+  {
+   "id": "w178",
+   "deck": "adv",
+   "term": "advocate",
+   "pos": "動",
+   "def": "提唱する、支持する",
+   "ex": "The consultant advocates a gradual approach to restructuring."
+  },
+  {
+   "id": "w179",
+   "deck": "adv",
+   "term": "affiliate",
+   "pos": "名",
+   "def": "系列会社、提携先",
+   "ex": "The bank has affiliates in twelve countries."
+  },
+  {
+   "id": "w180",
+   "deck": "adv",
+   "term": "aggregate",
+   "pos": "形",
+   "def": "総計の",
+   "ex": "Aggregate sales rose by eight percent last year."
+  },
+  {
+   "id": "w181",
+   "deck": "adv",
+   "term": "amicable",
+   "pos": "形",
+   "def": "友好的な、円満な",
+   "ex": "The two firms reached an amicable settlement."
+  },
+  {
+   "id": "w182",
+   "deck": "adv",
+   "term": "analogous to",
+   "pos": "形",
+   "def": "～に類似した",
+   "ex": "The situation is analogous to what happened in the retail sector."
+  },
+  {
+   "id": "w183",
+   "deck": "adv",
+   "term": "annex",
+   "pos": "名",
+   "def": "別館",
+   "ex": "Training sessions are held in the east annex."
+  },
+  {
+   "id": "w184",
+   "deck": "adv",
+   "term": "annul",
+   "pos": "動",
+   "def": "無効にする",
+   "ex": "The court annulled the contract due to fraud."
+  },
+  {
+   "id": "w185",
+   "deck": "adv",
+   "term": "apprise",
+   "pos": "動",
+   "def": "知らせる、通知する",
+   "ex": "Please keep me apprised of any changes to the schedule."
+  },
+  {
+   "id": "w186",
+   "deck": "adv",
+   "term": "arduous",
+   "pos": "形",
+   "def": "骨の折れる、困難な",
+   "ex": "Relocating the warehouse was an arduous task."
+  },
+  {
+   "id": "w187",
+   "deck": "adv",
+   "term": "assiduous",
+   "pos": "形",
+   "def": "勤勉な、根気強い",
+   "ex": "Thanks to her assiduous research, the report was accurate."
+  },
+  {
+   "id": "w188",
+   "deck": "adv",
+   "term": "assimilate",
+   "pos": "動",
+   "def": "吸収する、理解する",
+   "ex": "New hires need time to assimilate large amounts of information."
+  },
+  {
+   "id": "w189",
+   "deck": "adv",
+   "term": "astute",
+   "pos": "形",
+   "def": "抜け目のない、鋭い",
+   "ex": "An astute investor noticed the trend early."
+  },
+  {
+   "id": "w190",
+   "deck": "adv",
+   "term": "augment",
+   "pos": "動",
+   "def": "増やす、補強する",
+   "ex": "The company hired temporary staff to augment its workforce."
+  },
+  {
+   "id": "w191",
+   "deck": "adv",
+   "term": "auspicious",
+   "pos": "形",
+   "def": "幸先のよい",
+   "ex": "The product launch got off to an auspicious start."
+  },
+  {
+   "id": "w192",
+   "deck": "adv",
+   "term": "austerity",
+   "pos": "名",
+   "def": "緊縮（財政）",
+   "ex": "Austerity measures forced the city to cut several programs."
+  },
+  {
+   "id": "w193",
+   "deck": "adv",
+   "term": "autonomy",
+   "pos": "名",
+   "def": "自主性、自治",
+   "ex": "Team leaders are given considerable autonomy over budgets."
+  },
+  {
+   "id": "w194",
+   "deck": "adv",
+   "term": "bequeath",
+   "pos": "動",
+   "def": "遺贈する、残す",
+   "ex": "The founder bequeathed his art collection to the museum."
+  },
+  {
+   "id": "w195",
+   "deck": "adv",
+   "term": "bona fide",
+   "pos": "形",
+   "def": "本物の、誠実な",
+   "ex": "Only bona fide members may use the lounge."
+  },
+  {
+   "id": "w196",
+   "deck": "adv",
+   "term": "brisk",
+   "pos": "形",
+   "def": "活発な、きびきびした",
+   "ex": "Sales of umbrellas were brisk during the rainy season."
+  },
+  {
+   "id": "w197",
+   "deck": "adv",
+   "term": "burgeoning",
+   "pos": "形",
+   "def": "急成長している",
+   "ex": "The firm is targeting the burgeoning market for electric bikes."
+  },
+  {
+   "id": "w198",
+   "deck": "adv",
+   "term": "bylaw",
+   "pos": "名",
+   "def": "内規、条例",
+   "ex": "The association's bylaws require an annual meeting."
+  },
+  {
+   "id": "w199",
+   "deck": "adv",
+   "term": "cognizant of",
+   "pos": "形",
+   "def": "～を認識している",
+   "ex": "Managers must be cognizant of the risks involved."
+  },
+  {
+   "id": "w200",
+   "deck": "adv",
+   "term": "cohesive",
+   "pos": "形",
+   "def": "まとまりのある",
+   "ex": "The new director built a cohesive team."
+  },
+  {
+   "id": "w201",
+   "deck": "adv",
+   "term": "commemorate",
+   "pos": "動",
+   "def": "記念する、祝う",
+   "ex": "A plaque commemorates the company's founding."
+  },
+  {
+   "id": "w202",
+   "deck": "adv",
+   "term": "complacent",
+   "pos": "形",
+   "def": "現状に満足した、油断した",
+   "ex": "The market leader became complacent and lost share."
+  },
+  {
+   "id": "w203",
+   "deck": "adv",
+   "term": "complement",
+   "pos": "動",
+   "def": "補完する、引き立てる",
+   "ex": "The new line of accessories complements our existing products."
+  },
+  {
+   "id": "w204",
+   "deck": "adv",
+   "term": "comply with",
+   "pos": "動",
+   "def": "～に従う、応じる",
+   "ex": "All products must comply with safety standards."
+  },
+  {
+   "id": "w205",
+   "deck": "adv",
+   "term": "concurrent",
+   "pos": "形",
+   "def": "同時に起こる",
+   "ex": "The two projects are running concurrently."
+  },
+  {
+   "id": "w206",
+   "deck": "adv",
+   "term": "conducive to",
+   "pos": "形",
+   "def": "～に役立つ、～を促す",
+   "ex": "A quiet office is conducive to concentration."
+  },
+  {
+   "id": "w207",
+   "deck": "adv",
+   "term": "confer",
+   "pos": "動",
+   "def": "協議する、授与する",
+   "ex": "The partners conferred before making a decision."
+  },
+  {
+   "id": "w208",
+   "deck": "adv",
+   "term": "conglomerate",
+   "pos": "名",
+   "def": "複合企業",
+   "ex": "The hotel chain was acquired by a large conglomerate."
+  },
+  {
+   "id": "w209",
+   "deck": "adv",
+   "term": "connoisseur",
+   "pos": "名",
+   "def": "鑑定家、目利き",
+   "ex": "The restaurant is popular among wine connoisseurs."
+  },
+  {
+   "id": "w210",
+   "deck": "adv",
+   "term": "consecutive",
+   "pos": "形",
+   "def": "連続した",
+   "ex": "Profits have increased for five consecutive quarters."
+  },
+  {
+   "id": "w211",
+   "deck": "adv",
+   "term": "consignment",
+   "pos": "名",
+   "def": "委託販売、発送品",
+   "ex": "The shop sells used furniture on consignment."
+  },
+  {
+   "id": "w212",
+   "deck": "adv",
+   "term": "constituent",
+   "pos": "名",
+   "def": "構成要素、有権者",
+   "ex": "The mayor met with constituents to discuss the plan."
+  },
+  {
+   "id": "w213",
+   "deck": "adv",
+   "term": "contemplate",
+   "pos": "動",
+   "def": "熟考する、検討する",
+   "ex": "The board is contemplating a move to a larger office."
+  },
+  {
+   "id": "w214",
+   "deck": "adv",
+   "term": "contend",
+   "pos": "動",
+   "def": "主張する、競う",
+   "ex": "Critics contend that the fee is too high."
+  },
+  {
+   "id": "w215",
+   "deck": "adv",
+   "term": "conversant with",
+   "pos": "形",
+   "def": "～に精通した",
+   "ex": "Applicants should be conversant with accounting software."
+  },
+  {
+   "id": "w216",
+   "deck": "adv",
+   "term": "copious",
+   "pos": "形",
+   "def": "豊富な、大量の",
+   "ex": "The speaker took copious notes during the meeting."
+  },
+  {
+   "id": "w217",
+   "deck": "adv",
+   "term": "credential",
+   "pos": "名",
+   "def": "資格、資格証明",
+   "ex": "Please submit copies of your professional credentials."
+  },
+  {
+   "id": "w218",
+   "deck": "adv",
+   "term": "cursory",
+   "pos": "形",
+   "def": "おざなりの、ざっと行う",
+   "ex": "A cursory review missed several errors."
+  },
+  {
+   "id": "w219",
+   "deck": "adv",
+   "term": "debilitating",
+   "pos": "形",
+   "def": "衰弱させる、深刻な打撃を与える",
+   "ex": "The strike had a debilitating effect on the supply chain."
+  },
+  {
+   "id": "w220",
+   "deck": "adv",
+   "term": "decisive",
+   "pos": "形",
+   "def": "決定的な、断固とした",
+   "ex": "The CEO took decisive action to cut costs."
+  },
+  {
+   "id": "w221",
+   "deck": "adv",
+   "term": "deem",
+   "pos": "動",
+   "def": "～とみなす",
+   "ex": "The proposal was deemed too risky."
+  },
+  {
+   "id": "w222",
+   "deck": "adv",
+   "term": "default",
+   "pos": "名",
+   "def": "債務不履行、初期設定",
+   "ex": "The company is at risk of default on its loans."
+  },
+  {
+   "id": "w223",
+   "deck": "adv",
+   "term": "defray",
+   "pos": "動",
+   "def": "（費用を）支払う、負担する",
+   "ex": "A grant will help defray the cost of the event."
+  },
+  {
+   "id": "w224",
+   "deck": "adv",
+   "term": "delineate",
+   "pos": "動",
+   "def": "詳しく描写する、明確に示す",
+   "ex": "The contract delineates each party's responsibilities."
+  },
+  {
+   "id": "w225",
+   "deck": "adv",
+   "term": "demise",
+   "pos": "名",
+   "def": "消滅、終焉",
+   "ex": "Online shopping contributed to the demise of the store."
+  },
+  {
+   "id": "w226",
+   "deck": "adv",
+   "term": "deplete",
+   "pos": "動",
+   "def": "使い果たす、激減させる",
+   "ex": "Heavy demand has depleted our stock of printer paper."
+  },
+  {
+   "id": "w227",
+   "deck": "adv",
+   "term": "deploy",
+   "pos": "動",
+   "def": "配備する、導入する",
+   "ex": "The company will deploy the new system next month."
+  },
+  {
+   "id": "w228",
+   "deck": "adv",
+   "term": "deviate from",
+   "pos": "動",
+   "def": "～からそれる、逸脱する",
+   "ex": "Please do not deviate from the approved design."
+  },
+  {
+   "id": "w229",
+   "deck": "adv",
+   "term": "devise",
+   "pos": "動",
+   "def": "考案する",
+   "ex": "The team devised a plan to reduce waste."
+  },
+  {
+   "id": "w230",
+   "deck": "adv",
+   "term": "dilapidated",
+   "pos": "形",
+   "def": "荒れ果てた、老朽化した",
+   "ex": "The dilapidated building will be renovated."
+  },
+  {
+   "id": "w231",
+   "deck": "adv",
+   "term": "discern",
+   "pos": "動",
+   "def": "見分ける、識別する",
+   "ex": "It was difficult to discern any pattern in the data."
+  },
+  {
+   "id": "w232",
+   "deck": "adv",
+   "term": "discrepancy",
+   "pos": "名",
+   "def": "不一致、食い違い",
+   "ex": "Auditors found a discrepancy in the expense report."
+  },
+  {
+   "id": "w233",
+   "deck": "adv",
+   "term": "disseminate",
+   "pos": "動",
+   "def": "広める、普及させる",
+   "ex": "The newsletter disseminates information to all employees."
+  },
+  {
+   "id": "w234",
+   "deck": "adv",
+   "term": "divest",
+   "pos": "動",
+   "def": "（事業などを）売却する、手放す",
+   "ex": "The group plans to divest its food division."
+  },
+  {
+   "id": "w235",
+   "deck": "adv",
+   "term": "dwindle",
+   "pos": "動",
+   "def": "次第に減少する",
+   "ex": "Membership has dwindled over the past decade."
+  },
+  {
+   "id": "w236",
+   "deck": "adv",
+   "term": "elaborate",
+   "pos": "形",
+   "def": "手の込んだ、精巧な",
+   "ex": "The hotel prepared an elaborate dinner for the guests."
+  },
+  {
+   "id": "w237",
+   "deck": "adv",
+   "term": "elusive",
+   "pos": "形",
+   "def": "捉えにくい、達成しにくい",
+   "ex": "A solution to the problem remains elusive."
+  },
+  {
+   "id": "w238",
+   "deck": "adv",
+   "term": "emulate",
+   "pos": "動",
+   "def": "見習う、模倣する",
+   "ex": "Many startups try to emulate the company's success."
+  },
+  {
+   "id": "w239",
+   "deck": "adv",
+   "term": "endeavor",
+   "pos": "名",
+   "def": "努力、試み",
+   "ex": "We wish you success in your future endeavors."
+  },
+  {
+   "id": "w240",
+   "deck": "adv",
+   "term": "entrenched",
+   "pos": "形",
+   "def": "定着した、根強い",
+   "ex": "Changing entrenched habits takes time."
+  },
+  {
+   "id": "w241",
+   "deck": "adv",
+   "term": "entrepreneur",
+   "pos": "名",
+   "def": "起業家",
+   "ex": "The forum brings together young entrepreneurs."
+  },
+  {
+   "id": "w242",
+   "deck": "adv",
+   "term": "ephemeral",
+   "pos": "形",
+   "def": "はかない、短命の",
+   "ex": "Many social media trends are ephemeral."
+  },
+  {
+   "id": "w243",
+   "deck": "adv",
+   "term": "equitable",
+   "pos": "形",
+   "def": "公平な、公正な",
+   "ex": "The committee sought an equitable distribution of funds."
+  },
+  {
+   "id": "w244",
+   "deck": "adv",
+   "term": "erroneous",
+   "pos": "形",
+   "def": "誤った",
+   "ex": "The invoice contained erroneous charges."
+  },
+  {
+   "id": "w245",
+   "deck": "adv",
+   "term": "escalate",
+   "pos": "動",
+   "def": "拡大する、上昇する",
+   "ex": "Costs escalated as the project was delayed."
+  },
+  {
+   "id": "w246",
+   "deck": "adv",
+   "term": "exacerbate",
+   "pos": "動",
+   "def": "悪化させる",
+   "ex": "The shortage was exacerbated by the holiday rush."
+  },
+  {
+   "id": "w247",
+   "deck": "adv",
+   "term": "exceedingly",
+   "pos": "副",
+   "def": "非常に、極めて",
+   "ex": "The new model has been exceedingly popular."
+  },
+  {
+   "id": "w248",
+   "deck": "adv",
+   "term": "excerpt",
+   "pos": "名",
+   "def": "抜粋",
+   "ex": "An excerpt from the novel was printed in the magazine."
+  },
+  {
+   "id": "w249",
+   "deck": "adv",
+   "term": "expedient",
+   "pos": "形",
+   "def": "好都合な、便宜的な",
+   "ex": "It would be expedient to hold the meeting online."
+  },
+  {
+   "id": "w250",
+   "deck": "adv",
+   "term": "expire",
+   "pos": "動",
+   "def": "期限が切れる",
+   "ex": "Your subscription will expire at the end of the month."
+  },
+  {
+   "id": "w251",
+   "deck": "adv",
+   "term": "explicit",
+   "pos": "形",
+   "def": "明確な、はっきりした",
+   "ex": "The instructions were explicit about the deadline."
+  },
+  {
+   "id": "w252",
+   "deck": "adv",
+   "term": "exponential",
+   "pos": "形",
+   "def": "急激な、指数関数的な",
+   "ex": "The company has seen exponential growth in users."
+  },
+  {
+   "id": "w253",
+   "deck": "adv",
+   "term": "extraneous",
+   "pos": "形",
+   "def": "無関係の、余分な",
+   "ex": "Remove any extraneous information from the summary."
+  },
+  {
+   "id": "w254",
+   "deck": "adv",
+   "term": "fallible",
+   "pos": "形",
+   "def": "誤りを犯しやすい",
+   "ex": "Even experienced inspectors are fallible."
+  },
+  {
+   "id": "w255",
+   "deck": "adv",
+   "term": "fledgling",
+   "pos": "形",
+   "def": "駆け出しの、新興の",
+   "ex": "The fledgling company secured its first major client."
+  },
+  {
+   "id": "w256",
+   "deck": "adv",
+   "term": "foresee",
+   "pos": "動",
+   "def": "予見する",
+   "ex": "We do not foresee any problems with the delivery."
+  },
+  {
+   "id": "w257",
+   "deck": "adv",
+   "term": "foster",
+   "pos": "動",
+   "def": "育成する、促進する",
+   "ex": "The program aims to foster innovation among staff."
+  },
+  {
+   "id": "w258",
+   "deck": "adv",
+   "term": "fraudulent",
+   "pos": "形",
+   "def": "詐欺の、不正な",
+   "ex": "The bank blocked several fraudulent transactions."
+  },
+  {
+   "id": "w259",
+   "deck": "adv",
+   "term": "fruition",
+   "pos": "名",
+   "def": "実現、達成",
+   "ex": "After years of planning, the project came to fruition."
+  },
+  {
+   "id": "w260",
+   "deck": "adv",
+   "term": "galvanize",
+   "pos": "動",
+   "def": "奮い立たせる",
+   "ex": "The speech galvanized employees into action."
+  },
+  {
+   "id": "w261",
+   "deck": "adv",
+   "term": "gratuity",
+   "pos": "名",
+   "def": "チップ、心付け",
+   "ex": "A 15 percent gratuity is included in the bill."
+  },
+  {
+   "id": "w262",
+   "deck": "adv",
+   "term": "hinder",
+   "pos": "動",
+   "def": "妨げる",
+   "ex": "Heavy traffic hindered the delivery trucks."
+  },
+  {
+   "id": "w263",
+   "deck": "adv",
+   "term": "holistic",
+   "pos": "形",
+   "def": "全体的な、包括的な",
+   "ex": "The clinic takes a holistic approach to health."
+  },
+  {
+   "id": "w264",
+   "deck": "adv",
+   "term": "impartial",
+   "pos": "形",
+   "def": "公平な、偏らない",
+   "ex": "An impartial panel will judge the competition."
+  },
+  {
+   "id": "w265",
+   "deck": "adv",
+   "term": "impede",
+   "pos": "動",
+   "def": "妨げる、遅らせる",
+   "ex": "Outdated equipment impedes productivity."
+  },
+  {
+   "id": "w266",
+   "deck": "adv",
+   "term": "imperil",
+   "pos": "動",
+   "def": "危険にさらす",
+   "ex": "A data breach could imperil customer trust."
+  },
+  {
+   "id": "w267",
+   "deck": "adv",
+   "term": "implicit",
+   "pos": "形",
+   "def": "暗黙の、それとなく示された",
+   "ex": "There was an implicit agreement to keep prices stable."
+  },
+  {
+   "id": "w268",
+   "deck": "adv",
+   "term": "inception",
+   "pos": "名",
+   "def": "発足、開始",
+   "ex": "The charity has grown steadily since its inception."
+  },
+  {
+   "id": "w269",
+   "deck": "adv",
+   "term": "incremental",
+   "pos": "形",
+   "def": "段階的な、徐々に増える",
+   "ex": "The software receives incremental updates every month."
+  },
+  {
+   "id": "w270",
+   "deck": "adv",
+   "term": "indigenous",
+   "pos": "形",
+   "def": "その土地固有の",
+   "ex": "The garden features indigenous plants."
+  },
+  {
+   "id": "w271",
+   "deck": "adv",
+   "term": "ingenious",
+   "pos": "形",
+   "def": "独創的な、巧妙な",
+   "ex": "The engineer came up with an ingenious solution."
+  },
+  {
+   "id": "w272",
+   "deck": "adv",
+   "term": "innate",
+   "pos": "形",
+   "def": "生来の、生まれつきの",
+   "ex": "She has an innate talent for design."
+  },
+  {
+   "id": "w273",
+   "deck": "adv",
+   "term": "innocuous",
+   "pos": "形",
+   "def": "無害な、当たり障りのない",
+   "ex": "The comment seemed innocuous but caused offense."
+  },
+  {
+   "id": "w274",
+   "deck": "adv",
+   "term": "insolvent",
+   "pos": "形",
+   "def": "支払い不能の、破産した",
+   "ex": "The retailer was declared insolvent last year."
+  },
+  {
+   "id": "w275",
+   "deck": "adv",
+   "term": "instigate",
+   "pos": "動",
+   "def": "（調査などを）開始させる",
+   "ex": "The manager instigated a review of safety procedures."
+  },
+  {
+   "id": "w276",
+   "deck": "adv",
+   "term": "integral",
+   "pos": "形",
+   "def": "不可欠な",
+   "ex": "Customer feedback is integral to product development."
+  },
+  {
+   "id": "w277",
+   "deck": "adv",
+   "term": "intermittent",
+   "pos": "形",
+   "def": "断続的な",
+   "ex": "Intermittent power outages disrupted production."
+  },
+  {
+   "id": "w278",
+   "deck": "adv",
+   "term": "intricate",
+   "pos": "形",
+   "def": "複雑な、入り組んだ",
+   "ex": "The watch has an intricate mechanism."
+  },
+  {
+   "id": "w279",
+   "deck": "adv",
+   "term": "intrinsic",
+   "pos": "形",
+   "def": "本来備わっている、本質的な",
+   "ex": "The painting has little intrinsic value."
+  },
+  {
+   "id": "w280",
+   "deck": "adv",
+   "term": "inundate",
+   "pos": "動",
+   "def": "殺到させる、あふれさせる",
+   "ex": "The help desk was inundated with calls."
+  },
+  {
+   "id": "w281",
+   "deck": "adv",
+   "term": "irrevocable",
+   "pos": "形",
+   "def": "取り消せない",
+   "ex": "Once signed, the agreement is irrevocable."
+  },
+  {
+   "id": "w282",
+   "deck": "adv",
+   "term": "juncture",
+   "pos": "名",
+   "def": "（重大な）時点、局面",
+   "ex": "At this juncture, we cannot comment further."
+  },
+  {
+   "id": "w283",
+   "deck": "adv",
+   "term": "laudable",
+   "pos": "形",
+   "def": "称賛に値する",
+   "ex": "The team's efforts to reduce waste are laudable."
+  },
+  {
+   "id": "w284",
+   "deck": "adv",
+   "term": "magnitude",
+   "pos": "名",
+   "def": "大きさ、重要性",
+   "ex": "Nobody anticipated the magnitude of the problem."
+  },
+  {
+   "id": "w285",
+   "deck": "adv",
+   "term": "malfunction",
+   "pos": "名",
+   "def": "故障、不調",
+   "ex": "A malfunction in the printer delayed the mailing."
+  },
+  {
+   "id": "w286",
+   "deck": "adv",
+   "term": "mandate",
+   "pos": "名",
+   "def": "命令、権限",
+   "ex": "The committee has a mandate to review all spending."
+  },
+  {
+   "id": "w287",
+   "deck": "adv",
+   "term": "marginal",
+   "pos": "形",
+   "def": "わずかな、周辺的な",
+   "ex": "The change had only a marginal effect on sales."
+  },
+  {
+   "id": "w288",
+   "deck": "adv",
+   "term": "moratorium",
+   "pos": "名",
+   "def": "一時停止、猶予期間",
+   "ex": "The city imposed a moratorium on new construction."
+  },
+  {
+   "id": "w289",
+   "deck": "adv",
+   "term": "mundane",
+   "pos": "形",
+   "def": "ありふれた、平凡な",
+   "ex": "Automation frees staff from mundane tasks."
+  },
+  {
+   "id": "w290",
+   "deck": "adv",
+   "term": "nominal",
+   "pos": "形",
+   "def": "名ばかりの、ごくわずかな",
+   "ex": "Members can attend for a nominal fee."
+  },
+  {
+   "id": "w291",
+   "deck": "adv",
+   "term": "nonchalant",
+   "pos": "形",
+   "def": "無頓着な、平然とした",
+   "ex": "He remained nonchalant despite the bad news."
+  },
+  {
+   "id": "w292",
+   "deck": "adv",
+   "term": "notwithstanding",
+   "pos": "前",
+   "def": "～にもかかわらず",
+   "ex": "Notwithstanding the delay, the project stayed within budget."
+  },
+  {
+   "id": "w293",
+   "deck": "adv",
+   "term": "nullify",
+   "pos": "動",
+   "def": "無効にする",
+   "ex": "Any changes to the form will nullify the warranty."
+  },
+  {
+   "id": "w294",
+   "deck": "adv",
+   "term": "obsolescence",
+   "pos": "名",
+   "def": "陳腐化、旧式化",
+   "ex": "Rapid obsolescence is a risk in the electronics industry."
+  },
+  {
+   "id": "w295",
+   "deck": "adv",
+   "term": "obstruct",
+   "pos": "動",
+   "def": "妨げる、ふさぐ",
+   "ex": "Please do not obstruct the emergency exits."
+  },
+  {
+   "id": "w296",
+   "deck": "adv",
+   "term": "omission",
+   "pos": "名",
+   "def": "省略、記載漏れ",
+   "ex": "The omission of the date caused confusion."
+  },
+  {
+   "id": "w297",
+   "deck": "adv",
+   "term": "opportune",
+   "pos": "形",
+   "def": "好都合な、時宜を得た",
+   "ex": "This is an opportune moment to launch the campaign."
+  },
+  {
+   "id": "w298",
+   "deck": "adv",
+   "term": "optimal",
+   "pos": "形",
+   "def": "最適な",
+   "ex": "The device performs best at an optimal temperature."
+  },
+  {
+   "id": "w299",
+   "deck": "adv",
+   "term": "ostensibly",
+   "pos": "副",
+   "def": "表向きは",
+   "ex": "The trip was ostensibly for business."
+  },
+  {
+   "id": "w300",
+   "deck": "adv",
+   "term": "outlay",
+   "pos": "名",
+   "def": "支出、出費",
+   "ex": "The initial outlay for the equipment was high."
+  },
+  {
+   "id": "w301",
+   "deck": "adv",
+   "term": "outsource",
+   "pos": "動",
+   "def": "外部委託する",
+   "ex": "The firm outsources its payroll processing."
+  },
+  {
+   "id": "w302",
+   "deck": "adv",
+   "term": "paramount",
+   "pos": "形",
+   "def": "最重要の",
+   "ex": "Passenger safety is paramount."
+  },
+  {
+   "id": "w303",
+   "deck": "adv",
+   "term": "partition",
+   "pos": "名",
+   "def": "仕切り、区画",
+   "ex": "Glass partitions divide the open office."
+  },
+  {
+   "id": "w304",
+   "deck": "adv",
+   "term": "peripheral",
+   "pos": "形",
+   "def": "周辺の、二次的な",
+   "ex": "The meeting focused on peripheral issues."
+  },
+  {
+   "id": "w305",
+   "deck": "adv",
+   "term": "perpetual",
+   "pos": "形",
+   "def": "永続的な、絶え間ない",
+   "ex": "The software license is perpetual."
+  },
+  {
+   "id": "w306",
+   "deck": "adv",
+   "term": "pervasive",
+   "pos": "形",
+   "def": "広がっている、浸透した",
+   "ex": "Mobile payments have become pervasive."
+  },
+  {
+   "id": "w307",
+   "deck": "adv",
+   "term": "pivotal",
+   "pos": "形",
+   "def": "極めて重要な",
+   "ex": "She played a pivotal role in the merger."
+  },
+  {
+   "id": "w308",
+   "deck": "adv",
+   "term": "pragmatic",
+   "pos": "形",
+   "def": "実用的な、現実的な",
+   "ex": "We need a pragmatic solution, not a perfect one."
+  },
+  {
+   "id": "w309",
+   "deck": "adv",
+   "term": "precarious",
+   "pos": "形",
+   "def": "不安定な、危うい",
+   "ex": "The company is in a precarious financial position."
+  },
+  {
+   "id": "w310",
+   "deck": "adv",
+   "term": "preclude",
+   "pos": "動",
+   "def": "妨げる、不可能にする",
+   "ex": "Budget limits preclude any further hiring."
+  },
+  {
+   "id": "w311",
+   "deck": "adv",
+   "term": "predecessor",
+   "pos": "名",
+   "def": "前任者、前のもの",
+   "ex": "The new model is lighter than its predecessor."
+  },
+  {
+   "id": "w312",
+   "deck": "adv",
+   "term": "preeminent",
+   "pos": "形",
+   "def": "卓越した",
+   "ex": "He is a preeminent expert in tax law."
+  },
+  {
+   "id": "w313",
+   "deck": "adv",
+   "term": "premium",
+   "pos": "名",
+   "def": "保険料、割増金",
+   "ex": "Insurance premiums will rise next year."
+  },
+  {
+   "id": "w314",
+   "deck": "adv",
+   "term": "prerogative",
+   "pos": "名",
+   "def": "特権、権限",
+   "ex": "Setting salaries is the director's prerogative."
+  },
+  {
+   "id": "w315",
+   "deck": "adv",
+   "term": "prescribe",
+   "pos": "動",
+   "def": "規定する、処方する",
+   "ex": "Follow the procedures prescribed in the manual."
+  },
+  {
+   "id": "w316",
+   "deck": "adv",
+   "term": "procrastinate",
+   "pos": "動",
+   "def": "先延ばしにする",
+   "ex": "Don't procrastinate on your tax return."
+  },
+  {
+   "id": "w317",
+   "deck": "adv",
+   "term": "prodigious",
+   "pos": "形",
+   "def": "膨大な、驚異的な",
+   "ex": "The project required a prodigious amount of work."
+  },
+  {
+   "id": "w318",
+   "deck": "adv",
+   "term": "proliferate",
+   "pos": "動",
+   "def": "急増する",
+   "ex": "Coffee shops have proliferated downtown."
+  },
+  {
+   "id": "w319",
+   "deck": "adv",
+   "term": "prolific",
+   "pos": "形",
+   "def": "多作の、多産な",
+   "ex": "She is a prolific writer of business books."
+  },
+  {
+   "id": "w320",
+   "deck": "adv",
+   "term": "prompt",
+   "pos": "形",
+   "def": "迅速な",
+   "ex": "Thank you for your prompt reply."
+  },
+  {
+   "id": "w321",
+   "deck": "adv",
+   "term": "propensity",
+   "pos": "名",
+   "def": "傾向、性癖",
+   "ex": "Consumers have a propensity to buy on impulse."
+  },
+  {
+   "id": "w322",
+   "deck": "adv",
+   "term": "proponent",
+   "pos": "名",
+   "def": "支持者、提唱者",
+   "ex": "He is a strong proponent of remote work."
+  },
+  {
+   "id": "w323",
+   "deck": "adv",
+   "term": "prospectus",
+   "pos": "名",
+   "def": "（事業・学校などの）案内書、目論見書",
+   "ex": "Investors received a copy of the prospectus."
+  },
+  {
+   "id": "w324",
+   "deck": "adv",
+   "term": "protocol",
+   "pos": "名",
+   "def": "手順、儀礼",
+   "ex": "Staff must follow the safety protocol."
+  },
+  {
+   "id": "w325",
+   "deck": "adv",
+   "term": "prudent",
+   "pos": "形",
+   "def": "慎重な、賢明な",
+   "ex": "It would be prudent to wait for more data."
+  },
+  {
+   "id": "w326",
+   "deck": "adv",
+   "term": "pursuant to",
+   "pos": "前",
+   "def": "～に従って",
+   "ex": "Pursuant to the contract, payment is due in 30 days."
+  },
+  {
+   "id": "w327",
+   "deck": "adv",
+   "term": "quandary",
+   "pos": "名",
+   "def": "困惑、苦境",
+   "ex": "The sudden resignation left the team in a quandary."
+  },
+  {
+   "id": "w328",
+   "deck": "adv",
+   "term": "rampant",
+   "pos": "形",
+   "def": "はびこる、蔓延した",
+   "ex": "Counterfeit goods are rampant in some markets."
+  },
+  {
+   "id": "w329",
+   "deck": "adv",
+   "term": "ramification",
+   "pos": "名",
+   "def": "（予期せぬ）影響、結果",
+   "ex": "Consider the legal ramifications of the decision."
+  },
+  {
+   "id": "w330",
+   "deck": "adv",
+   "term": "rapport",
+   "pos": "名",
+   "def": "信頼関係",
+   "ex": "Sales staff should build rapport with clients."
+  },
+  {
+   "id": "w331",
+   "deck": "adv",
+   "term": "rebate",
+   "pos": "名",
+   "def": "払い戻し、割戻し",
+   "ex": "Customers can claim a $50 rebate by mail."
+  },
+  {
+   "id": "w332",
+   "deck": "adv",
+   "term": "recipient",
+   "pos": "名",
+   "def": "受取人、受賞者",
+   "ex": "The recipient of this year's award is Dr. Lin."
+  },
+  {
+   "id": "w333",
+   "deck": "adv",
+   "term": "reciprocate",
+   "pos": "動",
+   "def": "お返しをする、報いる",
+   "ex": "We hope to reciprocate your hospitality."
+  },
+  {
+   "id": "w334",
+   "deck": "adv",
+   "term": "recourse",
+   "pos": "名",
+   "def": "頼みの綱、償還請求",
+   "ex": "Legal action is our last recourse."
+  },
+  {
+   "id": "w335",
+   "deck": "adv",
+   "term": "rectify",
+   "pos": "動",
+   "def": "是正する、修正する",
+   "ex": "We will rectify the error immediately."
+  },
+  {
+   "id": "w336",
+   "deck": "adv",
+   "term": "reimbursement",
+   "pos": "名",
+   "def": "払い戻し、経費精算",
+   "ex": "Submit receipts for reimbursement by Friday."
+  },
+  {
+   "id": "w337",
+   "deck": "adv",
+   "term": "relegate",
+   "pos": "動",
+   "def": "格下げする、追いやる",
+   "ex": "The old printer was relegated to the storage room."
+  },
+  {
+   "id": "w338",
+   "deck": "adv",
+   "term": "relinquish",
+   "pos": "動",
+   "def": "放棄する、譲る",
+   "ex": "He relinquished control of the company to his daughter."
+  },
+  {
+   "id": "w339",
+   "deck": "adv",
+   "term": "remedy",
+   "pos": "動",
+   "def": "改善する、是正する",
+   "ex": "Steps were taken to remedy the situation."
+  },
+  {
+   "id": "w340",
+   "deck": "adv",
+   "term": "remnant",
+   "pos": "名",
+   "def": "残り、残部",
+   "ex": "Remnants of fabric are sold at a discount."
+  },
+  {
+   "id": "w341",
+   "deck": "adv",
+   "term": "repercussion",
+   "pos": "名",
+   "def": "（悪い）影響、反響",
+   "ex": "The decision had serious repercussions for the staff."
+  },
+  {
+   "id": "w342",
+   "deck": "adv",
+   "term": "replicate",
+   "pos": "動",
+   "def": "再現する、複製する",
+   "ex": "Other branches will try to replicate the success."
+  },
+  {
+   "id": "w343",
+   "deck": "adv",
+   "term": "repository",
+   "pos": "名",
+   "def": "保管場所、貯蔵庫",
+   "ex": "The shared drive serves as a repository for all forms."
+  },
+  {
+   "id": "w344",
+   "deck": "adv",
+   "term": "requisite",
+   "pos": "形",
+   "def": "必要な",
+   "ex": "Applicants must have the requisite experience."
+  },
+  {
+   "id": "w345",
+   "deck": "adv",
+   "term": "resilient",
+   "pos": "形",
+   "def": "回復力のある、しなやかな",
+   "ex": "The local economy proved resilient."
+  },
+  {
+   "id": "w346",
+   "deck": "adv",
+   "term": "resolute",
+   "pos": "形",
+   "def": "断固とした",
+   "ex": "The mayor remained resolute in her support for the plan."
+  },
+  {
+   "id": "w347",
+   "deck": "adv",
+   "term": "restitution",
+   "pos": "名",
+   "def": "返還、賠償",
+   "ex": "The company agreed to pay restitution to customers."
+  },
+  {
+   "id": "w348",
+   "deck": "adv",
+   "term": "retroactive",
+   "pos": "形",
+   "def": "遡及的な",
+   "ex": "The pay raise is retroactive to January 1."
+  },
+  {
+   "id": "w349",
+   "deck": "adv",
+   "term": "revoke",
+   "pos": "動",
+   "def": "取り消す、無効にする",
+   "ex": "The license was revoked after the inspection."
+  },
+  {
+   "id": "w350",
+   "deck": "adv",
+   "term": "rigorous",
+   "pos": "形",
+   "def": "厳格な、徹底した",
+   "ex": "All products undergo rigorous testing."
+  },
+  {
+   "id": "w351",
+   "deck": "adv",
+   "term": "rudimentary",
+   "pos": "形",
+   "def": "初歩の、基本的な",
+   "ex": "Applicants need only a rudimentary knowledge of Spanish."
+  },
+  {
+   "id": "w352",
+   "deck": "adv",
+   "term": "sanction",
+   "pos": "動",
+   "def": "認可する、制裁を加える",
+   "ex": "The board sanctioned the purchase of new equipment."
+  },
+  {
+   "id": "w353",
+   "deck": "adv",
+   "term": "saturated",
+   "pos": "形",
+   "def": "飽和した",
+   "ex": "The smartphone market is saturated."
+  },
+  {
+   "id": "w354",
+   "deck": "adv",
+   "term": "scrutiny",
+   "pos": "名",
+   "def": "綿密な調査、監視",
+   "ex": "The proposal came under close scrutiny."
+  },
+  {
+   "id": "w355",
+   "deck": "adv",
+   "term": "secluded",
+   "pos": "形",
+   "def": "人里離れた、隔離された",
+   "ex": "The resort is located on a secluded beach."
+  },
+  {
+   "id": "w356",
+   "deck": "adv",
+   "term": "skeptical",
+   "pos": "形",
+   "def": "懐疑的な",
+   "ex": "Investors were skeptical of the forecast."
+  },
+  {
+   "id": "w357",
+   "deck": "adv",
+   "term": "sluggish",
+   "pos": "形",
+   "def": "低迷した、のろい",
+   "ex": "Sales remained sluggish in the first quarter."
+  },
+  {
+   "id": "w358",
+   "deck": "adv",
+   "term": "sporadic",
+   "pos": "形",
+   "def": "散発的な",
+   "ex": "Sporadic showers are expected this afternoon."
+  },
+  {
+   "id": "w359",
+   "deck": "adv",
+   "term": "spearhead",
+   "pos": "動",
+   "def": "先頭に立って進める",
+   "ex": "Ms. Okafor will spearhead the marketing campaign."
+  },
+  {
+   "id": "w360",
+   "deck": "adv",
+   "term": "staggering",
+   "pos": "形",
+   "def": "驚異的な、膨大な",
+   "ex": "The project cost a staggering $2 billion."
+  },
+  {
+   "id": "w361",
+   "deck": "adv",
+   "term": "stakeholder",
+   "pos": "名",
+   "def": "利害関係者",
+   "ex": "The plan was shared with all stakeholders."
+  },
+  {
+   "id": "w362",
+   "deck": "adv",
+   "term": "stalwart",
+   "pos": "形",
+   "def": "頼りになる、忠実な",
+   "ex": "He has been a stalwart supporter of the charity."
+  },
+  {
+   "id": "w363",
+   "deck": "adv",
+   "term": "stamina",
+   "pos": "名",
+   "def": "持久力、体力",
+   "ex": "The job requires stamina and patience."
+  },
+  {
+   "id": "w364",
+   "deck": "adv",
+   "term": "subordinate",
+   "pos": "名",
+   "def": "部下",
+   "ex": "Good managers listen to their subordinates."
+  },
+  {
+   "id": "w365",
+   "deck": "adv",
+   "term": "subsidiary",
+   "pos": "名",
+   "def": "子会社",
+   "ex": "The firm opened a subsidiary in Brazil."
+  },
+  {
+   "id": "w366",
+   "deck": "adv",
+   "term": "subsidize",
+   "pos": "動",
+   "def": "補助金を出す",
+   "ex": "The city subsidizes public transportation."
+  },
+  {
+   "id": "w367",
+   "deck": "adv",
+   "term": "succinct",
+   "pos": "形",
+   "def": "簡潔な",
+   "ex": "Please keep your presentation succinct."
+  },
+  {
+   "id": "w368",
+   "deck": "adv",
+   "term": "superfluous",
+   "pos": "形",
+   "def": "余分な、不必要な",
+   "ex": "Remove superfluous details from the report."
+  },
+  {
+   "id": "w369",
+   "deck": "adv",
+   "term": "supplement",
+   "pos": "動",
+   "def": "補う、追加する",
+   "ex": "He supplements his income by teaching at night."
+  },
+  {
+   "id": "w370",
+   "deck": "adv",
+   "term": "surmount",
+   "pos": "動",
+   "def": "乗り越える、克服する",
+   "ex": "The team surmounted many obstacles."
+  },
+  {
+   "id": "w371",
+   "deck": "adv",
+   "term": "surpass",
+   "pos": "動",
+   "def": "上回る、しのぐ",
+   "ex": "Sales surpassed expectations."
+  },
+  {
+   "id": "w372",
+   "deck": "adv",
+   "term": "sustainable",
+   "pos": "形",
+   "def": "持続可能な",
+   "ex": "The company is committed to sustainable growth."
+  },
+  {
+   "id": "w373",
+   "deck": "adv",
+   "term": "tactful",
+   "pos": "形",
+   "def": "如才ない、気配りのある",
+   "ex": "She gave a tactful response to the complaint."
+  },
+  {
+   "id": "w374",
+   "deck": "adv",
+   "term": "tangential",
+   "pos": "形",
+   "def": "本題から外れた",
+   "ex": "His remarks were tangential to the discussion."
+  },
+  {
+   "id": "w375",
+   "deck": "adv",
+   "term": "tenacious",
+   "pos": "形",
+   "def": "粘り強い",
+   "ex": "A tenacious negotiator, she rarely gives up."
+  },
+  {
+   "id": "w376",
+   "deck": "adv",
+   "term": "tentatively",
+   "pos": "副",
+   "def": "仮に、暫定的に",
+   "ex": "The meeting is tentatively scheduled for Tuesday."
+  },
+  {
+   "id": "w377",
+   "deck": "adv",
+   "term": "terminology",
+   "pos": "名",
+   "def": "専門用語",
+   "ex": "The manual explains technical terminology."
+  },
+  {
+   "id": "w378",
+   "deck": "adv",
+   "term": "testimonial",
+   "pos": "名",
+   "def": "推薦文、お客様の声",
+   "ex": "The Web site features testimonials from clients."
+  },
+  {
+   "id": "w379",
+   "deck": "adv",
+   "term": "threshold",
+   "pos": "名",
+   "def": "基準値、入り口",
+   "ex": "Orders above the $100 threshold ship free."
+  },
+  {
+   "id": "w380",
+   "deck": "adv",
+   "term": "tout",
+   "pos": "動",
+   "def": "売り込む、褒めちぎる",
+   "ex": "The company touted its new product as revolutionary."
+  },
+  {
+   "id": "w381",
+   "deck": "adv",
+   "term": "transient",
+   "pos": "形",
+   "def": "一時的な、短期滞在の",
+   "ex": "The hotel caters mainly to transient guests."
+  },
+  {
+   "id": "w382",
+   "deck": "adv",
+   "term": "transparency",
+   "pos": "名",
+   "def": "透明性",
+   "ex": "Shareholders demanded greater transparency."
+  },
+  {
+   "id": "w383",
+   "deck": "adv",
+   "term": "trivial",
+   "pos": "形",
+   "def": "ささいな",
+   "ex": "The error was trivial and easily fixed."
+  },
+  {
+   "id": "w384",
+   "deck": "adv",
+   "term": "ubiquitous",
+   "pos": "形",
+   "def": "至る所にある",
+   "ex": "Smartphones are now ubiquitous."
+  },
+  {
+   "id": "w385",
+   "deck": "adv",
+   "term": "unilateral",
+   "pos": "形",
+   "def": "一方的な",
+   "ex": "The supplier made a unilateral decision to raise prices."
+  },
+  {
+   "id": "w386",
+   "deck": "adv",
+   "term": "unwavering",
+   "pos": "形",
+   "def": "揺るぎない",
+   "ex": "Thank you for your unwavering support."
+  },
+  {
+   "id": "w387",
+   "deck": "adv",
+   "term": "upheaval",
+   "pos": "名",
+   "def": "激変、大混乱",
+   "ex": "The industry is undergoing major upheaval."
+  },
+  {
+   "id": "w388",
+   "deck": "adv",
+   "term": "vacate",
+   "pos": "動",
+   "def": "明け渡す、立ち退く",
+   "ex": "Tenants must vacate the premises by May 31."
+  },
+  {
+   "id": "w389",
+   "deck": "adv",
+   "term": "vehemently",
+   "pos": "副",
+   "def": "激しく、猛烈に",
+   "ex": "The union vehemently opposed the plan."
+  },
+  {
+   "id": "w390",
+   "deck": "adv",
+   "term": "venture",
+   "pos": "名",
+   "def": "（冒険的）事業",
+   "ex": "The joint venture will produce solar panels."
+  },
+  {
+   "id": "w391",
+   "deck": "adv",
+   "term": "viability",
+   "pos": "名",
+   "def": "実行可能性",
+   "ex": "We are studying the viability of the project."
+  },
+  {
+   "id": "w392",
+   "deck": "adv",
+   "term": "vigilant",
+   "pos": "形",
+   "def": "油断のない、警戒している",
+   "ex": "Staff should remain vigilant against phishing e-mails."
+  },
+  {
+   "id": "w393",
+   "deck": "adv",
+   "term": "volatile",
+   "pos": "形",
+   "def": "変動しやすい、不安定な",
+   "ex": "Fuel prices have been volatile this year."
+  },
+  {
+   "id": "w394",
+   "deck": "adv",
+   "term": "wane",
+   "pos": "動",
+   "def": "衰える、弱まる",
+   "ex": "Interest in the product began to wane."
+  },
+  {
+   "id": "w395",
+   "deck": "adv",
+   "term": "wholesale",
+   "pos": "形",
+   "def": "卸売りの",
+   "ex": "Wholesale prices are lower than retail prices."
+  },
+  {
+   "id": "w396",
+   "deck": "adv",
+   "term": "windfall",
+   "pos": "名",
+   "def": "思いがけない収入",
+   "ex": "The company received a windfall from the sale."
+  },
+  {
+   "id": "w397",
+   "deck": "phr",
+   "term": "account for",
+   "pos": "句",
+   "def": "（割合を）占める、説明する",
+   "ex": "Online orders account for 40 percent of sales."
+  },
+  {
+   "id": "w398",
+   "deck": "phr",
+   "term": "act on",
+   "pos": "句",
+   "def": "（助言などに）基づいて行動する",
+   "ex": "The manager acted on the customer's suggestion."
+  },
+  {
+   "id": "w399",
+   "deck": "phr",
+   "term": "back up",
+   "pos": "句",
+   "def": "裏付ける、バックアップする",
+   "ex": "Please back up your files before the update."
+  },
+  {
+   "id": "w400",
+   "deck": "phr",
+   "term": "bank on",
+   "pos": "句",
+   "def": "～を当てにする",
+   "ex": "We are banking on strong holiday sales."
+  },
+  {
+   "id": "w401",
+   "deck": "phr",
+   "term": "bear with",
+   "pos": "句",
+   "def": "～を辛抱して待つ",
+   "ex": "Please bear with us while we fix the problem."
+  },
+  {
+   "id": "w402",
+   "deck": "phr",
+   "term": "boil down to",
+   "pos": "句",
+   "def": "結局～になる",
+   "ex": "The decision boils down to cost."
+  },
+  {
+   "id": "w403",
+   "deck": "phr",
+   "term": "branch out",
+   "pos": "句",
+   "def": "事業を拡大する",
+   "ex": "The bakery plans to branch out into catering."
+  },
+  {
+   "id": "w404",
+   "deck": "phr",
+   "term": "break ground",
+   "pos": "句",
+   "def": "着工する",
+   "ex": "The company will break ground on the new plant in May."
+  },
+  {
+   "id": "w405",
+   "deck": "phr",
+   "term": "bring about",
+   "pos": "句",
+   "def": "もたらす、引き起こす",
+   "ex": "The new CEO brought about major changes."
+  },
+  {
+   "id": "w406",
+   "deck": "phr",
+   "term": "bring up",
+   "pos": "句",
+   "def": "（話題を）持ち出す",
+   "ex": "She brought up the budget issue at the meeting."
+  },
+  {
+   "id": "w407",
+   "deck": "phr",
+   "term": "brush up on",
+   "pos": "句",
+   "def": "～を磨き直す",
+   "ex": "I need to brush up on my Spanish before the trip."
+  },
+  {
+   "id": "w408",
+   "deck": "phr",
+   "term": "call for",
+   "pos": "句",
+   "def": "必要とする、要求する",
+   "ex": "The plan calls for three new hires."
+  },
+  {
+   "id": "w409",
+   "deck": "phr",
+   "term": "carry over",
+   "pos": "句",
+   "def": "繰り越す",
+   "ex": "Unused vacation days can be carried over to next year."
+  },
+  {
+   "id": "w410",
+   "deck": "phr",
+   "term": "cater to",
+   "pos": "句",
+   "def": "～の要望に応える",
+   "ex": "The hotel caters to business travelers."
+  },
+  {
+   "id": "w411",
+   "deck": "phr",
+   "term": "cave in",
+   "pos": "句",
+   "def": "屈服する、崩れる",
+   "ex": "Management finally caved in to the union's demands."
+  },
+  {
+   "id": "w412",
+   "deck": "phr",
+   "term": "chip in",
+   "pos": "句",
+   "def": "（お金・手を）出し合う",
+   "ex": "Everyone chipped in for the farewell gift."
+  },
+  {
+   "id": "w413",
+   "deck": "phr",
+   "term": "clamp down on",
+   "pos": "句",
+   "def": "～を取り締まる",
+   "ex": "The city is clamping down on illegal parking."
+  },
+  {
+   "id": "w414",
+   "deck": "phr",
+   "term": "come across",
+   "pos": "句",
+   "def": "偶然見つける、～という印象を与える",
+   "ex": "I came across an interesting article."
+  },
+  {
+   "id": "w415",
+   "deck": "phr",
+   "term": "come up with",
+   "pos": "句",
+   "def": "思いつく、考え出す",
+   "ex": "The team came up with a creative slogan."
+  },
+  {
+   "id": "w416",
+   "deck": "phr",
+   "term": "count on",
+   "pos": "句",
+   "def": "～を頼りにする",
+   "ex": "You can count on us to deliver on time."
+  },
+  {
+   "id": "w417",
+   "deck": "phr",
+   "term": "crack down on",
+   "pos": "句",
+   "def": "～を厳しく取り締まる",
+   "ex": "Authorities cracked down on counterfeit goods."
+  },
+  {
+   "id": "w418",
+   "deck": "phr",
+   "term": "cut back on",
+   "pos": "句",
+   "def": "～を削減する",
+   "ex": "We need to cut back on travel expenses."
+  },
+  {
+   "id": "w419",
+   "deck": "phr",
+   "term": "deal with",
+   "pos": "句",
+   "def": "～に対処する",
+   "ex": "She deals with customer complaints."
+  },
+  {
+   "id": "w420",
+   "deck": "phr",
+   "term": "dispose of",
+   "pos": "句",
+   "def": "～を処分する",
+   "ex": "Please dispose of old files securely."
+  },
+  {
+   "id": "w421",
+   "deck": "phr",
+   "term": "draw up",
+   "pos": "句",
+   "def": "（文書を）作成する",
+   "ex": "The lawyer drew up a new contract."
+  },
+  {
+   "id": "w422",
+   "deck": "phr",
+   "term": "drop by",
+   "pos": "句",
+   "def": "立ち寄る",
+   "ex": "Feel free to drop by my office anytime."
+  },
+  {
+   "id": "w423",
+   "deck": "phr",
+   "term": "drop off",
+   "pos": "句",
+   "def": "置いていく、減少する",
+   "ex": "You can drop off the package at the front desk."
+  },
+  {
+   "id": "w424",
+   "deck": "phr",
+   "term": "fall behind",
+   "pos": "句",
+   "def": "遅れる",
+   "ex": "The project has fallen behind schedule."
+  },
+  {
+   "id": "w425",
+   "deck": "phr",
+   "term": "fall through",
+   "pos": "句",
+   "def": "（計画が）失敗に終わる",
+   "ex": "The deal fell through at the last minute."
+  },
+  {
+   "id": "w426",
+   "deck": "phr",
+   "term": "figure out",
+   "pos": "句",
+   "def": "理解する、解決する",
+   "ex": "We need to figure out why sales dropped."
+  },
+  {
+   "id": "w427",
+   "deck": "phr",
+   "term": "fill in for",
+   "pos": "句",
+   "def": "～の代わりを務める",
+   "ex": "Mr. Diaz will fill in for me while I'm away."
+  },
+  {
+   "id": "w428",
+   "deck": "phr",
+   "term": "follow up on",
+   "pos": "句",
+   "def": "～の追跡調査をする、フォローする",
+   "ex": "I'll follow up on your request tomorrow."
+  },
+  {
+   "id": "w429",
+   "deck": "phr",
+   "term": "get across",
+   "pos": "句",
+   "def": "（考えを）伝える",
+   "ex": "He struggled to get his point across."
+  },
+  {
+   "id": "w430",
+   "deck": "phr",
+   "term": "get around to",
+   "pos": "句",
+   "def": "ようやく～に取りかかる",
+   "ex": "I finally got around to updating the files."
+  },
+  {
+   "id": "w431",
+   "deck": "phr",
+   "term": "give away",
+   "pos": "句",
+   "def": "無料で配る",
+   "ex": "The store is giving away free samples."
+  },
+  {
+   "id": "w432",
+   "deck": "phr",
+   "term": "go over",
+   "pos": "句",
+   "def": "見直す、検討する",
+   "ex": "Let's go over the figures once more."
+  },
+  {
+   "id": "w433",
+   "deck": "phr",
+   "term": "hand in",
+   "pos": "句",
+   "def": "提出する",
+   "ex": "Please hand in your reports by noon."
+  },
+  {
+   "id": "w434",
+   "deck": "phr",
+   "term": "hand out",
+   "pos": "句",
+   "def": "配布する",
+   "ex": "Staff handed out brochures at the entrance."
+  },
+  {
+   "id": "w435",
+   "deck": "phr",
+   "term": "hold off on",
+   "pos": "句",
+   "def": "～を延期する、控える",
+   "ex": "We'll hold off on hiring until next year."
+  },
+  {
+   "id": "w436",
+   "deck": "phr",
+   "term": "hold up",
+   "pos": "句",
+   "def": "遅らせる、持ちこたえる",
+   "ex": "The shipment was held up at customs."
+  },
+  {
+   "id": "w437",
+   "deck": "phr",
+   "term": "iron out",
+   "pos": "句",
+   "def": "（問題を）解決する",
+   "ex": "We need to iron out a few details."
+  },
+  {
+   "id": "w438",
+   "deck": "phr",
+   "term": "keep up with",
+   "pos": "句",
+   "def": "～に遅れずについていく",
+   "ex": "It's hard to keep up with demand."
+  },
+  {
+   "id": "w439",
+   "deck": "phr",
+   "term": "lay off",
+   "pos": "句",
+   "def": "解雇する",
+   "ex": "The factory laid off 200 workers."
+  },
+  {
+   "id": "w440",
+   "deck": "phr",
+   "term": "lay out",
+   "pos": "句",
+   "def": "詳しく説明する、配置する",
+   "ex": "The report lays out a five-year plan."
+  },
+  {
+   "id": "w441",
+   "deck": "phr",
+   "term": "live up to",
+   "pos": "句",
+   "def": "（期待に）応える",
+   "ex": "The hotel lived up to its reputation."
+  },
+  {
+   "id": "w442",
+   "deck": "phr",
+   "term": "look into",
+   "pos": "句",
+   "def": "調べる",
+   "ex": "We will look into the matter right away."
+  },
+  {
+   "id": "w443",
+   "deck": "phr",
+   "term": "look over",
+   "pos": "句",
+   "def": "ざっと目を通す",
+   "ex": "Could you look over this draft?"
+  },
+  {
+   "id": "w444",
+   "deck": "phr",
+   "term": "make up for",
+   "pos": "句",
+   "def": "埋め合わせる",
+   "ex": "Extra shifts will make up for lost time."
+  },
+  {
+   "id": "w445",
+   "deck": "phr",
+   "term": "map out",
+   "pos": "句",
+   "def": "詳細に計画する",
+   "ex": "We mapped out a strategy for next year."
+  },
+  {
+   "id": "w446",
+   "deck": "phr",
+   "term": "mark down",
+   "pos": "句",
+   "def": "値下げする",
+   "ex": "All winter coats have been marked down."
+  },
+  {
+   "id": "w447",
+   "deck": "phr",
+   "term": "narrow down",
+   "pos": "句",
+   "def": "絞り込む",
+   "ex": "We narrowed down the list to three candidates."
+  },
+  {
+   "id": "w448",
+   "deck": "phr",
+   "term": "opt for",
+   "pos": "句",
+   "def": "～を選ぶ",
+   "ex": "Many customers opt for express shipping."
+  },
+  {
+   "id": "w449",
+   "deck": "phr",
+   "term": "opt out of",
+   "pos": "句",
+   "def": "～から脱退する、～に参加しないことを選ぶ",
+   "ex": "You can opt out of the newsletter at any time."
+  },
+  {
+   "id": "w450",
+   "deck": "phr",
+   "term": "pass up",
+   "pos": "句",
+   "def": "（機会を）逃す",
+   "ex": "Don't pass up this chance to save."
+  },
+  {
+   "id": "w451",
+   "deck": "phr",
+   "term": "pay off",
+   "pos": "句",
+   "def": "成果を上げる、完済する",
+   "ex": "Our hard work finally paid off."
+  },
+  {
+   "id": "w452",
+   "deck": "phr",
+   "term": "phase out",
+   "pos": "句",
+   "def": "段階的に廃止する",
+   "ex": "The model will be phased out next year."
+  },
+  {
+   "id": "w453",
+   "deck": "phr",
+   "term": "pick up",
+   "pos": "句",
+   "def": "受け取る、（景気が）回復する",
+   "ex": "Business usually picks up in spring."
+  },
+  {
+   "id": "w454",
+   "deck": "phr",
+   "term": "pitch in",
+   "pos": "句",
+   "def": "協力する",
+   "ex": "Everyone pitched in to finish the project."
+  },
+  {
+   "id": "w455",
+   "deck": "phr",
+   "term": "point out",
+   "pos": "句",
+   "def": "指摘する",
+   "ex": "She pointed out an error in the contract."
+  },
+  {
+   "id": "w456",
+   "deck": "phr",
+   "term": "pull out of",
+   "pos": "句",
+   "def": "～から撤退する",
+   "ex": "The firm pulled out of the deal."
+  },
+  {
+   "id": "w457",
+   "deck": "phr",
+   "term": "put forward",
+   "pos": "句",
+   "def": "提案する",
+   "ex": "He put forward a new proposal."
+  },
+  {
+   "id": "w458",
+   "deck": "phr",
+   "term": "put together",
+   "pos": "句",
+   "def": "まとめる、組み立てる",
+   "ex": "We put together a team of experts."
+  },
+  {
+   "id": "w459",
+   "deck": "phr",
+   "term": "rule out",
+   "pos": "句",
+   "def": "除外する",
+   "ex": "We can't rule out the possibility of delays."
+  },
+  {
+   "id": "w460",
+   "deck": "phr",
+   "term": "run out of",
+   "pos": "句",
+   "def": "～を使い果たす",
+   "ex": "We've run out of copy paper."
+  },
+  {
+   "id": "w461",
+   "deck": "phr",
+   "term": "run through",
+   "pos": "句",
+   "def": "ざっと目を通す、リハーサルする",
+   "ex": "Let's run through the presentation once more."
+  },
+  {
+   "id": "w462",
+   "deck": "phr",
+   "term": "scale back",
+   "pos": "句",
+   "def": "縮小する",
+   "ex": "The company scaled back its expansion plans."
+  },
+  {
+   "id": "w463",
+   "deck": "phr",
+   "term": "set aside",
+   "pos": "句",
+   "def": "取っておく",
+   "ex": "Set aside some time to review the materials."
+  },
+  {
+   "id": "w464",
+   "deck": "phr",
+   "term": "set up",
+   "pos": "句",
+   "def": "設立する、設置する",
+   "ex": "They set up a new branch in Seoul."
+  },
+  {
+   "id": "w465",
+   "deck": "phr",
+   "term": "settle on",
+   "pos": "句",
+   "def": "～に決める",
+   "ex": "We settled on a date for the conference."
+  },
+  {
+   "id": "w466",
+   "deck": "phr",
+   "term": "show up",
+   "pos": "句",
+   "def": "現れる",
+   "ex": "Only half the guests showed up."
+  },
+  {
+   "id": "w467",
+   "deck": "phr",
+   "term": "shut down",
+   "pos": "句",
+   "def": "閉鎖する、停止する",
+   "ex": "The plant will shut down for maintenance."
+  },
+  {
+   "id": "w468",
+   "deck": "phr",
+   "term": "sign off on",
+   "pos": "句",
+   "def": "～を承認する",
+   "ex": "The director signed off on the budget."
+  },
+  {
+   "id": "w469",
+   "deck": "phr",
+   "term": "sign up for",
+   "pos": "句",
+   "def": "～に申し込む",
+   "ex": "Sign up for our newsletter today."
+  },
+  {
+   "id": "w470",
+   "deck": "phr",
+   "term": "single out",
+   "pos": "句",
+   "def": "選び出す",
+   "ex": "She was singled out for praise."
+  },
+  {
+   "id": "w471",
+   "deck": "phr",
+   "term": "sort out",
+   "pos": "句",
+   "def": "整理する、解決する",
+   "ex": "IT will sort out the network problem."
+  },
+  {
+   "id": "w472",
+   "deck": "phr",
+   "term": "spell out",
+   "pos": "句",
+   "def": "はっきり説明する",
+   "ex": "The contract spells out the terms of payment."
+  },
+  {
+   "id": "w473",
+   "deck": "phr",
+   "term": "stand in for",
+   "pos": "句",
+   "def": "～の代理を務める",
+   "ex": "The deputy stood in for the mayor."
+  },
+  {
+   "id": "w474",
+   "deck": "phr",
+   "term": "step down",
+   "pos": "句",
+   "def": "辞任する",
+   "ex": "The chairman will step down next month."
+  },
+  {
+   "id": "w475",
+   "deck": "phr",
+   "term": "stick to",
+   "pos": "句",
+   "def": "～を守る、～に固執する",
+   "ex": "Please stick to the agenda."
+  },
+  {
+   "id": "w476",
+   "deck": "phr",
+   "term": "take on",
+   "pos": "句",
+   "def": "引き受ける、雇う",
+   "ex": "She has taken on additional responsibilities."
+  },
+  {
+   "id": "w477",
+   "deck": "phr",
+   "term": "take over",
+   "pos": "句",
+   "def": "引き継ぐ、買収する",
+   "ex": "Ms. Park will take over the project."
+  },
+  {
+   "id": "w478",
+   "deck": "phr",
+   "term": "tap into",
+   "pos": "句",
+   "def": "～を利用する、活用する",
+   "ex": "The firm hopes to tap into the youth market."
+  },
+  {
+   "id": "w479",
+   "deck": "phr",
+   "term": "team up with",
+   "pos": "句",
+   "def": "～と協力する",
+   "ex": "We teamed up with a local charity."
+  },
+  {
+   "id": "w480",
+   "deck": "phr",
+   "term": "tide over",
+   "pos": "句",
+   "def": "乗り切らせる",
+   "ex": "A short-term loan will tide us over."
+  },
+  {
+   "id": "w481",
+   "deck": "phr",
+   "term": "touch base with",
+   "pos": "句",
+   "def": "～と連絡を取る",
+   "ex": "I'll touch base with you next week."
+  },
+  {
+   "id": "w482",
+   "deck": "phr",
+   "term": "try out",
+   "pos": "句",
+   "def": "試してみる",
+   "ex": "Customers can try out the product in the store."
+  },
+  {
+   "id": "w483",
+   "deck": "phr",
+   "term": "turn around",
+   "pos": "句",
+   "def": "（業績を）好転させる",
+   "ex": "The new CEO turned the company around."
+  },
+  {
+   "id": "w484",
+   "deck": "phr",
+   "term": "turn out",
+   "pos": "句",
+   "def": "結局～であるとわかる、集まる",
+   "ex": "The event turned out to be a success."
+  },
+  {
+   "id": "w485",
+   "deck": "phr",
+   "term": "weigh in on",
+   "pos": "句",
+   "def": "～について意見を述べる",
+   "ex": "Experts weighed in on the proposal."
+  },
+  {
+   "id": "w486",
+   "deck": "phr",
+   "term": "wrap up",
+   "pos": "句",
+   "def": "終える、まとめる",
+   "ex": "Let's wrap up the meeting by five."
+  },
+  {
+   "id": "w487",
+   "deck": "phr",
+   "term": "write off",
+   "pos": "句",
+   "def": "（損失として）帳消しにする",
+   "ex": "The bank wrote off the bad debt."
+  },
+  {
+   "id": "w488",
+   "deck": "phr",
+   "term": "a wide array of",
+   "pos": "句",
+   "def": "多種多様な～",
+   "ex": "The store offers a wide array of products."
+  },
+  {
+   "id": "w489",
+   "deck": "phr",
+   "term": "at one's discretion",
+   "pos": "句",
+   "def": "～の裁量で",
+   "ex": "Bonuses are paid at the manager's discretion."
+  },
+  {
+   "id": "w490",
+   "deck": "phr",
+   "term": "at the latest",
+   "pos": "句",
+   "def": "遅くとも",
+   "ex": "Please reply by Friday at the latest."
+  },
+  {
+   "id": "w491",
+   "deck": "phr",
+   "term": "by means of",
+   "pos": "句",
+   "def": "～によって、～を用いて",
+   "ex": "Payment can be made by means of bank transfer."
+  },
+  {
+   "id": "w492",
+   "deck": "phr",
+   "term": "contrary to",
+   "pos": "句",
+   "def": "～に反して",
+   "ex": "Contrary to expectations, sales rose."
+  },
+  {
+   "id": "w493",
+   "deck": "phr",
+   "term": "for the time being",
+   "pos": "句",
+   "def": "当面の間",
+   "ex": "The shop will be closed for the time being."
+  },
+  {
+   "id": "w494",
+   "deck": "phr",
+   "term": "in accordance with",
+   "pos": "句",
+   "def": "～に従って",
+   "ex": "Waste must be disposed of in accordance with local rules."
+  },
+  {
+   "id": "w495",
+   "deck": "phr",
+   "term": "in anticipation of",
+   "pos": "句",
+   "def": "～を見越して",
+   "ex": "Stores hired extra staff in anticipation of the holidays."
+  },
+  {
+   "id": "w496",
+   "deck": "phr",
+   "term": "in compliance with",
+   "pos": "句",
+   "def": "～を順守して",
+   "ex": "The factory operates in compliance with safety laws."
+  },
+  {
+   "id": "w497",
+   "deck": "phr",
+   "term": "in conjunction with",
+   "pos": "句",
+   "def": "～と共同で、～と併せて",
+   "ex": "The event is held in conjunction with the city."
+  },
+  {
+   "id": "w498",
+   "deck": "phr",
+   "term": "in lieu of",
+   "pos": "句",
+   "def": "～の代わりに",
+   "ex": "Staff may take time off in lieu of overtime pay."
+  },
+  {
+   "id": "w499",
+   "deck": "phr",
+   "term": "in light of",
+   "pos": "句",
+   "def": "～を考慮して",
+   "ex": "In light of the feedback, we revised the plan."
+  },
+  {
+   "id": "w500",
+   "deck": "phr",
+   "term": "in the event of",
+   "pos": "句",
+   "def": "万一～の場合には",
+   "ex": "In the event of rain, the picnic will be held indoors."
+  },
+  {
+   "id": "w501",
+   "deck": "phr",
+   "term": "in the vicinity of",
+   "pos": "句",
+   "def": "～の近くに、およそ",
+   "ex": "The hotel is in the vicinity of the airport."
+  },
+  {
+   "id": "w502",
+   "deck": "phr",
+   "term": "on short notice",
+   "pos": "句",
+   "def": "急に、直前の通知で",
+   "ex": "Thank you for coming on such short notice."
+  },
+  {
+   "id": "w503",
+   "deck": "phr",
+   "term": "on the verge of",
+   "pos": "句",
+   "def": "今にも～しようとして",
+   "ex": "The company is on the verge of bankruptcy."
+  },
+  {
+   "id": "w504",
+   "deck": "phr",
+   "term": "regardless of",
+   "pos": "句",
+   "def": "～にかかわらず",
+   "ex": "The fee is the same regardless of age."
+  },
+  {
+   "id": "w505",
+   "deck": "phr",
+   "term": "with regard to",
+   "pos": "句",
+   "def": "～に関して",
+   "ex": "With regard to your inquiry, please see the attached file."
+  },
+  {
+   "id": "w506",
+   "deck": "phr",
+   "term": "be entitled to",
+   "pos": "句",
+   "def": "～の権利がある",
+   "ex": "Members are entitled to a 10 percent discount."
+  },
+  {
+   "id": "w507",
+   "deck": "phr",
+   "term": "be subject to",
+   "pos": "句",
+   "def": "～を受けることがある、～の対象である",
+   "ex": "Prices are subject to change without notice."
+  },
+  {
+   "id": "w508",
+   "deck": "phr",
+   "term": "be liable for",
+   "pos": "句",
+   "def": "～に法的責任がある",
+   "ex": "The tenant is liable for any damage."
+  },
+  {
+   "id": "w509",
+   "deck": "phr",
+   "term": "be accustomed to",
+   "pos": "句",
+   "def": "～に慣れている",
+   "ex": "She is accustomed to working under pressure."
+  },
+  {
+   "id": "w510",
+   "deck": "phr",
+   "term": "be committed to",
+   "pos": "句",
+   "def": "～に専心している",
+   "ex": "We are committed to customer satisfaction."
+  },
+  {
+   "id": "w511",
+   "deck": "phr",
+   "term": "be indicative of",
+   "pos": "句",
+   "def": "～を示している",
+   "ex": "The rise is indicative of strong demand."
+  },
+  {
+   "id": "w512",
+   "deck": "phr",
+   "term": "be contingent on",
+   "pos": "句",
+   "def": "～次第である",
+   "ex": "The deal is contingent on board approval."
+  },
+  {
+   "id": "w513",
+   "deck": "phr",
+   "term": "take into account",
+   "pos": "句",
+   "def": "考慮に入れる",
+   "ex": "We took your feedback into account."
   }
  ]
 }
