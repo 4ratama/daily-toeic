@@ -13,6 +13,7 @@
 
   const DECKS = [
     { id: "adv", name: "950〜990点の語", desc: "Part 5・7 で差がつく上級語" },
+    { id: "phr", name: "句動詞・熟語", desc: "Part 5・7 によく出るフレーズ" },
     { id: "para", name: "言い換え", desc: "毎日の「言い換え単語」に出る語" },
     { id: "colloc", name: "語法・コロケーション", desc: "毎日の「語彙」問題のポイント" },
     { id: "mine", name: "自分の単語", desc: "自分で追加した語" },
