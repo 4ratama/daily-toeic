@@ -3948,6 +3948,692 @@
    "tag": "倒置",
    "point": "否定の副詞 seldom → do/does の倒置",
    "level": 2
+  },
+  {
+   "id": "g283",
+   "q": "The company's profits increased _____ after the launch of its new product line.",
+   "choices": [
+    "substantially",
+    "substantive",
+    "substance",
+    "substantial"
+   ],
+   "exp": "動詞 increased を修飾するのは副詞 substantially。",
+   "tag": "品詞",
+   "point": "substantially「大幅に」",
+   "level": 1
+  },
+  {
+   "id": "g284",
+   "q": "The hotel's staff were _____ helpful during our stay.",
+   "choices": [
+    "exceptionally",
+    "exception",
+    "exceptional",
+    "excepting"
+   ],
+   "exp": "形容詞 helpful を修飾するのは副詞 exceptionally。",
+   "tag": "品詞",
+   "point": "exceptionally helpful「非常に親切な」",
+   "level": 1
+  },
+  {
+   "id": "g285",
+   "q": "The restaurant is known for its _____ service and reasonable prices.",
+   "choices": [
+    "attentive",
+    "attentively",
+    "attention",
+    "attend"
+   ],
+   "exp": "名詞 service を修飾する形容詞 attentive。",
+   "tag": "品詞",
+   "point": "attentive service「行き届いたサービス」",
+   "level": 1
+  },
+  {
+   "id": "g286",
+   "q": "The architect presented a _____ model of the proposed building.",
+   "choices": [
+    "scale",
+    "scaled",
+    "scaling",
+    "scales"
+   ],
+   "exp": "scale model は名詞＋名詞の複合語。",
+   "tag": "品詞",
+   "point": "a scale model「縮尺模型」",
+   "level": 2
+  },
+  {
+   "id": "g287",
+   "q": "The company is looking for a candidate with strong _____ skills.",
+   "choices": [
+    "analytical",
+    "analyze",
+    "analysis",
+    "analytically"
+   ],
+   "exp": "名詞 skills を修飾する形容詞 analytical。",
+   "tag": "品詞",
+   "point": "analytical skills「分析力」",
+   "level": 1
+  },
+  {
+   "id": "g288",
+   "q": "The technician was able to _____ the problem within an hour.",
+   "choices": [
+    "diagnose",
+    "diagnosis",
+    "diagnostic",
+    "diagnosed"
+   ],
+   "exp": "to の後は動詞の原形 diagnose。",
+   "tag": "品詞",
+   "point": "diagnose a problem「問題を特定する」",
+   "level": 1
+  },
+  {
+   "id": "g289",
+   "q": "The guest speaker gave an _____ presentation on renewable energy.",
+   "choices": [
+    "informative",
+    "informed",
+    "information",
+    "inform"
+   ],
+   "exp": "informative は「有益な情報を与える」。informed は「情報に通じた」。",
+   "tag": "品詞",
+   "point": "an informative presentation「有益な発表」",
+   "level": 1
+  },
+  {
+   "id": "g290",
+   "q": "Interested parties should contact the office for further _____.",
+   "choices": [
+    "details",
+    "detailed",
+    "detailing",
+    "detail it"
+   ],
+   "exp": "further の後に名詞 details。",
+   "tag": "品詞",
+   "point": "for further details「詳細については」",
+   "level": 1
+  },
+  {
+   "id": "g291",
+   "q": "All proposals must be submitted in _____ by the end of the month.",
+   "choices": [
+    "writing",
+    "written",
+    "write",
+    "writer"
+   ],
+   "exp": "前置詞 in の後に動名詞 writing で「書面で」の定型。",
+   "tag": "品詞",
+   "point": "in writing「書面で」",
+   "level": 2
+  },
+  {
+   "id": "g292",
+   "q": "The firm has a reputation for _____ high-quality products at affordable prices.",
+   "choices": [
+    "delivering",
+    "deliver",
+    "delivered",
+    "delivery of"
+   ],
+   "exp": "前置詞 for の後で目的語 products を取るので動名詞 delivering。",
+   "tag": "品詞",
+   "point": "reputation for ～ing「～するという評判」",
+   "level": 1
+  },
+  {
+   "id": "g293",
+   "q": "The renovation work is expected to cause some _____ to traffic.",
+   "choices": [
+    "disruption",
+    "disrupt",
+    "disruptive",
+    "disrupted"
+   ],
+   "exp": "some の後に名詞 disruption。",
+   "tag": "品詞",
+   "point": "cause disruption to ～「～に混乱をもたらす」",
+   "level": 1
+  },
+  {
+   "id": "g294",
+   "q": "The company's new logo was _____ received by customers.",
+   "choices": [
+    "favorably",
+    "favorable",
+    "favor",
+    "favorite"
+   ],
+   "exp": "過去分詞 received を修飾する副詞 favorably。",
+   "tag": "品詞",
+   "point": "be favorably received「好評を得る」",
+   "level": 2
+  },
+  {
+   "id": "g295",
+   "q": "The office will be _____ closed on Monday for maintenance.",
+   "choices": [
+    "temporarily",
+    "temporary",
+    "temporal",
+    "tempo"
+   ],
+   "exp": "過去分詞 closed を修飾する副詞 temporarily。",
+   "tag": "品詞",
+   "point": "temporarily closed「一時休業」",
+   "level": 1
+  },
+  {
+   "id": "g296",
+   "q": "The company is _____ to providing a safe working environment.",
+   "choices": [
+    "committed",
+    "commissioned",
+    "committing",
+    "commitment"
+   ],
+   "exp": "be committed to の to は前置詞で、後に動名詞 providing。",
+   "tag": "品詞",
+   "point": "be committed to ～ing「～に専念する」",
+   "level": 2
+  },
+  {
+   "id": "g297",
+   "q": "Several local businesses have agreed to _____ the charity event.",
+   "choices": [
+    "sponsor",
+    "sponsorship",
+    "sponsored",
+    "sponsoring"
+   ],
+   "exp": "to 不定詞の後なので動詞の原形 sponsor。",
+   "tag": "品詞",
+   "point": "sponsor an event「イベントに協賛する」",
+   "level": 1
+  },
+  {
+   "id": "g298",
+   "q": "The candidate's résumé was _____ impressive.",
+   "choices": [
+    "particularly",
+    "particular",
+    "particularity",
+    "particulars"
+   ],
+   "exp": "形容詞 impressive を修飾する副詞。",
+   "tag": "品詞",
+   "point": "particularly impressive「特に印象的」",
+   "level": 1
+  },
+  {
+   "id": "g299",
+   "q": "The ceremony will be held in _____ of the company's 50th anniversary.",
+   "choices": [
+    "celebration",
+    "celebrity",
+    "celebrate",
+    "celebrated"
+   ],
+   "exp": "前置詞 in の後に名詞 celebration。",
+   "tag": "品詞",
+   "point": "in celebration of ～「～を祝って」",
+   "level": 1
+  },
+  {
+   "id": "g300",
+   "q": "The pharmaceutical company is _____ new treatments for chronic illnesses.",
+   "choices": [
+    "pioneering",
+    "pioneer",
+    "pioneered by",
+    "pioneers"
+   ],
+   "exp": "be 動詞の後で目的語 new treatments を取る進行形 pioneering。",
+   "tag": "品詞",
+   "point": "pioneer ～「～の先駆けとなる」",
+   "level": 2
+  },
+  {
+   "id": "g301",
+   "q": "Participants are asked to _____ their mobile phones before the session begins.",
+   "choices": [
+    "silence",
+    "silent",
+    "silently",
+    "silences"
+   ],
+   "exp": "silence は動詞「静かにさせる」。",
+   "tag": "品詞",
+   "point": "silence a phone「電話を消音にする」",
+   "level": 1
+  },
+  {
+   "id": "g302",
+   "q": "The firm's new headquarters was designed to _____ natural light.",
+   "choices": [
+    "maximize",
+    "maximum",
+    "maximal",
+    "maximally"
+   ],
+   "exp": "to の後は動詞の原形 maximize。",
+   "tag": "品詞",
+   "point": "maximize ～「～を最大限に活かす」",
+   "level": 2
+  },
+  {
+   "id": "g303",
+   "q": "Job seekers are advised to _____ their résumés to each position they apply for.",
+   "choices": [
+    "customize",
+    "customer",
+    "custom",
+    "customary"
+   ],
+   "exp": "to の後で動詞が必要。customary は形容詞「慣例の」。",
+   "tag": "品詞",
+   "point": "customize ～「～を個別に合わせる」",
+   "level": 2
+  },
+  {
+   "id": "g304",
+   "q": "The board has _____ the CEO's request for additional funding.",
+   "choices": [
+    "granted",
+    "grant",
+    "granting",
+    "grants"
+   ],
+   "exp": "has の後は過去分詞 granted。",
+   "tag": "品詞",
+   "point": "grant a request「要求を認める」",
+   "level": 1
+  },
+  {
+   "id": "g305",
+   "q": "The hotel's restaurant is open to the public as well as to _____ guests.",
+   "choices": [
+    "registered",
+    "registry",
+    "registering",
+    "registration"
+   ],
+   "exp": "名詞 guests を修飾する過去分詞 registered。",
+   "tag": "品詞",
+   "point": "registered guests「宿泊客」",
+   "level": 2
+  },
+  {
+   "id": "g306",
+   "q": "To _____ the risk of injury, employees must wear protective gear.",
+   "choices": [
+    "minimize",
+    "minimum",
+    "minimal",
+    "minimally"
+   ],
+   "exp": "to の後は動詞 minimize。",
+   "tag": "品詞",
+   "point": "minimize the risk「リスクを最小限にする」",
+   "level": 1
+  },
+  {
+   "id": "g307",
+   "q": "Our team is _____ looking for ways to improve customer satisfaction.",
+   "choices": [
+    "constantly",
+    "constant",
+    "constancy",
+    "constants"
+   ],
+   "exp": "現在進行形 is looking を修飾する副詞。",
+   "tag": "品詞",
+   "point": "constantly「常に」",
+   "level": 1
+  },
+  {
+   "id": "g308",
+   "q": "Customers have complained about the _____ of the company's online help service.",
+   "choices": [
+    "inadequacy",
+    "inadequate",
+    "inadequately",
+    "inadequacies of"
+   ],
+   "exp": "the ＋ ～ ＋ of の形で単数の名詞が必要。",
+   "tag": "品詞",
+   "point": "the inadequacy of ～「～の不十分さ」",
+   "level": 3
+  },
+  {
+   "id": "g309",
+   "q": "The online store offers a wide _____ of kitchen appliances.",
+   "choices": [
+    "selection",
+    "selected",
+    "selective",
+    "selector"
+   ],
+   "exp": "a wide ＋名詞 ＋ of の形で selection。",
+   "tag": "品詞",
+   "point": "a wide selection of ～「豊富な品ぞろえの～」",
+   "level": 1
+  },
+  {
+   "id": "g310",
+   "q": "Employees must obtain _____ approval before working overtime.",
+   "choices": [
+    "prior",
+    "priority",
+    "prioritize",
+    "prioritized"
+   ],
+   "exp": "名詞 approval を修飾する形容詞 prior。",
+   "tag": "品詞",
+   "point": "prior approval「事前の承認」",
+   "level": 2
+  },
+  {
+   "id": "g311",
+   "q": "The hotel underwent extensive _____ last year.",
+   "choices": [
+    "refurbishment",
+    "refurbish",
+    "refurbished",
+    "refurbishing it"
+   ],
+   "exp": "extensive の後に名詞 refurbishment。",
+   "tag": "品詞",
+   "point": "undergo refurbishment「改装される」",
+   "level": 2
+  },
+  {
+   "id": "g312",
+   "q": "The company is _____ to announce record profits for the third consecutive year.",
+   "choices": [
+    "delighted",
+    "delightful",
+    "delighting",
+    "delight"
+   ],
+   "exp": "感情を表すのは過去分詞 delighted。delightful は「（物事が）楽しい」。",
+   "tag": "品詞",
+   "point": "be delighted to do「喜んで～する」",
+   "level": 1
+  },
+  {
+   "id": "g313",
+   "q": "The company provides _____ training for all new employees.",
+   "choices": [
+    "mandatory",
+    "mandate",
+    "mandated by",
+    "mandates"
+   ],
+   "exp": "名詞 training を修飾する形容詞 mandatory。",
+   "tag": "品詞",
+   "point": "mandatory training「必修研修」",
+   "level": 2
+  },
+  {
+   "id": "g314",
+   "q": "Ms. Burke has _____ worked in the hospitality industry for over twenty years.",
+   "choices": [
+    "reportedly",
+    "report",
+    "reported",
+    "reporter"
+   ],
+   "exp": "has と worked の間に入る副詞 reportedly。",
+   "tag": "品詞",
+   "point": "reportedly「伝えられるところでは」",
+   "level": 3
+  },
+  {
+   "id": "g315",
+   "q": "The engineer _____ several improvements to the original design.",
+   "choices": [
+    "suggested",
+    "suggestive",
+    "suggestion",
+    "suggesting"
+   ],
+   "exp": "文の動詞が必要なので過去形 suggested。",
+   "tag": "品詞",
+   "point": "suggest improvements「改善を提案する」",
+   "level": 1
+  },
+  {
+   "id": "g316",
+   "q": "The city has received _____ complaints about noise from the construction site.",
+   "choices": [
+    "numerous",
+    "numeral",
+    "numerically",
+    "numerate"
+   ],
+   "exp": "名詞を修飾し「多数の」は numerous。",
+   "tag": "品詞",
+   "point": "numerous complaints「多数の苦情」",
+   "level": 1
+  },
+  {
+   "id": "g317",
+   "q": "The restaurant's menu changes _____ to reflect the seasons.",
+   "choices": [
+    "periodically",
+    "period",
+    "periodic",
+    "periodical"
+   ],
+   "exp": "動詞 changes を修飾する副詞 periodically。",
+   "tag": "品詞",
+   "point": "periodically「定期的に」",
+   "level": 2
+  },
+  {
+   "id": "g318",
+   "q": "Ms. Hernandez _____ the team through a difficult transition period.",
+   "choices": [
+    "guided",
+    "guidance",
+    "guide",
+    "guiding"
+   ],
+   "exp": "文の動詞が必要なので過去形 guided。",
+   "tag": "品詞",
+   "point": "guide A through B「A を B の間導く」",
+   "level": 1
+  },
+  {
+   "id": "g319",
+   "q": "The proposed budget cuts have been met with strong _____ from staff.",
+   "choices": [
+    "resistance",
+    "resistant",
+    "resisting",
+    "resist"
+   ],
+   "exp": "strong の後に名詞 resistance。",
+   "tag": "品詞",
+   "point": "meet with resistance「抵抗に遭う」",
+   "level": 2
+  },
+  {
+   "id": "g320",
+   "q": "The company provides an _____ allowance for employees who relocate.",
+   "choices": [
+    "annual",
+    "annually",
+    "annuity",
+    "annul"
+   ],
+   "exp": "名詞 allowance を修飾する形容詞 annual。",
+   "tag": "品詞",
+   "point": "an annual allowance「年間手当」",
+   "level": 1
+  },
+  {
+   "id": "g321",
+   "q": "The CEO's resignation came as a _____ to many investors.",
+   "choices": [
+    "surprise",
+    "surprised",
+    "surprising",
+    "surprisingly"
+   ],
+   "exp": "a の後に名詞 surprise。",
+   "tag": "品詞",
+   "point": "come as a surprise「驚きとなる」",
+   "level": 1
+  },
+  {
+   "id": "g322",
+   "q": "The store manager _____ the staff to greet every customer with a smile.",
+   "choices": [
+    "instructed",
+    "instruct",
+    "instruction",
+    "instructive"
+   ],
+   "exp": "文の動詞が必要で過去形 instructed。",
+   "tag": "品詞",
+   "point": "instruct A to do「A に～するよう指示する」",
+   "level": 1
+  },
+  {
+   "id": "g323",
+   "q": "The renovated library features a _____ reading area for children.",
+   "choices": [
+    "dedicated",
+    "dedication",
+    "dedicate",
+    "dedicating"
+   ],
+   "exp": "dedicated は「専用の」。名詞 area を修飾する。",
+   "tag": "品詞",
+   "point": "a dedicated area「専用エリア」",
+   "level": 2
+  },
+  {
+   "id": "g324",
+   "q": "A large crowd _____ outside the store before it opened.",
+   "choices": [
+    "gathered",
+    "gathering",
+    "gather",
+    "gatherer"
+   ],
+   "exp": "文の動詞が必要で過去形 gathered。",
+   "tag": "品詞",
+   "point": "a crowd gathers「人々が集まる」",
+   "level": 1
+  },
+  {
+   "id": "g325",
+   "q": "The pilot announced that the plane would be landing _____.",
+   "choices": [
+    "shortly",
+    "short",
+    "shortage",
+    "shorten"
+   ],
+   "exp": "動詞を修飾し「間もなく」は shortly。",
+   "tag": "品詞",
+   "point": "shortly「間もなく」",
+   "level": 1
+  },
+  {
+   "id": "g326",
+   "q": "The workshop is open to anyone _____ in learning about digital marketing.",
+   "choices": [
+    "interested",
+    "interesting",
+    "interest",
+    "interestingly"
+   ],
+   "exp": "後置修飾の過去分詞 interested。",
+   "tag": "品詞",
+   "point": "anyone interested in ～「～に興味のある人」",
+   "level": 1
+  },
+  {
+   "id": "g327",
+   "q": "The company's annual report is _____ on its Web site.",
+   "choices": [
+    "available",
+    "avail",
+    "availability",
+    "availed"
+   ],
+   "exp": "be の後に形容詞 available。",
+   "tag": "品詞",
+   "point": "be available on ～「～で入手できる」",
+   "level": 1
+  },
+  {
+   "id": "g328",
+   "q": "The supplier offers _____ discounts for orders of more than 1,000 units.",
+   "choices": [
+    "volume",
+    "volumes",
+    "voluminous",
+    "voluntarily"
+   ],
+   "exp": "volume discount は複合名詞「数量割引」。",
+   "tag": "品詞",
+   "point": "volume discounts「大口割引」",
+   "level": 3
+  },
+  {
+   "id": "g329",
+   "q": "Ms. Sato _____ her intention to retire at the end of the year.",
+   "choices": [
+    "announced",
+    "announcer",
+    "announcement",
+    "announcing"
+   ],
+   "exp": "文の動詞が必要で過去形 announced。",
+   "tag": "品詞",
+   "point": "announce one's intention「意向を表明する」",
+   "level": 1
+  },
+  {
+   "id": "g330",
+   "q": "Our customer satisfaction rate has _____ improved this year.",
+   "choices": [
+    "significantly",
+    "significant",
+    "significance",
+    "signify"
+   ],
+   "exp": "過去分詞 improved を修飾する副詞。",
+   "tag": "品詞",
+   "point": "significantly improved「大幅に改善した」",
+   "level": 1
+  },
+  {
+   "id": "g331",
+   "q": "The new production line is fully _____.",
+   "choices": [
+    "operational",
+    "operation",
+    "operate",
+    "operator"
+   ],
+   "exp": "副詞 fully の後で補語になる形容詞 operational。",
+   "tag": "品詞",
+   "point": "fully operational「完全稼働して」",
+   "level": 2
   }
  ],
  "vocab": [
@@ -5627,6 +6313,1462 @@
    "exp": "attend to は「対応する」、apply to は「当てはまる・申し込む」。",
    "point": "appeal to ～「～の心に訴える」",
    "level": 3
+  },
+  {
+   "id": "v130",
+   "q": "Visitors must _____ at the reception desk before entering the laboratory.",
+   "choices": [
+    "register",
+    "enroll",
+    "record",
+    "subscribe"
+   ],
+   "exp": "enroll は「（講座に）入学・登録する」、subscribe は「定期購読する」。受付での記帳は register。",
+   "point": "register at ～「～で受付をする・登録する」",
+   "level": 1
+  },
+  {
+   "id": "v131",
+   "q": "We regret to inform you that the item you ordered is temporarily out of _____.",
+   "choices": [
+    "stock",
+    "store",
+    "supply",
+    "storage"
+   ],
+   "exp": "決まった言い方は out of stock。supply は in short supply の形で使う。",
+   "point": "out of stock「在庫切れで」",
+   "level": 1
+  },
+  {
+   "id": "v132",
+   "q": "Ms. Rivera was _____ to the position of regional director last month.",
+   "choices": [
+    "promoted",
+    "advanced",
+    "raised",
+    "lifted"
+   ],
+   "exp": "役職への昇進は promote。raise は給料など、advance は自動詞で使うことが多い。",
+   "point": "be promoted to ～「～に昇進する」",
+   "level": 1
+  },
+  {
+   "id": "v133",
+   "q": "Our customer service team will respond to your inquiry _____.",
+   "choices": [
+    "promptly",
+    "punctually",
+    "readily",
+    "rapidly"
+   ],
+   "exp": "promptly は「即座に」。punctually は「時間通りに」で約束の時刻があるときに使う。",
+   "point": "respond promptly「迅速に対応する」",
+   "level": 2
+  },
+  {
+   "id": "v134",
+   "q": "The contract will _____ automatically unless either party gives notice.",
+   "choices": [
+    "renew",
+    "resume",
+    "restore",
+    "revise"
+   ],
+   "exp": "契約の更新は renew。resume は「再開する」、restore は「元に戻す」。",
+   "point": "renew automatically「自動更新される」",
+   "level": 2
+  },
+  {
+   "id": "v135",
+   "q": "Applicants should have a _____ command of both English and French.",
+   "choices": [
+    "fluent",
+    "flowing",
+    "liquid",
+    "smooth"
+   ],
+   "exp": "command of a language と結びつくのは fluent（または good / strong）。",
+   "point": "a fluent command of ～「～を流ちょうに使いこなす力」",
+   "level": 2
+  },
+  {
+   "id": "v136",
+   "q": "The factory has _____ its production to meet the growing demand.",
+   "choices": [
+    "increased",
+    "grown",
+    "risen",
+    "raised up"
+   ],
+   "exp": "他動詞で目的語 its production を取るのは increase。grow / rise はこの意味では自動詞。",
+   "point": "increase production「生産を増やす」",
+   "level": 1
+  },
+  {
+   "id": "v137",
+   "q": "Due to _____ weather, the outdoor concert has been moved indoors.",
+   "choices": [
+    "inclement",
+    "inclined",
+    "incomplete",
+    "incidental"
+   ],
+   "exp": "inclement は weather と結びつく定番の形容詞。",
+   "point": "inclement weather「悪天候」",
+   "level": 2
+  },
+  {
+   "id": "v138",
+   "q": "The software update will be _____ to all users next week.",
+   "choices": [
+    "released",
+    "relieved",
+    "relayed",
+    "reliant"
+   ],
+   "exp": "製品・情報の公開は release。relieve は「和らげる」。",
+   "point": "release an update「更新を公開する」",
+   "level": 1
+  },
+  {
+   "id": "v139",
+   "q": "Ticket holders may _____ their seats up to thirty minutes before the show.",
+   "choices": [
+    "claim",
+    "demand",
+    "require",
+    "insist"
+   ],
+   "exp": "claim は「（権利として）受け取る」。insist は on が必要。",
+   "point": "claim one's seat「席を確保する・受け取る」",
+   "level": 2
+  },
+  {
+   "id": "v140",
+   "q": "The CEO's speech _____ the importance of teamwork.",
+   "choices": [
+    "emphasized",
+    "insisted",
+    "stressed on",
+    "argued"
+   ],
+   "exp": "emphasize は他動詞で直接目的語を取る。insist は on、stress は他動詞なので on は不要。",
+   "point": "emphasize ～「～を強調する」",
+   "level": 2
+  },
+  {
+   "id": "v141",
+   "q": "The new branch office is expected to _____ fifty new jobs.",
+   "choices": [
+    "create",
+    "invent",
+    "form",
+    "produce up"
+   ],
+   "exp": "jobs と結びつくのは create。invent は「発明する」。",
+   "point": "create jobs「雇用を生み出す」",
+   "level": 1
+  },
+  {
+   "id": "v142",
+   "q": "Shipping charges will be _____ for orders over $50.",
+   "choices": [
+    "waived",
+    "wavered",
+    "weighed",
+    "withheld"
+   ],
+   "exp": "waive は料金・権利の放棄。waver は「揺れる」、withhold は「差し控える」。",
+   "point": "waive a fee「料金を免除する」",
+   "level": 2
+  },
+  {
+   "id": "v143",
+   "q": "Mr. Chen has _____ experience in international trade.",
+   "choices": [
+    "extensive",
+    "expansive",
+    "expensive",
+    "extended"
+   ],
+   "exp": "経験・知識の豊富さは extensive。expensive は「高価な」。",
+   "point": "extensive experience「豊富な経験」",
+   "level": 2
+  },
+  {
+   "id": "v144",
+   "q": "The quarterly report must be _____ to the head office by the 10th of each month.",
+   "choices": [
+    "submitted",
+    "admitted",
+    "committed",
+    "permitted"
+   ],
+   "exp": "提出は submit。",
+   "point": "submit a report「報告書を提出する」",
+   "level": 1
+  },
+  {
+   "id": "v145",
+   "q": "The bridge will be closed for repairs for an _____ period.",
+   "choices": [
+    "indefinite",
+    "infinite",
+    "indecisive",
+    "inaccurate"
+   ],
+   "exp": "indefinite は「期限の定まらない」。infinite は「無限の」で期間には使わない。",
+   "point": "for an indefinite period「無期限に」",
+   "level": 3
+  },
+  {
+   "id": "v146",
+   "q": "The two companies have formed a strategic _____ to develop new technologies.",
+   "choices": [
+    "alliance",
+    "reliance",
+    "compliance",
+    "appliance"
+   ],
+   "exp": "alliance「提携」。compliance は「法令順守」、appliance は「家電」。",
+   "point": "form a strategic alliance「戦略的提携を結ぶ」",
+   "level": 2
+  },
+  {
+   "id": "v147",
+   "q": "Our sales figures _____ a steady increase over the past three years.",
+   "choices": [
+    "show",
+    "tell",
+    "speak",
+    "say"
+   ],
+   "exp": "データが「示す」は show（または indicate）。",
+   "point": "figures show ～「数値は～を示している」",
+   "level": 1
+  },
+  {
+   "id": "v148",
+   "q": "Employees must wear identification badges _____ times while on the premises.",
+   "choices": [
+    "at all",
+    "in all",
+    "by all",
+    "on all"
+   ],
+   "exp": "決まった言い方は at all times。",
+   "point": "at all times「常に」",
+   "level": 1
+  },
+  {
+   "id": "v149",
+   "q": "The new policy will _____ effect on July 1.",
+   "choices": [
+    "take",
+    "make",
+    "have",
+    "bring"
+   ],
+   "exp": "規則の発効は take effect。have an effect on は「～に影響を与える」。",
+   "point": "take effect「（法律・規則が）発効する」",
+   "level": 2
+  },
+  {
+   "id": "v150",
+   "q": "The staff were _____ for their hard work during the busy season.",
+   "choices": [
+    "rewarded",
+    "awarded",
+    "prized",
+    "granted"
+   ],
+   "exp": "reward A for B「B に対して A に報いる」。award は賞そのものを与える（award A B）。",
+   "point": "be rewarded for ～「～に対して報われる」",
+   "level": 2
+  },
+  {
+   "id": "v151",
+   "q": "The seminar will _____ topics such as time management and leadership.",
+   "choices": [
+    "cover",
+    "spread",
+    "contain",
+    "extend"
+   ],
+   "exp": "講義・本などが「扱う」は cover。",
+   "point": "cover a topic「話題を扱う」",
+   "level": 1
+  },
+  {
+   "id": "v152",
+   "q": "Please _____ that all lights are turned off before leaving the office.",
+   "choices": [
+    "ensure",
+    "assure",
+    "insure",
+    "secure"
+   ],
+   "exp": "that 節を取り「確実にする」は ensure。assure は assure 人 that、insure は「保険をかける」。",
+   "point": "ensure that ～「～を確実にする」",
+   "level": 2
+  },
+  {
+   "id": "v153",
+   "q": "The production schedule had to be _____ due to a shortage of parts.",
+   "choices": [
+    "revised",
+    "reviewed",
+    "reversed",
+    "revived"
+   ],
+   "exp": "予定の修正は revise。reverse は「逆転させる」、revive は「復活させる」。",
+   "point": "revise a schedule「予定を見直して変更する」",
+   "level": 2
+  },
+  {
+   "id": "v154",
+   "q": "Many residents _____ to the proposal to build a new highway.",
+   "choices": [
+    "objected",
+    "opposed",
+    "resisted",
+    "disagreed with"
+   ],
+   "exp": "to を取るのは object。oppose / resist は他動詞で to 不要、disagree with の後に to は来ない。",
+   "point": "object to ～「～に反対する」",
+   "level": 2
+  },
+  {
+   "id": "v155",
+   "q": "The museum's new exhibit has attracted a _____ number of visitors.",
+   "choices": [
+    "record",
+    "recorded",
+    "recording",
+    "records"
+   ],
+   "exp": "record は形容詞的に「記録的な」。",
+   "point": "a record number of ～「記録的な数の～」",
+   "level": 2
+  },
+  {
+   "id": "v156",
+   "q": "Our company prides _____ on the quality of its products.",
+   "choices": [
+    "itself",
+    "its",
+    "it",
+    "themselves"
+   ],
+   "exp": "主語 Our company を受ける再帰代名詞 itself。",
+   "point": "pride oneself on ～「～を誇りにする」",
+   "level": 1
+  },
+  {
+   "id": "v157",
+   "q": "This coupon is valid _____ purchases made before December 31.",
+   "choices": [
+    "for",
+    "to",
+    "at",
+    "by"
+   ],
+   "exp": "「～に対して有効」は valid for。",
+   "point": "valid for ～「～に有効な」",
+   "level": 1
+  },
+  {
+   "id": "v158",
+   "q": "The deadline for applications has been _____ until March 15.",
+   "choices": [
+    "extended",
+    "expanded",
+    "enlarged",
+    "stretched out"
+   ],
+   "exp": "期限の延長は extend。expand / enlarge は大きさ・範囲。",
+   "point": "extend a deadline「締め切りを延長する」",
+   "level": 1
+  },
+  {
+   "id": "v159",
+   "q": "Staff members are _____ encouraged to attend the safety workshop.",
+   "choices": [
+    "strongly",
+    "strength",
+    "strong",
+    "strengthen"
+   ],
+   "exp": "過去分詞 encouraged を修飾する副詞 strongly。",
+   "point": "strongly encourage「強く勧める」",
+   "level": 1
+  },
+  {
+   "id": "v160",
+   "q": "The company plans to _____ its operations into Southeast Asia.",
+   "choices": [
+    "expand",
+    "enlarge",
+    "spread",
+    "increase"
+   ],
+   "exp": "事業の拡大・進出は expand (into)。",
+   "point": "expand into ～「～に進出する」",
+   "level": 2
+  },
+  {
+   "id": "v161",
+   "q": "Ms. Patel was _____ as the most valuable employee of the year.",
+   "choices": [
+    "recognized",
+    "realized",
+    "recalled",
+    "reminded"
+   ],
+   "exp": "功績を認めるのは recognize。realize は「気づく・実現する」。",
+   "point": "be recognized as ～「～として表彰・認められる」",
+   "level": 2
+  },
+  {
+   "id": "v162",
+   "q": "The store will be closed _____ the national holiday.",
+   "choices": [
+    "in observance of",
+    "in respect to",
+    "in terms of",
+    "in favor of"
+   ],
+   "exp": "祝日のための休業は in observance of。in favor of は「～に賛成して」。",
+   "point": "in observance of ～「～を祝して・のため」",
+   "level": 3
+  },
+  {
+   "id": "v163",
+   "q": "The new equipment has significantly _____ the efficiency of the assembly line.",
+   "choices": [
+    "improved",
+    "approved",
+    "proved",
+    "moved"
+   ],
+   "exp": "改善は improve。",
+   "point": "improve efficiency「効率を高める」",
+   "level": 1
+  },
+  {
+   "id": "v164",
+   "q": "The company has a strict _____ regarding the use of personal devices at work.",
+   "choices": [
+    "policy",
+    "politics",
+    "police",
+    "polity"
+   ],
+   "exp": "方針・規定は policy。politics は「政治」。",
+   "point": "a strict policy「厳しい方針」",
+   "level": 1
+  },
+  {
+   "id": "v165",
+   "q": "The two departments will _____ on the development of the new software.",
+   "choices": [
+    "collaborate",
+    "corporate",
+    "coordinate with",
+    "corroborate"
+   ],
+   "exp": "on を取って「協力する」は collaborate。corroborate は「裏付ける」。",
+   "point": "collaborate on ～「～で協力する」",
+   "level": 2
+  },
+  {
+   "id": "v166",
+   "q": "The marketing campaign was a _____ success.",
+   "choices": [
+    "resounding",
+    "resonant",
+    "resolving",
+    "resorting"
+   ],
+   "exp": "resounding success は定番の結びつき。",
+   "point": "a resounding success「大成功」",
+   "level": 3
+  },
+  {
+   "id": "v167",
+   "q": "The company's annual revenue _____ $10 million for the first time.",
+   "choices": [
+    "exceeded",
+    "excelled",
+    "exceeding",
+    "excessive"
+   ],
+   "exp": "数値を「超える」は exceed。excel は「秀でる」。",
+   "point": "exceed ～「～を超える」",
+   "level": 2
+  },
+  {
+   "id": "v168",
+   "q": "Our office supplies are running _____, so please order more.",
+   "choices": [
+    "low",
+    "short of",
+    "little",
+    "few"
+   ],
+   "exp": "run low / run short は補語に形容詞。short of は後ろに名詞が必要。",
+   "point": "run low「（在庫が）少なくなる」",
+   "level": 2
+  },
+  {
+   "id": "v169",
+   "q": "Candidates will be _____ on their communication and problem-solving skills.",
+   "choices": [
+    "evaluated",
+    "valued",
+    "estimated",
+    "evacuated"
+   ],
+   "exp": "人の能力評価は evaluate。evacuate は「避難させる」。",
+   "point": "be evaluated on ～「～について評価される」",
+   "level": 2
+  },
+  {
+   "id": "v170",
+   "q": "_____ to the trade fair is free for registered members.",
+   "choices": [
+    "Admission",
+    "Admittance",
+    "Permission",
+    "Entry fee"
+   ],
+   "exp": "admission to an event は「入場」。entry fee は「入場料」なので free と意味が重複し、to the trade fair とも結びつかない。",
+   "point": "admission to ～「～への入場（料）」",
+   "level": 2
+  },
+  {
+   "id": "v171",
+   "q": "The board will _____ a final decision at next week's meeting.",
+   "choices": [
+    "reach",
+    "arrive",
+    "come",
+    "get to"
+   ],
+   "exp": "reach は他動詞。arrive / come は at が必要。",
+   "point": "reach a decision「決定に至る」",
+   "level": 1
+  },
+  {
+   "id": "v172",
+   "q": "The keynote speaker _____ the audience with her inspiring story.",
+   "choices": [
+    "captivated",
+    "captured up",
+    "caught on",
+    "capitulated"
+   ],
+   "exp": "captivate は「魅了する」。capitulate は「降伏する」。",
+   "point": "captivate an audience「聴衆を魅了する」",
+   "level": 3
+  },
+  {
+   "id": "v173",
+   "q": "The research team has made significant _____ in cancer treatment.",
+   "choices": [
+    "advances",
+    "advantages",
+    "advents",
+    "adventures"
+   ],
+   "exp": "進歩は advances。advantage は「利点」。",
+   "point": "make advances in ～「～で進歩を遂げる」",
+   "level": 2
+  },
+  {
+   "id": "v174",
+   "q": "Please _____ your seat belts while the sign is illuminated.",
+   "choices": [
+    "fasten",
+    "fashion",
+    "fixate",
+    "fast"
+   ],
+   "exp": "定番の表現。",
+   "point": "fasten a seat belt「シートベルトを締める」",
+   "level": 1
+  },
+  {
+   "id": "v175",
+   "q": "The sales team exceeded _____ quota for the third quarter.",
+   "choices": [
+    "its",
+    "it's",
+    "their own selves",
+    "it"
+   ],
+   "exp": "the sales team を受ける所有格 its。it's は it is。",
+   "point": "exceed one's quota「ノルマを超える」",
+   "level": 1
+  },
+  {
+   "id": "v176",
+   "q": "The manual provides step-by-step _____ for assembling the furniture.",
+   "choices": [
+    "instructions",
+    "instructors",
+    "instruments",
+    "institutions"
+   ],
+   "exp": "組み立ての「説明」は instructions。",
+   "point": "instructions for ～「～の説明書・指示」",
+   "level": 1
+  },
+  {
+   "id": "v177",
+   "q": "Due to rising costs, the company had no _____ but to raise prices.",
+   "choices": [
+    "choice",
+    "chance",
+    "way",
+    "method"
+   ],
+   "exp": "定番の表現。",
+   "point": "have no choice but to do「～するしかない」",
+   "level": 2
+  },
+  {
+   "id": "v178",
+   "q": "The new parking regulations will be strictly _____.",
+   "choices": [
+    "enforced",
+    "reinforced",
+    "forced",
+    "enhanced"
+   ],
+   "exp": "規則の施行・取り締まりは enforce。reinforce は「補強する」。",
+   "point": "enforce a regulation「規則を施行する」",
+   "level": 2
+  },
+  {
+   "id": "v179",
+   "q": "The company _____ a 15 percent increase in profits this year.",
+   "choices": [
+    "reported",
+    "repeated",
+    "reproduced",
+    "reposted"
+   ],
+   "exp": "業績の発表は report。",
+   "point": "report an increase「増加を報告・発表する」",
+   "level": 1
+  },
+  {
+   "id": "v180",
+   "q": "We appreciate your _____ in this matter.",
+   "choices": [
+    "cooperation",
+    "corporation",
+    "cooperate",
+    "cooperative"
+   ],
+   "exp": "所有格 your の後に名詞 cooperation。",
+   "point": "appreciate your cooperation「ご協力に感謝する」",
+   "level": 1
+  },
+  {
+   "id": "v181",
+   "q": "The CFO warned that the company's cash reserves were being _____ at an alarming rate.",
+   "choices": [
+    "depleted",
+    "deleted",
+    "depicted",
+    "deported"
+   ],
+   "exp": "資源・蓄えを減らすのは deplete。depict は「描く」、deport は「国外追放する」。",
+   "point": "deplete reserves「蓄えを減らす」",
+   "level": 3
+  },
+  {
+   "id": "v182",
+   "q": "The consultant's recommendations were _____ to the company's actual needs.",
+   "choices": [
+    "tailored",
+    "tailed",
+    "trailed",
+    "tailoring"
+   ],
+   "exp": "tailor は「（ニーズに）合わせる」。受動態で to と結びつく。",
+   "point": "be tailored to ～「～に合わせて作られる」",
+   "level": 2
+  },
+  {
+   "id": "v183",
+   "q": "Ms. Ndiaye has _____ a reputation as one of the most reliable suppliers in the region.",
+   "choices": [
+    "earned",
+    "won over",
+    "gained up",
+    "deserved"
+   ],
+   "exp": "評判を「得る」は earn（establish, build も可）。deserve は「値する」。",
+   "point": "earn a reputation「評判を得る」",
+   "level": 1
+  },
+  {
+   "id": "v184",
+   "q": "The company will _____ a hiring freeze until the end of the fiscal year.",
+   "choices": [
+    "impose",
+    "compose",
+    "expose",
+    "propose to"
+   ],
+   "exp": "制限・規制を課すのは impose。",
+   "point": "impose a freeze「凍結を課す」",
+   "level": 2
+  },
+  {
+   "id": "v185",
+   "q": "Because of the strike, deliveries may be _____ by up to a week.",
+   "choices": [
+    "delayed",
+    "deferred to",
+    "detained",
+    "deleted"
+   ],
+   "exp": "配送の遅延は delay。detain は人を「引き留める」。",
+   "point": "be delayed by ～「～だけ遅れる」",
+   "level": 1
+  },
+  {
+   "id": "v186",
+   "q": "The firm's quarterly earnings fell _____ of analysts' expectations.",
+   "choices": [
+    "short",
+    "shortly",
+    "shortage",
+    "shorten"
+   ],
+   "exp": "fall short of は定番の表現。",
+   "point": "fall short of ～「～に届かない」",
+   "level": 2
+  },
+  {
+   "id": "v187",
+   "q": "The new software _____ users to track their expenses in real time.",
+   "choices": [
+    "enables",
+    "allows for",
+    "lets",
+    "makes"
+   ],
+   "exp": "目的語＋to do を取るのは enable / allow。let は原形不定詞、make も原形不定詞。",
+   "point": "enable A to do「A が～できるようにする」",
+   "level": 2
+  },
+  {
+   "id": "v188",
+   "q": "The landlord agreed to _____ the rent by ten percent if we signed a three-year lease.",
+   "choices": [
+    "lower",
+    "low",
+    "lowly",
+    "lowered"
+   ],
+   "exp": "lower は動詞で「下げる」。to の後に原形。",
+   "point": "lower the rent「家賃を下げる」",
+   "level": 1
+  },
+  {
+   "id": "v189",
+   "q": "We are pleased to _____ that Dr. Haruka Ito will join our research team.",
+   "choices": [
+    "announce",
+    "pronounce",
+    "denounce",
+    "renounce"
+   ],
+   "exp": "発表は announce。renounce は「放棄する」。",
+   "point": "be pleased to announce that ～「～をお知らせします」",
+   "level": 1
+  },
+  {
+   "id": "v190",
+   "q": "The bank requires two forms of identification to _____ an account.",
+   "choices": [
+    "open",
+    "start",
+    "begin",
+    "launch"
+   ],
+   "exp": "口座の開設は open。",
+   "point": "open an account「口座を開設する」",
+   "level": 1
+  },
+  {
+   "id": "v191",
+   "q": "The delivery truck was _____ in heavy traffic for over an hour.",
+   "choices": [
+    "stuck",
+    "stacked",
+    "struck",
+    "stocked"
+   ],
+   "exp": "stuck「動けない」。stack は「積み重ねる」。",
+   "point": "be stuck in traffic「渋滞にはまる」",
+   "level": 1
+  },
+  {
+   "id": "v192",
+   "q": "Ms. Alvarez _____ the importance of meeting deadlines in her opening remarks.",
+   "choices": [
+    "underscored",
+    "underwent",
+    "underwrote",
+    "understated"
+   ],
+   "exp": "underscore = emphasize。undergo は「経験する」、underwrite は「保証・引き受ける」。",
+   "point": "underscore「強調する」",
+   "level": 3
+  },
+  {
+   "id": "v193",
+   "q": "The museum _____ a small fee for special exhibitions.",
+   "choices": [
+    "charges",
+    "costs",
+    "spends",
+    "pays"
+   ],
+   "exp": "料金を取るのは charge。cost は「（物が）費用がかかる」。",
+   "point": "charge a fee「料金を請求する」",
+   "level": 1
+  },
+  {
+   "id": "v194",
+   "q": "The supplier has _____ that the order will arrive by Tuesday.",
+   "choices": [
+    "guaranteed",
+    "warranted to",
+    "secured",
+    "assured"
+   ],
+   "exp": "that 節を直接取るのは guarantee。assure は assure 人 that の形が基本。",
+   "point": "guarantee that ～「～を保証する」",
+   "level": 2
+  },
+  {
+   "id": "v195",
+   "q": "Several employees _____ interest in the leadership training program.",
+   "choices": [
+    "expressed",
+    "exposed",
+    "extracted",
+    "exported"
+   ],
+   "exp": "関心の表明は express。",
+   "point": "express interest「関心を示す」",
+   "level": 1
+  },
+  {
+   "id": "v196",
+   "q": "Unauthorized _____ of company software is strictly prohibited.",
+   "choices": [
+    "duplication",
+    "duplicity",
+    "duplex",
+    "duplicate"
+   ],
+   "exp": "名詞「複製」は duplication。duplicity は「二枚舌」。",
+   "point": "unauthorized duplication「無断複製」",
+   "level": 3
+  },
+  {
+   "id": "v197",
+   "q": "The company's founder remains actively _____ in day-to-day decisions.",
+   "choices": [
+    "involved",
+    "evolved",
+    "revolved",
+    "dissolved"
+   ],
+   "exp": "関与は involved。",
+   "point": "be involved in ～「～に関わる」",
+   "level": 1
+  },
+  {
+   "id": "v198",
+   "q": "Please allow three to five business days for your order to be _____.",
+   "choices": [
+    "processed",
+    "proceeded",
+    "proceeds",
+    "procession"
+   ],
+   "exp": "注文の処理は process（受動態）。proceed は自動詞で受動態にならない。",
+   "point": "process an order「注文を処理する」",
+   "level": 2
+  },
+  {
+   "id": "v199",
+   "q": "The city plans to _____ the old factory into an art center.",
+   "choices": [
+    "convert",
+    "convict",
+    "convey",
+    "converse"
+   ],
+   "exp": "into と結びつくのは convert。convey は「運ぶ・伝える」。",
+   "point": "convert A into B「A を B に改装・転換する」",
+   "level": 2
+  },
+  {
+   "id": "v200",
+   "q": "Mr. Okoye's proposal received _____ support from the committee.",
+   "choices": [
+    "unanimous",
+    "anonymous",
+    "unanimously",
+    "magnanimous"
+   ],
+   "exp": "全会一致は unanimous。anonymous は「匿名の」。",
+   "point": "unanimous support「満場一致の支持」",
+   "level": 2
+  },
+  {
+   "id": "v201",
+   "q": "The manufacturer has _____ production of its older models.",
+   "choices": [
+    "ceased",
+    "seized",
+    "ceded",
+    "seated"
+   ],
+   "exp": "cease は「やめる」。seize は「つかむ・押収する」、cede は「譲る」。",
+   "point": "cease production「生産を停止する」",
+   "level": 2
+  },
+  {
+   "id": "v202",
+   "q": "The new regulations are intended to _____ consumers from unfair pricing.",
+   "choices": [
+    "protect",
+    "prevent",
+    "prohibit",
+    "preserve"
+   ],
+   "exp": "protect A from B が自然。prevent A from ～ing は「A が～するのを防ぐ」で、後に動名詞が来る。",
+   "point": "protect A from B「A を B から守る」",
+   "level": 2
+  },
+  {
+   "id": "v203",
+   "q": "The contract _____ that all work must be completed by June 30.",
+   "choices": [
+    "stipulates",
+    "stimulates",
+    "stipends",
+    "stifles"
+   ],
+   "exp": "契約が「規定する」は stipulate。stifle は「抑え込む」。",
+   "point": "stipulate that ～「～と規定する」",
+   "level": 3
+  },
+  {
+   "id": "v204",
+   "q": "Applicants who meet the requirements will be _____ for an interview.",
+   "choices": [
+    "contacted",
+    "contracted",
+    "contested",
+    "contented"
+   ],
+   "exp": "連絡は contact。contract は「契約する」。",
+   "point": "be contacted for ～「～のために連絡を受ける」",
+   "level": 1
+  },
+  {
+   "id": "v205",
+   "q": "The company spokesperson declined to _____ on the rumors.",
+   "choices": [
+    "comment",
+    "remark",
+    "mention",
+    "state"
+   ],
+   "exp": "on と結びつき自動詞で使えるのは comment。mention / state は他動詞で on 不要、remark on もあるが decline to comment が定型。",
+   "point": "comment on ～「～について論評する」",
+   "level": 1
+  },
+  {
+   "id": "v206",
+   "q": "The training program is designed to help employees _____ their full potential.",
+   "choices": [
+    "reach",
+    "arrive",
+    "attain to",
+    "come"
+   ],
+   "exp": "他動詞で目的語を取るのは reach。attain は他動詞なので to 不要。",
+   "point": "reach one's full potential「潜在能力を最大限に発揮する」",
+   "level": 2
+  },
+  {
+   "id": "v207",
+   "q": "The publisher has _____ the release of the book until next spring.",
+   "choices": [
+    "postponed",
+    "posted",
+    "postured",
+    "positioned"
+   ],
+   "exp": "延期は postpone。",
+   "point": "postpone ～「～を延期する」",
+   "level": 1
+  },
+  {
+   "id": "v208",
+   "q": "Any questions _____ the new policy should be directed to the human resources department.",
+   "choices": [
+    "regarding",
+    "regarded",
+    "regard",
+    "regards to"
+   ],
+   "exp": "前置詞として使える regarding。regards to は誤り（with regard to が正しい）。",
+   "point": "regarding ～「～に関して」",
+   "level": 2
+  },
+  {
+   "id": "v209",
+   "q": "The new branch will initially _____ a staff of twenty.",
+   "choices": [
+    "employ",
+    "deploy",
+    "enjoy",
+    "imply"
+   ],
+   "exp": "雇用は employ。deploy は「配備する」。",
+   "point": "employ a staff of ～「～人のスタッフを雇用する」",
+   "level": 1
+  },
+  {
+   "id": "v210",
+   "q": "The company's success can be _____ to its focus on innovation.",
+   "choices": [
+    "traced",
+    "tracked",
+    "trailed",
+    "trained"
+   ],
+   "exp": "trace A to B「A の原因を B にたどる」。",
+   "point": "be traced to ～「～に起因する・さかのぼる」",
+   "level": 3
+  },
+  {
+   "id": "v211",
+   "q": "The keynote address will be followed by a _____ discussion.",
+   "choices": [
+    "panel",
+    "pane",
+    "pale",
+    "panic"
+   ],
+   "exp": "複合名詞 panel discussion。",
+   "point": "a panel discussion「パネルディスカッション」",
+   "level": 1
+  },
+  {
+   "id": "v212",
+   "q": "The financial report must be _____ by an independent auditor.",
+   "choices": [
+    "reviewed",
+    "renewed",
+    "revived",
+    "revoked"
+   ],
+   "exp": "監査人による確認は review。revoke は「取り消す」。",
+   "point": "be reviewed by ～「～に精査される」",
+   "level": 1
+  },
+  {
+   "id": "v213",
+   "q": "The bus service will be _____ during the holiday period.",
+   "choices": [
+    "reduced",
+    "deduced",
+    "induced",
+    "seduced"
+   ],
+   "exp": "運行の縮小は reduce。deduce は「推論する」。",
+   "point": "reduce service「運行を減らす」",
+   "level": 2
+  },
+  {
+   "id": "v214",
+   "q": "The company has introduced flexible working hours to _____ employee morale.",
+   "choices": [
+    "boost",
+    "boast",
+    "booth",
+    "boom"
+   ],
+   "exp": "boost は「高める」。boast は「自慢する」。",
+   "point": "boost morale「士気を高める」",
+   "level": 1
+  },
+  {
+   "id": "v215",
+   "q": "_____ your order, please call our customer service center.",
+   "choices": [
+    "To track",
+    "Tracking",
+    "Tracked",
+    "Track"
+   ],
+   "exp": "目的を表す不定詞 To track。Tracking で始めると分詞構文になり意味上の主語が合わない。",
+   "point": "To do, ～「～するには」",
+   "level": 2
+  },
+  {
+   "id": "v216",
+   "q": "The negotiations were _____ after both sides agreed to compromise.",
+   "choices": [
+    "concluded",
+    "included",
+    "excluded",
+    "secluded"
+   ],
+   "exp": "交渉を終えるのは conclude。seclude は「隔離する」。",
+   "point": "conclude negotiations「交渉をまとめる」",
+   "level": 2
+  },
+  {
+   "id": "v217",
+   "q": "The new president has vowed to _____ the company's debt within three years.",
+   "choices": [
+    "eliminate",
+    "illuminate",
+    "eliminating",
+    "elaborate"
+   ],
+   "exp": "to の後に原形で「なくす」は eliminate。illuminate は「照らす」、elaborate は「詳しく述べる」。",
+   "point": "eliminate debt「負債をなくす」",
+   "level": 2
+  },
+  {
+   "id": "v218",
+   "q": "Mr. Takahashi was _____ by the board to lead the restructuring effort.",
+   "choices": [
+    "chosen",
+    "choice",
+    "choose",
+    "choosing"
+   ],
+   "exp": "受動態で過去分詞 chosen。",
+   "point": "be chosen to do「～するよう選ばれる」",
+   "level": 1
+  },
+  {
+   "id": "v219",
+   "q": "Our technicians are available _____ the clock to assist you.",
+   "choices": [
+    "around",
+    "about",
+    "through",
+    "over"
+   ],
+   "exp": "定番の表現。",
+   "point": "around the clock「24時間体制で」",
+   "level": 1
+  },
+  {
+   "id": "v220",
+   "q": "Prices for raw materials have _____ sharply in recent months.",
+   "choices": [
+    "soared",
+    "sored",
+    "soured over",
+    "sowed"
+   ],
+   "exp": "価格の急騰は soar。sour は「悪化する」で over は不要、sow は「種をまく」。",
+   "point": "prices soar「価格が急騰する」",
+   "level": 2
+  },
+  {
+   "id": "v221",
+   "q": "Hotel guests may _____ their valuables in the safe at the front desk.",
+   "choices": [
+    "deposit",
+    "dispose",
+    "depose",
+    "deport"
+   ],
+   "exp": "預けるのは deposit。dispose は of を伴い「処分する」。",
+   "point": "deposit valuables「貴重品を預ける」",
+   "level": 2
+  },
+  {
+   "id": "v222",
+   "q": "The software developer released a _____ to fix the security flaw.",
+   "choices": [
+    "patch",
+    "match",
+    "batch",
+    "latch"
+   ],
+   "exp": "ソフトの修正は patch。",
+   "point": "release a patch「修正プログラムを公開する」",
+   "level": 2
+  },
+  {
+   "id": "v223",
+   "q": "Our office will be _____ to a new location next month.",
+   "choices": [
+    "relocated",
+    "related",
+    "relegated",
+    "reloaded"
+   ],
+   "exp": "移転は relocate。relegate は「格下げする」。",
+   "point": "be relocated to ～「～へ移転する」",
+   "level": 2
+  },
+  {
+   "id": "v224",
+   "q": "The government has introduced new measures to _____ economic growth.",
+   "choices": [
+    "stimulate",
+    "simulate",
+    "stipulate",
+    "stimulus"
+   ],
+   "exp": "経済の刺激は stimulate。simulate は「模擬する」。",
+   "point": "stimulate growth「成長を促す」",
+   "level": 2
+  },
+  {
+   "id": "v225",
+   "q": "The company has _____ an agreement with a local university to share research.",
+   "choices": [
+    "forged",
+    "forgot",
+    "forgave",
+    "forbade"
+   ],
+   "exp": "forge は「（関係・協定を）築く」。",
+   "point": "forge an agreement「協定を結ぶ」",
+   "level": 3
+  },
+  {
+   "id": "v226",
+   "q": "Please notify the front desk if you require a wake-up _____.",
+   "choices": [
+    "call",
+    "ring",
+    "phone",
+    "alarm"
+   ],
+   "exp": "定番の表現。",
+   "point": "a wake-up call「モーニングコール」",
+   "level": 1
+  },
+  {
+   "id": "v227",
+   "q": "The company is _____ its customer service operations to improve response times.",
+   "choices": [
+    "restructuring",
+    "restricting",
+    "restraining",
+    "restoring to"
+   ],
+   "exp": "組織の再編は restructure。restrict は「制限する」。",
+   "point": "restructure operations「業務を再編する」",
+   "level": 2
+  },
+  {
+   "id": "v228",
+   "q": "The hotel is _____ booked during the festival, so reserve early.",
+   "choices": [
+    "typically",
+    "typical",
+    "type",
+    "typing"
+   ],
+   "exp": "過去分詞 booked を修飾する副詞 typically。",
+   "point": "typically「通常は」",
+   "level": 2
+  },
+  {
+   "id": "v229",
+   "q": "The new manager quickly _____ a good relationship with her staff.",
+   "choices": [
+    "established",
+    "estimated",
+    "estranged",
+    "esteemed"
+   ],
+   "exp": "関係を築くのは establish。esteem は「尊敬する」。",
+   "point": "establish a relationship「関係を築く」",
+   "level": 2
+  },
+  {
+   "id": "v230",
+   "q": "Customers can _____ their orders online at any time.",
+   "choices": [
+    "track",
+    "trace up",
+    "trail",
+    "tread"
+   ],
+   "exp": "配送状況の追跡は track。",
+   "point": "track an order「注文を追跡する」",
+   "level": 1
+  },
+  {
+   "id": "v231",
+   "q": "The proposal will be _____ to a vote at the next meeting.",
+   "choices": [
+    "put",
+    "set",
+    "made",
+    "taken"
+   ],
+   "exp": "定番の表現。",
+   "point": "put A to a vote「A を採決にかける」",
+   "level": 2
+  },
+  {
+   "id": "v232",
+   "q": "Unfortunately, the item you requested has been _____.",
+   "choices": [
+    "discontinued",
+    "discounted",
+    "discouraged",
+    "disconnected"
+   ],
+   "exp": "製品の販売終了は discontinue。discount は「値引きする」。",
+   "point": "be discontinued「製造中止になる」",
+   "level": 2
+  },
+  {
+   "id": "v233",
+   "q": "The museum's guided tours are conducted in several _____.",
+   "choices": [
+    "languages",
+    "linguistics",
+    "lingual",
+    "languish"
+   ],
+   "exp": "several の後に複数名詞 languages。",
+   "point": "several languages「複数の言語」",
+   "level": 1
+  },
+  {
+   "id": "v234",
+   "q": "Employees who wish to work remotely must _____ a request to their supervisor.",
+   "choices": [
+    "submit",
+    "subject",
+    "submerge",
+    "subscribe"
+   ],
+   "exp": "提出は submit。",
+   "point": "submit a request「申請を提出する」",
+   "level": 1
+  },
+  {
+   "id": "v235",
+   "q": "The airline has added more flights to _____ the increase in demand.",
+   "choices": [
+    "meet",
+    "match up",
+    "fit",
+    "suit"
+   ],
+   "exp": "需要に応えるのは meet。",
+   "point": "meet demand「需要を満たす」",
+   "level": 2
+  },
+  {
+   "id": "v236",
+   "q": "The new shopping center is expected to _____ thousands of visitors every week.",
+   "choices": [
+    "draw",
+    "drag",
+    "drown",
+    "drain"
+   ],
+   "exp": "draw は「引き寄せる」。drain は「（資源を）消耗させる」。",
+   "point": "draw visitors「客を引き寄せる」",
+   "level": 2
+  },
+  {
+   "id": "v237",
+   "q": "The company's stock price has _____ since the announcement.",
+   "choices": [
+    "plummeted",
+    "plumbed",
+    "plundered",
+    "plunged into"
+   ],
+   "exp": "自動詞で「急落する」は plummet。plunge into は「～に飛び込む」で目的語が必要。",
+   "point": "plummet「急落する」",
+   "level": 3
+  },
+  {
+   "id": "v238",
+   "q": "The team worked _____ to meet the tight deadline.",
+   "choices": [
+    "tirelessly",
+    "tireless",
+    "tired",
+    "tiring"
+   ],
+   "exp": "動詞を修飾する副詞 tirelessly。",
+   "point": "work tirelessly「たゆまず働く」",
+   "level": 2
+  },
+  {
+   "id": "v239",
+   "q": "The company has _____ a new marketing strategy aimed at young adults.",
+   "choices": [
+    "devised",
+    "divided",
+    "divined",
+    "devoted"
+   ],
+   "exp": "考案は devise。devote は to を伴う。",
+   "point": "devise a strategy「戦略を考案する」",
+   "level": 2
+  },
+  {
+   "id": "v240",
+   "q": "The company _____ its employees with free lunches on Fridays.",
+   "choices": [
+    "provides",
+    "offers",
+    "gives",
+    "supplies to"
+   ],
+   "exp": "A with B の形を取るのは provide。offer / give は二重目的語、supply A with B は可能だが to が付くと誤り。",
+   "point": "provide A with B「A に B を提供する」",
+   "level": 2
+  },
+  {
+   "id": "v241",
+   "q": "The director gave a brief _____ of the company's history.",
+   "choices": [
+    "overview",
+    "overlook",
+    "overtime",
+    "overhead"
+   ],
+   "exp": "概要は overview。overlook は「見落とす」。",
+   "point": "an overview of ～「～の概要」",
+   "level": 1
   }
  ],
  "para": [
