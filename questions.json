@@ -11545,14 +11545,16 @@
    "word": "commence",
    "answer": "begin",
    "ja": "開始する",
-   "level": 1
+   "level": 1,
+   "group": "begin"
   },
   {
    "id": "p004",
    "word": "tentative",
    "answer": "provisional",
    "ja": "暫定的な",
-   "level": 2
+   "level": 2,
+   "group": "temporary"
   },
   {
    "id": "p005",
@@ -11567,7 +11569,8 @@
    "word": "expedite",
    "answer": "speed up",
    "ja": "迅速化する",
-   "level": 2
+   "level": 2,
+   "group": "fast"
   },
   {
    "id": "p007",
@@ -11613,7 +11616,8 @@
    "word": "prior to",
    "answer": "before",
    "ja": "～より前に",
-   "level": 1
+   "level": 1,
+   "group": "before"
   },
   {
    "id": "p013",
@@ -11628,7 +11632,8 @@
    "word": "lucrative",
    "answer": "profitable",
    "ja": "儲かる",
-   "level": 2
+   "level": 2,
+   "group": "money"
   },
   {
    "id": "p015",
@@ -11666,14 +11671,16 @@
    "word": "durable",
    "answer": "long-lasting",
    "ja": "耐久性のある",
-   "level": 2
+   "level": 2,
+   "group": "lasting"
   },
   {
    "id": "p020",
    "word": "terminate",
    "answer": "end",
    "ja": "終了させる",
-   "level": 1
+   "level": 1,
+   "group": "end"
   },
   {
    "id": "p021",
@@ -11695,7 +11702,8 @@
    "word": "deteriorate",
    "answer": "worsen",
    "ja": "悪化する",
-   "level": 3
+   "level": 3,
+   "group": "worse"
   },
   {
    "id": "p024",
@@ -11734,14 +11742,16 @@
    "word": "viable",
    "answer": "feasible",
    "ja": "実行可能な",
-   "level": 3
+   "level": 3,
+   "group": "feasible"
   },
   {
    "id": "p029",
    "word": "tenant",
    "answer": "renter",
    "ja": "賃借人",
-   "level": 2
+   "level": 2,
+   "group": "resident"
   },
   {
    "id": "p030",
@@ -11770,21 +11780,24 @@
    "word": "adhere to",
    "answer": "follow",
    "ja": "～に従う",
-   "level": 2
+   "level": 2,
+   "group": "follow"
   },
   {
    "id": "p034",
    "word": "prospective",
    "answer": "potential",
    "ja": "見込みのある",
-   "level": 2
+   "level": 2,
+   "group": "possible"
   },
   {
    "id": "p035",
    "word": "tally",
    "answer": "count",
    "ja": "集計する",
-   "level": 3
+   "level": 3,
+   "group": "count"
   },
   {
    "id": "p036",
@@ -11805,7 +11818,8 @@
    "word": "patronage",
    "answer": "customer support",
    "ja": "ひいき、愛顧",
-   "level": 3
+   "level": 3,
+   "group": "customer"
   },
   {
    "id": "p039",
@@ -11878,35 +11892,40 @@
    "word": "complimentary",
    "answer": "free of charge",
    "ja": "無料の",
-   "level": 2
+   "level": 2,
+   "group": "free"
   },
   {
    "id": "p049",
    "word": "concise",
    "answer": "brief",
    "ja": "簡潔な",
-   "level": 2
+   "level": 2,
+   "group": "short"
   },
   {
    "id": "p050",
    "word": "confidential",
    "answer": "secret",
    "ja": "機密の",
-   "level": 1
+   "level": 1,
+   "group": "secret"
   },
   {
    "id": "p051",
    "word": "convene",
    "answer": "assemble",
    "ja": "招集する・集まる",
-   "level": 3
+   "level": 3,
+   "group": "combine"
   },
   {
    "id": "p052",
    "word": "courteous",
    "answer": "polite",
    "ja": "礼儀正しい",
-   "level": 2
+   "level": 2,
+   "group": "polite"
   },
   {
    "id": "p053",
@@ -11928,7 +11947,8 @@
    "word": "eligible",
    "answer": "qualified",
    "ja": "資格のある",
-   "level": 2
+   "level": 2,
+   "group": "able"
   },
   {
    "id": "p056",
@@ -11965,7 +11985,8 @@
    "word": "flaw",
    "answer": "defect",
    "ja": "欠陥",
-   "level": 2
+   "level": 2,
+   "group": "bad"
   },
   {
    "id": "p061",
@@ -12002,14 +12023,16 @@
    "word": "inventory",
    "answer": "stock",
    "ja": "在庫",
-   "level": 1
+   "level": 1,
+   "group": "goods"
   },
   {
    "id": "p066",
    "word": "invoice",
    "answer": "bill",
    "ja": "請求書",
-   "level": 1
+   "level": 1,
+   "group": "payback"
   },
   {
    "id": "p067",
@@ -12031,7 +12054,8 @@
    "word": "obsolete",
    "answer": "out of date",
    "ja": "時代遅れの",
-   "level": 2
+   "level": 2,
+   "group": "old"
   },
   {
    "id": "p070",
@@ -12045,7 +12069,8 @@
    "word": "on behalf of",
    "answer": "representing",
    "ja": "～を代表して",
-   "level": 2
+   "level": 2,
+   "group": "rep"
   },
   {
    "id": "p072",
@@ -12060,7 +12085,8 @@
    "word": "personnel",
    "answer": "staff",
    "ja": "職員",
-   "level": 1
+   "level": 1,
+   "group": "staff"
   },
   {
    "id": "p074",
@@ -12083,7 +12109,8 @@
    "word": "promptly",
    "answer": "immediately",
    "ja": "すぐに",
-   "level": 1
+   "level": 1,
+   "group": "fast"
   },
   {
    "id": "p077",
@@ -12106,14 +12133,16 @@
    "word": "reliable",
    "answer": "dependable",
    "ja": "信頼できる",
-   "level": 1
+   "level": 1,
+   "group": "trust"
   },
   {
    "id": "p080",
    "word": "remainder",
    "answer": "rest",
    "ja": "残り",
-   "level": 2
+   "level": 2,
+   "group": "rest"
   },
   {
    "id": "p081",
@@ -12127,14 +12156,16 @@
    "word": "retain",
    "answer": "keep",
    "ja": "保持する",
-   "level": 2
+   "level": 2,
+   "group": "claim"
   },
   {
    "id": "p083",
    "word": "revenue",
    "answer": "income",
    "ja": "収入・収益",
-   "level": 1
+   "level": 1,
+   "group": "money"
   },
   {
    "id": "p084",
@@ -12149,21 +12180,24 @@
    "word": "state-of-the-art",
    "answer": "most advanced",
    "ja": "最新式の",
-   "level": 2
+   "level": 2,
+   "group": "new"
   },
   {
    "id": "p086",
    "word": "streamline",
    "answer": "simplify",
    "ja": "合理化する",
-   "level": 2
+   "level": 2,
+   "group": "help"
   },
   {
    "id": "p087",
    "word": "substantial",
    "answer": "considerable",
    "ja": "かなりの",
-   "level": 2
+   "level": 2,
+   "group": "big"
   },
   {
    "id": "p088",
@@ -12177,7 +12211,8 @@
    "word": "unanimous",
    "answer": "in full agreement",
    "ja": "満場一致の",
-   "level": 3
+   "level": 3,
+   "group": "agree"
   },
   {
    "id": "p090",
@@ -12198,7 +12233,8 @@
    "word": "verify",
    "answer": "confirm",
    "ja": "確認する",
-   "level": 1
+   "level": 1,
+   "group": "confirm"
   },
   {
    "id": "p093",
@@ -12212,7 +12248,8 @@
    "word": "withdraw",
    "answer": "take out",
    "ja": "（預金を）引き出す",
-   "level": 2
+   "level": 2,
+   "group": "extract"
   },
   {
    "id": "p095",
@@ -12242,7 +12279,8 @@
    "word": "reluctant",
    "answer": "unwilling",
    "ja": "気が進まない",
-   "level": 2
+   "level": 2,
+   "group": "worry"
   },
   {
    "id": "p099",
@@ -12278,7 +12316,8 @@
    "word": "thrive",
    "answer": "flourish",
    "ja": "繁栄する",
-   "level": 3
+   "level": 3,
+   "group": "grow"
   },
   {
    "id": "p104",
@@ -12293,7 +12332,3077 @@
    "word": "collaborate",
    "answer": "work together",
    "ja": "協力する",
+   "level": 1,
+   "group": "together"
+  },
+  {
+   "id": "p106",
+   "word": "abolish",
+   "answer": "do away with",
+   "ja": "廃止する",
+   "level": 3,
+   "group": "end"
+  },
+  {
+   "id": "p107",
+   "word": "abundance",
+   "answer": "large amount",
+   "ja": "豊富さ",
+   "level": 2,
+   "group": "enough"
+  },
+  {
+   "id": "p108",
+   "word": "accelerate",
+   "answer": "quicken",
+   "ja": "加速する",
+   "level": 2,
+   "group": "fast"
+  },
+  {
+   "id": "p109",
+   "word": "acclaim",
+   "answer": "praise",
+   "ja": "称賛",
+   "level": 3,
+   "group": "praise"
+  },
+  {
+   "id": "p110",
+   "word": "accompany",
+   "answer": "go with",
+   "ja": "同行する",
    "level": 1
+  },
+  {
+   "id": "p111",
+   "word": "accumulate",
+   "answer": "build up",
+   "ja": "蓄積する",
+   "level": 2,
+   "group": "increase"
+  },
+  {
+   "id": "p112",
+   "word": "accurate",
+   "answer": "precise",
+   "ja": "正確な",
+   "level": 1,
+   "group": "exact"
+  },
+  {
+   "id": "p113",
+   "word": "acknowledge",
+   "answer": "admit",
+   "ja": "認める",
+   "level": 2,
+   "group": "admit"
+  },
+  {
+   "id": "p114",
+   "word": "acquaint",
+   "answer": "familiarize",
+   "ja": "精通させる",
+   "level": 3
+  },
+  {
+   "id": "p115",
+   "word": "adequate",
+   "answer": "satisfactory",
+   "ja": "十分な、適切な",
+   "level": 2,
+   "group": "enough"
+  },
+  {
+   "id": "p116",
+   "word": "adjust",
+   "answer": "adapt",
+   "ja": "調整する",
+   "level": 1,
+   "group": "change"
+  },
+  {
+   "id": "p117",
+   "word": "administer",
+   "answer": "manage",
+   "ja": "管理する、運営する",
+   "level": 2,
+   "group": "charge"
+  },
+  {
+   "id": "p118",
+   "word": "admission",
+   "answer": "entry",
+   "ja": "入場",
+   "level": 1
+  },
+  {
+   "id": "p119",
+   "word": "advance",
+   "answer": "progress",
+   "ja": "進歩",
+   "level": 1,
+   "group": "improve"
+  },
+  {
+   "id": "p120",
+   "word": "adverse",
+   "answer": "unfavorable",
+   "ja": "不利な",
+   "level": 3,
+   "group": "bad"
+  },
+  {
+   "id": "p121",
+   "word": "affluent",
+   "answer": "wealthy",
+   "ja": "裕福な",
+   "level": 3
+  },
+  {
+   "id": "p122",
+   "word": "aggravate",
+   "answer": "make worse",
+   "ja": "悪化させる",
+   "level": 3,
+   "group": "worse"
+  },
+  {
+   "id": "p123",
+   "word": "agenda",
+   "answer": "list of topics",
+   "ja": "議題",
+   "level": 1,
+   "group": "list"
+  },
+  {
+   "id": "p124",
+   "word": "aid",
+   "answer": "assistance",
+   "ja": "援助",
+   "level": 1,
+   "group": "help"
+  },
+  {
+   "id": "p125",
+   "word": "ailing",
+   "answer": "struggling",
+   "ja": "不振の",
+   "level": 3,
+   "group": "bad"
+  },
+  {
+   "id": "p126",
+   "word": "alter",
+   "answer": "revise",
+   "ja": "変更する",
+   "level": 2,
+   "group": "change"
+  },
+  {
+   "id": "p127",
+   "word": "alternative",
+   "answer": "option",
+   "ja": "代わりの手段",
+   "level": 1,
+   "group": "choose"
+  },
+  {
+   "id": "p128",
+   "word": "amend",
+   "answer": "correct",
+   "ja": "修正する",
+   "level": 2,
+   "group": "fix"
+  },
+  {
+   "id": "p129",
+   "word": "amenities",
+   "answer": "facilities",
+   "ja": "設備",
+   "level": 2
+  },
+  {
+   "id": "p130",
+   "word": "ample space",
+   "answer": "plenty of room",
+   "ja": "十分な広さ",
+   "level": 2,
+   "group": "enough"
+  },
+  {
+   "id": "p131",
+   "word": "annual",
+   "answer": "yearly",
+   "ja": "年1回の",
+   "level": 1
+  },
+  {
+   "id": "p132",
+   "word": "apparent",
+   "answer": "evident",
+   "ja": "明らかな",
+   "level": 2,
+   "group": "clear"
+  },
+  {
+   "id": "p133",
+   "word": "applaud",
+   "answer": "commend",
+   "ja": "称賛する",
+   "level": 2,
+   "group": "praise"
+  },
+  {
+   "id": "p134",
+   "word": "appliance",
+   "answer": "household device",
+   "ja": "家電製品",
+   "level": 1
+  },
+  {
+   "id": "p135",
+   "word": "appoint",
+   "answer": "nominate",
+   "ja": "任命する",
+   "level": 2,
+   "group": "assign"
+  },
+  {
+   "id": "p136",
+   "word": "appraise",
+   "answer": "assess the value of",
+   "ja": "評価する、査定する",
+   "level": 3,
+   "group": "check"
+  },
+  {
+   "id": "p137",
+   "word": "apprehensive",
+   "answer": "anxious",
+   "ja": "不安な",
+   "level": 3,
+   "group": "worry"
+  },
+  {
+   "id": "p138",
+   "word": "appropriate",
+   "answer": "suitable",
+   "ja": "適切な",
+   "level": 1,
+   "group": "suit"
+  },
+  {
+   "id": "p139",
+   "word": "approximately",
+   "answer": "roughly",
+   "ja": "おおよそ",
+   "level": 1,
+   "group": "about"
+  },
+  {
+   "id": "p140",
+   "word": "arbitrary",
+   "answer": "random",
+   "ja": "恣意的な",
+   "level": 3
+  },
+  {
+   "id": "p141",
+   "word": "arrange",
+   "answer": "organize",
+   "ja": "手配する",
+   "level": 1,
+   "group": "prepare"
+  },
+  {
+   "id": "p142",
+   "word": "ascend",
+   "answer": "climb",
+   "ja": "上がる",
+   "level": 2,
+   "group": "increase"
+  },
+  {
+   "id": "p143",
+   "word": "aspire",
+   "answer": "aim",
+   "ja": "熱望する",
+   "level": 2,
+   "group": "aim"
+  },
+  {
+   "id": "p144",
+   "word": "assemble",
+   "answer": "put together",
+   "ja": "組み立てる",
+   "level": 1,
+   "group": "combine"
+  },
+  {
+   "id": "p145",
+   "word": "assert",
+   "answer": "claim",
+   "ja": "主張する",
+   "level": 2,
+   "group": "claim"
+  },
+  {
+   "id": "p146",
+   "word": "asset",
+   "answer": "resource",
+   "ja": "資産",
+   "level": 2
+  },
+  {
+   "id": "p147",
+   "word": "assist",
+   "answer": "help out",
+   "ja": "手伝う",
+   "level": 1,
+   "group": "help"
+  },
+  {
+   "id": "p148",
+   "word": "assume",
+   "answer": "take on",
+   "ja": "（職務を）引き受ける",
+   "level": 2
+  },
+  {
+   "id": "p149",
+   "word": "assure",
+   "answer": "reassure",
+   "ja": "保証する、安心させる",
+   "level": 2
+  },
+  {
+   "id": "p150",
+   "word": "attain",
+   "answer": "achieve",
+   "ja": "達成する",
+   "level": 2,
+   "group": "achieve"
+  },
+  {
+   "id": "p151",
+   "word": "attendee",
+   "answer": "participant",
+   "ja": "参加者",
+   "level": 1
+  },
+  {
+   "id": "p152",
+   "word": "attest",
+   "answer": "testify",
+   "ja": "証言する",
+   "level": 3,
+   "group": "confirm"
+  },
+  {
+   "id": "p153",
+   "word": "augment",
+   "answer": "supplement",
+   "ja": "増やす、補う",
+   "level": 3,
+   "group": "increase"
+  },
+  {
+   "id": "p154",
+   "word": "authentic",
+   "answer": "genuine",
+   "ja": "本物の",
+   "level": 2,
+   "group": "real"
+  },
+  {
+   "id": "p155",
+   "word": "automated",
+   "answer": "computerized",
+   "ja": "自動化された",
+   "level": 2
+  },
+  {
+   "id": "p156",
+   "word": "avert",
+   "answer": "prevent",
+   "ja": "防ぐ",
+   "level": 3,
+   "group": "prevent"
+  },
+  {
+   "id": "p157",
+   "word": "avid",
+   "answer": "keen",
+   "ja": "熱心な",
+   "level": 3,
+   "group": "eager"
+  },
+  {
+   "id": "p158",
+   "word": "backing",
+   "answer": "support",
+   "ja": "支援",
+   "level": 2,
+   "group": "help"
+  },
+  {
+   "id": "p159",
+   "word": "ban",
+   "answer": "prohibit",
+   "ja": "禁止する",
+   "level": 1,
+   "group": "forbid"
+  },
+  {
+   "id": "p160",
+   "word": "bargain",
+   "answer": "good deal",
+   "ja": "お買い得品",
+   "level": 1,
+   "group": "cheap"
+  },
+  {
+   "id": "p161",
+   "word": "barrier",
+   "answer": "obstacle",
+   "ja": "障害",
+   "level": 2,
+   "group": "problem"
+  },
+  {
+   "id": "p162",
+   "word": "bolster",
+   "answer": "reinforce",
+   "ja": "強化する",
+   "level": 3,
+   "group": "strong"
+  },
+  {
+   "id": "p163",
+   "word": "booming",
+   "answer": "thriving",
+   "ja": "好況の",
+   "level": 2,
+   "group": "grow"
+  },
+  {
+   "id": "p164",
+   "word": "brief",
+   "answer": "short",
+   "ja": "短い",
+   "level": 1,
+   "group": "short"
+  },
+  {
+   "id": "p165",
+   "word": "broaden",
+   "answer": "widen",
+   "ja": "広げる",
+   "level": 2,
+   "group": "increase"
+  },
+  {
+   "id": "p166",
+   "word": "brochure",
+   "answer": "pamphlet",
+   "ja": "パンフレット",
+   "level": 1
+  },
+  {
+   "id": "p167",
+   "word": "budget",
+   "answer": "financial plan",
+   "ja": "予算",
+   "level": 1
+  },
+  {
+   "id": "p168",
+   "word": "burden",
+   "answer": "load",
+   "ja": "負担",
+   "level": 2
+  },
+  {
+   "id": "p169",
+   "word": "candidate",
+   "answer": "applicant",
+   "ja": "候補者",
+   "level": 1
+  },
+  {
+   "id": "p170",
+   "word": "capable",
+   "answer": "competent",
+   "ja": "有能な",
+   "level": 1,
+   "group": "able"
+  },
+  {
+   "id": "p171",
+   "word": "capacity",
+   "answer": "ability",
+   "ja": "能力",
+   "level": 2,
+   "group": "able"
+  },
+  {
+   "id": "p172",
+   "word": "cease",
+   "answer": "stop",
+   "ja": "やめる",
+   "level": 2,
+   "group": "end"
+  },
+  {
+   "id": "p173",
+   "word": "certify",
+   "answer": "attest to",
+   "ja": "証明する",
+   "level": 3,
+   "group": "confirm"
+  },
+  {
+   "id": "p174",
+   "word": "chiefly",
+   "answer": "primarily",
+   "ja": "主に",
+   "level": 2,
+   "group": "mainly"
+  },
+  {
+   "id": "p175",
+   "word": "circulate",
+   "answer": "distribute",
+   "ja": "配布する、回覧する",
+   "level": 2,
+   "group": "give"
+  },
+  {
+   "id": "p176",
+   "word": "clarify",
+   "answer": "explain",
+   "ja": "明らかにする",
+   "level": 1,
+   "group": "explain"
+  },
+  {
+   "id": "p177",
+   "word": "clientele",
+   "answer": "customers",
+   "ja": "顧客",
+   "level": 3,
+   "group": "customer"
+  },
+  {
+   "id": "p178",
+   "word": "coherent",
+   "answer": "logical",
+   "ja": "首尾一貫した",
+   "level": 3,
+   "group": "logic"
+  },
+  {
+   "id": "p179",
+   "word": "coincide",
+   "answer": "happen at the same time",
+   "ja": "同時に起こる",
+   "level": 3
+  },
+  {
+   "id": "p180",
+   "word": "commodity",
+   "answer": "goods",
+   "ja": "商品",
+   "level": 2,
+   "group": "goods"
+  },
+  {
+   "id": "p181",
+   "word": "compatible",
+   "answer": "consistent",
+   "ja": "両立する",
+   "level": 2
+  },
+  {
+   "id": "p182",
+   "word": "compel",
+   "answer": "oblige",
+   "ja": "強いる",
+   "level": 3,
+   "group": "required"
+  },
+  {
+   "id": "p183",
+   "word": "compensation",
+   "answer": "payment",
+   "ja": "報酬、補償",
+   "level": 2,
+   "group": "payback"
+  },
+  {
+   "id": "p184",
+   "word": "competent",
+   "answer": "skilled",
+   "ja": "有能な",
+   "level": 2,
+   "group": "able"
+  },
+  {
+   "id": "p185",
+   "word": "competitor",
+   "answer": "rival",
+   "ja": "競合他社",
+   "level": 1,
+   "group": "rival"
+  },
+  {
+   "id": "p186",
+   "word": "compile",
+   "answer": "gather",
+   "ja": "集めて編集する",
+   "level": 2,
+   "group": "combine"
+  },
+  {
+   "id": "p187",
+   "word": "complement",
+   "answer": "enhance",
+   "ja": "補完する",
+   "level": 3,
+   "group": "improve"
+  },
+  {
+   "id": "p188",
+   "word": "comply",
+   "answer": "conform",
+   "ja": "従う",
+   "level": 2,
+   "group": "follow"
+  },
+  {
+   "id": "p189",
+   "word": "component",
+   "answer": "part",
+   "ja": "部品",
+   "level": 1,
+   "group": "part"
+  },
+  {
+   "id": "p190",
+   "word": "comprehensive",
+   "answer": "thorough",
+   "ja": "包括的な",
+   "level": 2,
+   "group": "complete"
+  },
+  {
+   "id": "p191",
+   "word": "comprise",
+   "answer": "consist of",
+   "ja": "～から成る",
+   "level": 2,
+   "group": "combine"
+  },
+  {
+   "id": "p192",
+   "word": "conceal",
+   "answer": "hide",
+   "ja": "隠す",
+   "level": 2,
+   "group": "secret"
+  },
+  {
+   "id": "p193",
+   "word": "concede",
+   "answer": "acknowledge defeat",
+   "ja": "（負けを）認める",
+   "level": 3,
+   "group": "admit"
+  },
+  {
+   "id": "p194",
+   "word": "conclude",
+   "answer": "finish",
+   "ja": "終える",
+   "level": 1,
+   "group": "end"
+  },
+  {
+   "id": "p195",
+   "word": "concur",
+   "answer": "agree",
+   "ja": "同意する",
+   "level": 2,
+   "group": "agree"
+  },
+  {
+   "id": "p196",
+   "word": "condense",
+   "answer": "shorten",
+   "ja": "要約する、短縮する",
+   "level": 2,
+   "group": "short"
+  },
+  {
+   "id": "p197",
+   "word": "confer",
+   "answer": "consult",
+   "ja": "協議する",
+   "level": 3,
+   "group": "feasible"
+  },
+  {
+   "id": "p198",
+   "word": "confront",
+   "answer": "face",
+   "ja": "直面する",
+   "level": 2
+  },
+  {
+   "id": "p199",
+   "word": "congested",
+   "answer": "crowded",
+   "ja": "混雑した",
+   "level": 2
+  },
+  {
+   "id": "p200",
+   "word": "consecutive",
+   "answer": "in a row",
+   "ja": "連続した",
+   "level": 2
+  },
+  {
+   "id": "p201",
+   "word": "consent",
+   "answer": "permission",
+   "ja": "同意、許可",
+   "level": 2,
+   "group": "approve"
+  },
+  {
+   "id": "p202",
+   "word": "considerable",
+   "answer": "significant",
+   "ja": "かなりの",
+   "level": 2,
+   "group": "big"
+  },
+  {
+   "id": "p203",
+   "word": "constraint",
+   "answer": "limitation",
+   "ja": "制約",
+   "level": 2,
+   "group": "lessen"
+  },
+  {
+   "id": "p204",
+   "word": "consult",
+   "answer": "refer to",
+   "ja": "参照する、相談する",
+   "level": 2,
+   "group": "feasible"
+  },
+  {
+   "id": "p205",
+   "word": "consumer",
+   "answer": "buyer",
+   "ja": "消費者",
+   "level": 1,
+   "group": "customer"
+  },
+  {
+   "id": "p206",
+   "word": "contemplate",
+   "answer": "consider",
+   "ja": "熟考する",
+   "level": 2,
+   "group": "think"
+  },
+  {
+   "id": "p207",
+   "word": "contend",
+   "answer": "maintain",
+   "ja": "主張する",
+   "level": 3,
+   "group": "claim"
+  },
+  {
+   "id": "p208",
+   "word": "contract",
+   "answer": "agreement",
+   "ja": "契約",
+   "level": 1,
+   "group": "agree"
+  },
+  {
+   "id": "p209",
+   "word": "contribute",
+   "answer": "donate",
+   "ja": "寄付する",
+   "level": 1,
+   "group": "give"
+  },
+  {
+   "id": "p210",
+   "word": "controversial",
+   "answer": "disputed",
+   "ja": "議論を呼ぶ",
+   "level": 3,
+   "group": "dispute"
+  },
+  {
+   "id": "p211",
+   "word": "convey",
+   "answer": "communicate",
+   "ja": "伝える",
+   "level": 2,
+   "group": "tell"
+  },
+  {
+   "id": "p212",
+   "word": "cooperate",
+   "answer": "collaborate with",
+   "ja": "協力する",
+   "level": 1,
+   "group": "together"
+  },
+  {
+   "id": "p213",
+   "word": "coordinate",
+   "answer": "organize together",
+   "ja": "調整する",
+   "level": 2,
+   "group": "prepare"
+  },
+  {
+   "id": "p214",
+   "word": "cordial",
+   "answer": "friendly",
+   "ja": "心のこもった",
+   "level": 2,
+   "group": "polite"
+  },
+  {
+   "id": "p215",
+   "word": "correspond",
+   "answer": "write to each other",
+   "ja": "文通する",
+   "level": 2
+  },
+  {
+   "id": "p216",
+   "word": "cost-effective",
+   "answer": "economical",
+   "ja": "費用対効果の高い",
+   "level": 2,
+   "group": "cheap"
+  },
+  {
+   "id": "p217",
+   "word": "counterpart",
+   "answer": "equivalent",
+   "ja": "同等の地位の人",
+   "level": 3
+  },
+  {
+   "id": "p218",
+   "word": "credible",
+   "answer": "believable",
+   "ja": "信頼できる",
+   "level": 2,
+   "group": "trust"
+  },
+  {
+   "id": "p219",
+   "word": "crucial",
+   "answer": "vital",
+   "ja": "極めて重要な",
+   "level": 2,
+   "group": "required"
+  },
+  {
+   "id": "p220",
+   "word": "cumbersome",
+   "answer": "clumsy",
+   "ja": "扱いにくい",
+   "level": 3
+  },
+  {
+   "id": "p221",
+   "word": "curb",
+   "answer": "restrain",
+   "ja": "抑制する",
+   "level": 3,
+   "group": "lessen"
+  },
+  {
+   "id": "p222",
+   "word": "customary",
+   "answer": "usual",
+   "ja": "慣例の",
+   "level": 2,
+   "group": "usual"
+  },
+  {
+   "id": "p223",
+   "word": "cutting-edge",
+   "answer": "innovative",
+   "ja": "最先端の",
+   "level": 2,
+   "group": "new"
+  },
+  {
+   "id": "p224",
+   "word": "debut",
+   "answer": "first appearance",
+   "ja": "初登場",
+   "level": 1
+  },
+  {
+   "id": "p225",
+   "word": "decline",
+   "answer": "refuse",
+   "ja": "断る",
+   "level": 1,
+   "group": "refuse"
+  },
+  {
+   "id": "p226",
+   "word": "dedicated",
+   "answer": "devoted",
+   "ja": "献身的な",
+   "level": 2
+  },
+  {
+   "id": "p227",
+   "word": "deduct",
+   "answer": "subtract",
+   "ja": "差し引く",
+   "level": 2
+  },
+  {
+   "id": "p228",
+   "word": "defective",
+   "answer": "faulty",
+   "ja": "欠陥のある",
+   "level": 2,
+   "group": "bad"
+  },
+  {
+   "id": "p229",
+   "word": "deficit",
+   "answer": "shortfall",
+   "ja": "赤字、不足",
+   "level": 2,
+   "group": "lacking"
+  },
+  {
+   "id": "p230",
+   "word": "delegate",
+   "answer": "representative",
+   "ja": "代表者",
+   "level": 2,
+   "group": "rep"
+  },
+  {
+   "id": "p231",
+   "word": "deliberate",
+   "answer": "intentional",
+   "ja": "意図的な",
+   "level": 2
+  },
+  {
+   "id": "p232",
+   "word": "delicate",
+   "answer": "fragile",
+   "ja": "壊れやすい",
+   "level": 2,
+   "group": "fragile"
+  },
+  {
+   "id": "p233",
+   "word": "demolish",
+   "answer": "tear down",
+   "ja": "取り壊す",
+   "level": 2,
+   "group": "destroy"
+  },
+  {
+   "id": "p234",
+   "word": "demonstrate",
+   "answer": "show",
+   "ja": "実演する、示す",
+   "level": 1,
+   "group": "show"
+  },
+  {
+   "id": "p235",
+   "word": "dependable",
+   "answer": "trustworthy",
+   "ja": "信頼できる",
+   "level": 1,
+   "group": "trust"
+  },
+  {
+   "id": "p236",
+   "word": "depict",
+   "answer": "portray",
+   "ja": "描く",
+   "level": 2,
+   "group": "show"
+  },
+  {
+   "id": "p237",
+   "word": "deposit",
+   "answer": "down payment",
+   "ja": "頭金、保証金",
+   "level": 2,
+   "group": "payback"
+  },
+  {
+   "id": "p238",
+   "word": "deputy",
+   "answer": "assistant",
+   "ja": "代理、副",
+   "level": 2,
+   "group": "rep"
+  },
+  {
+   "id": "p239",
+   "word": "designated",
+   "answer": "specified",
+   "ja": "指定された",
+   "level": 2
+  },
+  {
+   "id": "p240",
+   "word": "detect",
+   "answer": "discover",
+   "ja": "発見する",
+   "level": 2,
+   "group": "find"
+  },
+  {
+   "id": "p241",
+   "word": "determine",
+   "answer": "decide",
+   "ja": "決定する",
+   "level": 1,
+   "group": "decide"
+  },
+  {
+   "id": "p242",
+   "word": "devise",
+   "answer": "invent",
+   "ja": "考案する",
+   "level": 2,
+   "group": "create"
+  },
+  {
+   "id": "p243",
+   "word": "diligent",
+   "answer": "hardworking",
+   "ja": "勤勉な",
+   "level": 2
+  },
+  {
+   "id": "p244",
+   "word": "dimension",
+   "answer": "measurement",
+   "ja": "寸法",
+   "level": 2,
+   "group": "size"
+  },
+  {
+   "id": "p245",
+   "word": "discard",
+   "answer": "throw away",
+   "ja": "捨てる",
+   "level": 1
+  },
+  {
+   "id": "p246",
+   "word": "discontinue",
+   "answer": "stop producing",
+   "ja": "生産を中止する",
+   "level": 2,
+   "group": "end"
+  },
+  {
+   "id": "p247",
+   "word": "discourage",
+   "answer": "deter",
+   "ja": "思いとどまらせる",
+   "level": 2,
+   "group": "prevent"
+  },
+  {
+   "id": "p248",
+   "word": "discrepancy",
+   "answer": "inconsistency",
+   "ja": "食い違い",
+   "level": 3
+  },
+  {
+   "id": "p249",
+   "word": "dismiss",
+   "answer": "fire",
+   "ja": "解雇する",
+   "level": 2
+  },
+  {
+   "id": "p250",
+   "word": "dispute",
+   "answer": "disagreement",
+   "ja": "論争",
+   "level": 2,
+   "group": "dispute"
+  },
+  {
+   "id": "p251",
+   "word": "disrupt",
+   "answer": "interrupt",
+   "ja": "中断させる",
+   "level": 2,
+   "group": "interrupt"
+  },
+  {
+   "id": "p252",
+   "word": "distinguished",
+   "answer": "eminent",
+   "ja": "著名な",
+   "level": 3,
+   "group": "famous"
+  },
+  {
+   "id": "p253",
+   "word": "distribute",
+   "answer": "hand out",
+   "ja": "配る",
+   "level": 1,
+   "group": "give"
+  },
+  {
+   "id": "p254",
+   "word": "diverse",
+   "answer": "varied",
+   "ja": "多様な",
+   "level": 2,
+   "group": "various"
+  },
+  {
+   "id": "p255",
+   "word": "domestic",
+   "answer": "national",
+   "ja": "国内の",
+   "level": 1
+  },
+  {
+   "id": "p256",
+   "word": "donation",
+   "answer": "gift",
+   "ja": "寄付",
+   "level": 1,
+   "group": "give"
+  },
+  {
+   "id": "p257",
+   "word": "draft",
+   "answer": "first version",
+   "ja": "草稿",
+   "level": 1
+  },
+  {
+   "id": "p258",
+   "word": "drastic",
+   "answer": "radical",
+   "ja": "抜本的な",
+   "level": 3
+  },
+  {
+   "id": "p259",
+   "word": "dwindle",
+   "answer": "shrink",
+   "ja": "減少する",
+   "level": 3,
+   "group": "decrease"
+  },
+  {
+   "id": "p260",
+   "word": "eager",
+   "answer": "enthusiastic",
+   "ja": "熱心な",
+   "level": 1,
+   "group": "eager"
+  },
+  {
+   "id": "p261",
+   "word": "earnings",
+   "answer": "profits",
+   "ja": "収益",
+   "level": 2,
+   "group": "money"
+  },
+  {
+   "id": "p262",
+   "word": "economize",
+   "answer": "save money",
+   "ja": "節約する",
+   "level": 2,
+   "group": "cheap"
+  },
+  {
+   "id": "p263",
+   "word": "efficient",
+   "answer": "productive",
+   "ja": "効率的な",
+   "level": 2
+  },
+  {
+   "id": "p264",
+   "word": "elaborate",
+   "answer": "detailed",
+   "ja": "詳細な、念入りな",
+   "level": 2,
+   "group": "complete"
+  },
+  {
+   "id": "p265",
+   "word": "eliminate",
+   "answer": "remove",
+   "ja": "取り除く",
+   "level": 2,
+   "group": "remove"
+  },
+  {
+   "id": "p266",
+   "word": "embark on",
+   "answer": "start out on",
+   "ja": "～に乗り出す",
+   "level": 3,
+   "group": "begin"
+  },
+  {
+   "id": "p267",
+   "word": "emerge",
+   "answer": "appear",
+   "ja": "現れる",
+   "level": 2,
+   "group": "appear"
+  },
+  {
+   "id": "p268",
+   "word": "eminent",
+   "answer": "well-known",
+   "ja": "著名な",
+   "level": 3,
+   "group": "famous"
+  },
+  {
+   "id": "p269",
+   "word": "emphasize",
+   "answer": "stress",
+   "ja": "強調する",
+   "level": 1,
+   "group": "emphasize"
+  },
+  {
+   "id": "p270",
+   "word": "enclose",
+   "answer": "attach",
+   "ja": "同封する",
+   "level": 1
+  },
+  {
+   "id": "p271",
+   "word": "encounter",
+   "answer": "come across",
+   "ja": "遭遇する",
+   "level": 2,
+   "group": "find"
+  },
+  {
+   "id": "p272",
+   "word": "endeavor",
+   "answer": "attempt",
+   "ja": "努力、試み",
+   "level": 3,
+   "group": "try"
+  },
+  {
+   "id": "p273",
+   "word": "enhance",
+   "answer": "boost",
+   "ja": "高める",
+   "level": 2,
+   "group": "improve"
+  },
+  {
+   "id": "p274",
+   "word": "enlarge",
+   "answer": "expand",
+   "ja": "拡大する",
+   "level": 1,
+   "group": "increase"
+  },
+  {
+   "id": "p275",
+   "word": "enroll",
+   "answer": "register",
+   "ja": "登録する",
+   "level": 1
+  },
+  {
+   "id": "p276",
+   "word": "ensure",
+   "answer": "make certain",
+   "ja": "確実にする",
+   "level": 2,
+   "group": "confirm"
+  },
+  {
+   "id": "p277",
+   "word": "entail",
+   "answer": "involve",
+   "ja": "伴う、必要とする",
+   "level": 3,
+   "group": "combine"
+  },
+  {
+   "id": "p278",
+   "word": "enterprise",
+   "answer": "business",
+   "ja": "企業",
+   "level": 2,
+   "group": "company"
+  },
+  {
+   "id": "p279",
+   "word": "entrepreneur",
+   "answer": "business founder",
+   "ja": "起業家",
+   "level": 2
+  },
+  {
+   "id": "p280",
+   "word": "equip",
+   "answer": "furnish",
+   "ja": "備え付ける",
+   "level": 2,
+   "group": "give"
+  },
+  {
+   "id": "p281",
+   "word": "eradicate",
+   "answer": "wipe out",
+   "ja": "根絶する",
+   "level": 3,
+   "group": "destroy"
+  },
+  {
+   "id": "p282",
+   "word": "erroneous",
+   "answer": "incorrect",
+   "ja": "誤った",
+   "level": 3,
+   "group": "wrong"
+  },
+  {
+   "id": "p283",
+   "word": "escalate",
+   "answer": "intensify",
+   "ja": "激化する",
+   "level": 3,
+   "group": "increase"
+  },
+  {
+   "id": "p284",
+   "word": "essential",
+   "answer": "indispensable",
+   "ja": "不可欠な",
+   "level": 2,
+   "group": "required"
+  },
+  {
+   "id": "p285",
+   "word": "estimate",
+   "answer": "approximate calculation",
+   "ja": "見積もり",
+   "level": 1,
+   "group": "estimate"
+  },
+  {
+   "id": "p286",
+   "word": "evacuate",
+   "answer": "clear",
+   "ja": "避難させる、退去する",
+   "level": 2,
+   "group": "leave"
+  },
+  {
+   "id": "p287",
+   "word": "evident",
+   "answer": "obvious",
+   "ja": "明白な",
+   "level": 2,
+   "group": "clear"
+  },
+  {
+   "id": "p288",
+   "word": "exaggerate",
+   "answer": "overstate",
+   "ja": "誇張する",
+   "level": 2
+  },
+  {
+   "id": "p289",
+   "word": "excavate",
+   "answer": "dig",
+   "ja": "発掘する",
+   "level": 3
+  },
+  {
+   "id": "p290",
+   "word": "exceptional",
+   "answer": "outstanding performance",
+   "ja": "並外れた",
+   "level": 2
+  },
+  {
+   "id": "p291",
+   "word": "excerpt",
+   "answer": "extract",
+   "ja": "抜粋",
+   "level": 3,
+   "group": "extract"
+  },
+  {
+   "id": "p292",
+   "word": "excursion",
+   "answer": "trip",
+   "ja": "小旅行",
+   "level": 2,
+   "group": "trip"
+  },
+  {
+   "id": "p293",
+   "word": "exempt",
+   "answer": "free",
+   "ja": "免除された",
+   "level": 3,
+   "group": "free"
+  },
+  {
+   "id": "p294",
+   "word": "exhausted",
+   "answer": "worn out",
+   "ja": "疲れ果てた",
+   "level": 1,
+   "group": "tired"
+  },
+  {
+   "id": "p295",
+   "word": "exhibit",
+   "answer": "display",
+   "ja": "展示する",
+   "level": 1,
+   "group": "show"
+  },
+  {
+   "id": "p296",
+   "word": "expansion",
+   "answer": "growth",
+   "ja": "拡大",
+   "level": 1,
+   "group": "grow"
+  },
+  {
+   "id": "p297",
+   "word": "expenditure",
+   "answer": "spending",
+   "ja": "支出",
+   "level": 2,
+   "group": "cost"
+  },
+  {
+   "id": "p298",
+   "word": "expertise",
+   "answer": "know-how",
+   "ja": "専門知識",
+   "level": 2
+  },
+  {
+   "id": "p299",
+   "word": "expire",
+   "answer": "run out",
+   "ja": "期限が切れる",
+   "level": 1,
+   "group": "end"
+  },
+  {
+   "id": "p300",
+   "word": "explicit",
+   "answer": "clearly stated",
+   "ja": "明示的な",
+   "level": 3,
+   "group": "clear"
+  },
+  {
+   "id": "p301",
+   "word": "extensive",
+   "answer": "wide-ranging",
+   "ja": "広範囲な",
+   "level": 2,
+   "group": "big"
+  },
+  {
+   "id": "p302",
+   "word": "facilitate",
+   "answer": "make easier",
+   "ja": "促進する、容易にする",
+   "level": 2,
+   "group": "help"
+  },
+  {
+   "id": "p303",
+   "word": "faculty",
+   "answer": "teaching staff",
+   "ja": "教授陣",
+   "level": 2,
+   "group": "staff"
+  },
+  {
+   "id": "p304",
+   "word": "fare",
+   "answer": "ticket price",
+   "ja": "運賃",
+   "level": 1,
+   "group": "cost"
+  },
+  {
+   "id": "p305",
+   "word": "feasible",
+   "answer": "practicable",
+   "ja": "実行可能な",
+   "level": 2,
+   "group": "feasible"
+  },
+  {
+   "id": "p306",
+   "word": "feature",
+   "answer": "characteristic",
+   "ja": "特徴",
+   "level": 1
+  },
+  {
+   "id": "p307",
+   "word": "figure",
+   "answer": "number",
+   "ja": "数字",
+   "level": 1,
+   "group": "count"
+  },
+  {
+   "id": "p308",
+   "word": "finalize",
+   "answer": "complete the details of",
+   "ja": "最終決定する",
+   "level": 2
+  },
+  {
+   "id": "p309",
+   "word": "flagship",
+   "answer": "leading",
+   "ja": "主力の",
+   "level": 2,
+   "group": "leading"
+  },
+  {
+   "id": "p310",
+   "word": "flexible",
+   "answer": "adaptable",
+   "ja": "柔軟な",
+   "level": 1,
+   "group": "change"
+  },
+  {
+   "id": "p311",
+   "word": "fluctuation",
+   "answer": "variation",
+   "ja": "変動",
+   "level": 2,
+   "group": "change"
+  },
+  {
+   "id": "p312",
+   "word": "forecast",
+   "answer": "prediction",
+   "ja": "予測",
+   "level": 1,
+   "group": "outlook"
+  },
+  {
+   "id": "p313",
+   "word": "foremost",
+   "answer": "leading expert",
+   "ja": "第一人者の",
+   "level": 3,
+   "group": "leading"
+  },
+  {
+   "id": "p314",
+   "word": "formulate",
+   "answer": "develop",
+   "ja": "策定する",
+   "level": 2,
+   "group": "create"
+  },
+  {
+   "id": "p315",
+   "word": "fragile",
+   "answer": "breakable",
+   "ja": "壊れやすい",
+   "level": 1,
+   "group": "fragile"
+  },
+  {
+   "id": "p316",
+   "word": "franchise",
+   "answer": "license to sell",
+   "ja": "フランチャイズ",
+   "level": 3
+  },
+  {
+   "id": "p317",
+   "word": "fulfill",
+   "answer": "carry through",
+   "ja": "果たす",
+   "level": 2,
+   "group": "achieve"
+  },
+  {
+   "id": "p318",
+   "word": "fundamental",
+   "answer": "basic",
+   "ja": "基本的な",
+   "level": 1
+  },
+  {
+   "id": "p319",
+   "word": "furnish",
+   "answer": "supply",
+   "ja": "供給する、家具を備える",
+   "level": 2,
+   "group": "give"
+  },
+  {
+   "id": "p320",
+   "word": "gauge",
+   "answer": "measure",
+   "ja": "測る",
+   "level": 3,
+   "group": "check"
+  },
+  {
+   "id": "p321",
+   "word": "generate",
+   "answer": "produce",
+   "ja": "生み出す",
+   "level": 1,
+   "group": "create"
+  },
+  {
+   "id": "p322",
+   "word": "generous",
+   "answer": "giving",
+   "ja": "気前のよい",
+   "level": 1,
+   "group": "give"
+  },
+  {
+   "id": "p323",
+   "word": "gratitude",
+   "answer": "thanks",
+   "ja": "感謝",
+   "level": 1
+  },
+  {
+   "id": "p324",
+   "word": "grievance",
+   "answer": "complaint",
+   "ja": "苦情",
+   "level": 3
+  },
+  {
+   "id": "p325",
+   "word": "guideline",
+   "answer": "rule",
+   "ja": "指針",
+   "level": 1
+  },
+  {
+   "id": "p326",
+   "word": "halt",
+   "answer": "bring to a stop",
+   "ja": "止める",
+   "level": 2,
+   "group": "end"
+  },
+  {
+   "id": "p327",
+   "word": "hamper",
+   "answer": "hinder",
+   "ja": "妨げる",
+   "level": 3,
+   "group": "prevent"
+  },
+  {
+   "id": "p328",
+   "word": "hazardous",
+   "answer": "dangerous",
+   "ja": "危険な",
+   "level": 2,
+   "group": "danger"
+  },
+  {
+   "id": "p329",
+   "word": "hesitant",
+   "answer": "unsure",
+   "ja": "ためらいがちな",
+   "level": 2,
+   "group": "worry"
+  },
+  {
+   "id": "p330",
+   "word": "highlight",
+   "answer": "spotlight",
+   "ja": "強調する",
+   "level": 2,
+   "group": "emphasize"
+  },
+  {
+   "id": "p331",
+   "word": "hinder",
+   "answer": "hold back",
+   "ja": "妨げる",
+   "level": 3,
+   "group": "prevent"
+  },
+  {
+   "id": "p332",
+   "word": "hire",
+   "answer": "recruit",
+   "ja": "雇う",
+   "level": 1,
+   "group": "hire"
+  },
+  {
+   "id": "p333",
+   "word": "honor",
+   "answer": "recognize",
+   "ja": "表彰する",
+   "level": 2,
+   "group": "praise"
+  },
+  {
+   "id": "p334",
+   "word": "identical",
+   "answer": "exactly the same",
+   "ja": "全く同じ",
+   "level": 2,
+   "group": "same"
+  },
+  {
+   "id": "p335",
+   "word": "immediate",
+   "answer": "instant",
+   "ja": "即座の",
+   "level": 1,
+   "group": "fast"
+  },
+  {
+   "id": "p336",
+   "word": "impartial",
+   "answer": "neutral",
+   "ja": "公平な",
+   "level": 3,
+   "group": "fair"
+  },
+  {
+   "id": "p337",
+   "word": "impending",
+   "answer": "approaching",
+   "ja": "差し迫った",
+   "level": 3,
+   "group": "after"
+  },
+  {
+   "id": "p338",
+   "word": "implication",
+   "answer": "consequence",
+   "ja": "影響、含意",
+   "level": 3
+  },
+  {
+   "id": "p339",
+   "word": "impose",
+   "answer": "levy",
+   "ja": "課す",
+   "level": 3
+  },
+  {
+   "id": "p340",
+   "word": "improvise",
+   "answer": "make up on the spot",
+   "ja": "即興で行う",
+   "level": 3
+  },
+  {
+   "id": "p341",
+   "word": "inaugurate",
+   "answer": "officially open",
+   "ja": "開設する",
+   "level": 3,
+   "group": "begin"
+  },
+  {
+   "id": "p342",
+   "word": "inaccurate",
+   "answer": "wrong",
+   "ja": "不正確な",
+   "level": 1,
+   "group": "wrong"
+  },
+  {
+   "id": "p343",
+   "word": "inadequate",
+   "answer": "insufficient",
+   "ja": "不十分な",
+   "level": 2,
+   "group": "lacking"
+  },
+  {
+   "id": "p344",
+   "word": "incorporate",
+   "answer": "include",
+   "ja": "組み込む",
+   "level": 2,
+   "group": "combine"
+  },
+  {
+   "id": "p345",
+   "word": "increment",
+   "answer": "increase",
+   "ja": "増加",
+   "level": 3,
+   "group": "increase"
+  },
+  {
+   "id": "p346",
+   "word": "indicate",
+   "answer": "signal",
+   "ja": "示す",
+   "level": 1,
+   "group": "show"
+  },
+  {
+   "id": "p347",
+   "word": "indispensable",
+   "answer": "absolutely necessary",
+   "ja": "不可欠な",
+   "level": 3,
+   "group": "required"
+  },
+  {
+   "id": "p348",
+   "word": "inevitable",
+   "answer": "unavoidable",
+   "ja": "避けられない",
+   "level": 2
+  },
+  {
+   "id": "p349",
+   "word": "influential",
+   "answer": "powerful",
+   "ja": "影響力のある",
+   "level": 2
+  },
+  {
+   "id": "p350",
+   "word": "inform",
+   "answer": "notify",
+   "ja": "知らせる",
+   "level": 1,
+   "group": "tell"
+  },
+  {
+   "id": "p351",
+   "word": "ingredient",
+   "answer": "component of a dish",
+   "ja": "材料",
+   "level": 1,
+   "group": "part"
+  },
+  {
+   "id": "p352",
+   "word": "inhabitant",
+   "answer": "resident",
+   "ja": "住民",
+   "level": 2,
+   "group": "resident"
+  },
+  {
+   "id": "p353",
+   "word": "initial",
+   "answer": "first",
+   "ja": "最初の",
+   "level": 1,
+   "group": "begin"
+  },
+  {
+   "id": "p354",
+   "word": "initiate",
+   "answer": "launch",
+   "ja": "始める",
+   "level": 2,
+   "group": "begin"
+  },
+  {
+   "id": "p355",
+   "word": "innovative",
+   "answer": "groundbreaking",
+   "ja": "革新的な",
+   "level": 2,
+   "group": "new"
+  },
+  {
+   "id": "p356",
+   "word": "inquiry",
+   "answer": "question",
+   "ja": "問い合わせ",
+   "level": 1,
+   "group": "ask"
+  },
+  {
+   "id": "p357",
+   "word": "insight",
+   "answer": "understanding",
+   "ja": "洞察",
+   "level": 2
+  },
+  {
+   "id": "p358",
+   "word": "inspect",
+   "answer": "check over",
+   "ja": "点検する",
+   "level": 1,
+   "group": "check"
+  },
+  {
+   "id": "p359",
+   "word": "install",
+   "answer": "set up",
+   "ja": "設置する",
+   "level": 1,
+   "group": "combine"
+  },
+  {
+   "id": "p360",
+   "word": "installment",
+   "answer": "partial payment",
+   "ja": "分割払い",
+   "level": 2,
+   "group": "payback"
+  },
+  {
+   "id": "p361",
+   "word": "instruct",
+   "answer": "direct",
+   "ja": "指示する",
+   "level": 1
+  },
+  {
+   "id": "p362",
+   "word": "intact",
+   "answer": "undamaged",
+   "ja": "無傷の",
+   "level": 3
+  },
+  {
+   "id": "p363",
+   "word": "integral",
+   "answer": "essential part",
+   "ja": "不可欠な",
+   "level": 3,
+   "group": "required"
+  },
+  {
+   "id": "p364",
+   "word": "intend",
+   "answer": "plan",
+   "ja": "意図する",
+   "level": 1,
+   "group": "aim"
+  },
+  {
+   "id": "p365",
+   "word": "interim",
+   "answer": "temporary",
+   "ja": "暫定の",
+   "level": 3,
+   "group": "temporary"
+  },
+  {
+   "id": "p366",
+   "word": "intermission",
+   "answer": "break",
+   "ja": "休憩",
+   "level": 2,
+   "group": "rest"
+  },
+  {
+   "id": "p367",
+   "word": "interrupt",
+   "answer": "cut in on",
+   "ja": "割り込む、中断させる",
+   "level": 2,
+   "group": "interrupt"
+  },
+  {
+   "id": "p368",
+   "word": "intricate",
+   "answer": "complicated",
+   "ja": "複雑な",
+   "level": 3
+  },
+  {
+   "id": "p369",
+   "word": "intuitive",
+   "answer": "easy to use",
+   "ja": "直感的な",
+   "level": 3,
+   "group": "easy"
+  },
+  {
+   "id": "p370",
+   "word": "invaluable",
+   "answer": "extremely useful",
+   "ja": "非常に役立つ",
+   "level": 3
+  },
+  {
+   "id": "p371",
+   "word": "invariably",
+   "answer": "always",
+   "ja": "いつも",
+   "level": 3,
+   "group": "usual"
+  },
+  {
+   "id": "p372",
+   "word": "invest",
+   "answer": "put money into",
+   "ja": "投資する",
+   "level": 1
+  },
+  {
+   "id": "p373",
+   "word": "itemize",
+   "answer": "list",
+   "ja": "項目別に記す",
+   "level": 2,
+   "group": "list"
+  },
+  {
+   "id": "p374",
+   "word": "jeopardize",
+   "answer": "endanger",
+   "ja": "危険にさらす",
+   "level": 3,
+   "group": "danger"
+  },
+  {
+   "id": "p375",
+   "word": "joint",
+   "answer": "shared",
+   "ja": "共同の",
+   "level": 2,
+   "group": "together"
+  },
+  {
+   "id": "p376",
+   "word": "justify",
+   "answer": "warrant",
+   "ja": "正当化する",
+   "level": 3
+  },
+  {
+   "id": "p377",
+   "word": "keen",
+   "answer": "eager",
+   "ja": "熱心な",
+   "level": 2,
+   "group": "eager"
+  },
+  {
+   "id": "p378",
+   "word": "landmark",
+   "answer": "historic site",
+   "ja": "名所",
+   "level": 1
+  },
+  {
+   "id": "p379",
+   "word": "lapse",
+   "answer": "expiration",
+   "ja": "失効",
+   "level": 3,
+   "group": "end"
+  },
+  {
+   "id": "p380",
+   "word": "lasting",
+   "answer": "enduring",
+   "ja": "永続的な",
+   "level": 2,
+   "group": "lasting"
+  },
+  {
+   "id": "p381",
+   "word": "launch",
+   "answer": "introduce",
+   "ja": "売り出す",
+   "level": 1,
+   "group": "begin"
+  },
+  {
+   "id": "p382",
+   "word": "lease",
+   "answer": "rental agreement",
+   "ja": "賃貸契約",
+   "level": 2,
+   "group": "agree"
+  },
+  {
+   "id": "p383",
+   "word": "legible",
+   "answer": "readable",
+   "ja": "読みやすい",
+   "level": 3
+  },
+  {
+   "id": "p384",
+   "word": "legitimate",
+   "answer": "lawful",
+   "ja": "合法的な",
+   "level": 3
+  },
+  {
+   "id": "p385",
+   "word": "lengthy",
+   "answer": "long",
+   "ja": "長い",
+   "level": 1
+  },
+  {
+   "id": "p386",
+   "word": "liability",
+   "answer": "legal responsibility",
+   "ja": "法的責任",
+   "level": 3
+  },
+  {
+   "id": "p387",
+   "word": "limited",
+   "answer": "restricted",
+   "ja": "限られた",
+   "level": 1,
+   "group": "lessen"
+  },
+  {
+   "id": "p388",
+   "word": "liquidate",
+   "answer": "sell off",
+   "ja": "清算する",
+   "level": 3
+  },
+  {
+   "id": "p389",
+   "word": "lodging",
+   "answer": "accommodation",
+   "ja": "宿泊施設",
+   "level": 2
+  },
+  {
+   "id": "p390",
+   "word": "lucrative deal",
+   "answer": "profitable agreement",
+   "ja": "もうかる取引",
+   "level": 3,
+   "group": "money"
+  },
+  {
+   "id": "p391",
+   "word": "maintain",
+   "answer": "preserve",
+   "ja": "維持する",
+   "level": 1,
+   "group": "claim"
+  },
+  {
+   "id": "p392",
+   "word": "malfunction",
+   "answer": "breakdown",
+   "ja": "故障",
+   "level": 2
+  },
+  {
+   "id": "p393",
+   "word": "manufacture",
+   "answer": "make",
+   "ja": "製造する",
+   "level": 1,
+   "group": "create"
+  },
+  {
+   "id": "p394",
+   "word": "margin",
+   "answer": "profit",
+   "ja": "利ざや",
+   "level": 3,
+   "group": "money"
+  },
+  {
+   "id": "p395",
+   "word": "massive",
+   "answer": "huge",
+   "ja": "巨大な",
+   "level": 1,
+   "group": "big"
+  },
+  {
+   "id": "p396",
+   "word": "maximize",
+   "answer": "make the most of",
+   "ja": "最大限に活用する",
+   "level": 2
+  },
+  {
+   "id": "p397",
+   "word": "merchandise",
+   "answer": "products",
+   "ja": "商品",
+   "level": 2,
+   "group": "goods"
+  },
+  {
+   "id": "p398",
+   "word": "merge",
+   "answer": "join",
+   "ja": "合併する",
+   "level": 2,
+   "group": "combine"
+  },
+  {
+   "id": "p399",
+   "word": "milestone",
+   "answer": "significant event",
+   "ja": "画期的な出来事",
+   "level": 2
+  },
+  {
+   "id": "p400",
+   "word": "minimize",
+   "answer": "keep to a minimum",
+   "ja": "最小限にする",
+   "level": 2,
+   "group": "lessen"
+  },
+  {
+   "id": "p401",
+   "word": "minor",
+   "answer": "small",
+   "ja": "小さな",
+   "level": 1,
+   "group": "small"
+  },
+  {
+   "id": "p402",
+   "word": "minute",
+   "answer": "tiny",
+   "ja": "ごく小さい",
+   "level": 3,
+   "group": "small"
+  },
+  {
+   "id": "p403",
+   "word": "mishap",
+   "answer": "accident",
+   "ja": "ちょっとした事故",
+   "level": 3
+  },
+  {
+   "id": "p404",
+   "word": "moderate",
+   "answer": "reasonable",
+   "ja": "適度な",
+   "level": 2,
+   "group": "cheap"
+  },
+  {
+   "id": "p405",
+   "word": "momentum",
+   "answer": "impetus",
+   "ja": "勢い",
+   "level": 3
+  },
+  {
+   "id": "p406",
+   "word": "monitor",
+   "answer": "watch",
+   "ja": "監視する",
+   "level": 1,
+   "group": "check"
+  },
+  {
+   "id": "p407",
+   "word": "monotonous",
+   "answer": "repetitive",
+   "ja": "単調な",
+   "level": 2,
+   "group": "boring"
+  },
+  {
+   "id": "p408",
+   "word": "morale",
+   "answer": "team spirit",
+   "ja": "士気",
+   "level": 2
+  },
+  {
+   "id": "p409",
+   "word": "nearby",
+   "answer": "close by",
+   "ja": "近くに",
+   "level": 1,
+   "group": "near"
+  },
+  {
+   "id": "p410",
+   "word": "negligible",
+   "answer": "insignificant",
+   "ja": "取るに足らない",
+   "level": 3,
+   "group": "small"
+  },
+  {
+   "id": "p411",
+   "word": "negotiate",
+   "answer": "bargain",
+   "ja": "交渉する",
+   "level": 2,
+   "group": "cheap"
+  },
+  {
+   "id": "p412",
+   "word": "nominal",
+   "answer": "token",
+   "ja": "名ばかりの、わずかな",
+   "level": 3,
+   "group": "small"
+  },
+  {
+   "id": "p413",
+   "word": "notable",
+   "answer": "remarkable",
+   "ja": "注目すべき",
+   "level": 2,
+   "group": "famous"
+  },
+  {
+   "id": "p414",
+   "word": "notify",
+   "answer": "let know",
+   "ja": "通知する",
+   "level": 1,
+   "group": "tell"
+  },
+  {
+   "id": "p415",
+   "word": "novel",
+   "answer": "new and unusual",
+   "ja": "斬新な",
+   "level": 2,
+   "group": "new"
+  },
+  {
+   "id": "p416",
+   "word": "numerous",
+   "answer": "many",
+   "ja": "多数の",
+   "level": 1,
+   "group": "enough"
+  },
+  {
+   "id": "p417",
+   "word": "objective",
+   "answer": "goal",
+   "ja": "目的",
+   "level": 1,
+   "group": "aim"
+  },
+  {
+   "id": "p418",
+   "word": "obligation",
+   "answer": "duty",
+   "ja": "義務",
+   "level": 2,
+   "group": "required"
+  },
+  {
+   "id": "p419",
+   "word": "observe",
+   "answer": "watch closely",
+   "ja": "観察する",
+   "level": 1,
+   "group": "check"
+  },
+  {
+   "id": "p420",
+   "word": "obstacle",
+   "answer": "hurdle",
+   "ja": "障害",
+   "level": 2,
+   "group": "problem"
+  },
+  {
+   "id": "p421",
+   "word": "occasionally",
+   "answer": "now and then",
+   "ja": "時々",
+   "level": 1
+  },
+  {
+   "id": "p422",
+   "word": "occupied",
+   "answer": "in use",
+   "ja": "使用中の",
+   "level": 1
+  },
+  {
+   "id": "p423",
+   "word": "omit",
+   "answer": "leave out",
+   "ja": "省く",
+   "level": 2,
+   "group": "remove"
+  },
+  {
+   "id": "p424",
+   "word": "ongoing",
+   "answer": "continuing",
+   "ja": "進行中の",
+   "level": 2,
+   "group": "continue"
+  },
+  {
+   "id": "p425",
+   "word": "operate",
+   "answer": "run",
+   "ja": "運営する、操作する",
+   "level": 1,
+   "group": "charge"
+  },
+  {
+   "id": "p426",
+   "word": "opponent",
+   "answer": "adversary",
+   "ja": "対戦相手",
+   "level": 2,
+   "group": "rival"
+  },
+  {
+   "id": "p427",
+   "word": "opt",
+   "answer": "choose",
+   "ja": "選ぶ",
+   "level": 2,
+   "group": "choose"
+  },
+  {
+   "id": "p428",
+   "word": "optimal",
+   "answer": "best possible",
+   "ja": "最適な",
+   "level": 2,
+   "group": "leading"
+  },
+  {
+   "id": "p429",
+   "word": "optional",
+   "answer": "voluntary",
+   "ja": "任意の",
+   "level": 2
+  },
+  {
+   "id": "p430",
+   "word": "orientation",
+   "answer": "introductory session",
+   "ja": "新人説明会",
+   "level": 2
+  },
+  {
+   "id": "p431",
+   "word": "outdated",
+   "answer": "old-fashioned",
+   "ja": "時代遅れの",
+   "level": 1,
+   "group": "old"
+  },
+  {
+   "id": "p432",
+   "word": "outing",
+   "answer": "day trip",
+   "ja": "遠足、外出",
+   "level": 2,
+   "group": "trip"
+  },
+  {
+   "id": "p433",
+   "word": "outlet",
+   "answer": "store",
+   "ja": "販売店、コンセント",
+   "level": 2
+  },
+  {
+   "id": "p434",
+   "word": "outline",
+   "answer": "summarize",
+   "ja": "概要を述べる",
+   "level": 2,
+   "group": "short"
+  },
+  {
+   "id": "p435",
+   "word": "outlook",
+   "answer": "prospects",
+   "ja": "見通し",
+   "level": 2,
+   "group": "outlook"
+  },
+  {
+   "id": "p436",
+   "word": "output",
+   "answer": "production",
+   "ja": "生産高",
+   "level": 2,
+   "group": "goods"
+  },
+  {
+   "id": "p437",
+   "word": "overdue",
+   "answer": "late",
+   "ja": "期限を過ぎた",
+   "level": 1,
+   "group": "delay"
+  },
+  {
+   "id": "p438",
+   "word": "overlook",
+   "answer": "fail to notice",
+   "ja": "見落とす",
+   "level": 2
+  },
+  {
+   "id": "p439",
+   "word": "overtime",
+   "answer": "extra hours",
+   "ja": "残業",
+   "level": 1
+  },
+  {
+   "id": "p440",
+   "word": "overwhelming",
+   "answer": "enormous",
+   "ja": "圧倒的な",
+   "level": 2,
+   "group": "big"
+  },
+  {
+   "id": "p441",
+   "word": "panel",
+   "answer": "committee",
+   "ja": "委員会",
+   "level": 2
+  },
+  {
+   "id": "p442",
+   "word": "paramount",
+   "answer": "of greatest importance",
+   "ja": "最も重要な",
+   "level": 3,
+   "group": "important"
+  },
+  {
+   "id": "p443",
+   "word": "participate",
+   "answer": "take part",
+   "ja": "参加する",
+   "level": 1
+  },
+  {
+   "id": "p444",
+   "word": "patron",
+   "answer": "regular customer",
+   "ja": "常連客",
+   "level": 2,
+   "group": "customer"
+  },
+  {
+   "id": "p445",
+   "word": "peak",
+   "answer": "highest point",
+   "ja": "頂点",
+   "level": 1
+  },
+  {
+   "id": "p446",
+   "word": "pending",
+   "answer": "awaiting a decision",
+   "ja": "未決定の",
+   "level": 2
+  },
+  {
+   "id": "p447",
+   "word": "perishable",
+   "answer": "likely to spoil",
+   "ja": "腐りやすい",
+   "level": 2
+  },
+  {
+   "id": "p448",
+   "word": "permanent",
+   "answer": "lasting forever",
+   "ja": "永続的な",
+   "level": 1,
+   "group": "lasting"
+  },
+  {
+   "id": "p449",
+   "word": "permit",
+   "answer": "license",
+   "ja": "許可証",
+   "level": 2,
+   "group": "approve"
+  },
+  {
+   "id": "p450",
+   "word": "perspective",
+   "answer": "viewpoint",
+   "ja": "視点",
+   "level": 2
+  },
+  {
+   "id": "p451",
+   "word": "persuade",
+   "answer": "convince",
+   "ja": "説得する",
+   "level": 1
+  },
+  {
+   "id": "p452",
+   "word": "phase",
+   "answer": "stage",
+   "ja": "段階",
+   "level": 1
+  },
+  {
+   "id": "p453",
+   "word": "pivotal",
+   "answer": "central",
+   "ja": "極めて重要な",
+   "level": 3,
+   "group": "important"
+  },
+  {
+   "id": "p454",
+   "word": "plummet",
+   "answer": "fall sharply",
+   "ja": "急落する",
+   "level": 3,
+   "group": "decrease"
+  },
+  {
+   "id": "p455",
+   "word": "portfolio",
+   "answer": "collection of work",
+   "ja": "作品集",
+   "level": 2
+  },
+  {
+   "id": "p456",
+   "word": "portion",
+   "answer": "part of something",
+   "ja": "一部",
+   "level": 1,
+   "group": "part"
+  },
+  {
+   "id": "p457",
+   "word": "postage",
+   "answer": "mailing cost",
+   "ja": "郵便料金",
+   "level": 2,
+   "group": "cost"
+  },
+  {
+   "id": "p458",
+   "word": "potential",
+   "answer": "possible",
+   "ja": "可能性のある",
+   "level": 1,
+   "group": "possible"
+  },
+  {
+   "id": "p459",
+   "word": "practical",
+   "answer": "realistic",
+   "ja": "実用的な",
+   "level": 2
+  },
+  {
+   "id": "p460",
+   "word": "praise",
+   "answer": "compliment",
+   "ja": "褒める",
+   "level": 1,
+   "group": "praise"
+  },
+  {
+   "id": "p461",
+   "word": "precaution",
+   "answer": "safeguard",
+   "ja": "予防措置",
+   "level": 2,
+   "group": "prevent"
+  },
+  {
+   "id": "p462",
+   "word": "precise",
+   "answer": "exact",
+   "ja": "正確な",
+   "level": 2,
+   "group": "exact"
+  },
+  {
+   "id": "p463",
+   "word": "premises",
+   "answer": "property",
+   "ja": "敷地、構内",
+   "level": 2
+  },
+  {
+   "id": "p464",
+   "word": "premium",
+   "answer": "high-quality",
+   "ja": "上等の",
+   "level": 2
+  },
+  {
+   "id": "p465",
+   "word": "prerequisite",
+   "answer": "requirement",
+   "ja": "前提条件",
+   "level": 3,
+   "group": "required"
+  },
+  {
+   "id": "p466",
+   "word": "preserve",
+   "answer": "protect",
+   "ja": "保護する",
+   "level": 2,
+   "group": "claim"
+  },
+  {
+   "id": "p467",
+   "word": "prevalent",
+   "answer": "widespread",
+   "ja": "広まっている",
+   "level": 3,
+   "group": "usual"
+  },
+  {
+   "id": "p468",
+   "word": "previous",
+   "answer": "earlier",
+   "ja": "以前の",
+   "level": 1,
+   "group": "before"
+  },
+  {
+   "id": "p469",
+   "word": "primary",
+   "answer": "main",
+   "ja": "主要な",
+   "level": 1,
+   "group": "mainly"
+  },
+  {
+   "id": "p470",
+   "word": "principal",
+   "answer": "chief",
+   "ja": "主要な",
+   "level": 2,
+   "group": "mainly"
+  },
+  {
+   "id": "p471",
+   "word": "prioritize",
+   "answer": "put first",
+   "ja": "優先する",
+   "level": 2
+  },
+  {
+   "id": "p472",
+   "word": "proceed",
+   "answer": "continue",
+   "ja": "進む、続行する",
+   "level": 2,
+   "group": "continue"
+  },
+  {
+   "id": "p473",
+   "word": "proficient",
+   "answer": "skilled at",
+   "ja": "熟達した",
+   "level": 2,
+   "group": "able"
+  },
+  {
+   "id": "p474",
+   "word": "profound",
+   "answer": "deep",
+   "ja": "深い",
+   "level": 3
+  },
+  {
+   "id": "p475",
+   "word": "prohibit",
+   "answer": "forbid",
+   "ja": "禁止する",
+   "level": 1,
+   "group": "forbid"
+  },
+  {
+   "id": "p476",
+   "word": "prominent",
+   "answer": "well-respected",
+   "ja": "著名な、目立つ",
+   "level": 2,
+   "group": "famous"
+  },
+  {
+   "id": "p477",
+   "word": "promising",
+   "answer": "hopeful",
+   "ja": "有望な",
+   "level": 2,
+   "group": "outlook"
+  },
+  {
+   "id": "p478",
+   "word": "prompt",
+   "answer": "quick",
+   "ja": "迅速な",
+   "level": 1,
+   "group": "fast"
+  },
+  {
+   "id": "p479",
+   "word": "proposal",
+   "answer": "plan put forward",
+   "ja": "提案",
+   "level": 1
+  },
+  {
+   "id": "p480",
+   "word": "prosper",
+   "answer": "succeed",
+   "ja": "繁栄する",
+   "level": 2,
+   "group": "grow"
+  },
+  {
+   "id": "p481",
+   "word": "provisional",
+   "answer": "interim plan",
+   "ja": "暫定的な",
+   "level": 3,
+   "group": "temporary"
+  },
+  {
+   "id": "p482",
+   "word": "publicize",
+   "answer": "advertise",
+   "ja": "宣伝する",
+   "level": 2
+  },
+  {
+   "id": "p483",
+   "word": "punctual",
+   "answer": "on time",
+   "ja": "時間を守る",
+   "level": 1
+  },
+  {
+   "id": "p484",
+   "word": "pursue",
+   "answer": "seek",
+   "ja": "追求する",
+   "level": 2,
+   "group": "ask"
+  },
+  {
+   "id": "p485",
+   "word": "qualified",
+   "answer": "certified",
+   "ja": "資格のある",
+   "level": 2,
+   "group": "able"
+  },
+  {
+   "id": "p486",
+   "word": "quarterly",
+   "answer": "every three months",
+   "ja": "四半期ごとの",
+   "level": 1
+  },
+  {
+   "id": "p487",
+   "word": "quota",
+   "answer": "target",
+   "ja": "割り当て、ノルマ",
+   "level": 2,
+   "group": "aim"
+  },
+  {
+   "id": "p488",
+   "word": "quote",
+   "answer": "price estimate",
+   "ja": "見積もり",
+   "level": 2,
+   "group": "estimate"
+  },
+  {
+   "id": "p489",
+   "word": "rate",
+   "answer": "charge per unit",
+   "ja": "料金",
+   "level": 1,
+   "group": "cost"
+  },
+  {
+   "id": "p490",
+   "word": "rationale",
+   "answer": "reasoning",
+   "ja": "根拠",
+   "level": 3,
+   "group": "logic"
+  },
+  {
+   "id": "p491",
+   "word": "readily",
+   "answer": "easily",
+   "ja": "容易に、快く",
+   "level": 2,
+   "group": "easy"
+  },
+  {
+   "id": "p492",
+   "word": "realize",
+   "answer": "achieve fully",
+   "ja": "実現する",
+   "level": 2,
+   "group": "achieve"
+  },
+  {
+   "id": "p493",
+   "word": "reasonable",
+   "answer": "affordable",
+   "ja": "手頃な",
+   "level": 1,
+   "group": "cheap"
+  },
+  {
+   "id": "p494",
+   "word": "recession",
+   "answer": "economic downturn",
+   "ja": "景気後退",
+   "level": 2
+  },
+  {
+   "id": "p495",
+   "word": "recipient",
+   "answer": "receiver",
+   "ja": "受取人",
+   "level": 2
+  },
+  {
+   "id": "p496",
+   "word": "reckless",
+   "answer": "careless",
+   "ja": "無謀な",
+   "level": 3,
+   "group": "danger"
+  },
+  {
+   "id": "p497",
+   "word": "recommend",
+   "answer": "advise",
+   "ja": "勧める",
+   "level": 1
+  },
+  {
+   "id": "p498",
+   "word": "reconcile",
+   "answer": "settle",
+   "ja": "和解させる、一致させる",
+   "level": 3
+  },
+  {
+   "id": "p499",
+   "word": "recruit",
+   "answer": "new employee",
+   "ja": "新入社員",
+   "level": 2,
+   "group": "hire"
+  },
+  {
+   "id": "p500",
+   "word": "rectify",
+   "answer": "put right",
+   "ja": "正す",
+   "level": 3,
+   "group": "fix"
+  },
+  {
+   "id": "p501",
+   "word": "redeem",
+   "answer": "exchange",
+   "ja": "（クーポンなどを）引き換える",
+   "level": 2
+  },
+  {
+   "id": "p502",
+   "word": "reduce",
+   "answer": "cut",
+   "ja": "減らす",
+   "level": 1,
+   "group": "lessen"
   }
  ],
  "reading": [

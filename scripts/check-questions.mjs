@@ -58,6 +58,12 @@ for (const key of ["answer", "word"]) {
     seen.set(v, it.id);
   }
 }
+// ある問題の word が別の問題の answer と同じなら、同じ group にして誤答に出ないようにする
+const byAnswer = new Map(bank.para.map(it => [it.answer.toLowerCase(), it]));
+for (const it of bank.para) {
+  const other = byAnswer.get(it.word.toLowerCase());
+  if (other && other !== it && (!it.group || it.group !== other.group)) fail(it.id, `word「${it.word}」が ${other.id} の answer と同じなので group をそろえる`);
+}
 
 if (errors.length) {
   console.error(`questions.json に ${errors.length} 件の問題があります:\n` + errors.join("\n"));
