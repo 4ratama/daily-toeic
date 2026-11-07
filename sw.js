@@ -1,6 +1,6 @@
 // オフラインでも前回読み込んだ問題で学習できるようにするキャッシュ（ネットワーク優先）
 // 更新したら CACHE の番号を上げる。ブラウザのHTTPキャッシュも使わず毎回最新を取りに行く。
-const CACHE = "toeic-daily-v4";
+const CACHE = "toeic-daily-v5";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
