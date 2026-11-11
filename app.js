@@ -319,6 +319,7 @@ function onAnswer(g, correct, sec, st) {
   const m = M();
   m.log.push({ d: today(), g, ok: correct ? 1 : 0, s: Math.round(sec) });
   const cut = today(-14); m.log = m.log.filter(x => x.d >= cut);
+  updateTrend(); // 直後の record()/finish() の save() で保存される
   if (g === "grammar") {
     m.combo = correct ? m.combo + 1 : 0;
     if (m.combo >= 10) award("combo10", st.badges);
@@ -363,6 +364,7 @@ function onTermDone(st) {
   }
   if (grammarGauge().some(x => x.pct >= 80)) award("tag_master", res.badges);
   res.levelAfter = levelOf(m.xp).level;
+  updateTrend();
   save();
   return res;
 }
@@ -387,8 +389,8 @@ function grammarGauge() {
 }
 // 予想スコア（目安）：直近14日の正答率と回答時間から、リーディングを推定。リスニングは前回の結果からの推定値。
 const LISTENING_ESTIMATE = 470;
-function predictScore() {
-  const log = M().log, need = 40;
+function predictScore(log = M().log) {
+  const need = 40;
   if (log.length < need) return { enough: false, left: need - log.length };
   const acc = gs => { const xs = log.filter(x => gs.includes(x.g)); return xs.length ? xs.reduce((a, x) => a + x.ok, 0) / xs.length : null; };
   const p5 = acc(["grammar", "vocab"]), p7 = acc(["reading", "para"]);
@@ -397,7 +399,131 @@ function predictScore() {
   const slow = Math.max(0, Math.min(30, (avgSec - 20) * 3)); // 1問20秒を超えるほど本番で時間が足りなくなる
   const reading = Math.max(5, Math.min(495, Math.round((5 + 490 * Math.pow(a, 1.6) - slow) / 5) * 5));
   const total = reading + LISTENING_ESTIMATE;
-  return { enough: true, reading, low: Math.max(10, total - 20), high: Math.min(990, total + 20), avgSec: Math.round(avgSec), n: log.length };
+  return { enough: true, reading, total, low: Math.max(10, total - 20), high: Math.min(990, total + 20), avgSec: Math.round(avgSec), n: log.length };
+}
+// ---- 成長グラフ（予想スコアの推移・学習曲線・成長度） ----
+// S.trend["YYYY-MM-DD"] = { n: 回答数, ok: 正解数, pred: 予想スコア(中央値), mastered: 定着数, xp, t: 更新時刻 }
+// m.log は直近14日分しか残らないので、日ごとの要約をここに残して長期の推移を描く。
+// 同期（sync.js）では日ごとに t が新しい方が残る。ウィジェット（widget/toeic-daily-graph-widget.js）もこの形を読む。
+function masteredCount() { return Object.values(S.items).filter(it => it.mastered).length; }
+function updateTrend() {
+  const log = M().log, tr = S.trend = S.trend || {}, t = today(), by = {};
+  for (const x of log) { const c = by[x.d] = by[x.d] || { n: 0, ok: 0 }; c.n++; c.ok += x.ok; }
+  // 過去の日：まだ無い日（以前の記録からの補完）と、同期で回答が増えた日だけ書き直す
+  for (const d of Object.keys(by).sort()) {
+    if (d === t) continue;
+    const e = tr[d], c = by[d];
+    if (e && e.n >= c.n) continue;
+    const p = e && e.pred != null ? null : predictScore(log.filter(x => x.d <= d));
+    tr[d] = { ...(e || {}), n: c.n, ok: c.ok, pred: e && e.pred != null ? e.pred : p.enough ? p.total : null, t: Date.now() };
+  }
+  const c = by[t] || { n: 0, ok: 0 }, p = predictScore(log);
+  if (c.n || tr[t]) tr[t] = { n: c.n, ok: c.ok, pred: p.enough ? p.total : null, mastered: masteredCount(), xp: M().xp, t: Date.now() };
+  return tr;
+}
+const TREND_RANGES = [[30, "30日"], [90, "90日"], [0, "全部"]];
+let trendRange = 30;
+function trendDays(range) {
+  const tr = S.trend || {}, keys = Object.keys(tr).sort();
+  const first = keys[0] || today();
+  const span = Math.max(6, daysBetween(first, today()));
+  const len = range ? Math.min(range - 1, span) : span;
+  const out = [];
+  for (let i = -len; i <= 0; i++) { const d = today(i); out.push({ d, ...(tr[d] || {}) }); }
+  return out;
+}
+const sum = (xs, f) => xs.reduce((a, x) => a + (f(x) || 0), 0);
+const md = d => `${+d.slice(5, 7)}/${+d.slice(8)}`;
+// 直近 from〜to 日前の正答率（%）と回答数
+function windowAcc(days, from, to) {
+  const xs = days.slice(Math.max(0, days.length - to), days.length - from);
+  const n = sum(xs, x => x.n), ok = sum(xs, x => x.ok);
+  return { n, acc: n ? ok / n * 100 : null };
+}
+function deltaHtml(v, unit = "", digits = 0) {
+  if (v === null || v === undefined || isNaN(v)) return `<span class="delta">—</span>`;
+  const r = +v.toFixed(digits), cls = r > 0 ? "up" : r < 0 ? "down" : "";
+  return `<span class="delta ${cls}">${r > 0 ? "+" : r < 0 ? "−" : "±"}${Math.abs(r)}${unit}</span>`;
+}
+// 成長度：予想スコア・正答率・回答数・定着数を「前と比べて」で並べる
+function growthHtml(all) {
+  const preds = all.filter(x => x.pred != null);
+  const now = preds.length ? preds[preds.length - 1] : null;
+  const ago = now ? preds.filter(x => daysBetween(x.d, now.d) >= 14).pop() || preds[0] : null;
+  const w1 = windowAcc(all, 0, 7), w0 = windowAcc(all, 7, 14);
+  const ms = all.filter(x => x.mastered != null), mNow = masteredCount();
+  const mAgo = ms.filter(x => daysBetween(x.d, today()) >= 7).pop();
+  const tile = (label, val, delta, note) => `<div class="g-tile"><span class="g-label">${label}</span><b>${val}</b>${delta}<span class="g-note">${note}</span></div>`;
+  return `<div class="growth">
+    ${tile("予想スコア", now ? now.pred : "—", now && ago !== now ? deltaHtml(now.pred - ago.pred) : deltaHtml(null), now && ago !== now ? `${md(ago.d)}から` : "記録がたまると比較")}
+    ${tile("正答率（7日）", w1.acc !== null ? `${Math.round(w1.acc)}%` : "—", w1.acc !== null && w0.acc !== null ? deltaHtml(w1.acc - w0.acc, "pt") : deltaHtml(null), "前の7日と比べて")}
+    ${tile("回答数（7日）", `${w1.n}問`, w0.n ? deltaHtml(w1.n - w0.n, "問") : deltaHtml(null), "前の7日と比べて")}
+    ${tile("定着した問題", mNow, mAgo ? deltaHtml(mNow - mAgo.mastered) : deltaHtml(null), mAgo ? `${md(mAgo.d)}から` : "1週間たつと比較")}
+  </div>`;
+}
+// SVG：x は日付の位置、y は値。W×H は viewBox（画面幅に合わせて伸縮）
+const CW = 320, CH = 150, PL = 34, PR = 10, PT = 12, PB = 22;
+function xAt(i, n) { return PL + (n <= 1 ? 0 : i / (n - 1) * (CW - PL - PR)); }
+function axisDates(days) {
+  const n = days.length, idx = [0, Math.round((n - 1) / 2), n - 1].filter((v, i, a) => a.indexOf(v) === i);
+  return idx.map(i => `<text x="${xAt(i, n)}" y="${CH - 6}" text-anchor="${i === 0 ? "start" : i === n - 1 ? "end" : "middle"}">${md(days[i].d)}</text>`).join("");
+}
+function scoreChart(days) {
+  const pts = days.map((x, i) => ({ i, v: x.pred })).filter(p => p.v != null);
+  if (!pts.length) return `<div class="muted chart-empty">予想スコアは、あと${predictScore().left || 0}問解くと記録が始まります。</div>`;
+  const lo = Math.max(10, Math.floor((Math.min(...pts.map(p => p.v), 950) - 25) / 25) * 25), hi = 990;
+  const y = v => PT + (hi - v) / (hi - lo) * (CH - PT - PB), n = days.length;
+  const grid = [lo, Math.round((lo + 950) / 2 / 5) * 5, 950, 990].filter((v, i, a) => a.indexOf(v) === i && v >= lo);
+  const line = pts.map((p, k) => `${k ? "L" : "M"}${xAt(p.i, n).toFixed(1)},${y(p.v).toFixed(1)}`).join("");
+  const last = pts[pts.length - 1];
+  return `<svg class="chart" viewBox="0 0 ${CW} ${CH}" role="img" aria-label="予想スコアの推移。最新 ${last.v}点">
+    ${grid.map(v => `<line class="${v === 950 ? "goal" : "grid"}" x1="${PL}" x2="${CW - PR}" y1="${y(v)}" y2="${y(v)}"/><text x="${PL - 4}" y="${y(v) + 4}" text-anchor="end" class="${v === 950 ? "goal-t" : ""}">${v}</text>`).join("")}
+    <path class="score-line" d="${line}"/>
+    ${pts.length <= 40 ? pts.map(p => `<circle class="dot" cx="${xAt(p.i, n)}" cy="${y(p.v)}" r="2.2"/>`).join("") : ""}
+    <circle class="dot last" cx="${xAt(last.i, n)}" cy="${y(last.v)}" r="4"/>
+    <text class="val" x="${Math.min(xAt(last.i, n), CW - PR - 2)}" y="${y(last.v) - 8}" text-anchor="end">${last.v}</text>
+    ${axisDates(days)}
+  </svg>`;
+}
+// 学習曲線：棒＝その日の回答数、線＝7日間の正答率（その日までの7日分をまとめて計算）
+function learningChart(days) {
+  if (!days.some(x => x.n)) return `<div class="muted chart-empty">問題を解くと、ここに学習曲線が出ます。</div>`;
+  const n = days.length, maxN = Math.max(...days.map(x => x.n || 0), 10);
+  const plotH = CH - PT - PB, base = CH - PB, bw = Math.max(1.5, (CW - PL - PR) / n * 0.6);
+  const yA = a => PT + (100 - a) / 50 * plotH; // 50〜100% を表示
+  const rolling = days.map((x, i) => {
+    const w = days.slice(Math.max(0, i - 6), i + 1), tn = sum(w, z => z.n);
+    return tn >= 5 ? { i, v: Math.max(50, sum(w, z => z.ok) / tn * 100) } : null;
+  }).filter(Boolean);
+  const line = rolling.map((p, k) => `${k ? "L" : "M"}${xAt(p.i, n).toFixed(1)},${yA(p.v).toFixed(1)}`).join("");
+  const last = rolling[rolling.length - 1];
+  return `<svg class="chart" viewBox="0 0 ${CW} ${CH}" role="img" aria-label="学習曲線。棒は1日の回答数、線は7日間の正答率">
+    ${[50, 75, 100].map(a => `<line class="grid" x1="${PL}" x2="${CW - PR}" y1="${yA(a)}" y2="${yA(a)}"/><text x="${PL - 4}" y="${yA(a) + 4}" text-anchor="end">${a}%</text>`).join("")}
+    ${days.map((x, i) => x.n ? `<rect class="vol" x="${(xAt(i, n) - bw / 2).toFixed(1)}" y="${(base - x.n / maxN * plotH * 0.45).toFixed(1)}" width="${bw.toFixed(1)}" height="${(x.n / maxN * plotH * 0.45).toFixed(1)}"/>` : "").join("")}
+    ${line ? `<path class="acc-line" d="${line}"/>` : ""}
+    ${last ? `<circle class="dot acc last" cx="${xAt(last.i, n)}" cy="${yA(last.v)}" r="4"/><text class="val acc-t" x="${Math.min(xAt(last.i, n), CW - PR - 2)}" y="${yA(last.v) - 8}" text-anchor="end">${Math.round(last.v)}%</text>` : ""}
+    ${axisDates(days)}
+  </svg>
+  <div class="legend"><span><i class="lg-bar"></i>1日の回答数（最大${maxN}問）</span><span><i class="lg-acc"></i>7日間の正答率</span></div>`;
+}
+function trendHtml() {
+  updateTrend();
+  const all = trendDays(0), days = trendDays(trendRange);
+  return `<div class="card trend-card">
+    <h2>成長グラフ</h2>
+    ${growthHtml(all)}
+    <div class="seg" role="group" aria-label="期間">${TREND_RANGES.map(([v, l]) => `<button class="seg-btn${v === trendRange ? " on" : ""}" data-range="${v}">${l}</button>`).join("")}</div>
+    <h3>予想スコアの推移 <span class="muted">（目安・赤い点線が目標950）</span></h3>
+    ${scoreChart(days)}
+    <h3>学習曲線</h3>
+    ${learningChart(days)}
+    <div class="muted" style="margin-top:6px">予想スコアは毎日、直近14日の正答率と回答時間から計算した値を記録しています。ホーム画面のウィジェットにも出せます（READMEの「成長グラフのウィジェット」）。</div>
+  </div>`;
+}
+function bindTrend() {
+  const el = document.getElementById("trend");
+  if (!el) return;
+  el.querySelectorAll(".seg-btn").forEach(b => b.onclick = () => { trendRange = +b.dataset.range; el.innerHTML = trendHtml(); bindTrend(); });
 }
 // 学習カレンダー（直近12週）
 function calendarHtml() {
@@ -514,7 +640,9 @@ function home() {
       <h2>ジャンル別の正答率</h2>
       <table class="genres">${rows}</table>
       <div class="muted" style="margin-top:8px">正解して「自信あり」を選び、制限時間内（文法・語彙20秒、言い換え10秒）に答えると次の復習までの間隔が 1→3→7→14→30→60日と伸びます。</div>
-    </div>`;
+    </div>
+    <div id="trend">${trendHtml()}</div>`;
+  bindTrend();
   app.querySelectorAll(".term").forEach(b => b.onclick = () => startTerm(+b.dataset.term));
   document.getElementById("settings").onclick = settings;
   document.getElementById("guide").onclick = guide;
